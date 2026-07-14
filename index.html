@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pratix.io - Free Premium Web Tools. Clean, deduplicate, and validate Excel &amp; CSV files instantly | Generate, validate, and optimize structured data markup i...">
-  <meta name="keywords" content="web tools, Data Cleaner, Schema Generator, Revenue Calculator, Ad Layout &amp; Banner Placeholder Generator, Ai Prompt Generator, Marketing, Finance, SEO, Ai Tools, free tools, online tools, micro-saas, excel tools, csv tools">
+  <meta name="keywords" content="web tools, Data Cleaner, Schema Generator, Revenue Calculator, Ad Layout &amp; Banner Placeholder Generator, Compressor, Marketing, Finance, SEO, free tools, online tools, micro-saas, excel tools, csv tools">
   <meta name="author" content="Pratix.io">
   <meta property="og:title" content="Pratix.io - Premium Micro-SaaS Web Tools">
   <meta property="og:description" content="Free Premium Web Tools - 100% Client-Side Processing">
@@ -29,7 +29,6 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
     --color-rose-400: oklch(71.2% 0.194 13.428);
-    --color-rose-500: oklch(64.5% 0.246 16.439);
     --color-zinc-50: oklch(98.5% 0 0);
     --color-zinc-100: oklch(96.7% 0.001 286.375);
     --color-zinc-200: oklch(92% 0.004 286.32);
@@ -708,9 +707,6 @@
   }
   .text-emerald-500 {
     color: var(--color-emerald-500);
-  }
-  .text-rose-500 {
-    color: var(--color-rose-500);
   }
   .text-transparent {
     color: transparent;
@@ -4674,7 +4670,7 @@
   </div>
 
   <main class="max-w-6xl w-full mx-auto px-4 sm:px-8 flex-grow mb-20">
-    <div class="flex flex-wrap gap-2 mb-8 border-b border-zinc-200 pb-5 justify-center sm:justify-start" id="filterContainer"><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-blue-600 text-white" data-category="all"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" aria-hidden="true" class="lucide lucide-layers w-4 h-4"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>All Tools</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="marketing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="megaphone" aria-hidden="true" class="lucide lucide-megaphone w-4 h-4"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path><path d="M8 6v8"></path></svg><span>Marketing</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="finance"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="landmark" aria-hidden="true" class="lucide lucide-landmark w-4 h-4"><path d="M10 18v-7"></path><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"></path><path d="M14 18v-7"></path><path d="M18 18v-7"></path><path d="M3 22h18"></path><path d="M6 18v-7"></path></svg><span>Finance</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="seo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="line-chart" aria-hidden="true" class="lucide lucide-line-chart w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg><span>SEO</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="ai-tools"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bot" aria-hidden="true" class="lucide lucide-bot w-4 h-4"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg><span>Ai Tools</span></button></div>
+    <div class="flex flex-wrap gap-2 mb-8 border-b border-zinc-200 pb-5 justify-center sm:justify-start" id="filterContainer"><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-blue-600 text-white" data-category="all"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" aria-hidden="true" class="lucide lucide-layers w-4 h-4"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>All Tools</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="marketing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="megaphone" aria-hidden="true" class="lucide lucide-megaphone w-4 h-4"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"></path><path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path><path d="M8 6v8"></path></svg><span>Marketing</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="finance"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="landmark" aria-hidden="true" class="lucide lucide-landmark w-4 h-4"><path d="M10 18v-7"></path><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"></path><path d="M14 18v-7"></path><path d="M18 18v-7"></path><path d="M3 22h18"></path><path d="M6 18v-7"></path></svg><span>Finance</span></button><button class="category-btn px-4 py-2 text-sm font-medium rounded-xl transition duration-200 flex items-center gap-2 cursor-pointer shadow-xs bg-white text-zinc-500 border border-zinc-200 hover:text-zinc-900" data-category="seo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="line-chart" aria-hidden="true" class="lucide lucide-line-chart w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg><span>SEO</span></button></div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="toolsGrid"><div class="tool-card card-animate bg-white border border-zinc-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between transition-colors duration-300">
           <div>
             <div class="flex items-start justify-between mb-5">
@@ -4735,14 +4731,15 @@
           <div>
             <div class="flex items-start justify-between mb-5">
               <div class="icon-glow w-11 h-11 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center text-blue-600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-text" aria-hidden="true" class="lucide lucide-file-text w-5 h-5"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-archive" aria-hidden="true" class="lucide lucide-file-archive w-5 h-5"><path d="M13.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v11.5"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M8 12v-1"></path><path d="M8 18v-2"></path><path d="M8 7V6"></path><circle cx="8" cy="20" r="2"></circle></svg>
               </div>
-              <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-500 border border-zinc-200">Ai Tools</span>
+              <span class="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-zinc-100 text-zinc-500 border border-zinc-200">SEO</span>
             </div>
-            <h3 class="text-lg font-bold mb-2 text-zinc-900">Ai Prompt Generator</h3>
-            <p class="text-sm text-zinc-600 leading-relaxed mb-6">Create high-quality prompts for DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude and Gemini. All data is stored locally in your browser.</p>
+            <h3 class="text-lg font-bold mb-2 text-zinc-900">Compressor</h3>
+            <p class="text-sm text-zinc-600 leading-relaxed mb-6">Compress Anything, Instantly
+Code, SVG, PDF &amp; Images — compressed privately in your browser.</p>
           </div>
-          <button onclick="window.open('https://prompter.pratix.io/', '_blank')" class="w-full px-4 py-2.5 bg-zinc-100 border border-zinc-200 hover:bg-zinc-200 text-zinc-700 font-medium rounded-xl transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider cursor-pointer">
+          <button onclick="window.open('https://compressor.pratix.io/', '_blank')" class="w-full px-4 py-2.5 bg-zinc-100 border border-zinc-200 hover:bg-zinc-200 text-zinc-700 font-medium rounded-xl transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider cursor-pointer">
             <span>Open Tool</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" aria-hidden="true" class="lucide lucide-arrow-up-right w-3.5 h-3.5 text-zinc-400"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
           </button>
         </div></div>
@@ -4812,24 +4809,6 @@
                   "no": "SEO",
                   "fi": "SEO",
                   "zh": "SEO"
-              }
-          },
-          {
-              "id": "ai-tools",
-              "icon": "bot",
-              "name": {
-                  "en": "Ai Tools",
-                  "tr": "Yapay Zeka Araçları",
-                  "de": "KI-Tools",
-                  "fr": "Outils d'IA",
-                  "es": "Herramientas de IA",
-                  "it": "Strumenti Ai",
-                  "nl": "Ai-hulpmiddelen",
-                  "sv": "Ai Verktyg",
-                  "da": "Ai værktøj",
-                  "no": "Ai verktøy",
-                  "fi": "Ai työkalut",
-                  "zh": "人工智能工具"
               }
           }
       ];
@@ -4972,38 +4951,38 @@
               "category": "marketing"
           },
           {
-              "id": "ai-prompt-generator",
+              "id": "compressor",
               "name": {
-                  "en": "Ai Prompt Generator",
-                  "tr": "Yapay Zeka İstemi Oluşturucu",
-                  "de": "Ai-Prompt-Generator",
-                  "fr": "Générateur d'invites Ai",
-                  "es": "Generador de mensajes de IA",
-                  "it": "Generatore di prompt Ai",
-                  "nl": "Ai-promptgenerator",
-                  "sv": "Ai promptgenerator",
-                  "da": "Ai promptgenerator",
-                  "no": "Ai ledetekstgenerator",
-                  "fi": "Ai Prompt -generaattori",
-                  "zh": "艾提示生成器"
+                  "en": "Compressor",
+                  "tr": "Kompresör",
+                  "de": "Kompressor",
+                  "fr": "Compresseur",
+                  "es": "Compresor",
+                  "it": "Compressore",
+                  "nl": "Compressor",
+                  "sv": "Kompressor",
+                  "da": "Kompressor",
+                  "no": "Kompressor",
+                  "fi": "Kompressori",
+                  "zh": "压缩机"
               },
               "desc": {
-                  "en": "Create high-quality prompts for DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude and Gemini. All data is stored locally in your browser.",
-                  "tr": "DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude ve Gemini için yüksek kaliteli istemler oluşturun. Tüm veriler tarayıcınızda yerel olarak saklanır.",
-                  "de": "Erstellen Sie hochwertige Eingabeaufforderungen für DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude und Gemini. Alle Daten werden lokal in Ihrem Browser gespeichert.",
-                  "fr": "Créez des invites de haute qualité pour DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude et Gemini. Toutes les données sont stockées localement dans votre navigateur.",
-                  "es": "Cree indicaciones de alta calidad para DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude y Gemini. Todos los datos se almacenan localmente en su navegador.",
-                  "it": "Crea istruzioni di alta qualità per DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude e Gemini. Tutti i dati vengono archiviati localmente nel tuo browser.",
-                  "nl": "Creëer hoogwaardige prompts voor DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude en Gemini. Alle gegevens worden lokaal in uw browser opgeslagen.",
-                  "sv": "Skapa högkvalitativa uppmaningar för DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude och Gemini. All data lagras lokalt i din webbläsare.",
-                  "da": "Opret prompter af høj kvalitet til DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude og Gemini. Alle data gemmes lokalt i din browser.",
-                  "no": "Lag meldinger av høy kvalitet for DALL-E, Midjourney, Sora, Runway, ChatGPT, Claude og Gemini. All data lagres lokalt i nettleseren din.",
-                  "fi": "Luo korkealaatuisia kehotteita DALL-E:lle, Midjourneylle, Soralle, Runwaylle, ChatGPT:lle, Claudelle ja Geminille. Kaikki tiedot tallennetaan paikallisesti selaimeesi.",
-                  "zh": "为 DALL-E、Midjourney、Sora、Runway、ChatGPT、Claude 和 Gemini 创建高质量提示。所有数据都存储在您的本地浏览器中。"
+                  "en": "Compress Anything, Instantly\nCode, SVG, PDF & Images — compressed privately in your browser.",
+                  "tr": "Her Şeyi Anında Sıkıştırın\nKod, SVG, PDF ve Resimler — tarayıcınızda özel olarak sıkıştırılır.",
+                  "de": "Komprimieren Sie alles sofort\nCode, SVG, PDF und Bilder – privat komprimiert in Ihrem Browser.",
+                  "fr": "Compressez n'importe quoi, instantanément\nCode, SVG, PDF et images — compressés en privé dans votre navigateur.",
+                  "es": "Comprime cualquier cosa al instante\nCódigo, SVG, PDF e imágenes: comprimidos de forma privada en su navegador.",
+                  "it": "Comprimi qualsiasi cosa, istantaneamente\nCodice, SVG, PDF e immagini: compressi privatamente nel tuo browser.",
+                  "nl": "Comprimeer alles, onmiddellijk\nCode, SVG, PDF en afbeeldingen — privé gecomprimeerd in uw browser.",
+                  "sv": "Komprimera vad som helst, direkt\nKod, SVG, PDF och bilder — komprimerade privat i din webbläsare.",
+                  "da": "Komprimer hvad som helst, øjeblikkeligt\nKode, SVG, PDF og billeder - komprimeret privat i din browser.",
+                  "no": "Komprimer hva som helst, umiddelbart\nKode, SVG, PDF og bilder – komprimert privat i nettleseren din.",
+                  "fi": "Pakkaa mitä tahansa heti\nKoodi, SVG, PDF ja kuvat – pakattu yksityisesti selaimessasi.",
+                  "zh": "立即压缩任何内容\n代码、SVG、PDF 和图像 — 在您的浏览器中私密压缩。"
               },
-              "url": "https://prompter.pratix.io/",
-              "icon": "file-text",
-              "category": "ai-tools"
+              "url": "https://compressor.pratix.io/",
+              "icon": "file-archive",
+              "category": "seo"
           }
       ];
       // [CONFIG_END]
