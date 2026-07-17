@@ -41,9 +41,12 @@
       "destination": "https://excel-data-cleaner-iota.vercel.app/$1"
     },
     {
-     {
-  "source": "/schema",
-  "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/?lang=en"
-}
+      "source": "/schema",
+      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/?lang=en"
+    },
+    {
+      "source": "/schema/(.*)",
+      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/$1"
+    }
   ]
 }
