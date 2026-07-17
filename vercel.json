@@ -1,54 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "compressor.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/compressor/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "prompter.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/prompter/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "revenue.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/revenue/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "ads.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/ads/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "cleaner.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/cleaner/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "schema.pratix.io" }
-      ],
-      "destination": "https://www.pratix.io/schema/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/compressor",
@@ -65,6 +15,38 @@
     {
       "source": "/prompter/(.*)",
       "destination": "https://prompter-wine-three.vercel.app/$1"
+    },
+    {
+      "source": "/revenue",
+      "destination": "https://revenue-khaki-seven.vercel.app"
+    },
+    {
+      "source": "/revenue/(.*)",
+      "destination": "https://revenue-khaki-seven.vercel.app/$1"
+    },
+    {
+      "source": "/ads",
+      "destination": "https://banner-placeholder-generator.vercel.app"
+    },
+    {
+      "source": "/ads/(.*)",
+      "destination": "https://banner-placeholder-generator.vercel.app/$1"
+    },
+    {
+      "source": "/cleaner",
+      "destination": "https://excel-data-cleaner-iota.vercel.app"
+    },
+    {
+      "source": "/cleaner/(.*)",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/$1"
+    },
+    {
+      "source": "/schema",
+      "destination": "https://schema-generator-one.vercel.app"
+    },
+    {
+      "source": "/schema/(.*)",
+      "destination": "https://schema-generator-one.vercel.app/$1"
     }
   ]
 }
