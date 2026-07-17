@@ -42,11 +42,11 @@
     },
     {
       "source": "/schema",
-      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/?lang=en"
+      "destination": "https://schema-generator-one.vercel.app"
     },
     {
       "source": "/schema/(.*)",
-      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/$1"
+      "destination": "https://schema-generator-one.vercel.app/$1"
     }
   ]
 }
