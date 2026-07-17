@@ -1,0 +1,52 @@
+{
+  "rewrites": [
+    {
+      "source": "/compressor",
+      "destination": "https://compressor-murex.vercel.app"
+    },
+    {
+      "source": "/compressor/(.*)",
+      "destination": "https://compressor-murex.vercel.app/$1"
+    },
+    {
+      "source": "/prompter",
+      "destination": "https://prompter-wine-three.vercel.app"
+    },
+    {
+      "source": "/prompter/(.*)",
+      "destination": "https://prompter-wine-three.vercel.app/$1"
+    },
+    {
+      "source": "/revenue",
+      "destination": "https://revenue-khaki-seven.vercel.app"
+    },
+    {
+      "source": "/revenue/(.*)",
+      "destination": "https://revenue-khaki-seven.vercel.app/$1"
+    },
+    {
+      "source": "/ads",
+      "destination": "https://banner-placeholder-generator.vercel.app"
+    },
+    {
+      "source": "/ads/(.*)",
+      "destination": "https://banner-placeholder-generator.vercel.app/$1"
+    },
+    {
+      "source": "/cleaner",
+      "destination": "https://excel-data-cleaner-iota.vercel.app"
+    },
+    {
+      "source": "/cleaner/(.*)",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/$1"
+    },
+    {
+      "source": "/schema",
+      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app"
+    },
+    {
+      "source": "/schema/(.*)",
+      "destination": "https://schema-generator-o3vaxuv9a-pratix-s-projects.vercel.app/$1"
+    }
+  ]
+}
