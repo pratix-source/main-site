@@ -1,4 +1,72 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "compressor.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/compressor",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "prompter.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/prompter",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "revenue.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/revenue",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ads.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/ads",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "cleaner.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "schema.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/schema",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/compressor",
