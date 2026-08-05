@@ -148,11 +148,11 @@
     },
     {
       "source": "/pdf-editor",
-      "destination": "https://pdf-editor-czoo19mnf-pratix-s-projects.vercel.app"
+      "destination": "https://pdf-editor-six-rose.vercel.app"
     },
     {
       "source": "/pdf-editor/(.*)",
-      "destination": "https://pdf-editor-czoo19mnf-pratix-s-projects.vercel.app/$1"
+      "destination": "https://pdf-editor-six-rose.vercel.app/$1"
     }
   ]
 }
