@@ -148,7 +148,7 @@
     },
     {
       "source": "/pdf-editor",
-      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/"
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
     },
     {
       "source": "/pdf-editor/(.*)",
