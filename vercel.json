@@ -1,16 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/pdf-editor/pdf-editor",
-      "destination": "/pdf-editor",
-      "permanent": false
-    },
-    {
-      "source": "/pdf-editor/pdf-editor/(.*)",
-      "destination": "/pdf-editor/$1",
-      "permanent": false
-    },
-    {
       "source": "/(.*)",
       "has": [
         {
@@ -158,6 +148,10 @@
     },
     {
       "source": "/pdf-editor",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+    },
+    {
+      "source": "/pdf-editor/",
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
     },
     {
