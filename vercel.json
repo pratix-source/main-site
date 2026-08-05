@@ -76,16 +76,6 @@
       ],
       "destination": "https://pratix.io/commerce-studio",
       "permanent": true
-    },
-    {
-      "source": "/pdf-editor/(.*)",
-      "destination": "https://pratix.io/pdfeditor/$1",
-      "permanent": true
-    },
-    {
-      "source": "/pdf-editor",
-      "destination": "https://pratix.io/pdfeditor",
-      "permanent": true
     }
   ],
   "rewrites": [
