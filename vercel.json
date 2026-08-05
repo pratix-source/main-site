@@ -146,12 +146,16 @@
       "destination": "https://pratix-commerce-studio.vercel.app/$1"
     },
     {
-      "source": "/pdfeditor",
-      "destination": "https://pdf-editor-six-rose.vercel.app/"
+      "source": "/pdfeditor-assets/:path*",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdfeditor-assets/:path*"
     },
     {
-      "source": "/pdfeditor/(.*)",
-      "destination": "https://pdf-editor-six-rose.vercel.app/$1"
+      "source": "/pdfeditor",
+      "destination": "https://pdf-editor-six-rose.vercel.app"
+    },
+    {
+      "source": "/pdfeditor/:path*",
+      "destination": "https://pdf-editor-six-rose.vercel.app/:path*"
     }
   ]
 }
