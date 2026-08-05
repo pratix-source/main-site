@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/pdfeditor",
+      "destination": "/pdf-editor",
+      "permanent": false
+    },
+    {
+      "source": "/pdfeditor/(.*)",
+      "destination": "/pdf-editor/$1",
+      "permanent": false
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
@@ -76,6 +86,17 @@
       ],
       "destination": "https://pratix.io/commerce-studio",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "pdf-editor.pratix.io"
+        }
+      ],
+      "destination": "https://pratix.io/pdf-editor",
+      "permanent": false
     }
   ],
   "rewrites": [
@@ -136,16 +157,20 @@
       "destination": "https://pratix-commerce-studio.vercel.app/$1"
     },
     {
-      "source": "/pdfeditor-assets/:path*",
-      "destination": "https://pdf-editor-six-rose.vercel.app/pdfeditor-assets/:path*"
+      "source": "/pdfeditor-assets/(.*)",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdfeditor-assets/$1"
     },
     {
-      "source": "/pdfeditor",
+      "source": "/pdf-editor",
       "destination": "https://pdf-editor-six-rose.vercel.app"
     },
     {
-      "source": "/pdfeditor/:path*",
-      "destination": "https://pdf-editor-six-rose.vercel.app/:path*"
+      "source": "/pdf-editor/",
+      "destination": "https://pdf-editor-six-rose.vercel.app"
+    },
+    {
+      "source": "/pdf-editor/(.*)",
+      "destination": "https://pdf-editor-six-rose.vercel.app/$1"
     }
   ]
 }
