@@ -78,14 +78,13 @@
       "permanent": true
     },
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "pdf-editor.pratix.io"
-        }
-      ],
-      "destination": "https://pratix.io/pdf-editor",
+      "source": "/pdf-editor/(.*)",
+      "destination": "https://pdf-editor.pratix.io/$1",
+      "permanent": true
+    },
+    {
+      "source": "/pdf-editor",
+      "destination": "https://pdf-editor.pratix.io",
       "permanent": true
     }
   ],
@@ -145,14 +144,6 @@
     {
       "source": "/commerce-studio/(.*)",
       "destination": "https://pratix-commerce-studio.vercel.app/$1"
-    },
-    {
-      "source": "/pdf-editor",
-      "destination": "https://pdf-editor-six-rose.vercel.app"
-    },
-    {
-      "source": "/pdf-editor/(.*)",
-      "destination": "https://pdf-editor-six-rose.vercel.app/$1"
     }
   ]
 }
