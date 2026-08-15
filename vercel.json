@@ -171,15 +171,15 @@
 
     {
       "source": "/retirementsavingscalculator",
-      "destination": "https://retirement-savings-calculator.vercel.app/"
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/"
     },
     {
       "source": "/retirementsavingscalculator/",
-      "destination": "https://retirement-savings-calculator.vercel.app/"
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/"
     },
     {
       "source": "/retirementsavingscalculator/:path*",
-      "destination": "https://retirement-savings-calculator.vercel.app/:path*"
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
     },
 
     {
