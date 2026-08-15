@@ -192,16 +192,25 @@
     },
 
     {
-      "source": "/vatcalculator",
-      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+      "source": "/tools/retirement-savings-calculator.html",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
     },
     {
-      "source": "/vatcalculator/",
-      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+      "source": "/tools/retirement-savings-calculator",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+    },
+
+    {
+      "source": "/retirementsavingscalculator",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
     },
     {
-      "source": "/vatcalculator/:path*",
-      "destination": "https://vat-calculator-seven.vercel.app/:path*"
+      "source": "/retirementsavingscalculator/",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+    },
+    {
+      "source": "/retirementsavingscalculator/:path*",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
     }
   ]
 }
