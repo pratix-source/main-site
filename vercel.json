@@ -163,6 +163,37 @@
       ],
       "destination": "https://pratix.io/vatcalculator",
       "permanent": true
+    },
+
+    {
+      "source": "/tools/(.*)dept-payoff-calculator(.*)",
+      "destination": "/deptpayoffcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/(.*)auto-loan-calculator(.*)",
+      "destination": "/autoloancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/(.*)loan-calculator(.*)",
+      "destination": "/loancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/(.*)net-worth-calculator(.*)",
+      "destination": "/networthcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/(.*)retirement-savings-calculator(.*)",
+      "destination": "/retirementsavingscalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/(.*)vat-calculator(.*)",
+      "destination": "/vatcalculator",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -236,80 +267,51 @@
     },
 
     {
-      "source": "/(?:tools/)*dept-payoff-calculator(?:\\.html)?",
-      "destination": "https://dept-payoff-calculator.vercel.app"
-    },
-    {
       "source": "/deptpayoffcalculator",
       "destination": "https://dept-payoff-calculator.vercel.app"
     },
     {
-      "source": "/(?:tools/)*dept-payoff-calculator/(.*)",
+      "source": "/deptpayoffcalculator/(.*)",
       "destination": "https://dept-payoff-calculator.vercel.app/$1"
-    },
-
-    {
-      "source": "/(?:tools/)*auto-loan-calculator(?:\\.html)?",
-      "destination": "https://auto-loan-calculator-flame.vercel.app"
     },
     {
       "source": "/autoloancalculator",
       "destination": "https://auto-loan-calculator-flame.vercel.app"
     },
     {
-      "source": "/(?:tools/)*auto-loan-calculator/(.*)",
+      "source": "/autoloancalculator/(.*)",
       "destination": "https://auto-loan-calculator-flame.vercel.app/$1"
-    },
-
-    {
-      "source": "/(?:tools/)*loan-calculator(?:\\.html)?",
-      "destination": "https://loan-calculator-eight-mu.vercel.app"
     },
     {
       "source": "/loancalculator",
       "destination": "https://loan-calculator-eight-mu.vercel.app"
     },
     {
-      "source": "/(?:tools/)*loan-calculator/(.*)",
+      "source": "/loancalculator/(.*)",
       "destination": "https://loan-calculator-eight-mu.vercel.app/$1"
-    },
-
-    {
-      "source": "/(?:tools/)*net-worth-calculator(?:\\.html)?",
-      "destination": "https://net-worth-calculator-one.vercel.app"
     },
     {
       "source": "/networthcalculator",
       "destination": "https://net-worth-calculator-one.vercel.app"
     },
     {
-      "source": "/(?:tools/)*net-worth-calculator/(.*)",
+      "source": "/networthcalculator/(.*)",
       "destination": "https://net-worth-calculator-one.vercel.app/$1"
-    },
-
-    {
-      "source": "/(?:tools/)*retirement-savings-calculator(?:\\.html)?",
-      "destination": "https://retirement-savings-calculator.vercel.app"
     },
     {
       "source": "/retirementsavingscalculator",
       "destination": "https://retirement-savings-calculator.vercel.app"
     },
     {
-      "source": "/(?:tools/)*retirement-savings-calculator/(.*)",
+      "source": "/retirementsavingscalculator/(.*)",
       "destination": "https://retirement-savings-calculator.vercel.app/$1"
-    },
-
-    {
-      "source": "/(?:tools/)*vat-calculator(?:\\.html)?",
-      "destination": "https://vat-calculator.vercel.app"
     },
     {
       "source": "/vatcalculator",
       "destination": "https://vat-calculator.vercel.app"
     },
     {
-      "source": "/(?:tools/)*vat-calculator/(.*)",
+      "source": "/vatcalculator/(.*)",
       "destination": "https://vat-calculator.vercel.app/$1"
     }
   ]
