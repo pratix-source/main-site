@@ -244,27 +244,27 @@
     },
     {
       "source": "/auto-loan-calculator",
-      "destination": "https://auto-loan-calculator.vercel.app"
+      "destination": "https://auto-loan-calculator-flame.vercel.app"
     },
     {
       "source": "/auto-loan-calculator/(.*)",
-      "destination": "https://auto-loan-calculator.vercel.app/$1"
+      "destination": "https://auto-loan-calculator-flame.vercel.app/$1"
     },
     {
       "source": "/loan-calculator",
-      "destination": "https://loan-calculator.vercel.app"
+      "destination": "https://loan-calculator-eight-mu.vercel.app"
     },
     {
       "source": "/loan-calculator/(.*)",
-      "destination": "https://loan-calculator.vercel.app/$1"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/$1"
     },
     {
       "source": "/net-worth-calculator",
-      "destination": "https://net-worth-calculator.vercel.app"
+      "destination": "https://net-worth-calculator-one.vercel.app"
     },
     {
       "source": "/net-worth-calculator/(.*)",
-      "destination": "https://net-worth-calculator.vercel.app/$1"
+      "destination": "https://net-worth-calculator-one.vercel.app/$1"
     },
     {
       "source": "/retirement-savings-calculator",
