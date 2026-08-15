@@ -183,12 +183,21 @@
     },
 
     {
+      "source": "/tools/vat-calculator.html",
+      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+    },
+    {
+      "source": "/tools/vat-calculator",
+      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+    },
+
+    {
       "source": "/vatcalculator",
-      "destination": "https://vat-calculator-seven.vercel.app/"
+      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
     },
     {
       "source": "/vatcalculator/",
-      "destination": "https://vat-calculator-seven.vercel.app/"
+      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
     },
     {
       "source": "/vatcalculator/:path*",
