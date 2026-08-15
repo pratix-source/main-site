@@ -1,57 +1,198 @@
 {
-  "rewrites": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
     {
-      "source": "/loancalculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app"
+      "source": "/pdfeditor",
+      "destination": "/pdf-editor",
+      "permanent": false
     },
     {
-      "source": "/(.*)loan-calculator(.*)",
-      "destination": "https://loan-calculator-eight-mu.vercel.app"
+      "source": "/pdfeditor/:path*",
+      "destination": "/pdf-editor/:path*",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/compressor",
+      "destination": "https://compressor-murex.vercel.app"
+    },
+    {
+      "source": "/compressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/compressor/:path*",
+      "destination": "https://compressor-murex.vercel.app/:path*"
+    },
+
+    {
+      "source": "/prompter",
+      "destination": "https://prompter-wine-three.vercel.app"
+    },
+    {
+      "source": "/prompter/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/prompter/:path*",
+      "destination": "https://prompter-wine-three.vercel.app/:path*"
+    },
+
+    {
+      "source": "/revenue",
+      "destination": "https://revenue-khaki-seven.vercel.app"
+    },
+    {
+      "source": "/revenue/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/revenue/:path*",
+      "destination": "https://revenue-khaki-seven.vercel.app/:path*"
+    },
+
+    {
+      "source": "/ads",
+      "destination": "https://banner-placeholder-generator.vercel.app"
+    },
+    {
+      "source": "/ads/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/ads/:path*",
+      "destination": "https://banner-placeholder-generator.vercel.app/:path*"
+    },
+
+    {
+      "source": "/cleaner",
+      "destination": "https://excel-data-cleaner-iota.vercel.app"
+    },
+    {
+      "source": "/cleaner/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/cleaner/:path*",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/:path*"
+    },
+
+    {
+      "source": "/schema",
+      "destination": "https://schema-generator-one.vercel.app"
+    },
+    {
+      "source": "/schema/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/schema/:path*",
+      "destination": "https://schema-generator-one.vercel.app/:path*"
+    },
+
+    {
+      "source": "/commerce-studio",
+      "destination": "https://pratix-commerce-studio.vercel.app"
+    },
+    {
+      "source": "/commerce-studio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/commerce-studio/:path*",
+      "destination": "https://pratix-commerce-studio.vercel.app/:path*"
+    },
+
+    {
+      "source": "/pdf-editor",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+    },
+    {
+      "source": "/pdf-editor/",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/"
+    },
+    {
+      "source": "/pdf-editor/:path*",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
+    },
+
+    {
+      "source": "/loancalculator",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/loancalculator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/loancalculator/:path*",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/:path*"
     },
 
     {
       "source": "/autoloancalculator",
-      "destination": "https://auto-loan-calculator-flame.vercel.app"
+      "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
     },
     {
-      "source": "/(.*)auto-loan-calculator(.*)",
-      "destination": "https://auto-loan-calculator-flame.vercel.app"
+      "source": "/autoloancalculator/",
+      "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
+    },
+    {
+      "source": "/autoloancalculator/:path*",
+      "destination": "https://auto-loan-calculator-flame.vercel.app/:path*"
     },
 
     {
       "source": "/deptpayoffcalculator",
-      "destination": "https://dept-payoff-calculator.vercel.app"
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
     },
     {
-      "source": "/(.*)dept-payoff-calculator(.*)",
-      "destination": "https://dept-payoff-calculator.vercel.app"
+      "source": "/deptpayoffcalculator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/deptpayoffcalculator/:path*",
+      "destination": "https://dept-payoff-calculator.vercel.app/:path*"
     },
 
     {
       "source": "/networthcalculator",
-      "destination": "https://net-worth-calculator-one.vercel.app"
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
     },
     {
-      "source": "/(.*)net-worth-calculator(.*)",
-      "destination": "https://net-worth-calculator-one.vercel.app"
+      "source": "/networthcalculator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/networthcalculator/:path*",
+      "destination": "https://net-worth-calculator-one.vercel.app/:path*"
     },
 
     {
       "source": "/retirementsavingscalculator",
-      "destination": "https://retirement-savings-calculator.vercel.app"
+      "destination": "https://retirement-savings-calculator.vercel.app/"
     },
     {
-      "source": "/(.*)retirement-savings-calculator(.*)",
-      "destination": "https://retirement-savings-calculator.vercel.app"
+      "source": "/retirementsavingscalculator/",
+      "destination": "https://retirement-savings-calculator.vercel.app/"
+    },
+    {
+      "source": "/retirementsavingscalculator/:path*",
+      "destination": "https://retirement-savings-calculator.vercel.app/:path*"
     },
 
     {
       "source": "/vatcalculator",
-      "destination": "https://vat-calculator.vercel.app"
+      "destination": "https://vat-calculator.vercel.app/"
     },
     {
-      "source": "/(.*)vat-calculator(.*)",
-      "destination": "https://vat-calculator.vercel.app"
+      "source": "/vatcalculator/",
+      "destination": "https://vat-calculator.vercel.app/"
+    },
+    {
+      "source": "/vatcalculator/:path*",
+      "destination": "https://vat-calculator.vercel.app/:path*"
     }
   ]
 }
