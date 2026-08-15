@@ -10,6 +10,68 @@
       "destination": "/pdf-editor/$1",
       "permanent": false
     },
+
+    {
+      "source": "/tools/dept-payoff-calculator.html",
+      "destination": "/deptpayoffcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/dept-payoff-calculator.html",
+      "destination": "/deptpayoffcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/auto-loan-calculator.html",
+      "destination": "/autoloancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/auto-loan-calculator.html",
+      "destination": "/autoloancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/loan-calculator.html",
+      "destination": "/loancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/loan-calculator.html",
+      "destination": "/loancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/net-worth-calculator.html",
+      "destination": "/networthcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/net-worth-calculator.html",
+      "destination": "/networthcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/retirement-savings-calculator.html",
+      "destination": "/retirementsavingscalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/retirement-savings-calculator.html",
+      "destination": "/retirementsavingscalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/vat-calculator.html",
+      "destination": "/vatcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tools/vat-calculator.html",
+      "destination": "/vatcalculator",
+      "permanent": true
+    },
+
     {
       "source": "/(.*)",
       "has": [
@@ -162,37 +224,6 @@
         }
       ],
       "destination": "https://pratix.io/vatcalculator",
-      "permanent": true
-    },
-
-    {
-      "source": "/tools/(.*)dept-payoff-calculator(.*)",
-      "destination": "/deptpayoffcalculator",
-      "permanent": true
-    },
-    {
-      "source": "/tools/(.*)auto-loan-calculator(.*)",
-      "destination": "/autoloancalculator",
-      "permanent": true
-    },
-    {
-      "source": "/tools/(.*)loan-calculator(.*)",
-      "destination": "/loancalculator",
-      "permanent": true
-    },
-    {
-      "source": "/tools/(.*)net-worth-calculator(.*)",
-      "destination": "/networthcalculator",
-      "permanent": true
-    },
-    {
-      "source": "/tools/(.*)retirement-savings-calculator(.*)",
-      "destination": "/retirementsavingscalculator",
-      "permanent": true
-    },
-    {
-      "source": "/tools/(.*)vat-calculator(.*)",
-      "destination": "/vatcalculator",
       "permanent": true
     }
   ],
