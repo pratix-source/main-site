@@ -114,16 +114,16 @@
       "destination": "https://pratix-commerce-studio.vercel.app/"
     },
     {
-      "source": "/pdf-editor/:path*",
-      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
+      "source": "/pdfeditor/:path*",
+      "destination": "https://pdfeditor-psi.vercel.app/:path*"
     },
     {
-      "source": "/pdf-editor",
-      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+      "source": "/pdfeditor",
+      "destination": "https://pdfeditor-psi.vercel.app/"
     },
     {
-      "source": "/pdf-editor/",
-      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+      "source": "/pdfeditor/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
     },
     {
       "source": "/loancalculator",
