@@ -1,21 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    {
-      "source": "/pdf-editor/pdf-editor",
-      "destination": "/pdf-editor",
-      "permanent": true
-    },
-    {
-      "source": "/pdfeditor",
-      "destination": "/pdf-editor",
-      "permanent": false
-    },
-    {
-      "source": "/pdfeditor/:path*",
-      "destination": "/pdf-editor/:path*",
-      "permanent": false
-    }
+   {
+  "source": "/pdf-editor",
+  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+},
+{
+  "source": "/pdf-editor/",
+  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+},
+{
+  "source": "/pdf-editor/:path*",
+  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
+}
+
   ],
   "rewrites": [
     {
