@@ -241,7 +241,7 @@
 
     {
       "source": "/bridge",
-      "destination": "https://pratix-bridge.vercel.app"
+      "destination": "https://pratix-bridge.vercel.app/"
     },
     {
       "source": "/bridge/",
