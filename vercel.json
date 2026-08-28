@@ -25,7 +25,6 @@
       "source": "/compressor/:path*",
       "destination": "https://compressor-murex.vercel.app/:path*"
     },
-
     {
       "source": "/prompter",
       "destination": "https://prompter-wine-three.vercel.app"
@@ -38,7 +37,6 @@
       "source": "/prompter/:path*",
       "destination": "https://prompter-wine-three.vercel.app/:path*"
     },
-
     {
       "source": "/revenue",
       "destination": "https://revenue-khaki-seven.vercel.app"
@@ -51,7 +49,6 @@
       "source": "/revenue/:path*",
       "destination": "https://revenue-khaki-seven.vercel.app/:path*"
     },
-
     {
       "source": "/ads",
       "destination": "https://banner-placeholder-generator.vercel.app"
@@ -64,7 +61,6 @@
       "source": "/ads/:path*",
       "destination": "https://banner-placeholder-generator.vercel.app/:path*"
     },
-
     {
       "source": "/cleaner",
       "destination": "https://excel-data-cleaner-iota.vercel.app"
@@ -77,7 +73,6 @@
       "source": "/cleaner/:path*",
       "destination": "https://excel-data-cleaner-iota.vercel.app/:path*"
     },
-
     {
       "source": "/schema",
       "destination": "https://schema-generator-one.vercel.app"
@@ -90,7 +85,6 @@
       "source": "/schema/:path*",
       "destination": "https://schema-generator-one.vercel.app/:path*"
     },
-
     {
       "source": "/commerce-studio",
       "destination": "https://pratix-commerce-studio.vercel.app"
@@ -103,7 +97,6 @@
       "source": "/commerce-studio/:path*",
       "destination": "https://pratix-commerce-studio.vercel.app/:path*"
     },
-
     {
       "source": "/pdf-editor",
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
@@ -116,7 +109,6 @@
       "source": "/pdf-editor/:path*",
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
     },
-
     {
       "source": "/loancalculator",
       "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
@@ -129,7 +121,6 @@
       "source": "/loancalculator/:path*",
       "destination": "https://loan-calculator-eight-mu.vercel.app/:path*"
     },
-
     {
       "source": "/autoloancalculator",
       "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
@@ -142,7 +133,6 @@
       "source": "/autoloancalculator/:path*",
       "destination": "https://auto-loan-calculator-flame.vercel.app/:path*"
     },
-
     {
       "source": "/deptpayoffcalculator",
       "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
@@ -155,7 +145,6 @@
       "source": "/deptpayoffcalculator/:path*",
       "destination": "https://dept-payoff-calculator.vercel.app/:path*"
     },
-
     {
       "source": "/networthcalculator",
       "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
@@ -168,20 +157,6 @@
       "source": "/networthcalculator/:path*",
       "destination": "https://net-worth-calculator-one.vercel.app/:path*"
     },
-
-    {
-      "source": "/retirementsavingscalculator",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/"
-    },
-    {
-      "source": "/retirementsavingscalculator/",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/"
-    },
-    {
-      "source": "/retirementsavingscalculator/:path*",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
-    },
-
     {
       "source": "/vatcalculator",
       "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
@@ -194,7 +169,6 @@
       "source": "/vatcalculator/:path*",
       "destination": "https://vat-calculator-seven.vercel.app/:path*"
     },
-
     {
       "source": "/tools/vat-calculator.html",
       "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
@@ -203,7 +177,6 @@
       "source": "/tools/vat-calculator",
       "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
     },
-
     {
       "source": "/tools/retirement-savings-calculator.html",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
@@ -212,7 +185,6 @@
       "source": "/tools/retirement-savings-calculator",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
     },
-
     {
       "source": "/retirementsavingscalculator",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
@@ -225,20 +197,6 @@
       "source": "/retirementsavingscalculator/:path*",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
     },
-
-    {
-      "source": "/manifest.webmanifest",
-      "destination": "https://pratix-bridge.vercel.app/manifest.webmanifest"
-    },
-    {
-      "source": "/assets/:path*",
-      "destination": "https://pratix-bridge.vercel.app/assets/:path*"
-    },
-    {
-      "source": "/favicon.ico",
-      "destination": "https://pratix-bridge.vercel.app/favicon.ico"
-    },
-
     {
       "source": "/bridge",
       "destination": "https://pratix-bridge.vercel.app/"
@@ -250,7 +208,18 @@
     {
       "source": "/bridge/:path*",
       "destination": "https://pratix-bridge.vercel.app/:path*"
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "destination": "https://pratix-bridge.vercel.app/manifest.webmanifest"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://pratix-bridge.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://pratix-bridge.vercel.app/favicon.ico"
     }
   ]
 }
-
