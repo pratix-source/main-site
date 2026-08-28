@@ -34,6 +34,10 @@
       "destination": "https://pratix-bridge.vercel.app/favicon.ico"
     },
     {
+      "source": "/sw.js",
+      "destination": "https://pratix-bridge.vercel.app/sw.js"
+    },
+    {
       "source": "/compressor/:path*",
       "destination": "https://compressor-murex.vercel.app/:path*"
     },
