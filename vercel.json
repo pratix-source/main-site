@@ -1,20 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
-   {
-  "source": "/pdf-editor",
-  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
-},
-{
-  "source": "/pdf-editor/",
-  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
-},
-{
-  "source": "/pdf-editor/:path*",
-  "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
-}
-
-  ],
   "rewrites": [
     {
       "source": "/bridge/:path*",
