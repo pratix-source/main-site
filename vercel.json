@@ -224,6 +224,20 @@
     {
       "source": "/retirementsavingscalculator/:path*",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
+    },
+
+    {
+      "source": "/bridge",
+      "destination": "https://pratix-bridge.vercel.app"
+    },
+    {
+      "source": "/bridge/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/bridge/:path*",
+      "destination": "https://pratix-bridge.vercel.app/:path*"
     }
   ]
 }
+
