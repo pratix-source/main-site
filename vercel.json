@@ -227,6 +227,19 @@
     },
 
     {
+      "source": "/manifest.webmanifest",
+      "destination": "https://pratix-bridge.vercel.app/manifest.webmanifest"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "https://pratix-bridge.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://pratix-bridge.vercel.app/favicon.ico"
+    },
+
+    {
       "source": "/bridge",
       "destination": "https://pratix-bridge.vercel.app"
     },
