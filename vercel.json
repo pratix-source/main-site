@@ -27,6 +27,10 @@
       "destination": "https://pratix-bridge.vercel.app/"
     },
     {
+      "source": "/bridge/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
       "source": "/manifest.webmanifest",
       "destination": "https://pratix-bridge.vercel.app/manifest.webmanifest"
     },
@@ -51,11 +55,19 @@
       "destination": "https://compressor-murex.vercel.app/"
     },
     {
+      "source": "/compressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
       "source": "/prompter/:path*",
       "destination": "https://prompter-wine-three.vercel.app/:path*"
     },
     {
       "source": "/prompter",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/prompter/",
       "destination": "https://prompter-wine-three.vercel.app/"
     },
     {
@@ -67,11 +79,19 @@
       "destination": "https://revenue-khaki-seven.vercel.app/"
     },
     {
+      "source": "/revenue/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
       "source": "/ads/:path*",
       "destination": "https://banner-placeholder-generator.vercel.app/:path*"
     },
     {
       "source": "/ads",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/ads/",
       "destination": "https://banner-placeholder-generator.vercel.app/"
     },
     {
@@ -83,11 +103,19 @@
       "destination": "https://excel-data-cleaner-iota.vercel.app/"
     },
     {
+      "source": "/cleaner/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
       "source": "/schema/:path*",
       "destination": "https://schema-generator-one.vercel.app/:path*"
     },
     {
       "source": "/schema",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/schema/",
       "destination": "https://schema-generator-one.vercel.app/"
     },
     {
@@ -99,11 +127,19 @@
       "destination": "https://pratix-commerce-studio.vercel.app/"
     },
     {
+      "source": "/commerce-studio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
       "source": "/pdf-editor/:path*",
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor/:path*"
     },
     {
       "source": "/pdf-editor",
+      "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
+    },
+    {
+      "source": "/pdf-editor/",
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
     },
     {
