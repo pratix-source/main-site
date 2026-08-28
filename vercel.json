@@ -102,52 +102,76 @@
       "destination": "https://pdf-editor-six-rose.vercel.app/pdf-editor"
     },
     {
-      "source": "/loancalculator/:path*",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/:path*"
-    },
-    {
       "source": "/loancalculator",
       "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
     },
     {
-      "source": "/autoloancalculator/:path*",
-      "destination": "https://auto-loan-calculator-flame.vercel.app/:path*"
+      "source": "/loancalculator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/loancalculator/:path*",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/:path*"
     },
     {
       "source": "/autoloancalculator",
       "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
     },
     {
-      "source": "/deptpayoffcalculator/:path*",
-      "destination": "https://dept-payoff-calculator.vercel.app/:path*"
+      "source": "/autoloancalculator/",
+      "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
+    },
+    {
+      "source": "/autoloancalculator/:path*",
+      "destination": "https://auto-loan-calculator-flame.vercel.app/:path*"
     },
     {
       "source": "/deptpayoffcalculator",
       "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
     },
     {
-      "source": "/networthcalculator/:path*",
-      "destination": "https://net-worth-calculator-one.vercel.app/:path*"
+      "source": "/deptpayoffcalculator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/deptpayoffcalculator/:path*",
+      "destination": "https://dept-payoff-calculator.vercel.app/:path*"
     },
     {
       "source": "/networthcalculator",
       "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
     },
     {
-      "source": "/vatcalculator/:path*",
-      "destination": "https://vat-calculator-seven.vercel.app/:path*"
+      "source": "/networthcalculator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/networthcalculator/:path*",
+      "destination": "https://net-worth-calculator-one.vercel.app/:path*"
     },
     {
       "source": "/vatcalculator",
       "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
     },
     {
-      "source": "/retirementsavingscalculator/:path*",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
+      "source": "/vatcalculator/",
+      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+    },
+    {
+      "source": "/vatcalculator/:path*",
+      "destination": "https://vat-calculator-seven.vercel.app/:path*"
     },
     {
       "source": "/retirementsavingscalculator",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+    },
+    {
+      "source": "/retirementsavingscalculator/",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+    },
+    {
+      "source": "/retirementsavingscalculator/:path*",
+      "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
     }
   ]
 }
