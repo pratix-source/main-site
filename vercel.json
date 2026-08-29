@@ -126,6 +126,18 @@
       "destination": "https://pdfeditor-psi.vercel.app/"
     },
     {
+      "source": "/creator-studio/:path*",
+      "destination": "https://creator-studio-seven-murex.vercel.app/:path*"
+    },
+    {
+      "source": "/creator-studio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/creator-studio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
       "source": "/loancalculator",
       "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
     },
