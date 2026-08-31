@@ -131,14 +131,12 @@ fs.rmSync(distPath, { recursive: true, force: true });
 fs.mkdirSync(distPath, { recursive: true });
 writePage('index.html', 'en');
 for (const language of languages) writePage(`${language}/index.html`, language);
-for (const toolId of localizedToolIds) {
-  for (const language of languages) writePage(`${language}/${slugMap[toolId][language]}/index.html`, language, toolId);
-}
-
+// Tool routes belong to the external tool deployments. Do not emit local tool-path
+// index files here, or Vercel's filesystem can shadow the external rewrites.
 for (const staticFile of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html']) {
   const staticSource = path.join(root, staticFile);
   if (fs.existsSync(staticSource)) fs.copyFileSync(staticSource, path.join(distPath, staticFile));
 }
 
-console.log(`Prerendered ${1 + languages.length + localizedToolIds.length * languages.length} pages into ${path.relative(root, distPath)}/`);
+console.log(`Prerendered ${1 + languages.length} hub pages into ${path.relative(root, distPath)}/`);
 console.log(`Localized tools: ${localizedToolIds.length}; languages: ${languages.length}`);

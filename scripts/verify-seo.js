@@ -12,7 +12,7 @@ function walk(directory) {
   }
 }
 walk(dist);
-if (htmlFiles.length !== 169) throw new Error(`Expected 169 generated pages, found ${htmlFiles.length}`);
+if (htmlFiles.length !== 13) throw new Error(`Expected 13 generated hub pages, found ${htmlFiles.length}`);
 const failures = [];
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
@@ -32,4 +32,4 @@ for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html'])
   if (!fs.existsSync(path.join(dist, file))) failures.push(`dist/${file}: missing`);
 }
 if (failures.length) throw new Error(failures.slice(0, 20).join('\n'));
-console.log(`SEO validation passed for ${htmlFiles.length} pages: title <= 60, description 120-155, canonical, hreflang, JSON-LD, sitemap and robots.`);
+console.log(`SEO validation passed for ${htmlFiles.length} hub pages: title <= 60, description 120-155, canonical, hreflang, JSON-LD, sitemap and robots.`);
