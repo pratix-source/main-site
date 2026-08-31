@@ -15414,9 +15414,56 @@ planning and are not financial advice.</p>
       zh: { heroTitle: '免费高级网络工具', heroDesc: '在您的浏览器中 100% 处理您的 Excel 和 CSV 文件。无上传、无服务器、无数据收集。完全符合 GDPR 和 KVKK。', badge1: '100% 客户端纯本地处理', badge2: '不收集任何用户数据', badge3: '永远免费与极速体验', allTools: '所有工具', openTool: '打开工具', footerText: '© 2026 Pratix.io。所有工具均在本地浏览器安全运行。' }
     };
 
-    let currentLanguage = 'en';
-    let activeCategory = 'all';
+    // URL is the source of truth for language selection. Every supported language uses a prefix.
     const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh'];
+    const LOCALIZED_SLUGS = {
+      'cleaner': { en: 'excel-data-cleaner', tr: 'excel-veri-temizleyici', de: 'excel-datenbereinigung', fr: 'nettoyeur-de-donnees-excel', es: 'limpiador-de-datos-excel', it: 'pulizia-dati-excel', nl: 'excel-gegevensreiniger', sv: 'excel-datarensare', da: 'excel-datarenser', no: 'excel-datarenser', fi: 'excel-datan-puhdistaja', zh: 'excel-shuju-qingliqi' },
+      'schema-generator': { en: 'schema-generator', tr: 'schema-olusturucu', de: 'schema-generator', fr: 'generateur-de-schema', es: 'generador-de-schema', it: 'generatore-di-schema', nl: 'schema-generator', sv: 'schema-generator', da: 'schema-generator', no: 'skjemagenerator', fi: 'skeemageneraattori', zh: 'jiegouhua-shuju-shengchengqi' },
+      'revenue-calculator': { en: 'revenue-calculator', tr: 'gelir-hesaplayici', de: 'umsatzrechner', fr: 'calculateur-de-revenus', es: 'calculadora-de-ingresos', it: 'calcolatore-entrate', nl: 'inkomsten-calculator', sv: 'intaktskalkylator', da: 'indtaegtsberegner', no: 'inntektskalkulator', fi: 'tulolaskuri', zh: 'shouru-jisuanqi' },
+      'ad-layout---banner-placeholder-generator': { en: 'ad-layout-generator', tr: 'reklam-yerlesim-olusturucu', de: 'werbelayout-generator', fr: 'generateur-de-mise-en-page-publicitaire', es: 'generador-de-diseno-publicitario', it: 'generatore-layout-pubblicitario', nl: 'advertentie-layout-generator', sv: 'annonslayout-generator', da: 'annonce-layout-generator', no: 'annonselayout-generator', fi: 'mainosasettelun-generaattori', zh: 'guanggao-buju-shengchengqi' },
+      'ai-prompt-generator': { en: 'ai-prompt-generator', tr: 'yapay-zeka-prompt-olusturucu', de: 'ki-prompt-generator', fr: 'generateur-de-prompts-ia', es: 'generador-de-prompts-ia', it: 'generatore-di-prompt-ia', nl: 'ai-promptgenerator', sv: 'ai-promptgenerator', da: 'ai-promptgenerator', no: 'ai-promptgenerator', fi: 'tekoaly-kehotegeneraattori', zh: 'rengong-zhineng-tishi-ci-shengchengqi' },
+      'compressor': { en: 'file-compressor', tr: 'dosya-sikistirici', de: 'dateikomprimierer', fr: 'compresseur-de-fichiers', es: 'compresor-de-archivos', it: 'compressore-di-file', nl: 'bestandscompressor', sv: 'filkompressor', da: 'filkompressor', no: 'filkompressor', fi: 'tiedostopakkaaja', zh: 'wenjian-yasuoqi' },
+      'commerce-studio': { en: 'commerce-studio', tr: 'ticaret-studyosu', de: 'commerce-studio', fr: 'studio-commerce', es: 'estudio-de-comercio', it: 'studio-commerce', nl: 'commerce-studio', sv: 'handelsstudio', da: 'handelsstudio', no: 'handelsstudio', fi: 'kaupankayntistudio', zh: 'dian-shang-gongzuoshi' },
+      'free-pdf-editor---toolkit': { en: 'pdf-editor', tr: 'pdf-duzenleyici', de: 'pdf-editor', fr: 'editeur-pdf', es: 'editor-pdf', it: 'editor-pdf', nl: 'pdf-editor', sv: 'pdf-redigerare', da: 'pdf-editor', no: 'pdf-redigerer', fi: 'pdf-editori', zh: 'pdf-bianjiqi' },
+      'loan-calculator': { en: 'loan-calculator', tr: 'kredi-hesaplayici', de: 'kreditrechner', fr: 'calculateur-de-pret', es: 'calculadora-de-prestamos', it: 'calcolatore-di-prestiti', nl: 'leningcalculator', sv: 'lanekalkylator', da: 'laaneberegner', no: 'lanekalkulator', fi: 'lainalaskuri', zh: 'daikuan-jisuanqi' },
+      'debt-payoff-calculator': { en: 'debt-payoff-calculator', tr: 'borc-kapatma-hesaplayici', de: 'schuldentilgungsrechner', fr: 'calculateur-de-remboursement-de-dettes', es: 'calculadora-de-pago-de-deudas', it: 'calcolatore-estinzione-debiti', nl: 'schuldaflossingscalculator', sv: 'skuldavbetalningskalkylator', da: 'gaeldsafviklingsberegner', no: 'gjeldsnedbetalingskalkulator', fi: 'velanmaksulaskuri', zh: 'zhaiwu-huankuan-jisuanqi' },
+      'net-worth-calculator': { en: 'net-worth-calculator', tr: 'net-deger-hesaplayici', de: 'nettovermoegensrechner', fr: 'calculateur-de-patrimoine-net', es: 'calculadora-de-patrimonio-neto', it: 'calcolatore-del-patrimonio-netto', nl: 'nettovermogen-calculator', sv: 'nettofoermoegenhetskalkylator', da: 'nettoformueberegner', no: 'nettoformuekalkulator', fi: 'nettovarallisuuslaskuri', zh: 'jing-zichan-jisuanqi' },
+      'file-bridge': { en: 'file-bridge', tr: 'dosya-koprusu', de: 'dateibruecke', fr: 'pont-de-fichiers', es: 'puente-de-archivos', it: 'ponte-file', nl: 'bestandsbrug', sv: 'filbrygga', da: 'filbro', no: 'filbro', fi: 'tiedostosilta', zh: 'wenjian-qiaojie' },
+      'content-creator-studio': { en: 'content-creator-studio', tr: 'icerik-uretici-studyosu', de: 'content-creator-studio', fr: 'studio-de-creation-de-contenu', es: 'estudio-de-creacion-de-contenido', it: 'studio-creazione-contenuti', nl: 'contentcreator-studio', sv: 'innehallsskaparstudio', da: 'indholdsskaber-studie', no: 'innholdsskaperstudio', fi: 'sisallontuottajan-studio', zh: 'neirong-chuangzuozhe-gongzuoshi' }
+    };
+    const LOCALIZED_TOOL_IDS = new Set(Object.keys(LOCALIZED_SLUGS));
+
+    function getRouteLanguage() {
+      const firstSegment = window.location.pathname.split('/').filter(Boolean)[0];
+      return SUPPORTED_LANGUAGES.includes(firstSegment) ? firstSegment : 'en';
+    }
+
+    function getToolPath(tool, language = getRouteLanguage()) {
+      const slugs = LOCALIZED_SLUGS[tool.id];
+      if (!slugs) return tool.url.replace(/^https?:\/\/[^/]+/, '') || '/';
+      return `/${language}/${slugs[language] || slugs.en}`;
+    }
+
+    function getLanguagePath(language) {
+      return `/${language}/`;
+    }
+
+    function getBrowserLanguageSuggestion() {
+      const browserLanguage = (navigator.language || '').toLowerCase().split('-')[0];
+      return SUPPORTED_LANGUAGES.includes(browserLanguage) ? browserLanguage : 'en';
+    }
+
+    function applyRouteLanguage() {
+      document.documentElement.lang = currentLanguage;
+      const langToggle = document.getElementById('langToggle');
+      if (langToggle && !window.location.pathname.split('/').filter(Boolean).length) {
+        const suggestion = getBrowserLanguageSuggestion();
+        if (suggestion !== 'en') langToggle.title = `Suggested language: ${suggestion.toUpperCase()}`;
+      }
+    }
+
+    let currentLanguage = getRouteLanguage();
+    let activeCategory = 'all';
 
     // Google Translate API Engine
     async function remoteTranslate(text, targetLang) {
@@ -15528,9 +15575,9 @@ planning and are not financial advice.</p>
             <h3 class="text-lg font-bold mb-2 text-zinc-900">${title}</h3>
             <p class="text-sm text-zinc-600 leading-relaxed mb-6">${desc}</p>
           </div>
-          <button onclick="window.open('${tool.url}', '_blank')" class="w-full px-4 py-2.5 bg-zinc-100 border border-zinc-200 hover:bg-zinc-200 text-zinc-700 font-medium rounded-xl transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider cursor-pointer">
+          <a href="${getToolPath(tool, currentLanguage)}" class="w-full px-4 py-2.5 bg-zinc-100 border border-zinc-200 hover:bg-zinc-200 text-zinc-700 font-medium rounded-xl transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider cursor-pointer">
             <span>${t.openTool}</span> <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-zinc-400"></i>
-          </button>
+          </a>
         `;
         grid.appendChild(card);
       });
@@ -15551,13 +15598,8 @@ planning and are not financial advice.</p>
     }
 
     function updateLanguage(lang) {
-      currentLanguage = lang;
-      const displayMap = {en:'EN', tr:'TR', de:'DE', fr:'FR', es:'ES', it:'IT', nl:'NL', sv:'SV', da:'DA', no:'NO', fi:'FI', zh:'中文'};
-      document.getElementById('langDisplay').textContent = displayMap[lang] || 'EN';
-      updateStaticText();
-      buildFilterMenu();
-      renderTools();
-      document.getElementById('langDropdown').classList.remove('open');
+      if (!SUPPORTED_LANGUAGES.includes(lang)) return;
+      window.location.assign(getLanguagePath(lang));
     }
 
     // Lifecycle Core Init
@@ -15579,6 +15621,7 @@ planning and are not financial advice.</p>
     });
 
     document.addEventListener('DOMContentLoaded', () => {
+      applyRouteLanguage();
       updateStaticText();
       buildFilterMenu();
       renderTools();

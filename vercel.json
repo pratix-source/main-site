@@ -2,6 +2,1350 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/en/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/en/excel-data-cleaner",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/en/excel-data-cleaner/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/en/schema-generator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/en/schema-generator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/en/revenue-calculator",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/en/revenue-calculator/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/en/ad-layout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/en/ad-layout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/en/ai-prompt-generator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/en/ai-prompt-generator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/en/file-compressor",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/en/file-compressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/en/commerce-studio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/en/commerce-studio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/en/pdf-editor",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/en/pdf-editor/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/en/loan-calculator",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/en/loan-calculator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/en/debt-payoff-calculator",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/en/debt-payoff-calculator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/en/net-worth-calculator",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/en/net-worth-calculator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/en/file-bridge",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/en/file-bridge/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/en/content-creator-studio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/en/content-creator-studio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/tr/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/tr",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/tr/excel-veri-temizleyici",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/tr/excel-veri-temizleyici/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/tr/schema-olusturucu",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/tr/schema-olusturucu/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/tr/gelir-hesaplayici",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/tr/gelir-hesaplayici/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/tr/reklam-yerlesim-olusturucu",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/tr/reklam-yerlesim-olusturucu/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/tr/yapay-zeka-prompt-olusturucu",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/tr/yapay-zeka-prompt-olusturucu/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/tr/dosya-sikistirici",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/tr/dosya-sikistirici/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/tr/ticaret-studyosu",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/tr/ticaret-studyosu/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/tr/pdf-duzenleyici",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/tr/pdf-duzenleyici/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/tr/kredi-hesaplayici",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/tr/kredi-hesaplayici/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/tr/borc-kapatma-hesaplayici",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/tr/borc-kapatma-hesaplayici/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/tr/net-deger-hesaplayici",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/tr/net-deger-hesaplayici/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/tr/dosya-koprusu",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/tr/dosya-koprusu/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/tr/icerik-uretici-studyosu",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/tr/icerik-uretici-studyosu/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/de/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/de",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/de/excel-datenbereinigung",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/de/excel-datenbereinigung/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/de/schema-generator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/de/schema-generator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/de/umsatzrechner",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/de/umsatzrechner/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/de/werbelayout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/de/werbelayout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/de/ki-prompt-generator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/de/ki-prompt-generator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/de/dateikomprimierer",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/de/dateikomprimierer/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/de/commerce-studio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/de/commerce-studio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/de/pdf-editor",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/de/pdf-editor/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/de/kreditrechner",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/de/kreditrechner/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/de/schuldentilgungsrechner",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/de/schuldentilgungsrechner/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/de/nettovermoegensrechner",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/de/nettovermoegensrechner/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/de/dateibruecke",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/de/dateibruecke/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/de/content-creator-studio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/de/content-creator-studio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/fr/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fr/nettoyeur-de-donnees-excel",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/fr/nettoyeur-de-donnees-excel/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-schema",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-schema/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/fr/calculateur-de-revenus",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/fr/calculateur-de-revenus/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-mise-en-page-publicitaire",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-mise-en-page-publicitaire/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-prompts-ia",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/fr/generateur-de-prompts-ia/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/fr/compresseur-de-fichiers",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/fr/compresseur-de-fichiers/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/fr/studio-commerce",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/fr/studio-commerce/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/fr/editeur-pdf",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/fr/editeur-pdf/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/fr/calculateur-de-pret",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/fr/calculateur-de-pret/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/fr/calculateur-de-remboursement-de-dettes",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/fr/calculateur-de-remboursement-de-dettes/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/fr/calculateur-de-patrimoine-net",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/fr/calculateur-de-patrimoine-net/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/fr/pont-de-fichiers",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/fr/pont-de-fichiers/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/fr/studio-de-creation-de-contenu",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/fr/studio-de-creation-de-contenu/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/es/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es/limpiador-de-datos-excel",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/es/limpiador-de-datos-excel/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-schema",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-schema/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/es/calculadora-de-ingresos",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/es/calculadora-de-ingresos/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-diseno-publicitario",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-diseno-publicitario/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-prompts-ia",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/es/generador-de-prompts-ia/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/es/compresor-de-archivos",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/es/compresor-de-archivos/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/es/estudio-de-comercio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/es/estudio-de-comercio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/es/editor-pdf",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/es/editor-pdf/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/es/calculadora-de-prestamos",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/es/calculadora-de-prestamos/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/es/calculadora-de-pago-de-deudas",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/es/calculadora-de-pago-de-deudas/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/es/calculadora-de-patrimonio-neto",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/es/calculadora-de-patrimonio-neto/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/es/puente-de-archivos",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/es/puente-de-archivos/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/es/estudio-de-creacion-de-contenido",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/es/estudio-de-creacion-de-contenido/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/it/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/it",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/it/pulizia-dati-excel",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/it/pulizia-dati-excel/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-di-schema",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-di-schema/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/it/calcolatore-entrate",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/it/calcolatore-entrate/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-layout-pubblicitario",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-layout-pubblicitario/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-di-prompt-ia",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/it/generatore-di-prompt-ia/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/it/compressore-di-file",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/it/compressore-di-file/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/it/studio-commerce",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/it/studio-commerce/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/it/editor-pdf",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/it/editor-pdf/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/it/calcolatore-di-prestiti",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/it/calcolatore-di-prestiti/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/it/calcolatore-estinzione-debiti",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/it/calcolatore-estinzione-debiti/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/it/calcolatore-del-patrimonio-netto",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/it/calcolatore-del-patrimonio-netto/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/it/ponte-file",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/it/ponte-file/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/it/studio-creazione-contenuti",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/it/studio-creazione-contenuti/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/nl/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/nl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/nl/excel-gegevensreiniger",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/nl/excel-gegevensreiniger/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/nl/schema-generator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/nl/schema-generator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/nl/inkomsten-calculator",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/nl/inkomsten-calculator/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/nl/advertentie-layout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/nl/advertentie-layout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/nl/ai-promptgenerator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/nl/ai-promptgenerator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/nl/bestandscompressor",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/nl/bestandscompressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/nl/commerce-studio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/nl/commerce-studio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/nl/pdf-editor",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/nl/pdf-editor/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/nl/leningcalculator",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/nl/leningcalculator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/nl/schuldaflossingscalculator",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/nl/schuldaflossingscalculator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/nl/nettovermogen-calculator",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/nl/nettovermogen-calculator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/nl/bestandsbrug",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/nl/bestandsbrug/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/nl/contentcreator-studio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/nl/contentcreator-studio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/sv/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sv",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sv/excel-datarensare",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/sv/excel-datarensare/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/sv/schema-generator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/sv/schema-generator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/sv/intaktskalkylator",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/sv/intaktskalkylator/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/sv/annonslayout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/sv/annonslayout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/sv/ai-promptgenerator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/sv/ai-promptgenerator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/sv/filkompressor",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/sv/filkompressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/sv/handelsstudio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/sv/handelsstudio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/sv/pdf-redigerare",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/sv/pdf-redigerare/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/sv/lanekalkylator",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/sv/lanekalkylator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/sv/skuldavbetalningskalkylator",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/sv/skuldavbetalningskalkylator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/sv/nettofoermoegenhetskalkylator",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/sv/nettofoermoegenhetskalkylator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/sv/filbrygga",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/sv/filbrygga/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/sv/innehallsskaparstudio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/sv/innehallsskaparstudio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/da/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/da",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/da/excel-datarenser",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/da/excel-datarenser/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/da/schema-generator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/da/schema-generator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/da/indtaegtsberegner",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/da/indtaegtsberegner/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/da/annonce-layout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/da/annonce-layout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/da/ai-promptgenerator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/da/ai-promptgenerator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/da/filkompressor",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/da/filkompressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/da/handelsstudio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/da/handelsstudio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/da/pdf-editor",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/da/pdf-editor/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/da/laaneberegner",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/da/laaneberegner/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/da/gaeldsafviklingsberegner",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/da/gaeldsafviklingsberegner/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/da/nettoformueberegner",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/da/nettoformueberegner/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/da/filbro",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/da/filbro/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/da/indholdsskaber-studie",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/da/indholdsskaber-studie/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/no/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/no",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/no/excel-datarenser",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/no/excel-datarenser/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/no/skjemagenerator",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/no/skjemagenerator/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/no/inntektskalkulator",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/no/inntektskalkulator/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/no/annonselayout-generator",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/no/annonselayout-generator/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/no/ai-promptgenerator",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/no/ai-promptgenerator/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/no/filkompressor",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/no/filkompressor/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/no/handelsstudio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/no/handelsstudio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/no/pdf-redigerer",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/no/pdf-redigerer/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/no/lanekalkulator",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/no/lanekalkulator/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/no/gjeldsnedbetalingskalkulator",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/no/gjeldsnedbetalingskalkulator/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/no/nettoformuekalkulator",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/no/nettoformuekalkulator/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/no/filbro",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/no/filbro/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/no/innholdsskaperstudio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/no/innholdsskaperstudio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/fi/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fi",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fi/excel-datan-puhdistaja",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/fi/excel-datan-puhdistaja/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/fi/skeemageneraattori",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/fi/skeemageneraattori/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/fi/tulolaskuri",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/fi/tulolaskuri/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/fi/mainosasettelun-generaattori",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/fi/mainosasettelun-generaattori/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/fi/tekoaly-kehotegeneraattori",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/fi/tekoaly-kehotegeneraattori/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/fi/tiedostopakkaaja",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/fi/tiedostopakkaaja/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/fi/kaupankayntistudio",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/fi/kaupankayntistudio/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/fi/pdf-editori",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/fi/pdf-editori/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/fi/lainalaskuri",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/fi/lainalaskuri/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/fi/velanmaksulaskuri",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/fi/velanmaksulaskuri/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/fi/nettovarallisuuslaskuri",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/fi/nettovarallisuuslaskuri/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/fi/tiedostosilta",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/fi/tiedostosilta/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/fi/sisallontuottajan-studio",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/fi/sisallontuottajan-studio/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/zh/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh/excel-shuju-qingliqi",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/zh/excel-shuju-qingliqi/",
+      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+    },
+    {
+      "source": "/zh/jiegouhua-shuju-shengchengqi",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/zh/jiegouhua-shuju-shengchengqi/",
+      "destination": "https://schema-generator-one.vercel.app/"
+    },
+    {
+      "source": "/zh/shouru-jisuanqi",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/zh/shouru-jisuanqi/",
+      "destination": "https://revenue-khaki-seven.vercel.app/"
+    },
+    {
+      "source": "/zh/guanggao-buju-shengchengqi",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/zh/guanggao-buju-shengchengqi/",
+      "destination": "https://banner-placeholder-generator.vercel.app/"
+    },
+    {
+      "source": "/zh/rengong-zhineng-tishi-ci-shengchengqi",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/zh/rengong-zhineng-tishi-ci-shengchengqi/",
+      "destination": "https://prompter-wine-three.vercel.app/"
+    },
+    {
+      "source": "/zh/wenjian-yasuoqi",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/zh/wenjian-yasuoqi/",
+      "destination": "https://compressor-murex.vercel.app/"
+    },
+    {
+      "source": "/zh/dian-shang-gongzuoshi",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/zh/dian-shang-gongzuoshi/",
+      "destination": "https://pratix-commerce-studio.vercel.app/"
+    },
+    {
+      "source": "/zh/pdf-bianjiqi",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/zh/pdf-bianjiqi/",
+      "destination": "https://pdfeditor-psi.vercel.app/"
+    },
+    {
+      "source": "/zh/daikuan-jisuanqi",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/zh/daikuan-jisuanqi/",
+      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+    },
+    {
+      "source": "/zh/zhaiwu-huankuan-jisuanqi",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/zh/zhaiwu-huankuan-jisuanqi/",
+      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+    },
+    {
+      "source": "/zh/jing-zichan-jisuanqi",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/zh/jing-zichan-jisuanqi/",
+      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+    },
+    {
+      "source": "/zh/wenjian-qiaojie",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/zh/wenjian-qiaojie/",
+      "destination": "https://pratix-bridge.vercel.app/"
+    },
+    {
+      "source": "/zh/neirong-chuangzuozhe-gongzuoshi",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
+      "source": "/zh/neirong-chuangzuozhe-gongzuoshi/",
+      "destination": "https://creator-studio-seven-murex.vercel.app/"
+    },
+    {
       "source": "/bridge/:path*",
       "destination": "https://pratix-bridge.vercel.app/:path*"
     },
@@ -208,6 +1552,138 @@
     {
       "source": "/retirementsavingscalculator/:path*",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/bridge",
+      "destination": "/en/file-bridge",
+      "permanent": true
+    },
+    {
+      "source": "/bridge/",
+      "destination": "/en/file-bridge",
+      "permanent": true
+    },
+    {
+      "source": "/compressor",
+      "destination": "/en/file-compressor",
+      "permanent": true
+    },
+    {
+      "source": "/compressor/",
+      "destination": "/en/file-compressor",
+      "permanent": true
+    },
+    {
+      "source": "/prompter",
+      "destination": "/en/ai-prompt-generator",
+      "permanent": true
+    },
+    {
+      "source": "/prompter/",
+      "destination": "/en/ai-prompt-generator",
+      "permanent": true
+    },
+    {
+      "source": "/revenue",
+      "destination": "/en/revenue-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/revenue/",
+      "destination": "/en/revenue-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/ads",
+      "destination": "/en/ad-layout-generator",
+      "permanent": true
+    },
+    {
+      "source": "/ads/",
+      "destination": "/en/ad-layout-generator",
+      "permanent": true
+    },
+    {
+      "source": "/cleaner",
+      "destination": "/en/excel-data-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/cleaner/",
+      "destination": "/en/excel-data-cleaner",
+      "permanent": true
+    },
+    {
+      "source": "/schema",
+      "destination": "/en/schema-generator",
+      "permanent": true
+    },
+    {
+      "source": "/schema/",
+      "destination": "/en/schema-generator",
+      "permanent": true
+    },
+    {
+      "source": "/commerce-studio",
+      "destination": "/en/commerce-studio",
+      "permanent": true
+    },
+    {
+      "source": "/commerce-studio/",
+      "destination": "/en/commerce-studio",
+      "permanent": true
+    },
+    {
+      "source": "/pdfeditor",
+      "destination": "/en/pdf-editor",
+      "permanent": true
+    },
+    {
+      "source": "/pdfeditor/",
+      "destination": "/en/pdf-editor",
+      "permanent": true
+    },
+    {
+      "source": "/loancalculator",
+      "destination": "/en/loan-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/loancalculator/",
+      "destination": "/en/loan-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/deptpayoffcalculator",
+      "destination": "/en/debt-payoff-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/deptpayoffcalculator/",
+      "destination": "/en/debt-payoff-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/networthcalculator",
+      "destination": "/en/net-worth-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/networthcalculator/",
+      "destination": "/en/net-worth-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/creator-studio",
+      "destination": "/en/content-creator-studio",
+      "permanent": true
+    },
+    {
+      "source": "/creator-studio/",
+      "destination": "/en/content-creator-studio",
+      "permanent": true
     }
   ]
 }
