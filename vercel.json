@@ -77,27 +77,27 @@
     },
     {
       "source": "/en/loan-calculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/en/loan-calculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/en/debt-payoff-calculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/en/debt-payoff-calculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/en/net-worth-calculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/en/net-worth-calculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/en/file-bridge",
@@ -189,27 +189,27 @@
     },
     {
       "source": "/tr/kredi-hesaplayici",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/tr/kredi-hesaplayici/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/tr/borc-kapatma-hesaplayici",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/tr/borc-kapatma-hesaplayici/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/tr/net-deger-hesaplayici",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/tr/net-deger-hesaplayici/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/tr/dosya-koprusu",
@@ -301,27 +301,27 @@
     },
     {
       "source": "/de/kreditrechner",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/de/kreditrechner/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/de/schuldentilgungsrechner",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/de/schuldentilgungsrechner/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/de/nettovermoegensrechner",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/de/nettovermoegensrechner/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/de/dateibruecke",
@@ -413,27 +413,27 @@
     },
     {
       "source": "/fr/calculateur-de-pret",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/fr/calculateur-de-pret/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/fr/calculateur-de-remboursement-de-dettes",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/fr/calculateur-de-remboursement-de-dettes/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/fr/calculateur-de-patrimoine-net",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/fr/calculateur-de-patrimoine-net/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/fr/pont-de-fichiers",
@@ -525,27 +525,27 @@
     },
     {
       "source": "/es/calculadora-de-prestamos",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/es/calculadora-de-prestamos/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/es/calculadora-de-pago-de-deudas",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/es/calculadora-de-pago-de-deudas/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/es/calculadora-de-patrimonio-neto",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/es/calculadora-de-patrimonio-neto/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/es/puente-de-archivos",
@@ -637,27 +637,27 @@
     },
     {
       "source": "/it/calcolatore-di-prestiti",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/it/calcolatore-di-prestiti/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/it/calcolatore-estinzione-debiti",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/it/calcolatore-estinzione-debiti/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/it/calcolatore-del-patrimonio-netto",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/it/calcolatore-del-patrimonio-netto/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/it/ponte-file",
@@ -749,27 +749,27 @@
     },
     {
       "source": "/nl/leningcalculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/nl/leningcalculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/nl/schuldaflossingscalculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/nl/schuldaflossingscalculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/nl/nettovermogen-calculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/nl/nettovermogen-calculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/nl/bestandsbrug",
@@ -861,27 +861,27 @@
     },
     {
       "source": "/sv/lanekalkylator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/sv/lanekalkylator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/sv/skuldavbetalningskalkylator",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/sv/skuldavbetalningskalkylator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/sv/nettofoermoegenhetskalkylator",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/sv/nettofoermoegenhetskalkylator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/sv/filbrygga",
@@ -973,27 +973,27 @@
     },
     {
       "source": "/da/laaneberegner",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/da/laaneberegner/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/da/gaeldsafviklingsberegner",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/da/gaeldsafviklingsberegner/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/da/nettoformueberegner",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/da/nettoformueberegner/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/da/filbro",
@@ -1085,27 +1085,27 @@
     },
     {
       "source": "/no/lanekalkulator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/no/lanekalkulator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/no/gjeldsnedbetalingskalkulator",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/no/gjeldsnedbetalingskalkulator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/no/nettoformuekalkulator",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/no/nettoformuekalkulator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/no/filbro",
@@ -1197,27 +1197,27 @@
     },
     {
       "source": "/fi/lainalaskuri",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/fi/lainalaskuri/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/fi/velanmaksulaskuri",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/fi/velanmaksulaskuri/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/fi/nettovarallisuuslaskuri",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/fi/nettovarallisuuslaskuri/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/fi/tiedostosilta",
@@ -1309,27 +1309,27 @@
     },
     {
       "source": "/zh/daikuan-jisuanqi",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/zh/daikuan-jisuanqi/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/zh/zhaiwu-huankuan-jisuanqi",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/zh/zhaiwu-huankuan-jisuanqi/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/zh/jing-zichan-jisuanqi",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/zh/jing-zichan-jisuanqi/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/zh/wenjian-qiaojie",
@@ -1485,11 +1485,11 @@
     },
     {
       "source": "/loancalculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/loancalculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/tools/loan-calculator.html"
+      "destination": "https://loan-calculator-eight-mu.vercel.app/"
     },
     {
       "source": "/loancalculator/:path*",
@@ -1509,11 +1509,11 @@
     },
     {
       "source": "/deptpayoffcalculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/deptpayoffcalculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/tools/debt-payoff-calculator.html"
+      "destination": "https://dept-payoff-calculator.vercel.app/"
     },
     {
       "source": "/deptpayoffcalculator/:path*",
@@ -1521,11 +1521,11 @@
     },
     {
       "source": "/networthcalculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/networthcalculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/tools/net-worth-calculator.html"
+      "destination": "https://net-worth-calculator-one.vercel.app/"
     },
     {
       "source": "/networthcalculator/:path*",
