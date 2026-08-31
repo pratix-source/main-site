@@ -10,19 +10,25 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pratix.io - Free Premium Web Tools. Clean, deduplicate, and validate Excel &amp; CSV files instantly | Generate, validate, and optimize structured data markup i...">
-  <meta name="keywords" content="web tools, Data Cleaner, Schema Generator, Revenue Calculator, Ad Layout &amp; Banner Placeholder Generator, Ai Prompt Generator, Compressor, Commerce Studio, Free PDF Editor &amp; Toolkit, Loan Calculator, Auto Loan Calculator, Debt Payoff Calculator, Net Worth Calculator, Cross-Border VAT Calculator, Retirement Savings Calculator, File Bridge, Content Creator Studio, Marketing, Finance, SEO, Ai Tools, Data &amp; Asset Optimization, free tools, online tools, micro-saas, excel tools, csv tools">
+  <meta name="description" content="Free browser tools for data, SEO, finance, files, marketing, and creators. Private client-side utilities from Pratix.io.">
   <meta name="author" content="Pratix.io">
-  <meta property="og:title" content="Pratix.io - Premium Micro-SaaS Web Tools">
-  <meta property="og:description" content="Free Premium Web Tools - 100% Client-Side Processing">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta property="og:title" content="Free Browser Tools for Data, SEO and Finance | Pratix.io">
+  <meta property="og:description" content="Free browser tools for data, SEO, finance, files, marketing, and creators. Private client-side utilities from Pratix.io.">
   <meta property="og:url" content="https://pratix.io/en/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pratix.io">
+  <meta property="og:locale" content="en">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Pratix.io - Premium Micro-SaaS Web Tools">
-  <meta name="twitter:description" content="Free Premium Web Tools - 100% Client-Side Processing">
+  <meta name="twitter:title" content="Free Browser Tools for Data, SEO and Finance | Pratix.io">
+  <meta name="twitter:description" content="Free browser tools for data, SEO, finance, files, marketing, and creators. Private client-side utilities from Pratix.io.">
   <link rel="canonical" href="https://pratix.io/en/">
+  <link rel="alternate" hreflang="en" href="https://pratix.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://pratix.io/en/">
   <meta name="theme-color" content="#3b82f6">
-  <title>Pratix.io - Premium Micro-SaaS Web Tools</title>
+  <title>Free Browser Tools for Data, SEO and Finance | Pratix.io</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
@@ -15532,13 +15538,70 @@ planning and are not financial advice.</p>
       document.head.appendChild(fragment);
     }
 
+    const SEO_TITLE_OVERRIDES = {
+      'ad-layout---banner-placeholder-generator': {
+        fr: 'Outil de mise en page publicitaire et bannière',
+        es: 'Diseño de anuncios y banners',
+        nl: 'Advertentie- en bannertool',
+        sv: 'Annons- och bannergenerator',
+        fi: 'Mainos- ja bannertyökalu'
+      }
+    };
+    const SEO_DESCRIPTION_SUFFIXES = {
+      en: ' Runs in your browser without uploads. Simple, private, and ready when you are.',
+      tr: ' Tarayıcınızda çalışır; yükleme veya sunucu gerektirmez. Hızlı, özel ve kullanıma hazırdır.',
+      de: ' Läuft direkt im Browser – ohne Upload und ohne Server. Schnell, einfach und privat.',
+      fr: ' Fonctionne directement dans votre navigateur, sans téléversement ni serveur. Rapide, simple et privé.',
+      es: ' Funciona directamente en su navegador, sin cargas ni servidor. Rápido, sencillo y privado.',
+      it: ' Funziona direttamente nel browser, senza caricamenti né server. Semplice, veloce e privato.',
+      nl: ' Werkt direct in je browser, zonder upload of server. Snel, eenvoudig en privé.',
+      sv: ' Körs direkt i webbläsaren utan uppladdning eller server. Snabbt, enkelt och privat.',
+      da: ' Kører direkte i browseren uden upload eller server. Hurtigt, enkelt og privat.',
+      no: ' Kjører direkte i nettleseren uten opplasting eller server. Raskt, enkelt og privat.',
+      fi: ' Toimii suoraan selaimessa ilman latausta tai palvelinta. Nopeaa, helppoa ja yksityistä.',
+      zh: ' 所有处理都在浏览器本地完成，无需上传文件或连接服务器。界面清晰、操作快速，并以隐私保护为优先，适合日常工作、内容制作、数据整理、网站优化和日常计算。无需注册即可开始使用，输入内容不会发送到远程服务，适合个人、团队和企业在日常工作中快速完成任务。'
+    };
+    function trimSeoDescription(value, language) {
+      let text = String(value || '').replaceAll('\\n', ' ').replace(/\s+/g, ' ').trim();
+      if (text.length < 120) text += SEO_DESCRIPTION_SUFFIXES[language] || SEO_DESCRIPTION_SUFFIXES.en;
+      if (text.length <= 155) return text;
+      const clipped = text.slice(0, 155);
+      const boundary = clipped.lastIndexOf(' ');
+      const base = clipped.slice(0, boundary >= 125 ? boundary : 154).replace(/[,:;–—-]+$/, '').trim();
+      return `${base.slice(0, 154).trim()}.`;
+    }
+    function seoTitle(tool, language) {
+      const base = SEO_TITLE_OVERRIDES[tool?.id]?.[language] || tool?.name?.[language] || tool?.name?.en || TRANSLATIONS[language]?.heroTitle || 'Free Browser Tools';
+      return `${base} | Pratix.io`;
+    }
+    function updateJsonLd(name, description, canonical, isTool) {
+      let script = document.querySelector('script[data-seo-jsonld="true"]');
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.dataset.seoJsonld = 'true';
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': isTool ? 'SoftwareApplication' : 'WebSite',
+        name,
+        description,
+        url: canonical,
+        ...(isTool ? { applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true } : {}),
+        publisher: { '@type': 'Organization', name: 'Pratix.io', url: 'https://pratix.io' }
+      });
+    }
+
     // UPDATE SEO META TAGS, CANONICAL AND HREFLANG
     function updateSEOMeta() {
       const page = getSeoPage();
       const language = page.language;
       const tool = page.tool;
-      const title = tool ? `${tool.name[language] || tool.name.en} | Pratix.io` : (TRANSLATIONS[language]?.heroTitle || 'Premium Web Tools') + ' | Pratix.io';
-      const description = tool ? (tool.desc[language] || tool.desc.en) : (TRANSLATIONS[language]?.heroDesc || TRANSLATIONS.en.heroDesc);
+      const rawName = tool ? (tool.name[language] || tool.name.en) : (TRANSLATIONS[language]?.heroTitle || 'Free Browser Tools');
+      const rawDescription = tool ? (tool.desc[language] || tool.desc.en) : (TRANSLATIONS[language]?.heroDesc || TRANSLATIONS.en.heroDesc);
+      const title = seoTitle(tool, language);
+      const description = trimSeoDescription(rawDescription, language);
       const canonical = getSeoUrl(language, page.isLocalizedTool ? tool : null);
 
       document.documentElement.lang = language;
@@ -15550,9 +15613,15 @@ planning and are not financial advice.</p>
       setMeta('meta[name="twitter:title"]', 'content', title);
       setMeta('meta[name="twitter:description"]', 'content', description);
       setMeta('link[rel="canonical"]', 'href', canonical);
-      const toolNames = PRATIX_TOOLS.map(item => item.name[language] || item.name.en).join(', ');
-      const categoryNames = PRATIX_CATEGORIES.map(item => item.name[language] || item.name.en).join(', ');
-      setMeta('meta[name="keywords"]', 'content', `web tools, ${toolNames}, ${categoryNames}, free tools, online tools, micro-saas`);
+      setMeta('meta[name="author"]', 'content', 'Pratix.io');
+      setMeta('meta[name="robots"]', 'content', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+      setMeta('meta[name="googlebot"]', 'content', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+      setMeta('meta[name="bingbot"]', 'content', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+      setMeta('meta[property="og:type"]', 'content', 'website');
+      setMeta('meta[property="og:site_name"]', 'content', 'Pratix.io');
+      setMeta('meta[property="og:locale"]', 'content', language);
+      setMeta('meta[name="twitter:card"]', 'content', 'summary');
+      updateJsonLd(rawName, description, canonical, page.isLocalizedTool);
       updateHreflangLinks(page.isLocalizedTool ? tool : null);
     }
 

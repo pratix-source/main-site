@@ -7,6 +7,7 @@ const distPath = path.join(root, 'dist');
 const source = fs.readFileSync(sourcePath, 'utf8');
 const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh'];
 const siteOrigin = 'https://pratix.io';
+const { getSeoCopy } = require('./seo-copy');
 
 function escapeHtml(value) {
   return String(value).replaceAll('\\n', ' ').replace(/\s+/g, ' ').trim()
@@ -80,8 +81,9 @@ function replaceOrInsert(html, matcher, replacement, insertionPoint = '</head>')
 
 function setStaticMetadata(html, language, toolId = null) {
   const tool = toolId ? tools[toolId] : null;
-  const title = tool ? `${tool.name[language] || tool.name.en} | Pratix.io` : `${uiTranslations[language]?.heroTitle || uiTranslations.en.heroTitle} | Pratix.io`;
-  const description = tool ? (tool.desc[language] || tool.desc.en) : (uiTranslations[language]?.heroDesc || uiTranslations.en.heroDesc);
+  const rawName = tool ? (tool.name[language] || tool.name.en) : (uiTranslations[language]?.heroTitle || uiTranslations.en.heroTitle);
+  const rawDescription = tool ? (tool.desc[language] || tool.desc.en) : (uiTranslations[language]?.heroDesc || uiTranslations.en.heroDesc);
+  const { title, description } = getSeoCopy({ language, toolId, name: rawName, description: rawDescription });
   const canonical = absoluteUrl(language, toolId);
   const replacements = [
     [/<html\s+lang="[^"]*">/, `<html lang="${escapeHtml(language)}">`],
@@ -93,19 +95,27 @@ function setStaticMetadata(html, language, toolId = null) {
     [/<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${escapeHtml(title)}">`],
     [/<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${escapeHtml(description)}">`],
     [/<link rel="canonical" href="[^"]*">/, `<link rel="canonical" href="${canonical}">`],
+    [/<meta name="author" content="[^"]*">/, '<meta name="author" content="Pratix.io">'],
+    [/<meta name="robots" content="[^"]*">/, '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">'],
+    [/<meta property="og:type" content="[^"]*">/, '<meta property="og:type" content="website">'],
+    [/<meta property="og:site_name" content="[^"]*">/, '<meta property="og:site_name" content="Pratix.io">'],
+    [/<meta property="og:locale" content="[^"]*">/, `<meta property="og:locale" content="${language}">`],
+    [/<meta name="twitter:card" content="[^"]*">/, '<meta name="twitter:card" content="summary">'],
   ];
   for (const [matcher, replacement] of replacements) html = replaceOrInsert(html, matcher, replacement);
 
-  const keywordSource = tool ? `${tool.name[language] || tool.name.en}, ${tool.desc[language] || tool.desc.en}` : `${uiTranslations[language]?.heroTitle || uiTranslations.en.heroTitle}, ${uiTranslations[language]?.heroDesc || uiTranslations.en.heroDesc}`;
-  html = replaceOrInsert(html, /<meta name="keywords" content="[^"]*">/, `<meta name="keywords" content="${escapeHtml(`Pratix.io, ${keywordSource}`)}">`);
+  const jsonLd = { '@context': 'https://schema.org', '@type': tool ? 'SoftwareApplication' : 'WebSite', name: rawName, description, url: canonical, ...(tool ? { applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', isAccessibleForFree: true } : {}), publisher: { '@type': 'Organization', name: 'Pratix.io', url: siteOrigin } };
+  html = html.replace(/<script type="application\/ld\+json" data-seo-jsonld="true">[\s\S]*?<\/script>/g, '');
+  html = html.replace('</head>', `  <script type="application/ld+json" data-seo-jsonld="true">${JSON.stringify(jsonLd)}</script>\n</head>`);
+  html = html.replace(/\n\s*<link rel="alternate" hreflang="[^"]*"[^>]*>/g, '');
   html = html.replace(/\n\s*<link data-seo-hreflang="true"[^>]*>/g, '');
 
   const alternateLinks = languages.map(candidate => `  <link rel="alternate" hreflang="${candidate}" href="${absoluteUrl(candidate, toolId)}" data-seo-hreflang="true">`);
   alternateLinks.push(`  <link rel="alternate" hreflang="x-default" href="${absoluteUrl('en', toolId)}" data-seo-hreflang="true">`);
   html = html.replace('</head>', `${alternateLinks.join('\n')}\n</head>`);
 
-  const contentTitle = tool ? (tool.name[language] || tool.name.en) : (uiTranslations[language]?.heroTitle || uiTranslations.en.heroTitle);
-  const contentDescription = tool ? (tool.desc[language] || tool.desc.en) : (uiTranslations[language]?.heroDesc || uiTranslations.en.heroDesc);
+  const contentTitle = rawName;
+  const contentDescription = description;
   const staticSection = `\n  <section class="max-w-4xl mx-auto px-6 py-8 prerendered-content" data-prerendered="true">\n    <h1 class="text-2xl font-bold text-zinc-900">${escapeHtml(contentTitle)}</h1>\n    <p class="mt-3 text-zinc-600 leading-relaxed">${escapeHtml(contentDescription)}</p>\n  </section>\n`;
   html = html.replace('<body>', `<body>${staticSection}`);
   return html;
@@ -125,7 +135,7 @@ for (const toolId of localizedToolIds) {
   for (const language of languages) writePage(`${language}/${slugMap[toolId][language]}/index.html`, language, toolId);
 }
 
-for (const staticFile of ['sitemap.xml', 'google6ddf2b84ffac0dd8.html']) {
+for (const staticFile of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html']) {
   const staticSource = path.join(root, staticFile);
   if (fs.existsSync(staticSource)) fs.copyFileSync(staticSource, path.join(distPath, staticFile));
 }
