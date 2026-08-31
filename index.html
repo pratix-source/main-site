@@ -15,8 +15,12 @@
   <meta name="author" content="Pratix.io">
   <meta property="og:title" content="Pratix.io - Premium Micro-SaaS Web Tools">
   <meta property="og:description" content="Free Premium Web Tools - 100% Client-Side Processing">
+  <meta property="og:url" content="https://pratix.io/en/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pratix.io">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pratix.io - Premium Micro-SaaS Web Tools">
+  <meta name="twitter:description" content="Free Premium Web Tools - 100% Client-Side Processing">
+  <link rel="canonical" href="https://pratix.io/en/">
   <meta name="theme-color" content="#3b82f6">
   <title>Pratix.io - Premium Micro-SaaS Web Tools</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><style>/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
@@ -15479,15 +15483,77 @@ planning and are not financial advice.</p>
       }
     }
 
-    // UPDATE SEO META TAGS
+    function getLocalizedToolFromPath() {
+      const segments = window.location.pathname.split('/').filter(Boolean);
+      if (segments.length < 2 || !SUPPORTED_LANGUAGES.includes(segments[0])) return null;
+      const language = segments[0];
+      const slug = decodeURIComponent(segments.slice(1).join('/')).replace(/\/$/, '');
+      return Object.entries(LOCALIZED_SLUGS).find(([, perLanguage]) => perLanguage[language] === slug) || null;
+    }
+
+    function getSeoPage() {
+      const language = getRouteLanguage();
+      const localizedTool = getLocalizedToolFromPath();
+      if (localizedTool) {
+        const [toolId] = localizedTool;
+        const tool = PRATIX_TOOLS.find(item => item.id === toolId);
+        if (tool) return { language, tool, isLocalizedTool: true };
+      }
+      return { language, tool: null, isLocalizedTool: false };
+    }
+
+    function getSeoUrl(language, tool = null) {
+      if (!tool || !LOCALIZED_SLUGS[tool.id]) return `https://pratix.io/${language}/`;
+      return `https://pratix.io/${language}/${encodeURIComponent(LOCALIZED_SLUGS[tool.id][language] || LOCALIZED_SLUGS[tool.id].en)}`;
+    }
+
+    function setMeta(selector, attribute, value) {
+      const element = document.querySelector(selector);
+      if (element) element.setAttribute(attribute, value);
+    }
+
+    function updateHreflangLinks(tool) {
+      document.querySelectorAll('link[data-seo-hreflang]').forEach(link => link.remove());
+      const fragment = document.createDocumentFragment();
+      SUPPORTED_LANGUAGES.forEach(language => {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = language;
+        link.href = getSeoUrl(language, tool);
+        link.dataset.seoHreflang = 'true';
+        fragment.appendChild(link);
+      });
+      const fallback = document.createElement('link');
+      fallback.rel = 'alternate';
+      fallback.hreflang = 'x-default';
+      fallback.href = getSeoUrl('en', tool);
+      fallback.dataset.seoHreflang = 'true';
+      fragment.appendChild(fallback);
+      document.head.appendChild(fragment);
+    }
+
+    // UPDATE SEO META TAGS, CANONICAL AND HREFLANG
     function updateSEOMeta() {
-      const toolNames = PRATIX_TOOLS.map(t => t.name.en).join(', ');
-      const categoryNames = PRATIX_CATEGORIES.map(c => c.name.en).join(', ');
-      
-      document.querySelector('meta[name="keywords"]').setAttribute('content', `web tools, ${toolNames}, ${categoryNames}, free tools, online tools, micro-saas, excel tools, csv tools`);
-      
-      const toolDescriptions = PRATIX_TOOLS.map(t => t.desc.en).join(' | ');
-      document.querySelector('meta[name="description"]').setAttribute('content', `Pratix.io - Free Premium Web Tools. ${toolDescriptions.substring(0, 120)}...`);
+      const page = getSeoPage();
+      const language = page.language;
+      const tool = page.tool;
+      const title = tool ? `${tool.name[language] || tool.name.en} | Pratix.io` : (TRANSLATIONS[language]?.heroTitle || 'Premium Web Tools') + ' | Pratix.io';
+      const description = tool ? (tool.desc[language] || tool.desc.en) : (TRANSLATIONS[language]?.heroDesc || TRANSLATIONS.en.heroDesc);
+      const canonical = getSeoUrl(language, page.isLocalizedTool ? tool : null);
+
+      document.documentElement.lang = language;
+      document.title = title;
+      setMeta('meta[name="description"]', 'content', description);
+      setMeta('meta[property="og:title"]', 'content', title);
+      setMeta('meta[property="og:description"]', 'content', description);
+      setMeta('meta[property="og:url"]', 'content', canonical);
+      setMeta('meta[name="twitter:title"]', 'content', title);
+      setMeta('meta[name="twitter:description"]', 'content', description);
+      setMeta('link[rel="canonical"]', 'href', canonical);
+      const toolNames = PRATIX_TOOLS.map(item => item.name[language] || item.name.en).join(', ');
+      const categoryNames = PRATIX_CATEGORIES.map(item => item.name[language] || item.name.en).join(', ');
+      setMeta('meta[name="keywords"]', 'content', `web tools, ${toolNames}, ${categoryNames}, free tools, online tools, micro-saas`);
+      updateHreflangLinks(page.isLocalizedTool ? tool : null);
     }
 
     // BUILD FILTERS NAVBAR BUTTONS
