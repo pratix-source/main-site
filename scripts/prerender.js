@@ -125,5 +125,10 @@ for (const toolId of localizedToolIds) {
   for (const language of languages) writePage(`${language}/${slugMap[toolId][language]}/index.html`, language, toolId);
 }
 
+for (const staticFile of ['sitemap.xml', 'google6ddf2b84ffac0dd8.html']) {
+  const staticSource = path.join(root, staticFile);
+  if (fs.existsSync(staticSource)) fs.copyFileSync(staticSource, path.join(distPath, staticFile));
+}
+
 console.log(`Prerendered ${1 + languages.length + localizedToolIds.length * languages.length} pages into ${path.relative(root, distPath)}/`);
 console.log(`Localized tools: ${localizedToolIds.length}; languages: ${languages.length}`);
