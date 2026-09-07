@@ -28,12 +28,12 @@ for (const file of htmlFiles) {
   if (hreflangCount !== 13) failures.push(`${file}: hreflang count ${hreflangCount}`);
   if (jsonLdCount !== 1) failures.push(`${file}: JSON-LD count ${jsonLdCount}`);
 }
-for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html']) {
+for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html', 'tools/qr-code-generator.html']) {
   if (!fs.existsSync(path.join(dist, file))) failures.push(`dist/${file}: missing`);
 }
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-const expectedUrlCount = 12 + 12 * 13;
+const expectedUrlCount = 12 + 12 * 14;
 if (sitemapUrls.length !== expectedUrlCount) failures.push(`sitemap.xml: ${sitemapUrls.length} URLs, expected ${expectedUrlCount}`);
 for (const url of sitemapUrls) {
   if (!url.startsWith('https://www.pratix.io/')) failures.push(`sitemap.xml: non-www URL ${url}`);

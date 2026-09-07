@@ -164,9 +164,12 @@ writePage('index.html', 'en');
 for (const language of languages) writePage(`${language}/index.html`, language);
 // Tool routes belong to the external tool deployments. Do not emit local tool-path
 // index files here, or Vercel's filesystem can shadow the external rewrites.
-for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html']) {
+for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html', 'pratix-standard.css', 'tools/qr-code-generator.html']) {
   const staticSource = path.join(root, staticFile);
-  if (fs.existsSync(staticSource)) fs.copyFileSync(staticSource, path.join(distPath, staticFile));
+  if (fs.existsSync(staticSource)) {
+    fs.mkdirSync(path.dirname(path.join(distPath, staticFile)), { recursive: true });
+    fs.copyFileSync(staticSource, path.join(distPath, staticFile));
+  }
 }
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
 

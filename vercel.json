@@ -1554,6 +1554,102 @@
     {
       "source": "/retirementsavingscalculator/:path*",
       "destination": "https://retirement-savings-calculator-cyan.vercel.app/:path*"
+    },
+    {
+      "source": "/en/qr-code-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/en/qr-code-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/tr/qr-kod-olusturucu",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/tr/qr-kod-olusturucu/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/de/qr-code-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/de/qr-code-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/fr/generateur-de-qr-code",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/fr/generateur-de-qr-code/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/es/generador-de-codigos-qr",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/es/generador-de-codigos-qr/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/it/generatore-di-qr-code",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/it/generatore-di-qr-code/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/nl/qr-code-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/nl/qr-code-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/sv/qr-kod-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/sv/qr-kod-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/da/qr-kode-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/da/qr-kode-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/no/qr-kode-generator",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/no/qr-kode-generator/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/fi/qr-koodigeneraattori",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/fi/qr-koodigeneraattori/",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/zh/erwei-ma-shengchengqi",
+      "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/zh/erwei-ma-shengchengqi/",
+      "destination": "/tools/qr-code-generator.html"
     }
   ],
   "redirects": [

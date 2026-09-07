@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free QR Code Generator for Links, Text, Wi-Fi and vCards | Pratix.io</title>
+<meta name="description" content="Create high-resolution QR codes for URLs, text, Wi-Fi and contact cards. Customize colors and size, then download PNG or SVG — right in your browser." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Pratix.io" />
+<link rel="canonical" href="https://www.pratix.io/en/qr-code-generator" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pratix.io" />
+<meta property="og:title" content="Free QR Code Generator for Links, Text, Wi-Fi and vCards | Pratix.io" />
+<meta property="og:description" content="Create high-resolution QR codes for URLs, text, Wi-Fi and contact cards. Customize colors and size, then download PNG or SVG — right in your browser." />
+<meta property="og:url" content="https://www.pratix.io/en/qr-code-generator" />
+<meta property="og:locale" content="en" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Free QR Code Generator for Links, Text, Wi-Fi and vCards | Pratix.io" />
+<meta name="twitter:description" content="Create high-resolution QR codes for URLs, text, Wi-Fi and contact cards. Customize colors and size, then download PNG or SVG — right in your browser." />
+<link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+<link rel="stylesheet" href="/pratix-standard.css" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  h1[data-i18n="heroTitle"] { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.02; overflow-wrap: anywhere; }
+  .qr-canvas { image-rendering: pixelated; }
+  @media (max-width: 640px) { h1[data-i18n="heroTitle"] { font-size: clamp(1.9rem, 9vw, 2.6rem); } }
+</style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-950">
+
+<header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <a href="https://www.pratix.io/" class="flex items-center gap-3" aria-label="Pratix.io home">
+      <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-400 text-lg font-black text-white shadow-sm">P</span>
+      <span>
+        <span class="block text-base font-black tracking-tight">pratix.io</span>
+        <span class="block text-xs font-semibold text-slate-500" data-i18n="brandLine">Practical Micro-SaaS Tools</span>
+      </span>
+    </a>
+    <div class="flex items-center gap-3">
+      <a href="https://www.pratix.io/" class="hidden rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-blue-300 hover:text-blue-700 sm:inline-flex" data-i18n="allTools">All tools</a>
+      <label class="sr-only" for="languageSelect" data-i18n="language">Language</label>
+      <select id="languageSelect" class="rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+        <option value="en">English (EN)</option>
+        <option value="tr">Türkçe (TR)</option>
+        <option value="de">Deutsch (DE)</option>
+        <option value="fr">Français (FR)</option>
+        <option value="es">Español (ES)</option>
+        <option value="it">Italiano (IT)</option>
+        <option value="nl">Nederlands (NL)</option>
+        <option value="sv">Svenska (SV)</option>
+        <option value="da">Dansk (DA)</option>
+        <option value="no">Norsk (NO)</option>
+        <option value="fi">Suomi (FI)</option>
+        <option value="zh">中文 (ZH)</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="border-b border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.15fr_.85fr] lg:px-8 lg:py-16">
+      <div>
+        <p class="text-sm font-black uppercase tracking-[.22em] text-blue-600" data-i18n="eyebrow">Free QR code generator — no sign-up, runs in your browser</p>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl" data-i18n="heroTitle">QR Code Generator for Links, Text, Wi-Fi and vCards</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600" data-i18n="heroDesc">Create high-resolution QR codes for URLs, plain text, Wi-Fi networks and contact cards. Customize colors and size, then download PNG or SVG — everything is generated locally in your browser.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700" data-i18n="badge1">PNG &amp; SVG export</span>
+          <span class="rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700" data-i18n="badge2">Custom colors</span>
+          <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-bold text-slate-700" data-i18n="badge3">100% client-side</span>
+        </div>
+      </div>
+      <aside class="space-y-5 lg:pt-2">
+        <div class="rounded-[2rem] bg-slate-950 p-7 text-white shadow-xl shadow-slate-300/40">
+          <h2 class="text-lg font-black" data-i18n="heroCardTitle">Built for print and screens</h2>
+          <p class="mt-3 text-base leading-7 text-slate-300" data-i18n="heroCardDesc">Export a crisp PNG for websites and slides, or a vector SVG that stays sharp on posters, packaging and business cards at any print size.</p>
+        </div>
+        <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="tool" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-8 lg:grid-cols-[420px_1fr]">
+      <section class="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+        <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="formEyebrow">Generator</p>
+        <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="formTitle">Build your QR code</h2>
+        <form id="qrForm" class="mt-6 grid gap-5">
+          <label class="grid gap-2">
+            <span class="text-sm font-bold text-slate-800" data-i18n="contentLabel">QR content</span>
+            <textarea id="contentInput" rows="4" class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="https://example.com" data-i18n-placeholder="contentPlaceholder">https://www.pratix.io</textarea>
+          </label>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="grid gap-2">
+              <span class="text-sm font-bold text-slate-800" data-i18n="sizeLabel">Size (px)</span>
+              <select id="sizeSelect" class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+                <option value="256">256</option>
+                <option value="512" selected>512</option>
+                <option value="1024">1024</option>
+                <option value="2048">2048</option>
+              </select>
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-bold text-slate-800" data-i18n="marginLabel">Quiet zone</span>
+              <select id="marginSelect" class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4" selected>4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+              </select>
+            </label>
+          </div>
+          <label class="grid gap-2">
+            <span class="text-sm font-bold text-slate-800" data-i18n="eccLabel">Error correction</span>
+            <select id="eccSelect" class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+              <option value="L" data-i18n="eccL">Low (7%)</option>
+              <option value="M" selected data-i18n="eccM">Medium (15%)</option>
+              <option value="Q" data-i18n="eccQ">Quartile (25%)</option>
+              <option value="H" data-i18n="eccH">High (30%)</option>
+            </select>
+          </label>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="grid gap-2">
+              <span class="text-sm font-bold text-slate-800" data-i18n="fgLabel">Foreground</span>
+              <input id="fgColor" type="color" value="#0f172a" class="h-12 w-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-1" />
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm font-bold text-slate-800" data-i18n="bgLabel">Background</span>
+              <input id="bgColor" type="color" value="#ffffff" class="h-12 w-full cursor-pointer rounded-2xl border border-slate-200 bg-white p-1" />
+            </label>
+          </div>
+        </form>
+      </section>
+
+      <aside id="output" class="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="previewEyebrow">Live preview</p>
+              <h2 class="mt-2 text-xl font-black tracking-tight text-slate-950" data-i18n="previewTitle">Your QR code updates as you type</h2>
+            </div>
+            <span id="validBadge" class="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-black text-emerald-600" data-i18n="validBadge">Ready</span>
+          </div>
+          <div class="mt-5 flex min-h-[280px] items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <canvas id="qrCanvas" class="qr-canvas max-h-[320px] max-w-full rounded-xl shadow-sm" width="512" height="512" aria-label="QR code preview"></canvas>
+          </div>
+          <p id="qrError" class="mt-3 hidden rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-600"></p>
+          <div class="mt-5 grid grid-cols-2 gap-3">
+            <button id="downloadPng" type="button" class="rounded-2xl bg-blue-600 px-4 py-3 text-sm font-black text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700" data-i18n="downloadPng">Download PNG</button>
+            <button id="downloadSvg" type="button" class="rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white transition hover:bg-slate-800" data-i18n="downloadSvg">Download SVG</button>
+          </div>
+        </div>
+        <div class="rounded-[1.75rem] border border-slate-200 bg-white p-5">
+          <h3 class="text-sm font-black text-slate-950" data-i18n="tipsTitle">Quick quality checklist</h3>
+          <ul id="tipsList" class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip1">Keep a quiet zone of at least 4 modules so scanners lock on quickly.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip2">Test the final code with two different phones before printing.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip3">Prefer high error correction when placing logos over the code.</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="featuresEyebrow">Features</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="featuresTitle">Why use this QR code generator</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Instant generation</h3><p class="mt-2 text-sm leading-6 text-slate-600">QR codes render as you type with no uploads, no accounts and no watermarks — see the result before you download.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Print-ready exports</h3><p class="mt-2 text-sm leading-6 text-slate-600">Download a crisp PNG for screens and slides, or a vector SVG that stays sharp at any print dimension.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Full customization</h3><p class="mt-2 text-sm leading-6 text-slate-600">Adjust size, quiet zone, error-correction level and brand colors to match your visual identity.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Privacy by design</h3><p class="mt-2 text-sm leading-6 text-slate-600">Encoding happens entirely in your browser with JavaScript — your content never leaves your device.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Smart error correction</h3><p class="mt-2 text-sm leading-6 text-slate-600">Choose L, M, Q or H recovery levels so codes survive logos, scratches or partial occlusion.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Works everywhere</h3><p class="mt-2 text-sm leading-6 text-slate-600">Generated codes follow the QR standard and scan with every major phone camera — no app installation required.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="howEyebrow">Step by step</p>
+    <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="howTitle">How to create a QR code in three steps</h2>
+    <ol class="mt-8 grid gap-4 md:grid-cols-3">
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">1</span><div><h3 class="text-base font-black text-slate-950">Paste your content</h3><p class="mt-2 text-sm leading-6 text-slate-600">Add a link, plain text, Wi-Fi credentials or contact details into the content box.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">2</span><div><h3 class="text-base font-black text-slate-950">Tune the settings</h3><p class="mt-2 text-sm leading-6 text-slate-600">Pick the size, error-correction level and foreground and background colors that match your brand.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">3</span><div><h3 class="text-base font-black text-slate-950">Download and share</h3><p class="mt-2 text-sm leading-6 text-slate-600">Export the PNG or SVG and add it to posters, packaging, slides, menus or screens.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="faq" class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="faqEyebrow">FAQ</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="faqTitle">Frequently asked questions</h2>
+      <div class="mt-8 space-y-4">
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5" open><summary class="cursor-pointer text-base font-black text-slate-950">Is this QR code generator free?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Yes. Every feature, including PNG and SVG downloads, is free and unlimited — there is no sign-up and no watermark.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Do the QR codes expire?</summary><p class="mt-3 text-sm leading-6 text-slate-600">No. A QR code is simply an encoded image of your content, so it keeps working forever and never expires.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Is my data uploaded anywhere?</summary><p class="mt-3 text-sm leading-6 text-slate-600">No. Generation runs entirely in your browser with JavaScript; your content never leaves your device.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">PNG or SVG — which should I choose?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Use PNG for websites, presentations and screens; use SVG for print materials because it stays sharp at any size.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Can I use the QR codes commercially?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Yes. QR codes you create are yours to use in marketing, packaging, events or products with no attribution required.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white">
+  <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+    <p><strong class="text-slate-950">pratix.io</strong> — <span data-i18n="footerText">All QR codes are generated client-side in your browser.</span></p>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://www.pratix.io/" class="font-bold text-blue-700">pratix.io</a>
+      <a href="https://www.pratix.io/en/schema-generator" class="font-bold text-slate-700">Schema Generator</a>
+      <a href="https://www.pratix.io/en/pdf-editor" class="font-bold text-slate-700">PDF Editor</a>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="fixed bottom-5 left-1/2 z-50 hidden -translate-x-1/2 rounded-2xl bg-slate-950 px-5 py-3 text-sm font-black text-white shadow-2xl"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+(() => {
+  'use strict';
+  const LANGUAGES = ['en','tr','de','fr','es','it','nl','sv','da','no','fi','zh'];
+  const SLUGS = { en:'qr-code-generator', tr:'qr-kod-olusturucu', de:'qr-code-generator', fr:'generateur-de-qr-code', es:'generador-de-codigos-qr', it:'generatore-di-qr-code', nl:'qr-code-generator', sv:'qr-kod-generator', da:'qr-kode-generator', no:'qr-kode-generator', fi:'qr-koodigeneraattori', zh:'erwei-ma-shengchengqi' };
+  const T = {
+    en: { brandLine:'Practical Micro-SaaS Tools', allTools:'All tools', language:'Language', eyebrow:'Free QR code generator — no sign-up, runs in your browser', heroTitle:'QR Code Generator for Links, Text, Wi-Fi and vCards', heroDesc:'Create high-resolution QR codes for URLs, plain text, Wi-Fi networks and contact cards. Customize colors and size, then download PNG or SVG — everything is generated locally in your browser.', badge1:'PNG & SVG export', badge2:'Custom colors', badge3:'100% client-side', heroCardTitle:'Built for print and screens', heroCardDesc:'Export a crisp PNG for websites and slides, or a vector SVG that stays sharp on posters, packaging and business cards at any print size.', adTop:'Advertisement Space (Leaderboard)', formEyebrow:'Generator', formTitle:'Build your QR code', contentLabel:'QR content', contentPlaceholder:'https://example.com or any text…', sizeLabel:'Size (px)', marginLabel:'Quiet zone', eccLabel:'Error correction', eccL:'Low (7%)', eccM:'Medium (15%)', eccQ:'Quartile (25%)', eccH:'High (30%)', fgLabel:'Foreground', bgLabel:'Background', previewEyebrow:'Live preview', previewTitle:'Your QR code updates as you type', validBadge:'Ready', downloadPng:'Download PNG', downloadSvg:'Download SVG', tipsTitle:'Quick quality checklist', tip1:'Keep a quiet zone of at least 4 modules so scanners lock on quickly.', tip2:'Test the final code with two different phones before printing.', tip3:'Prefer high error correction when placing logos over the code.', featuresEyebrow:'Features', featuresTitle:'Why use this QR code generator', howEyebrow:'Step by step', howTitle:'How to create a QR code in three steps', faqEyebrow:'FAQ', faqTitle:'Frequently asked questions', footerText:'All QR codes are generated client-side in your browser.', errorEmpty:'Enter some content to generate a QR code.', errorTooLong:'Content is too long for a single QR code — shorten it or lower the error correction.', errorEngine:'QR engine failed to load. Check your connection and reload the page.', downloaded:'QR code downloaded.', copiedState:'QR code is ready.' },
+    tr: { brandLine:'Pratik Mikro-SaaS Araçları', allTools:'Tüm araçlar', language:'Dil', eyebrow:'Ücretsiz QR kod oluşturucu — kayıt yok, tarayıcınızda çalışır', heroTitle:'Link, Metin, Wi-Fi ve vCard için QR Kod Oluşturucu', heroDesc:'URL’ler, düz metin, Wi-Fi ağları ve iletişim kartları için yüksek çözünürlüklü QR kodlar oluşturun. Renk ve boyutu özelleştirin, PNG veya SVG indirin — her şey tarayıcınızda yerel olarak üretilir.', badge1:'PNG ve SVG dışa aktarma', badge2:'Özel renkler', badge3:'%100 istemci tarafı', heroCardTitle:'Baskı ve ekran için hazır', heroCardDesc:'Web siteleri ve sunumlar için keskin PNG; afiş, ambalaj ve kartvizitlerde her baskı boyutunda net kalan vektör SVG dışa aktarın.', adTop:'Reklam Alanı (Leaderboard)', formEyebrow:'Oluşturucu', formTitle:'QR kodunuzu oluşturun', contentLabel:'QR içeriği', contentPlaceholder:'https://example.com veya herhangi bir metin…', sizeLabel:'Boyut (px)', marginLabel:'Sessiz bölge', eccLabel:'Hata düzeltme', eccL:'Düşük (%7)', eccM:'Orta (%15)', eccQ:'Çeyrek (%25)', eccH:'Yüksek (%30)', fgLabel:'Ön plan', bgLabel:'Arka plan', previewEyebrow:'Canlı önizleme', previewTitle:'Yazdıkça güncellenen QR kodunuz', validBadge:'Hazır', downloadPng:'PNG indir', downloadSvg:'SVG indir', tipsTitle:'Hızlı kalite kontrol listesi', tip1:'Tarayıcıların hızlı kilitlenmesi için en az 4 modüllük sessiz bölge bırakın.', tip2:'Baskıdan önce son kodu iki farklı telefonla test edin.', tip3:'Kodun üzerine logo yerleştirirken yüksek hata düzeltmeyi tercih edin.', featuresEyebrow:'Özellikler', featuresTitle:'Bu QR kod oluşturucuyu neden kullanmalısınız', howEyebrow:'Adım adım', howTitle:'Üç adımda QR kod oluşturma', faqEyebrow:'SSS', faqTitle:'Sıkça sorulan sorular', footerText:'Tüm QR kodlar tarayıcınızda istemci tarafında üretilir.', errorEmpty:'QR kod oluşturmak için bir içerik girin.', errorTooLong:'İçerik tek bir QR kod için çok uzun — kısaltın veya hata düzeltmeyi düşürün.', errorEngine:'QR motoru yüklenemedi. Bağlantınızı kontrol edip sayfayı yenileyin.', downloaded:'QR kod indirildi.', copiedState:'QR kod hazır.' },
+    de: { brandLine:'Praktische Micro-SaaS-Tools', allTools:'Alle Tools', language:'Sprache', eyebrow:'Kostenloser QR-Code-Generator — ohne Anmeldung, direkt im Browser', heroTitle:'QR-Code-Generator für Links, Text, WLAN und vCards', heroDesc:'Erstellen Sie hochauflösende QR-Codes für URLs, Text, WLAN-Netzwerke und Kontaktkarten. Passen Sie Farben und Größe an und laden Sie PNG oder SVG herunter — alles wird lokal in Ihrem Browser erzeugt.', badge1:'PNG- & SVG-Export', badge2:'Individuelle Farben', badge3:'100% clientseitig', heroCardTitle:'Für Druck und Bildschirm gebaut', heroCardDesc:'Exportieren Sie ein scharfes PNG für Websites und Präsentationen oder ein Vektor-SVG, das auf Postern, Verpackungen und Visitenkarten in jeder Druckgröße sauber bleibt.', adTop:'Werbefläche (Leaderboard)', formEyebrow:'Generator', formTitle:'Ihren QR-Code erstellen', contentLabel:'QR-Inhalt', contentPlaceholder:'https://example.com oder beliebiger Text…', sizeLabel:'Größe (px)', marginLabel:'Ruhezone', eccLabel:'Fehlerkorrektur', eccL:'Niedrig (7%)', eccM:'Mittel (15%)', eccQ:'Quartil (25%)', eccH:'Hoch (30%)', fgLabel:'Vordergrund', bgLabel:'Hintergrund', previewEyebrow:'Live-Vorschau', previewTitle:'Ihr QR-Code aktualisiert sich beim Tippen', validBadge:'Bereit', downloadPng:'PNG herunterladen', downloadSvg:'SVG herunterladen', tipsTitle:'Kurze Qualitätscheckliste', tip1:'Lassen Sie eine Ruhezone von mindestens 4 Modulen, damit Scanner schnell erkennen.', tip2:'Testen Sie den finalen Code vor dem Druck mit zwei verschiedenen Handys.', tip3:'Bevorzugen Sie hohe Fehlerkorrektur, wenn Sie Logos über den Code legen.', featuresEyebrow:'Funktionen', featuresTitle:'Warum diesen QR-Code-Generator nutzen', howEyebrow:'Schritt für Schritt', howTitle:'So erstellen Sie in drei Schritten einen QR-Code', faqEyebrow:'FAQ', faqTitle:'Häufig gestellte Fragen', footerText:'Alle QR-Codes werden clientseitig in Ihrem Browser erzeugt.', errorEmpty:'Geben Sie Inhalt ein, um einen QR-Code zu erzeugen.', errorTooLong:'Der Inhalt ist zu lang für einen einzelnen QR-Code — kürzen Sie ihn oder senken Sie die Fehlerkorrektur.', errorEngine:'QR-Engine konnte nicht geladen werden. Prüfen Sie Ihre Verbindung und laden Sie neu.', downloaded:'QR-Code heruntergeladen.', copiedState:'QR-Code ist bereit.' },
+    fr: { brandLine:'Outils Micro-SaaS pratiques', allTools:'Tous les outils', language:'Langue', eyebrow:'Générateur de QR code gratuit — sans inscription, dans votre navigateur', heroTitle:'Générateur de QR code pour liens, texte, Wi-Fi et vCards', heroDesc:'Créez des QR codes haute résolution pour URL, texte, réseaux Wi-Fi et cartes de visite. Personnalisez les couleurs et la taille, puis téléchargez en PNG ou SVG — tout est généré localement dans votre navigateur.', badge1:'Export PNG & SVG', badge2:'Couleurs personnalisées', badge3:'100% côté client', heroCardTitle:'Conçu pour l’impression et l’écran', heroCardDesc:'Exportez un PNG net pour les sites et présentations, ou un SVG vectoriel qui reste net sur affiches, emballages et cartes de visite à toute taille d’impression.', adTop:'Espace publicitaire (Leaderboard)', formEyebrow:'Générateur', formTitle:'Créez votre QR code', contentLabel:'Contenu du QR code', contentPlaceholder:'https://example.com ou tout texte…', sizeLabel:'Taille (px)', marginLabel:'Zone calme', eccLabel:'Correction d’erreur', eccL:'Faible (7%)', eccM:'Moyenne (15%)', eccQ:'Quartile (25%)', eccH:'Élevée (30%)', fgLabel:'Premier plan', bgLabel:'Arrière-plan', previewEyebrow:'Aperçu en direct', previewTitle:'Votre QR code se met à jour en temps réel', validBadge:'Prêt', downloadPng:'Télécharger PNG', downloadSvg:'Télécharger SVG', tipsTitle:'Liste de contrôle qualité', tip1:'Gardez une zone calme d’au moins 4 modules pour un scan rapide.', tip2:'Testez le code final avec deux téléphones différents avant d’imprimer.', tip3:'Préférez une correction d’erreur élevée si vous placez un logo sur le code.', featuresEyebrow:'Fonctionnalités', featuresTitle:'Pourquoi utiliser ce générateur de QR code', howEyebrow:'Étape par étape', howTitle:'Créer un QR code en trois étapes', faqEyebrow:'FAQ', faqTitle:'Questions fréquentes', footerText:'Tous les QR codes sont générés côté client dans votre navigateur.', errorEmpty:'Saisissez du contenu pour générer un QR code.', errorTooLong:'Le contenu est trop long pour un seul QR code — raccourcissez-le ou réduisez la correction d’erreur.', errorEngine:'Le moteur QR n’a pas pu charger. Vérifiez votre connexion et rechargez la page.', downloaded:'QR code téléchargé.', copiedState:'Le QR code est prêt.' },
+    es: { brandLine:'Herramientas Micro-SaaS prácticas', allTools:'Todas las herramientas', language:'Idioma', eyebrow:'Generador de códigos QR gratis — sin registro, en tu navegador', heroTitle:'Generador de códigos QR para enlaces, texto, Wi-Fi y vCards', heroDesc:'Crea códigos QR de alta resolución para URL, texto, redes Wi-Fi y tarjetas de contacto. Personaliza colores y tamaño y descarga en PNG o SVG — todo se genera localmente en tu navegador.', badge1:'Exportación PNG y SVG', badge2:'Colores personalizados', badge3:'100% del lado del cliente', heroCardTitle:'Preparado para impresión y pantalla', heroCardDesc:'Exporta un PNG nítido para webs y presentaciones, o un SVG vectorial que se mantiene nítido en pósters, embalajes y tarjetas a cualquier tamaño de impresión.', adTop:'Espacio publicitario (Leaderboard)', formEyebrow:'Generador', formTitle:'Crea tu código QR', contentLabel:'Contenido del QR', contentPlaceholder:'https://example.com o cualquier texto…', sizeLabel:'Tamaño (px)', marginLabel:'Zona silenciosa', eccLabel:'Corrección de errores', eccL:'Baja (7%)', eccM:'Media (15%)', eccQ:'Cuartil (25%)', eccH:'Alta (30%)', fgLabel:'Primer plano', bgLabel:'Fondo', previewEyebrow:'Vista previa', previewTitle:'Tu código QR se actualiza mientras escribes', validBadge:'Listo', downloadPng:'Descargar PNG', downloadSvg:'Descargar SVG', tipsTitle:'Lista de control de calidad', tip1:'Deja una zona silenciosa de al menos 4 módulos para un escaneo rápido.', tip2:'Prueba el código final con dos teléfonos distintos antes de imprimir.', tip3:'Prefiere una corrección de errores alta si colocas un logo sobre el código.', featuresEyebrow:'Funciones', featuresTitle:'Por qué usar este generador de códigos QR', howEyebrow:'Paso a paso', howTitle:'Cómo crear un código QR en tres pasos', faqEyebrow:'FAQ', faqTitle:'Preguntas frecuentes', footerText:'Todos los códigos QR se generan en tu navegador, del lado del cliente.', errorEmpty:'Introduce contenido para generar un código QR.', errorTooLong:'El contenido es demasiado largo para un solo código QR — acórtalo o reduce la corrección de errores.', errorEngine:'El motor QR no se pudo cargar. Comprueba tu conexión y recarga la página.', downloaded:'Código QR descargado.', copiedState:'El código QR está listo.' },
+    it: { brandLine:'Strumenti Micro-SaaS pratici', allTools:'Tutti gli strumenti', language:'Lingua', eyebrow:'Generatore di QR code gratuito — senza registrazione, nel tuo browser', heroTitle:'Generatore di QR code per link, testo, Wi-Fi e vCard', heroDesc:'Crea QR code ad alta risoluzione per URL, testo, reti Wi-Fi e biglietti da visita. Personalizza colori e dimensioni, poi scarica in PNG o SVG — tutto generato localmente nel tuo browser.', badge1:'Esportazione PNG e SVG', badge2:'Colori personalizzati', badge3:'100% lato client', heroCardTitle:'Pensato per stampa e schermi', heroCardDesc:'Esporta un PNG nitido per siti e presentazioni, o un SVG vettoriale che resta nitido su poster, packaging e biglietti a qualsiasi dimensione di stampa.', adTop:'Spazio pubblicitario (Leaderboard)', formEyebrow:'Generatore', formTitle:'Crea il tuo QR code', contentLabel:'Contenuto del QR code', contentPlaceholder:'https://example.com o qualsiasi testo…', sizeLabel:'Dimensione (px)', marginLabel:'Zona silenziosa', eccLabel:'Correzione errori', eccL:'Bassa (7%)', eccM:'Media (15%)', eccQ:'Quartile (25%)', eccH:'Alta (30%)', fgLabel:'Primo piano', bgLabel:'Sfondo', previewEyebrow:'Anteprima live', previewTitle:'Il tuo QR code si aggiorna mentre digiti', validBadge:'Pronto', downloadPng:'Scarica PNG', downloadSvg:'Scarica SVG', tipsTitle:'Checklist di qualità rapida', tip1:'Mantieni una zona silenziosa di almeno 4 moduli per una lettura rapida.', tip2:'Prova il codice finale con due telefoni diversi prima di stampare.', tip3:'Preferisci una correzione errori alta se sovrapponi un logo al codice.', featuresEyebrow:'Funzionalità', featuresTitle:'Perché usare questo generatore di QR code', howEyebrow:'Passo per passo', howTitle:'Come creare un QR code in tre passaggi', faqEyebrow:'FAQ', faqTitle:'Domande frequenti', footerText:'Tutti i QR code vengono generati lato client nel tuo browser.', errorEmpty:'Inserisci del contenuto per generare un QR code.', errorTooLong:'Il contenuto è troppo lungo per un singolo QR code — accorcialo o riduci la correzione errori.', errorEngine:'Impossibile caricare il motore QR. Controlla la connessione e ricarica la pagina.', downloaded:'QR code scaricato.', copiedState:'Il QR code è pronto.' },
+    nl: { brandLine:'Praktische Micro-SaaS tools', allTools:'Alle tools', language:'Taal', eyebrow:'Gratis QR-codegenerator — zonder account, in je browser', heroTitle:'QR-codegenerator voor links, tekst, wifi en vCards', heroDesc:'Maak QR-codes met hoge resolutie voor URL’s, tekst, wifinetwerken en contactkaarten. Pas kleuren en grootte aan en download PNG of SVG — alles wordt lokaal in je browser gegenereerd.', badge1:'PNG- & SVG-export', badge2:'Aangepaste kleuren', badge3:'100% client-side', heroCardTitle:'Gemaakt voor drukwerk en scherm', heroCardDesc:'Exporteer een scherp PNG voor websites en presentaties, of een vector-SVG die scherp blijft op posters, verpakkingen en visitekaartjes op elke drukformaat.', adTop:'Advertentieruimte (Leaderboard)', formEyebrow:'Generator', formTitle:'Maak je QR-code', contentLabel:'QR-inhoud', contentPlaceholder:'https://example.com of willekeurige tekst…', sizeLabel:'Grootte (px)', marginLabel:'Stille zone', eccLabel:'Foutcorrectie', eccL:'Laag (7%)', eccM:'Gemiddeld (15%)', eccQ:'Kwartiel (25%)', eccH:'Hoog (30%)', fgLabel:'Voorgrond', bgLabel:'Achtergrond', previewEyebrow:'Live voorbeeld', previewTitle:'Je QR-code wordt bijgewerkt terwijl je typt', validBadge:'Gereed', downloadPng:'PNG downloaden', downloadSvg:'SVG downloaden', tipsTitle:'Snelle kwaliteitschecklist', tip1:'Houd een stille zone van minimaal 4 modules aan zodat scanners snel vergrendelen.', tip2:'Test de definitieve code met twee verschillende telefoons voordat je drukt.', tip3:'Gebruik hoge foutcorrectie als je een logo over de code plaatst.', featuresEyebrow:'Functies', featuresTitle:'Waarom deze QR-codegenerator gebruiken', howEyebrow:'Stap voor stap', howTitle:'Zo maak je in drie stappen een QR-code', faqEyebrow:'FAQ', faqTitle:'Veelgestelde vragen', footerText:'Alle QR-codes worden client-side in je browser gegenereerd.', errorEmpty:'Voer inhoud in om een QR-code te genereren.', errorTooLong:'De inhoud is te lang voor één QR-code — verkort deze of verlaag de foutcorrectie.', errorEngine:'De QR-engine kon niet laden. Controleer je verbinding en herlaad de pagina.', downloaded:'QR-code gedownload.', copiedState:'De QR-code is klaar.' },
+    sv: { brandLine:'Praktiska Micro-SaaS-verktyg', allTools:'Alla verktyg', language:'Språk', eyebrow:'Gratis QR-kodsgenerator — inget konto, i din webbläsare', heroTitle:'QR-kodsgenerator för länkar, text, Wi-Fi och vCards', heroDesc:'Skapa QR-koder i hög upplösning för URL:er, text, Wi-Fi-nätverk och kontaktkort. Anpassa färger och storlek och ladda ner PNG eller SVG — allt genereras lokalt i din webbläsare.', badge1:'PNG- & SVG-export', badge2:'Egna färger', badge3:'100% på klientsidan', heroCardTitle:'Byggd för print och skärm', heroCardDesc:'Exportera ett skarpt PNG för webbplatser och presentationer, eller en vektor-SVG som förblir skarp på affischer, förpackningar och visitkort i valfri utskriftsstorlek.', adTop:'Annonsyta (Leaderboard)', formEyebrow:'Generator', formTitle:'Skapa din QR-kod', contentLabel:'QR-innehåll', contentPlaceholder:'https://example.com eller valfri text…', sizeLabel:'Storlek (px)', marginLabel:'Tyst zon', eccLabel:'Felkorrigering', eccL:'Låg (7%)', eccM:'Medel (15%)', eccQ:'Kvartil (25%)', eccH:'Hög (30%)', fgLabel:'Förgrund', bgLabel:'Bakgrund', previewEyebrow:'Live-förhandsvisning', previewTitle:'Din QR-kod uppdateras medan du skriver', validBadge:'Klar', downloadPng:'Ladda ner PNG', downloadSvg:'Ladda ner SVG', tipsTitle:'Snabb kvalitetschecklista', tip1:'Behåll en tyst zon på minst 4 moduler så att skannrar låser snabbt.', tip2:'Testa den slutliga koden med två olika telefoner innan du skriver ut.', tip3:'Föredra hög felkorrigering när du lägger logotyper över koden.', featuresEyebrow:'Funktioner', featuresTitle:'Varför använda denna QR-kodsgenerator', howEyebrow:'Steg för steg', howTitle:'Skapa en QR-kod i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanliga frågor', footerText:'Alla QR-koder genereras på klientsidan i din webbläsare.', errorEmpty:'Ange innehåll för att generera en QR-kod.', errorTooLong:'Innehållet är för långt för en enda QR-kod — förkorta det eller sänk felkorrigeringen.', errorEngine:'QR-motorn kunde inte laddas. Kontrollera din anslutning och ladda om sidan.', downloaded:'QR-kod nedladdad.', copiedState:'QR-koden är klar.' },
+    da: { brandLine:'Praktiske Micro-SaaS-værktøjer', allTools:'Alle værktøjer', language:'Sprog', eyebrow:'Gratis QR-kodegenerator — ingen tilmelding, i din browser', heroTitle:'QR-kodegenerator til links, tekst, Wi-Fi og vCards', heroDesc:'Opret QR-koder i høj opløsning til URL’er, tekst, Wi-Fi-netværk og kontaktkort. Tilpas farver og størrelse, og download PNG eller SVG — alt genereres lokalt i din browser.', badge1:'PNG- & SVG-eksport', badge2:'Brugerdefinerede farver', badge3:'100% på klientsiden', heroCardTitle:'Bygget til print og skærm', heroCardDesc:'Eksportér et skarpt PNG til hjemmesider og præsentationer, eller en vektor-SVG, der forbliver skarp på plakater, emballage og visitkort i enhver trykstørrelse.', adTop:'Annonceplads (Leaderboard)', formEyebrow:'Generator', formTitle:'Opret din QR-kode', contentLabel:'QR-indhold', contentPlaceholder:'https://example.com eller vilkårlig tekst…', sizeLabel:'Størrelse (px)', marginLabel:'Stille zone', eccLabel:'Fejlkorrektion', eccL:'Lav (7%)', eccM:'Mellem (15%)', eccQ:'Kvartil (25%)', eccH:'Høj (30%)', fgLabel:'Forgrund', bgLabel:'Baggrund', previewEyebrow:'Live forhåndsvisning', previewTitle:'Din QR-kode opdateres, mens du skriver', validBadge:'Klar', downloadPng:'Download PNG', downloadSvg:'Download SVG', tipsTitle:'Hurtig kvalitetstjekliste', tip1:'Hold en stille zone på mindst 4 moduler, så scannere låser hurtigt.', tip2:'Test den endelige kode med to forskellige telefoner, før du printer.', tip3:'Foretræk høj fejlkorrektion, når du placerer logoer over koden.', featuresEyebrow:'Funktioner', featuresTitle:'Hvorfor bruge denne QR-kodegenerator', howEyebrow:'Trin for trin', howTitle:'Sådan opretter du en QR-kode i tre trin', faqEyebrow:'FAQ', faqTitle:'Ofte stillede spørgsmål', footerText:'Alle QR-koder genereres på klientsiden i din browser.', errorEmpty:'Indhold noget indhold for at generere en QR-kode.', errorTooLong:'Indholdet er for langt til en enkelt QR-kode — forkort det eller sænk fejlkorrektionen.', errorEngine:'QR-motoren kunne ikke indlæses. Tjek din forbindelse og genindlæs siden.', downloaded:'QR-kode downloadet.', copiedState:'QR-koden er klar.' },
+    no: { brandLine:'Praktiske Micro-SaaS-verktøy', allTools:'Alle verktøy', language:'Språk', eyebrow:'Gratis QR-kodegenerator — ingen registrering, i nettleseren din', heroTitle:'QR-kodegenerator for lenker, tekst, Wi-Fi og vCards', heroDesc:'Lag QR-koder i høy oppløsning for URL-er, tekst, Wi-Fi-nettverk og kontaktkort. Tilpass farger og størrelse, og last ned PNG eller SVG — alt genereres lokalt i nettleseren din.', badge1:'PNG- og SVG-eksport', badge2:'Egendefinerte farger', badge3:'100% på klientsiden', heroCardTitle:'Bygget for print og skjerm', heroCardDesc:'Eksporter et skarpt PNG for nettsider og presentasjoner, eller en vektor-SVG som forblir skarp på plakater, emballasje og visitkort i alle utskriftsstørrelser.', adTop:'Annonseplass (Leaderboard)', formEyebrow:'Generator', formTitle:'Lag QR-koden din', contentLabel:'QR-innhold', contentPlaceholder:'https://example.com eller vilkårlig tekst…', sizeLabel:'Størrelse (px)', marginLabel:'Stille sone', eccLabel:'Feilkorreksjon', eccL:'Lav (7%)', eccM:'Middels (15%)', eccQ:'Kvartil (25%)', eccH:'Høy (30%)', fgLabel:'Forgrunn', bgLabel:'Bakgrunn', previewEyebrow:'Forhåndsvisning', previewTitle:'QR-koden din oppdateres mens du skriver', validBadge:'Klar', downloadPng:'Last ned PNG', downloadSvg:'Last ned SVG', tipsTitle:'Rask kvalitetssjekkliste', tip1:'Behold en stille sone på minst 4 moduler slik at skannere låser raskt.', tip2:'Test den endelige koden med to forskellige telefoner før utskrift.', tip3:'Bruk høy feilkorreksjon når du plasserer logoer over koden.', featuresEyebrow:'Funksjoner', featuresTitle:'Hvorfor bruke denne QR-kodegeneratoren', howEyebrow:'Steg for steg', howTitle:'Slik lager du en QR-kode i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanlige spørsmål', footerText:'Alle QR-koder genereres på klientsiden i nettleseren din.', errorEmpty:'Skriv inn innhold for å generere en QR-kode.', errorTooLong:'Innholdet er for langt for én QR-kode — kort det ned eller senk feilkorreksjonen.', errorEngine:'QR-motoren kunne ikke lastes. Sjekk tilkoblingen og last siden på nytt.', downloaded:'QR-kode nedlastet.', copiedState:'QR-koden er klar.' },
+    fi: { brandLine:'Käytännöllisiä Micro-SaaS-työkaluja', allTools:'Kaikki työkalut', language:'Kieli', eyebrow:'Ilmainen QR-koodigeneraattori — ei rekisteröitymistä, selaimessasi', heroTitle:'QR-koodigeneraattori linkeille, tekstille, Wi-Fi:lle ja vKorteille', heroDesc:'Luo korkean resoluution QR-koodeja URL-osoitteille, tekstille, Wi-Fi-verkoille ja yhteystiedoille. Mukauta värit ja koko ja lataa PNG tai SVG — kaikki luodaan paikallisesti selaimessasi.', badge1:'PNG- ja SVG-vienti', badge2:'Mukautetut värit', badge3:'100 % asiakaspuolella', heroCardTitle:'Suunniteltu tulosteille ja näytöille', heroCardDesc:'Vie terävä PNG verkkosivuille ja esityksiin tai vektorinen SVG, joka pysyy terävänä julisteissa, pakkauksissa ja käyntikorteissa missä tahansa tulostekoossa.', adTop:'Mainostila (Leaderboard)', formEyebrow:'Generaattori', formTitle:'Luo QR-koodisi', contentLabel:'QR-sisältö', contentPlaceholder:'https://example.com tai mikä tahansa teksti…', sizeLabel:'Koko (px)', marginLabel:'Hiljainen alue', eccLabel:'Virheenkorjaus', eccL:'Matala (7 %)', eccM:'Keskitaso (15 %)', eccQ:'Kvartiili (25 %)', eccH:'Korkea (30 %)', fgLabel:'Etuala', bgLabel:'Tausta', previewEyebrow:'Live-esikatselu', previewTitle:'QR-koodisi päivittyy kirjoittaessasi', validBadge:'Valmis', downloadPng:'Lataa PNG', downloadSvg:'Lataa SVG', tipsTitle:'Nopea laatu tarkistuslista', tip1:'Pidä vähintään 4 moduulin hiljainen alue, jotta lukijat lukitsevat nopeasti.', tip2:'Testaa lopullinen koodilla kahdella eri puhelimella ennen tulostusta.', tip3:'Suosi korkeaa virheenkorjausta, kun lisäät logoja koodin päälle.', featuresEyebrow:'Ominaisuudet', featuresTitle:'Miksi käyttää tätä QR-koodigeneraattoria', howEyebrow:'Vaihe vaiheelta', howTitle:'Näin luot QR-koodin kolmessa vaiheessa', faqEyebrow:'UKK', faqTitle:'Usein kysytyt kysymykset', footerText:'Kaikki QR-koodit luodaan asiakaspuolella selaimessasi.', errorEmpty:'Syötä sisältöä QR-koodin luomiseksi.', errorTooLong:'Sisältö on liian pitkä yhteen QR-koodiin — lyennä sitä tai laske virheenkorjausta.', errorEngine:'QR-moottoria ei voitu ladata. Tarkista yhteys ja lataa sivu uudelleen.', downloaded:'QR-koodi ladattu.', copiedState:'QR-koodi on valmis.' },
+    zh: { brandLine:'实用 Micro-SaaS 工具', allTools:'所有工具', language:'语言', eyebrow:'免费二维码生成器 — 无需注册，在浏览器中运行', heroTitle:'链接、文本、Wi-Fi 和名片的二维码生成器', heroDesc:'为网址、纯文本、Wi-Fi 网络和联系人名片创建高分辨率二维码。自定义颜色和尺寸，然后下载 PNG 或 SVG — 一切都在您的浏览器本地生成。', badge1:'PNG 和 SVG 导出', badge2:'自定义颜色', badge3:'100% 客户端运行', heroCardTitle:'为印刷和屏幕而生', heroCardDesc:'为网站和演示文稿导出清晰的 PNG，或导出矢量 SVG — 在海报、包装和名片上以任何印刷尺寸都保持清晰。', adTop:'广告位（Leaderboard）', formEyebrow:'生成器', formTitle:'创建您的二维码', contentLabel:'二维码内容', contentPlaceholder:'https://example.com 或任意文本…', sizeLabel:'尺寸（px）', marginLabel:'静区', eccLabel:'纠错级别', eccL:'低（7%）', eccM:'中（15%）', eccQ:'四分之一（25%）', eccH:'高（30%）', fgLabel:'前景色', bgLabel:'背景色', previewEyebrow:'实时预览', previewTitle:'二维码随输入实时更新', validBadge:'就绪', downloadPng:'下载 PNG', downloadSvg:'下载 SVG', tipsTitle:'快速质量检查清单', tip1:'保留至少 4 个模块的静区，以便扫描仪快速锁定。', tip2:'打印前用两部不同的手机测试最终二维码。', tip3:'在二维码上放置 logo 时，建议使用高纠错级别。', featuresEyebrow:'功能', featuresTitle:'为什么使用这款二维码生成器', howEyebrow:'分步指南', howTitle:'三步创建二维码', faqEyebrow:'常见问题', faqTitle:'常见问题解答', footerText:'所有二维码均在您的浏览器客户端生成。', errorEmpty:'请输入内容以生成二维码。', errorTooLong:'内容对于单个二维码来说太长 — 请缩短内容或降低纠错级别。', errorEngine:'二维码引擎加载失败。请检查网络连接并刷新页面。', downloaded:'二维码已下载。', copiedState:'二维码已就绪。' }
+  };
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' }[c]));
+
+  function routeLanguage() {
+    const first = window.location.pathname.split('/').filter(Boolean)[0];
+    return LANGUAGES.includes(first) ? first : 'en';
+  }
+  let lang = routeLanguage() || new URLSearchParams(window.location.search).get('lang') || localStorage.getItem('qrPratixLang') || 'en';
+  if (!LANGUAGES.includes(lang)) lang = 'en';
+
+  const t = (key) => (T[lang] && T[lang][key]) ?? T.en[key] ?? key;
+
+  function applyI18n() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+    $('languageSelect').value = lang;
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = $('toast');
+    el.textContent = msg;
+    el.classList.remove('hidden');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.add('hidden'), 2200);
+  }
+
+  function qrMatrix(content, ecc) {
+    if (typeof qrcode !== 'function') throw new Error('ENGINE');
+    const qr = qrcode(0, ecc);
+    qr.addData(content, 'Byte');
+    qr.make();
+    return qr;
+  }
+
+  function buildSvg(qr, size, margin, fg, bg) {
+    const count = qr.getModuleCount();
+    const total = count + margin * 2;
+    const cell = size / total;
+    let path = '';
+    for (let r = 0; r < count; r += 1) {
+      for (let c = 0; c < count; c += 1) {
+        if (qr.isDark(r, c)) path += `M${(c + margin) * cell} ${(r + margin) * cell}h${cell}v${cell}h-${cell}z`;
+      }
+    }
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" shape-rendering="crispEdges"><rect width="${size}" height="${size}" fill="${esc(bg)}"/><path d="${path}" fill="${esc(fg)}"/></svg>`;
+  }
+
+  let lastSvg = '';
+  function render() {
+    const content = $('contentInput').value.trim();
+    const size = Number($('sizeSelect').value);
+    const margin = Number($('marginSelect').value);
+    const ecc = $('eccSelect').value;
+    const fg = $('fgColor').value;
+    const bg = $('bgColor').value;
+    const canvas = $('qrCanvas');
+    const errorEl = $('qrError');
+    const badge = $('validBadge');
+    errorEl.classList.add('hidden');
+    lastSvg = '';
+    if (!content) {
+      badge.textContent = t('validBadge');
+      badge.className = 'rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-black text-emerald-600';
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = bg; ctx.fillRect(0, 0, canvas.width, canvas.height);
+      return;
+    }
+    try {
+      const qr = qrMatrix(content, ecc);
+      lastSvg = buildSvg(qr, size, margin, fg, bg);
+      const img = new Image();
+      img.onload = () => {
+        canvas.width = size; canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = bg; ctx.fillRect(0, 0, size, size);
+        ctx.drawImage(img, 0, 0);
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(lastSvg);
+      badge.textContent = t('copiedState');
+      badge.className = 'rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-black text-emerald-600';
+    } catch (err) {
+      const message = err && err.message === 'ENGINE' ? t('errorEngine') : (String(err && err.message || err).includes('code length') ? t('errorTooLong') : t('errorTooLong'));
+      errorEl.textContent = message;
+      errorEl.classList.remove('hidden');
+      badge.textContent = '!';
+      badge.className = 'rounded-full bg-red-400/15 px-3 py-1 text-xs font-black text-red-600';
+    }
+  }
+
+  function triggerDownload(href, filename) {
+    const a = document.createElement('a');
+    a.href = href; a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+  }
+
+  function downloadPng() {
+    const content = $('contentInput').value.trim();
+    if (!content || !lastSvg) { toast(t('errorEmpty')); return; }
+    const size = Number($('sizeSelect').value);
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = size; canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+      triggerDownload(canvas.toDataURL('image/png'), 'pratix-qr-code.png');
+      toast(t('downloaded'));
+    };
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(lastSvg);
+  }
+
+  function downloadSvg() {
+    if (!lastSvg) { toast(t('errorEmpty')); return; }
+    const blob = new Blob([lastSvg], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    triggerDownload(url, 'pratix-qr-code.svg');
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast(t('downloaded'));
+  }
+
+  $('languageSelect').addEventListener('change', (e) => {
+    lang = e.target.value;
+    localStorage.setItem('qrPratixLang', lang);
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length && LANGUAGES.includes(segments[0])) {
+      segments[0] = lang;
+      segments[1] = SLUGS[lang];
+      window.history.replaceState(null, '', '/' + segments.join('/') + '/');
+    }
+    applyI18n();
+    render();
+  });
+  ['contentInput', 'sizeSelect', 'marginSelect', 'eccSelect', 'fgColor', 'bgColor'].forEach((id) => {
+    $(id).addEventListener('input', render);
+    $(id).addEventListener('change', render);
+  });
+  $('downloadPng').addEventListener('click', downloadPng);
+  $('downloadSvg').addEventListener('click', downloadSvg);
+  $('qrForm').addEventListener('submit', (e) => { e.preventDefault(); render(); });
+
+  applyI18n();
+  render();
+})();
+</script>
+</body>
+</html>

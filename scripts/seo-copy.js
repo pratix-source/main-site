@@ -20,6 +20,20 @@ const TITLE_OVERRIDES = {
     fi: 'Ilmainen Skeemageneraattori — JSON-LD',
     zh: '免费 Schema 生成器 — JSON-LD 结构化数据',
   },
+  'qr-code-generator': {
+    en: 'Free QR Code Generator — Links, Wi-Fi, vCard',
+    tr: 'Ücretsiz QR Kod Oluşturucu — Link, Wi-Fi, vCard',
+    de: 'Kostenloser QR-Code-Generator — WLAN, vCard',
+    fr: 'Générateur de QR Code Gratuit — Lien, Wi-Fi',
+    es: 'Generador de Códigos QR Gratis — Wi-Fi, vCard',
+    it: 'Generatore di QR Code Gratuito — Wi-Fi, vCard',
+    nl: 'Gratis QR-codegenerator — Link, Wifi, vCard',
+    sv: 'Gratis QR-kodsgenerator — Länk, Wi-Fi, vCard',
+    da: 'Gratis QR-kodegenerator — Link, Wi-Fi, vCard',
+    no: 'Gratis QR-kodegenerator — Lenke, Wi-Fi, vCard',
+    fi: 'Ilmainen QR-koodigeneraattori — Linkki, Wi-Fi',
+    zh: '免费二维码生成器 — 链接、Wi-Fi、名片',
+  },
 };
 
 const DESCRIPTION_SUFFIXES = {
@@ -66,6 +80,20 @@ const DESCRIPTION_OVERRIDES = {
     no: 'JSON-LD skjemagenerator for strukturerte data: lag gyldig markup for rich results direkte i nettleseren, uten registrering eller opplasting.',
     fi: 'JSON-LD skeemageneraattori rakenteiselle datalle: luo kelvollinen merkintä rich results -tuloksiin suoraan selaimessa ilman rekisteröitymistä.',
     zh: '免费的 JSON-LD Schema 生成器：在浏览器中为结构化数据生成有效标记，助力 Google 搜索富结果展示，无需注册、无需上传文件，适合 Shopify、WooCommerce、Webflow、Wix、Squarespace 与 Magento 等平台的站长与开发者，即开即用。',
+  },
+  'qr-code-generator': {
+    en: 'Create custom QR codes for URLs, text, Wi-Fi and contact cards in your browser. Choose colors and size, then download print-ready PNG or SVG files.',
+    tr: 'URL, metin, Wi-Fi ve iletişim kartları için tarayıcınızda özel QR kodlar oluşturun. Renk ve boyut seçin, baskıya hazır PNG veya SVG olarak indirin.',
+    de: 'Erstellen Sie individuelle QR-Codes für URLs, Text, WLAN und Kontaktkarten direkt im Browser. Farben und Größe wählen und als PNG oder SVG herunterladen.',
+    fr: 'Créez des QR codes personnalisés pour URL, texte, Wi-Fi et cartes de visite dans votre navigateur. Choisissez couleurs et taille, exportez en PNG ou SVG.',
+    es: 'Crea códigos QR personalizados para URL, texto, Wi-Fi y tarjetas de contacto en tu navegador. Elige colores y tamaño y descarga en PNG o SVG para impresión.',
+    it: 'Crea QR code personalizzati per URL, testo, Wi-Fi e biglietti da visita nel browser. Scegli colori e dimensioni e scarica in PNG o SVG pronto per la stampa.',
+    nl: "Maak aangepaste QR-codes voor URL's, tekst, wifi en contactkaarten in je browser. Kies kleuren en grootte en download drukklare PNG- of SVG-bestanden.",
+    sv: 'Skapa anpassade QR-koder för URL:er, text, Wi-Fi och kontaktkort i webbläsaren. Välj färger och storlek och ladda ner utskriftsklara PNG- eller SVG-filer.',
+    da: "Opret brugerdefinerede QR-koder til URL'er, tekst, Wi-Fi og kontaktkort i browseren. Vælg farver og størrelse og download printklare PNG- eller SVG-filer.",
+    no: 'Lag egendefinerte QR-koder for URL-er, tekst, Wi-Fi og kontaktkort i nettleseren. Velg farger og størrelse og last ned utskriftsklare PNG- eller SVG-filer.',
+    fi: 'Luo mukautettuja QR-koodeja linkkejä, tekstiä, Wi-Fi-yhteyksiä ja yhteystietoja varten selaimessa. Valitse värit ja koko ja lataa painovalmis PNG tai SVG.',
+    zh: '在浏览器中为网址、文本、Wi-Fi 和联系人名片创建自定义二维码，自由调整颜色与尺寸，导出高清 PNG 或矢量 SVG，适用于海报、包装与名片印刷，无需注册，内容不上传服务器。',
   },
 };
 
