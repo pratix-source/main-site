@@ -1660,6 +1660,102 @@
       "destination": "/tools/llms-txt-generator.html"
     },
     {
+      "source": "/en/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/en/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/tr/robots-txt-olusturucu",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/tr/robots-txt-olusturucu/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/de/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/de/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/fr/generateur-robots-txt",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/fr/generateur-robots-txt/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/es/generador-robots-txt",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/es/generador-robots-txt/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/it/generatore-robots-txt",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/it/generatore-robots-txt/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/nl/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/nl/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/sv/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/sv/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/da/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/da/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/no/robots-txt-generator",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/no/robots-txt-generator/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/fi/robots-txt-generaattori",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/fi/robots-txt-generaattori/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/zh/robots-wenjian-shengchengqi",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
+      "source": "/zh/robots-wenjian-shengchengqi/",
+      "destination": "/tools/robots-txt-generator.html"
+    },
+    {
       "source": "/tr/qr-kod-olusturucu",
       "destination": "/tools/qr-code-generator.html"
     },

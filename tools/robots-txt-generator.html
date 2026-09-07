@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free Robots.txt Generator for AI Bots | Pratix.io</title>
+<meta name="description" content="Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live, then copy or download." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Pratix.io" />
+<link rel="canonical" href="https://www.pratix.io/en/robots-txt-generator" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pratix.io" />
+<meta property="og:title" content="Free Robots.txt Generator for AI Bots | Pratix.io" />
+<meta property="og:description" content="Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live, then copy or download." />
+<meta property="og:url" content="https://www.pratix.io/en/robots-txt-generator" />
+<meta property="og:locale" content="en" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Free Robots.txt Generator for AI Bots | Pratix.io" />
+<meta name="twitter:description" content="Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live, then copy or download." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/pratix-standard.css" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { width: auto !important; margin-inline: 0 !important; }
+  h1[data-i18n="heroTitle"] { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.02; overflow-wrap: anywhere; }
+  .robots-output { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+  @media (max-width: 640px) { h1[data-i18n="heroTitle"] { font-size: clamp(1.9rem, 9vw, 2.6rem); } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a robots.txt file?","acceptedAnswer":{"@type":"Answer","text":"A robots.txt file is a plain text file at your domain root that tells crawlers which parts of your site they may access. AI bots and search engines read it before fetching your pages."}},{"@type":"Question","name":"How do I block AI bots from training on my content?","acceptedAnswer":{"@type":"Answer","text":"Add Disallow: / rules for AI training crawlers such as GPTBot, CCBot, Google-Extended, Bytespider and Applebot-Extended. This generator writes those rules for you in one click."}},{"@type":"Question","name":"Does blocking AI training bots affect my Google rankings?","acceptedAnswer":{"@type":"Answer","text":"No. Search crawlers such as Googlebot and Bingbot are separate from AI training crawlers. Blocking GPTBot or CCBot does not hurt your search rankings."}},{"@type":"Question","name":"Can I allow AI search but block AI training?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bots like OAI-SearchBot and PerplexityBot power AI answer engines that cite your pages, while GPTBot and CCBot collect training data. You can set different rules for each group."}},{"@type":"Question","name":"Where do I upload the robots.txt file?","acceptedAnswer":{"@type":"Answer","text":"Upload it to the root of your domain so it resolves directly at /robots.txt, next to your sitemap.xml and llms.txt files."}}]}
+</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-950">
+
+<header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <a href="https://www.pratix.io/" class="flex items-center gap-3" aria-label="Pratix.io home">
+      <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-400 text-lg font-black text-white shadow-sm">P</span>
+      <span>
+        <span class="block text-base font-black tracking-tight">pratix.io</span>
+        <span class="block text-xs font-semibold text-slate-500" data-i18n="brandLine">Practical Micro-SaaS Tools</span>
+      </span>
+    </a>
+    <div class="flex items-center gap-3">
+      <a href="https://www.pratix.io/" class="hidden rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-blue-300 hover:text-blue-700 sm:inline-flex" data-i18n="allTools">All tools</a>
+      <label class="sr-only" for="languageSelect" data-i18n="language">Language</label>
+      <select id="languageSelect" class="rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+        <option value="en">English (EN)</option>
+        <option value="tr">Türkçe (TR)</option>
+        <option value="de">Deutsch (DE)</option>
+        <option value="fr">Français (FR)</option>
+        <option value="es">Español (ES)</option>
+        <option value="it">Italiano (IT)</option>
+        <option value="nl">Nederlands (NL)</option>
+        <option value="sv">Svenska (SV)</option>
+        <option value="da">Dansk (DA)</option>
+        <option value="no">Norsk (NO)</option>
+        <option value="fi">Suomi (FI)</option>
+        <option value="zh">中文 (ZH)</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+    <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+  </div>
+  <section class="border-b border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.15fr_.85fr] lg:px-8 lg:py-16">
+      <div>
+        <p class="text-sm font-black uppercase tracking-[.22em] text-blue-600" data-i18n="eyebrow">Free robots.txt generator — decide which AI bots may crawl your site</p>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl" data-i18n="heroTitle">Robots.txt Generator for AI Bots</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600" data-i18n="heroDesc">Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live, then copy or download — everything runs in your browser.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700" data-i18n="badge1">16 AI bot rules</span>
+          <span class="rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700" data-i18n="badge2">Live preview</span>
+          <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-bold text-slate-700" data-i18n="badge3">100% client-side</span>
+        </div>
+      </div>
+      <aside class="space-y-5 lg:pt-2">
+        <div class="rounded-[2rem] bg-slate-950 p-7 text-white shadow-xl shadow-slate-300/40">
+          <h2 class="text-lg font-black" data-i18n="heroCardTitle">Take control of AI crawlers</h2>
+          <p class="mt-3 text-base leading-7 text-slate-300" data-i18n="heroCardDesc">AI bots fall into two groups: answer engines that cite your pages and training crawlers that collect data. Robots.txt lets you welcome one and decline the other.</p>
+        </div>
+        <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="tool" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <section class="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+        <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="formEyebrow">Generator</p>
+        <h2 class="mt-2 text-2xl font-black tracking-tight text-slate-950" data-i18n="formTitle">Build your robots.txt</h2>
+        <div class="mt-6 space-y-4">
+          <div>
+            <label for="domainInput" class="block text-sm font-black text-slate-950" data-i18n="domainLabel">Website domain</label>
+            <input id="domainInput" type="url" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="https://example.com" data-i18n-placeholder="domainPlaceholder" />
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            <p class="text-sm font-black text-slate-950" data-i18n="presetsTitle">Quick presets</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <button type="button" data-preset="allowAll" class="preset-btn rounded-2xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-xs font-black text-emerald-700 transition hover:bg-emerald-100" data-i18n="presetAllowAll">Allow all AI</button>
+              <button type="button" data-preset="searchBlock" class="preset-btn rounded-2xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100" data-i18n="presetSearchBlock">Allow AI search, block training</button>
+              <button type="button" data-preset="blockAll" class="preset-btn rounded-2xl border border-red-200 bg-red-50 px-3 py-2 text-xs font-black text-red-600 transition hover:bg-red-100" data-i18n="presetBlockAll">Block all AI</button>
+              <button type="button" data-preset="reset" class="preset-btn rounded-2xl border border-slate-200 bg-white px-3 py-2 text-xs font-black text-slate-600 transition hover:bg-slate-100" data-i18n="presetReset">Reset to default</button>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-black text-slate-950" data-i18n="groupSearchTitle">AI assistants &amp; answer engines</h3>
+            <p class="mt-1 text-xs font-semibold text-slate-500" data-i18n="groupSearchDesc">Bots that fetch pages to cite or answer users</p>
+            <div id="searchBots" class="mt-4 space-y-3"></div>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            <h3 class="text-sm font-black text-slate-950" data-i18n="groupTrainingTitle">AI training crawlers</h3>
+            <p class="mt-1 text-xs font-semibold text-slate-500" data-i18n="groupTrainingDesc">Bots that collect content to train models</p>
+            <div id="trainingBots" class="mt-4 space-y-3"></div>
+          </div>
+          <div>
+            <label for="extraInput" class="block text-sm font-black text-slate-950" data-i18n="extraLabel">Extra blocked paths (applies to all bots)</label>
+            <textarea id="extraInput" rows="3" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="/admin/&#10;/private/&#10;/cart" data-i18n-placeholder="extraPlaceholder"></textarea>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            <label class="flex items-center gap-3">
+              <input id="sitemapToggle" type="checkbox" checked class="h-5 w-5 rounded-md border-slate-300 text-blue-600 focus:ring-blue-500" />
+              <span>
+                <span class="block text-sm font-black text-slate-950" data-i18n="sitemapLabel">Include Sitemap line</span>
+                <span class="block text-xs font-semibold text-slate-500" data-i18n="sitemapHint">Appends your sitemap.xml URL at the end</span>
+              </span>
+            </label>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <button id="copyBtn" type="button" class="rounded-2xl bg-blue-600 px-4 py-3 text-sm font-black text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700" data-i18n="copyBtn">Copy robots.txt</button>
+            <button id="downloadBtn" type="button" class="rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white transition hover:bg-slate-800" data-i18n="downloadBtn">Download robots.txt</button>
+          </div>
+        </div>
+      </section>
+
+      <aside id="output" class="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <div class="rounded-[1.75rem] border border-slate-200 bg-slate-950 p-5 shadow-sm">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-black uppercase tracking-wide text-sky-400" data-i18n="previewEyebrow">Live preview</p>
+              <h3 class="mt-1 text-base font-black text-white" data-i18n="previewTitle">Your robots.txt updates as you click</h3>
+            </div>
+            <span class="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-black text-emerald-400">robots.txt</span>
+          </div>
+          <pre id="robotsOutput" class="robots-output mt-4 max-h-[420px] overflow-auto rounded-2xl bg-black/40 p-4 text-sm leading-6 text-emerald-300"></pre>
+        </div>
+        <div class="rounded-[1.75rem] border border-slate-200 bg-white p-5">
+          <h3 class="text-sm font-black text-slate-950" data-i18n="tipsTitle">Quick quality checklist</h3>
+          <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip1">Blocking AI training bots does not affect your Google rankings.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip2">Keep AI search bots like OAI-SearchBot allowed if you want citations in AI answers.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip3">Upload the file to your domain root so it resolves at /robots.txt.</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ad-slot mt-8 flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+  </section>
+
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="featuresEyebrow">Features</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="featuresTitle">Why use this robots.txt generator</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">16 AI bots covered</h3><p class="mt-2 text-sm leading-6 text-slate-600">GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Bytespider and more — each with its own allow or block rule.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Smart presets</h3><p class="mt-2 text-sm leading-6 text-slate-600">One click to allow every AI bot, block training crawlers only, or shut out all of them at once.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Per-bot control</h3><p class="mt-2 text-sm leading-6 text-slate-600">Switch any crawler between allow, block and default with a single click — no syntax to remember.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Extra path rules</h3><p class="mt-2 text-sm leading-6 text-slate-600">Add your own disallowed paths that apply to every user agent, from admin panels to checkout pages.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Sitemap declaration</h3><p class="mt-2 text-sm leading-6 text-slate-600">Optionally append your sitemap.xml URL so compliant crawlers can discover every indexable page.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Privacy by design</h3><p class="mt-2 text-sm leading-6 text-slate-600">Everything is generated in your browser with JavaScript — your domain never leaves your device.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="howEyebrow">Step by step</p>
+    <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="howTitle">How to create a robots.txt file in three steps</h2>
+    <ol class="mt-8 grid gap-4 md:grid-cols-3">
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">1</span><div><h3 class="text-base font-black text-slate-950">Enter your domain</h3><p class="mt-2 text-sm leading-6 text-slate-600">Type your website URL so the generator can reference it in the sitemap line.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">2</span><div><h3 class="text-base font-black text-slate-950">Choose bot rules</h3><p class="mt-2 text-sm leading-6 text-slate-600">Pick a preset or fine-tune each of the 16 AI crawlers with allow, block or default.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">3</span><div><h3 class="text-base font-black text-slate-950">Publish to your domain root</h3><p class="mt-2 text-sm leading-6 text-slate-600">Download the file, upload it to your site root and verify it loads at /robots.txt.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="faq" class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="faqEyebrow">FAQ</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="faqTitle">Frequently asked questions</h2>
+      <div class="mt-8 space-y-4">
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5" open><summary class="cursor-pointer text-base font-black text-slate-950">What is a robots.txt file?</summary><p class="mt-3 text-sm leading-6 text-slate-600">A robots.txt file is a plain text file at your domain root that tells crawlers which parts of your site they may access. AI bots and search engines read it before fetching your pages.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">How do I block AI bots from training on my content?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Add Disallow: / rules for AI training crawlers such as GPTBot, CCBot, Google-Extended, Bytespider and Applebot-Extended. This generator writes those rules for you in one click.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Does blocking AI training bots affect my Google rankings?</summary><p class="mt-3 text-sm leading-6 text-slate-600">No. Search crawlers such as Googlebot and Bingbot are separate from AI training crawlers. Blocking GPTBot or CCBot does not hurt your search rankings.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Can I allow AI search but block AI training?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Yes. Bots like OAI-SearchBot and PerplexityBot power AI answer engines that cite your pages, while GPTBot and CCBot collect training data. You can set different rules for each group.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Where do I upload the robots.txt file?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Upload it to the root of your domain so it resolves directly at /robots.txt, next to your sitemap.xml and llms.txt files.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+  <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+</div>
+
+<footer class="border-t border-slate-200 bg-white">
+  <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+    <p><strong class="text-slate-950">pratix.io</strong> — <span data-i18n="footerText">Your robots.txt is generated entirely in your browser.</span></p>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://www.pratix.io/" class="font-bold text-blue-700">pratix.io</a>
+      <a href="https://www.pratix.io/en/schema-generator" class="font-bold text-slate-700">Schema Generator</a>
+      <a href="https://www.pratix.io/en/llms-txt-generator" class="font-bold text-slate-700">llms.txt Generator</a>
+      <a href="https://www.pratix.io/en/qr-code-generator" class="font-bold text-slate-700">QR Code Generator</a>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-2xl bg-slate-950 px-5 py-3 text-sm font-black text-white shadow-2xl hidden"></div>
+
+<script>
+(() => {
+  'use strict';
+  const LANGUAGES = ['en','tr','de','fr','es','it','nl','sv','da','no','fi','zh'];
+  const SLUGS = { en:'robots-txt-generator', tr:'robots-txt-olusturucu', de:'robots-txt-generator', fr:'generateur-robots-txt', es:'generador-robots-txt', it:'generatore-robots-txt', nl:'robots-txt-generator', sv:'robots-txt-generator', da:'robots-txt-generator', no:'robots-txt-generator', fi:'robots-txt-generaattori', zh:'robots-wenjian-shengchengqi' };
+  const T = {
+    en: { brandLine:'Practical Micro-SaaS Tools', allTools:'All tools', language:'Language', eyebrow:'Free robots.txt generator — decide which AI bots may crawl your site', heroTitle:'Robots.txt Generator for AI Bots', heroDesc:'Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live, then copy or download — everything runs in your browser.', badge1:'16 AI bot rules', badge2:'Live preview', badge3:'100% client-side', heroCardTitle:'Take control of AI crawlers', heroCardDesc:'AI bots fall into two groups: answer engines that cite your pages and training crawlers that collect data. Robots.txt lets you welcome one and decline the other.', adTop:'Advertisement Space (Leaderboard)', formEyebrow:'Generator', formTitle:'Build your robots.txt', domainLabel:'Website domain', domainPlaceholder:'https://example.com', presetsTitle:'Quick presets', presetAllowAll:'Allow all AI', presetSearchBlock:'Allow AI search, block training', presetBlockAll:'Block all AI', presetReset:'Reset to default', groupSearchTitle:'AI assistants & answer engines', groupSearchDesc:'Bots that fetch pages to cite or answer users', groupTrainingTitle:'AI training crawlers', groupTrainingDesc:'Bots that collect content to train models', stateAllow:'Allow', stateBlock:'Block', stateDefault:'Default', extraLabel:'Extra blocked paths (applies to all bots)', extraPlaceholder:'/admin/\n/private/\n/cart', sitemapLabel:'Include Sitemap line', sitemapHint:'Appends your sitemap.xml URL at the end', previewEyebrow:'Live preview', previewTitle:'Your robots.txt updates as you click', copyBtn:'Copy robots.txt', downloadBtn:'Download robots.txt', copiedState:'Copied to clipboard.', downloaded:'robots.txt downloaded.', emptyState:'Your robots.txt preview will appear here.', tipsTitle:'Quick quality checklist', tip1:'Blocking AI training bots does not affect your Google rankings.', tip2:'Keep AI search bots like OAI-SearchBot allowed if you want citations in AI answers.', tip3:'Upload the file to your domain root so it resolves at /robots.txt.', featuresEyebrow:'Features', featuresTitle:'Why use this robots.txt generator', howEyebrow:'Step by step', howTitle:'How to create a robots.txt file in three steps', faqEyebrow:'FAQ', faqTitle:'Frequently asked questions', footerText:'Your robots.txt is generated entirely in your browser.' },
+    tr: { brandLine:'Pratik Mikro-SaaS Araçları', allTools:'Tüm araçlar', language:'Dil', eyebrow:'Ücretsiz robots.txt oluşturucu — hangi yapay zekâ botları gezebilir, karar verin', heroTitle:'Yapay Zekâ Botları için Robots.txt Oluşturucu', heroDesc:'GPTBot, ClaudeBot, Google-Extended ve daha fazlası için robots.txt kuralları oluşturun. AI arama botlarına izin verin, eğitim botlarını engelleyin, canlı önizleyin, kopyalayın veya indirin — her şey tarayıcınızda çalışır.', badge1:'16 AI bot kuralı', badge2:'Canlı önizleme', badge3:'%100 istemci tarafı', heroCardTitle:'Yapay zekâ tarayıcılarının kontrolünü elinize alın', heroCardDesc:'Yapay zekâ botları iki gruba ayrılır: sayfalarınızı kaynak gösteren cevap motorları ve veri toplayan eğitim tarayıcıları. Robots.txt ile birine kapınızı açıp diğerine kapatabilirsiniz.', adTop:'Reklam Alanı (Leaderboard)', formEyebrow:'Oluşturucu', formTitle:'Robots.txt dosyanızı oluşturun', domainLabel:'Web sitesi alan adı', domainPlaceholder:'https://ornek.com', presetsTitle:'Hızlı hazır ayarlar', presetAllowAll:'Tümüne izin ver', presetSearchBlock:'Aramaya izin, eğitimi engelle', presetBlockAll:'Tümünü engelle', presetReset:'Varsayılana dön', groupSearchTitle:'Yapay zekâ asistanları ve cevap motorları', groupSearchDesc:'Sayfalarınızı alıntılamak veya kullanıcılara cevap vermek için gezen botlar', groupTrainingTitle:'Yapay zekâ eğitim tarayıcıları', groupTrainingDesc:'Model eğitmek için içerik toplayan botlar', stateAllow:'İzin', stateBlock:'Engelle', stateDefault:'Varsayılan', extraLabel:'Ek engellenen yollar (tüm botlar için geçerli)', extraPlaceholder:'/admin/\n/ozel/\n/sepet', sitemapLabel:'Sitemap satırı ekle', sitemapHint:'Sonda sitemap.xml adresinizi ekler', previewEyebrow:'Canlı önizleme', previewTitle:'Robots.txt dosyanız tıkladıkça güncellenir', copyBtn:'Robots.txt kopyala', downloadBtn:'Robots.txt indir', copiedState:'Panoya kopyalandı.', downloaded:'robots.txt indirildi.', emptyState:'Robots.txt önizlemeniz burada görünecek.', tipsTitle:'Hızlı kalite kontrol listesi', tip1:'Yapay zekâ eğitim botlarını engellemek Google sıralamalarınızı etkilemez.', tip2:'Yapay zekâ cevaplarında alıntılanmak istiyorsanız OAI-SearchBot gibi arama botlarına izin verin.', tip3:'Dosyayı alan adınızın köküne yükleyin, /robots.txt adresinde açılsın.', featuresEyebrow:'Özellikler', featuresTitle:'Bu robots.txt oluşturucuyu neden kullanmalısınız', howEyebrow:'Adım adım', howTitle:'Üç adımda robots.txt dosyası oluşturma', faqEyebrow:'SSS', faqTitle:'Sıkça sorulan sorular', footerText:'Robots.txt dosyanız tamamen tarayıcınızda üretilir.' },
+    de: { brandLine:'Praktische Micro-SaaS-Tools', allTools:'Alle Tools', language:'Sprache', eyebrow:'Kostenloser robots.txt-Generator — entscheide, welche KI-Bots deine Website crawlen dürfen', heroTitle:'Robots.txt-Generator für KI-Bots', heroDesc:'Erstelle robots.txt-Regeln für GPTBot, ClaudeBot, Google-Extended und mehr. Erlaube KI-Such-Bots, blockiere KI-Training-Crawler, sieh alles live an und kopiere oder lade herunter — alles läuft im Browser.', badge1:'16 KI-Bot-Regeln', badge2:'Live-Vorschau', badge3:'100 % clientseitig', heroCardTitle:'Übernimm die Kontrolle über KI-Crawler', heroCardDesc:'KI-Bots fallen in zwei Gruppen: Antwortmaschinen, die deine Seiten zitieren, und Training-Crawler, die Daten sammeln. Mit robots.txt lässt du den einen hinein und den anderen draußen.', adTop:'Werbefläche (Leaderboard)', formEyebrow:'Generator', formTitle:'Deine robots.txt erstellen', domainLabel:'Website-Domain', domainPlaceholder:'https://beispiel.de', presetsTitle:'Schnellvoreinstellungen', presetAllowAll:'Allen erlauben', presetSearchBlock:'Suche erlauben, Training blockieren', presetBlockAll:'Alle blockieren', presetReset:'Zurücksetzen', groupSearchTitle:'KI-Assistenten & Antwortmaschinen', groupSearchDesc:'Bots, die Seiten abrufen, um zu zitieren oder Nutzer zu beantworten', groupTrainingTitle:'KI-Training-Crawler', groupTrainingDesc:'Bots, die Inhalte zum Trainieren von Modellen sammeln', stateAllow:'Erlauben', stateBlock:'Blockieren', stateDefault:'Standard', extraLabel:'Zusätzliche blockierte Pfade (für alle Bots)', extraPlaceholder:'/admin/\n/privat/\n/warenkorb', sitemapLabel:'Sitemap-Zeile einfügen', sitemapHint:'Hängt deine sitemap.xml-URL ans Ende', previewEyebrow:'Live-Vorschau', previewTitle:'Deine robots.txt aktualisiert sich bei jedem Klick', copyBtn:'robots.txt kopieren', downloadBtn:'robots.txt herunterladen', copiedState:'In die Zwischenablage kopiert.', downloaded:'robots.txt heruntergeladen.', emptyState:'Hier erscheint deine robots.txt-Vorschau.', tipsTitle:'Kurze Qualitätscheckliste', tip1:'Das Blockieren von KI-Training-Bots beeinträchtigt deine Google-Rankings nicht.', tip2:'Erlaube KI-Such-Bots wie OAI-SearchBot, wenn du Zitate in KI-Antworten möchtest.', tip3:'Lade die Datei in das Stammverzeichnis deiner Domain, damit sie unter /robots.txt erreichbar ist.', featuresEyebrow:'Funktionen', featuresTitle:'Warum diesen robots.txt-Generator nutzen', howEyebrow:'Schritt für Schritt', howTitle:'So erstellst du in drei Schritten eine robots.txt-Datei', faqEyebrow:'FAQ', faqTitle:'Häufig gestellte Fragen', footerText:'Deine robots.txt wird vollständig in deinem Browser erzeugt.' },
+    fr: { brandLine:'Outils Micro-SaaS pratiques', allTools:'Tous les outils', language:'Langue', eyebrow:'Générateur de robots.txt gratuit — décidez quels bots IA peuvent explorer votre site', heroTitle:'Générateur de robots.txt pour les bots IA', heroDesc:'Créez des règles robots.txt pour GPTBot, ClaudeBot, Google-Extended et plus encore. Autorisez les bots de recherche IA, bloquez les crawlers d’entraînement, prévisualisez en direct, puis copiez ou téléchargez — tout s’exécute dans votre navigateur.', badge1:'16 règles de bots IA', badge2:'Aperçu en direct', badge3:'100 % côté client', heroCardTitle:'Prenez le contrôle des crawlers IA', heroCardDesc:'Les bots IA se divisent en deux groupes : les moteurs de réponse qui citent vos pages et les crawlers d’entraînement qui collectent des données. Robots.txt permet d’accueillir l’un et de refuser l’autre.', adTop:'Espace publicitaire (Leaderboard)', formEyebrow:'Générateur', formTitle:'Créez votre robots.txt', domainLabel:'Domaine du site', domainPlaceholder:'https://exemple.com', presetsTitle:'Préréglages rapides', presetAllowAll:'Tout autoriser', presetSearchBlock:'Recherche OK, entraînement bloqué', presetBlockAll:'Tout bloquer', presetReset:'Réinitialiser', groupSearchTitle:'Assistants IA & moteurs de réponse', groupSearchDesc:'Bots qui récupèrent des pages pour citer ou répondre aux utilisateurs', groupTrainingTitle:'Crawlers d’entraînement IA', groupTrainingDesc:'Bots qui collectent du contenu pour entraîner des modèles', stateAllow:'Autoriser', stateBlock:'Bloquer', stateDefault:'Défaut', extraLabel:'Chemins bloqués supplémentaires (pour tous les bots)', extraPlaceholder:'/admin/\n/prive/\n/panier', sitemapLabel:'Inclure la ligne Sitemap', sitemapHint:'Ajoute l’URL de votre sitemap.xml à la fin', previewEyebrow:'Aperçu en direct', previewTitle:'Votre robots.txt se met à jour à chaque clic', copyBtn:'Copier le robots.txt', downloadBtn:'Télécharger robots.txt', copiedState:'Copié dans le presse-papiers.', downloaded:'robots.txt téléchargé.', emptyState:'Votre aperçu robots.txt apparaîtra ici.', tipsTitle:'Liste de contrôle qualité', tip1:'Bloquer les bots d’entraînement IA n’affecte pas votre classement Google.', tip2:'Gardez les bots de recherche IA comme OAI-SearchBot autorisés pour être cité dans les réponses IA.', tip3:'Téléversez le fichier à la racine de votre domaine pour qu’il réponde sur /robots.txt.', featuresEyebrow:'Fonctionnalités', featuresTitle:'Pourquoi utiliser ce générateur de robots.txt', howEyebrow:'Étape par étape', howTitle:'Créer un fichier robots.txt en trois étapes', faqEyebrow:'FAQ', faqTitle:'Questions fréquentes', footerText:'Votre robots.txt est généré entièrement dans votre navigateur.' },
+    es: { brandLine:'Herramientas Micro-SaaS prácticas', allTools:'Todas las herramientas', language:'Idioma', eyebrow:'Generador de robots.txt gratis — decide qué bots de IA pueden rastrear tu sitio', heroTitle:'Generador de robots.txt para bots de IA', heroDesc:'Crea reglas de robots.txt para GPTBot, ClaudeBot, Google-Extended y más. Permite los bots de búsqueda de IA, bloquea los rastreadores de entrenamiento, previsualiza en vivo y copia o descarga — todo se ejecuta en tu navegador.', badge1:'16 reglas de bots de IA', badge2:'Vista previa en vivo', badge3:'100 % del lado del cliente', heroCardTitle:'Toma el control de los rastreadores de IA', heroCardDesc:'Los bots de IA se dividen en dos grupos: motores de respuesta que citan tus páginas y rastreadores de entrenamiento que recopilan datos. Con robots.txt puedes recibir a unos y rechazar a otros.', adTop:'Espacio publicitario (Leaderboard)', formEyebrow:'Generador', formTitle:'Crea tu robots.txt', domainLabel:'Dominio del sitio web', domainPlaceholder:'https://ejemplo.com', presetsTitle:'Ajustes rápidos', presetAllowAll:'Permitir toda la IA', presetSearchBlock:'Permitir búsqueda, bloquear entrenamiento', presetBlockAll:'Bloquear toda la IA', presetReset:'Restablecer', groupSearchTitle:'Asistentes de IA y motores de respuesta', groupSearchDesc:'Bots que obtienen páginas para citar o responder a los usuarios', groupTrainingTitle:'Rastreadores de entrenamiento de IA', groupTrainingDesc:'Bots que recopilan contenido para entrenar modelos', stateAllow:'Permitir', stateBlock:'Bloquear', stateDefault:'Predeterminado', extraLabel:'Rutas bloqueadas adicionales (para todos los bots)', extraPlaceholder:'/admin/\n/privado/\n/carrito', sitemapLabel:'Incluir línea Sitemap', sitemapHint:'Añade la URL de tu sitemap.xml al final', previewEyebrow:'Vista previa', previewTitle:'Tu robots.txt se actualiza con cada clic', copyBtn:'Copiar robots.txt', downloadBtn:'Descargar robots.txt', copiedState:'Copiado al portapapeles.', downloaded:'robots.txt descargado.', emptyState:'Tu vista previa de robots.txt aparecerá aquí.', tipsTitle:'Lista de control de calidad', tip1:'Bloquear los bots de entrenamiento de IA no afecta tu posicionamiento en Google.', tip2:'Mantén permitidos bots de búsqueda de IA como OAI-SearchBot si quieres citas en las respuestas de IA.', tip3:'Sube el archivo a la raíz de tu dominio para que responda en /robots.txt.', featuresEyebrow:'Funciones', featuresTitle:'Por qué usar este generador de robots.txt', howEyebrow:'Paso a paso', howTitle:'Cómo crear un archivo robots.txt en tres pasos', faqEyebrow:'FAQ', faqTitle:'Preguntas frecuentes', footerText:'Tu robots.txt se genera por completo en tu navegador.' },
+    it: { brandLine:'Strumenti Micro-SaaS pratici', allTools:'Tutti gli strumenti', language:'Lingua', eyebrow:'Generatore di robots.txt gratuito — decidi quali bot IA possono esplorare il tuo sito', heroTitle:'Generatore di robots.txt per i bot IA', heroDesc:'Crea regole robots.txt per GPTBot, ClaudeBot, Google-Extended e altri. Consenti ai bot di ricerca IA, blocca i crawler di addestramento, visualizza l’anteprima live, poi copia o scarica — tutto avviene nel tuo browser.', badge1:'16 regole per bot IA', badge2:'Anteprima live', badge3:'100% lato client', heroCardTitle:'Prendi il controllo dei crawler IA', heroCardDesc:'I bot IA si dividono in due gruppi: motori di risposta che citano le tue pagine e crawler di addestramento che raccolgono dati. Con robots.txt puoi accoglierne uno e respingere l’altro.', adTop:'Spazio pubblicitario (Leaderboard)', formEyebrow:'Generatore', formTitle:'Crea il tuo robots.txt', domainLabel:'Dominio del sito', domainPlaceholder:'https://esempio.com', presetsTitle:'Preset rapidi', presetAllowAll:'Consenti a tutti', presetSearchBlock:'Ricerca sì, addestramento no', presetBlockAll:'Blocca tutti', presetReset:'Ripristina', groupSearchTitle:'Assistenti IA e motori di risposta', groupSearchDesc:'Bot che recuperano pagine per citarle o rispondere agli utenti', groupTrainingTitle:'Crawler di addestramento IA', groupTrainingDesc:'Bot che raccolgono contenuti per addestrare modelli', stateAllow:'Consenti', stateBlock:'Blocca', stateDefault:'Predefinito', extraLabel:'Percorsi bloccati extra (per tutti i bot)', extraPlaceholder:'/admin/\n/privato/\n/carrello', sitemapLabel:'Includi riga Sitemap', sitemapHint:'Aggiunge l’URL del tuo sitemap.xml alla fine', previewEyebrow:'Anteprima live', previewTitle:'Il tuo robots.txt si aggiorna a ogni clic', copyBtn:'Copia robots.txt', downloadBtn:'Scarica robots.txt', copiedState:'Copiato negli appunti.', downloaded:'robots.txt scaricato.', emptyState:'L’anteprima del tuo robots.txt apparirà qui.', tipsTitle:'Checklist di qualità rapida', tip1:'Bloccare i bot di addestramento IA non influisce sul posizionamento su Google.', tip2:'Mantieni consentiti i bot di ricerca IA come OAI-SearchBot se vuoi citazioni nelle risposte IA.', tip3:'Carica il file nella radice del dominio così risponde su /robots.txt.', featuresEyebrow:'Funzionalità', featuresTitle:'Perché usare questo generatore di robots.txt', howEyebrow:'Passo per passo', howTitle:'Come creare un file robots.txt in tre passaggi', faqEyebrow:'FAQ', faqTitle:'Domande frequenti', footerText:'Il tuo robots.txt viene generato interamente nel browser.' },
+    nl: { brandLine:'Praktische Micro-SaaS tools', allTools:'Alle tools', language:'Taal', eyebrow:'Gratis robots.txt-generator — bepaal welke AI-bots je site mogen crawlen', heroTitle:'Robots.txt-generator voor AI-bots', heroDesc:'Maak robots.txt-regels voor GPTBot, ClaudeBot, Google-Extended en meer. Sta AI-zoekbots toe, blokkeer AI-trainingscrawlers, bekijk live en kopieer of download — alles draait in je browser.', badge1:'16 AI-botregels', badge2:'Live voorbeeld', badge3:'100% client-side', heroCardTitle:'Neem de controle over AI-crawlers', heroCardDesc:'AI-bots vallen in twee groepen: antwoordmachines die je pagina’s citeren en trainingscrawlers die data verzamelen. Met robots.txt laat je de ene binnen en houd je de andere buiten.', adTop:'Advertentieruimte (Leaderboard)', formEyebrow:'Generator', formTitle:'Maak je robots.txt', domainLabel:'Websitedomein', domainPlaceholder:'https://voorbeeld.com', presetsTitle:'Snelle presets', presetAllowAll:'Alles toestaan', presetSearchBlock:'Zoek toe, training blok', presetBlockAll:'Alles blokkeren', presetReset:'Standaardinstelling', groupSearchTitle:'AI-assistenten & antwoordmachines', groupSearchDesc:'Bots die pagina’s ophalen om te citeren of gebruikers te antwoorden', groupTrainingTitle:'AI-trainingscrawlers', groupTrainingDesc:'Bots die content verzamelen om modellen te trainen', stateAllow:'Toestaan', stateBlock:'Blokkeren', stateDefault:'Standaard', extraLabel:'Extra geblokkeerde paden (voor alle bots)', extraPlaceholder:'/admin/\n/prive/\n/winkelmand', sitemapLabel:'Sitemapregel opnemen', sitemapHint:'Plakt je sitemap.xml-URL aan het eind', previewEyebrow:'Live voorbeeld', previewTitle:'Je robots.txt wordt bijgewerkt bij elke klik', copyBtn:'robots.txt kopiëren', downloadBtn:'robots.txt downloaden', copiedState:'Gekopieerd naar het klembord.', downloaded:'robots.txt gedownload.', emptyState:'Je robots.txt-voorbeeld verschijnt hier.', tipsTitle:'Snelle kwaliteitschecklist', tip1:'AI-trainingsbots blokkeren heeft geen invloed op je Google-ranking.', tip2:'Sta AI-zoekbots zoals OAI-SearchBot toe als je citaten in AI-antwoorden wilt.', tip3:'Upload het bestand in de root van je domein zodat het bereikbaar is op /robots.txt.', featuresEyebrow:'Functies', featuresTitle:'Waarom deze robots.txt-generator gebruiken', howEyebrow:'Stap voor stap', howTitle:'Zo maak je in drie stappen een robots.txt-bestand', faqEyebrow:'FAQ', faqTitle:'Veelgestelde vragen', footerText:'Je robots.txt wordt volledig in je browser gegenereerd.' },
+    sv: { brandLine:'Praktiska Micro-SaaS-verktyg', allTools:'Alla verktyg', language:'Språk', eyebrow:'Gratis robots.txt-generator — bestäm vilka AI-robotar som får crawla din webbplats', heroTitle:'Robots.txt-generator för AI-robotar', heroDesc:'Skapa robots.txt-regler för GPTBot, ClaudeBot, Google-Extended med flera. Tillåt AI-sökrobotar, blockera AI-träningscrawlers, förhandsgranska live och kopiera eller ladda ner — allt körs i din webbläsare.', badge1:'16 AI-robotregler', badge2:'Live-förhandsvisning', badge3:'100% på klientsidan', heroCardTitle:'Ta kontroll över AI-crawlers', heroCardDesc:'AI-robotar delas in i två grupper: svara motorer som citerar dina sidor och träningscrawlers som samlar data. Med robots.txt släpper du in den ena och håller den andra utanför.', adTop:'Annonsyta (Leaderboard)', formEyebrow:'Generator', formTitle:'Skapa din robots.txt', domainLabel:'Webbplatsens domän', domainPlaceholder:'https://exempel.se', presetsTitle:'Snabba förinställningar', presetAllowAll:'Tillåt alla', presetSearchBlock:'Tillåt sökning, blockera träning', presetBlockAll:'Blockera alla', presetReset:'Återställ', groupSearchTitle:'AI-assistenter & svara motorer', groupSearchDesc:'Robotar som hämtar sidor för att citera eller svara användare', groupTrainingTitle:'AI-träningscrawlers', groupTrainingDesc:'Robotar som samlar innehåll för att träna modeller', stateAllow:'Tillåt', stateBlock:'Blockera', stateDefault:'Standard', extraLabel:'Extra blockerade sökvägar (gäller alla robotar)', extraPlaceholder:'/admin/\n/privat/\n/varukorg', sitemapLabel:'Inkludera Sitemap-rad', sitemapHint:'Lägger till din sitemap.xml-URL på slutet', previewEyebrow:'Live-förhandsvisning', previewTitle:'Din robots.txt uppdateras med varje klick', copyBtn:'Kopiera robots.txt', downloadBtn:'Ladda ner robots.txt', copiedState:'Kopierat till urklipp.', downloaded:'robots.txt nedladdad.', emptyState:'Din robots.txt-förhandsvisning visas här.', tipsTitle:'Snabb kvalitetschecklista', tip1:'Att blockera AI-träningsrobotar påverkar inte dina Google-rankingar.', tip2:'Håll AI-sökrobotar som OAI-SearchBot tillåtna om du vill citeras i AI-svar.', tip3:'Ladda upp filen i domänens rot så att den nås på /robots.txt.', featuresEyebrow:'Funktioner', featuresTitle:'Varför använda denna robots.txt-generator', howEyebrow:'Steg för steg', howTitle:'Skapa en robots.txt-fil i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanliga frågor', footerText:'Din robots.txt genereras helt i din webbläsare.' },
+    da: { brandLine:'Praktiske Micro-SaaS-værktøjer', allTools:'Alle værktøjer', language:'Sprog', eyebrow:'Gratis robots.txt-generator — beslut hvilke AI-botter der må crawle dit website', heroTitle:'Robots.txt-generator til AI-botter', heroDesc:'Opret robots.txt-regler for GPTBot, ClaudeBot, Google-Extended m.fl. Tillad AI-søgebotter, bloker AI-træningscrawlers, forhåndsvis live og kopier eller download — alt kører i din browser.', badge1:'16 AI-bot-regler', badge2:'Live forhåndsvisning', badge3:'100% på klientsiden', heroCardTitle:'Tag kontrollen over AI-crawlers', heroCardDesc:'AI-botter falder i to grupper: svarmotorer, der citerer dine sider, og træningscrawlers, der indsamler data. Med robots.txt kan du lukke den ene ind og holde den anden ude.', adTop:'Annonceplads (Leaderboard)', formEyebrow:'Generator', formTitle:'Opret din robots.txt', domainLabel:'Websitedomæne', domainPlaceholder:'https://eksempel.dk', presetsTitle:'Hurtige forudindstillinger', presetAllowAll:'Tillad alle', presetSearchBlock:'Tillad søgning, bloker træning', presetBlockAll:'Bloker alle', presetReset:'Nulstil', groupSearchTitle:'AI-assistenter & svarmotorer', groupSearchDesc:'Botter, der henter sider for at citere eller besvare brugere', groupTrainingTitle:'AI-træningscrawlers', groupTrainingDesc:'Botter, der indsamler indhold til at træne modeller', stateAllow:'Tillad', stateBlock:'Bloker', stateDefault:'Standard', extraLabel:'Ekstra blokerede stier (gælder alle botter)', extraPlaceholder:'/admin/\n/privat/\n/kurv', sitemapLabel:'Inkluder Sitemap-linje', sitemapHint:'Tilføjer din sitemap.xml-URL til sidst', previewEyebrow:'Live forhåndsvisning', previewTitle:'Din robots.txt opdateres ved hvert klik', copyBtn:'Kopiér robots.txt', downloadBtn:'Download robots.txt', copiedState:'Kopieret til udklipsholderen.', downloaded:'robots.txt downloadet.', emptyState:'Din robots.txt-forhåndsvisning vises her.', tipsTitle:'Hurtig kvalitetstjekliste', tip1:'At blokere AI-træningsbotter påvirker ikke dine Google-rangeringer.', tip2:'Hold AI-søgebotter som OAI-SearchBot tilladte, hvis du vil citeres i AI-svar.', tip3:'Upload filen til dit domænes rod, så den er tilgængelig på /robots.txt.', featuresEyebrow:'Funktioner', featuresTitle:'Hvorfor bruge denne robots.txt-generator', howEyebrow:'Trin for trin', howTitle:'Sådan opretter du en robots.txt-fil i tre trin', faqEyebrow:'FAQ', faqTitle:'Ofte stillede spørgsmål', footerText:'Din robots.txt genereres helt i din browser.' },
+    no: { brandLine:'Praktiske Micro-SaaS-verktøy', allTools:'Alle verktøy', language:'Språk', eyebrow:'Gratis robots.txt-generator — bestem hvilke AI-boter som kan crawle nettstedet ditt', heroTitle:'Robots.txt-generator for AI-boter', heroDesc:'Lag robots.txt-regler for GPTBot, ClaudeBot, Google-Extended med flere. Tillat AI-søkeboter, blokker AI-treningscrawlere, forhåndsvis live og kopier eller last ned — alt kjører i nettleseren.', badge1:'16 AI-bot-regler', badge2:'Forhåndsvisning', badge3:'100% på klientsiden', heroCardTitle:'Ta kontroll over AI-crawlere', heroCardDesc:'AI-boter faller i to grupper: svarmotorer som siterer sidene dine og treningscrawlere som samler data. Med robots.txt kan du slippe den ene inn og holde den andre ute.', adTop:'Annonseplass (Leaderboard)', formEyebrow:'Generator', formTitle:'Lag robots.txt-filen din', domainLabel:'Nettstedets domene', domainPlaceholder:'https://eksempel.no', presetsTitle:'Hurtigforhåndsinnstillinger', presetAllowAll:'Tillat alle', presetSearchBlock:'Tillat søk, blokker trening', presetBlockAll:'Blokker alle', presetReset:'Tilbakestill', groupSearchTitle:'AI-assistenter & svarmotorer', groupSearchDesc:'Boter som henter sider for å sitere eller svare brukere', groupTrainingTitle:'AI-treningscrawlere', groupTrainingDesc:'Boter som samler innhold for å trene modeller', stateAllow:'Tillat', stateBlock:'Blokker', stateDefault:'Standard', extraLabel:'Ekstra blokkerte stier (gjelder alle boter)', extraPlaceholder:'/admin/\n/privat/\n/handlekurv', sitemapLabel:'Inkluder Sitemap-linje', sitemapHint:'Legger til sitemap.xml-URL-en din på slutten', previewEyebrow:'Forhåndsvisning', previewTitle:'Robots.txt-filen din oppdateres ved hvert klikk', copyBtn:'Kopier robots.txt', downloadBtn:'Last ned robots.txt', copiedState:'Kopiert til utklippstavlen.', downloaded:'robots.txt nedlastet.', emptyState:'Forhåndsvisningen din vises her.', tipsTitle:'Rask kvalitetssjekkliste', tip1:'Å blokkere AI-treningsboter påvirker ikke Google-rangeringene dine.', tip2:'Hold AI-søkeboter som OAI-SearchBot tillatt hvis du vil siteres i AI-svar.', tip3:'Last opp filen i domeneroten slik at den er tilgjengelig på /robots.txt.', featuresEyebrow:'Funksjoner', featuresTitle:'Hvorfor bruke denne robots.txt-generatoren', howEyebrow:'Steg for steg', howTitle:'Slik lager du en robots.txt-fil i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanlige spørsmål', footerText:'Robots.txt-filen din genereres helt i nettleseren din.' },
+    fi: { brandLine:'Käytännöllisiä Micro-SaaS-työkaluja', allTools:'Kaikki työkalut', language:'Kieli', eyebrow:'Ilmainen robots.txt-generaattori — päätä, mitkä tekoälybotit saavat selata sivustoasi', heroTitle:'Robots.txt-generaattori tekoälyboteille', heroDesc:'Luo robots.txt-säännöt GPTBotille, ClaudeBotille, Google-Extendedille ja muille. Salli tekoälyhakubotit, estä koulutuscrawlerit, esikatsele reaaliajassa ja kopioi tai lataa — kaikki toimii selaimessasi.', badge1:'16 tekoälybottisääntöä', badge2:'Live-esikatselu', badge3:'100 % asiakaspuolella', heroCardTitle:'Ota tekoälycrawleriin hallintaasi', heroCardDesc:'Tekoälybotit jakautuvat kahteen ryhmään: sivujesi lainaaviin vastausmoottoreihin ja dataa kerääviin koulutuscrawlereihin. Robots.txt:n avulla voit päästää toiset sisään ja karkottaa toiset.', adTop:'Mainostila (Leaderboard)', formEyebrow:'Generaattori', formTitle:'Luo robots.txt-tiedostosi', domainLabel:'Sivuston domain', domainPlaceholder:'https://esimerkki.fi', presetsTitle:'Nopeat esiasetukset', presetAllowAll:'Salli kaikki', presetSearchBlock:'Salli haku, estä koulutus', presetBlockAll:'Estä kaikki', presetReset:'Palauta oletus', groupSearchTitle:'Tekoälyavustajat ja vastausmoottorit', groupSearchDesc:'Botit, jotka hakevat sivuja lainataksesi tai vastataksesi käyttäjille', groupTrainingTitle:'Tekoälyn koulutuscrawlerit', groupTrainingDesc:'Botit, jotka keräävät sisältöä mallien kouluttamiseen', stateAllow:'Salli', stateBlock:'Estä', stateDefault:'Oletus', extraLabel:'Lisäestetyt polut (koskee kaikkia botteja)', extraPlaceholder:'/admin/\n/yksityinen/\n/ostoskori', sitemapLabel:'Lisää Sitemap-rivi', sitemapHint:'Lisää sitemap.xml-osoitteesi loppuun', previewEyebrow:'Live-esikatselu', previewTitle:'robots.txt-tiedostosi päivittyy jokaisella klikkauksella', copyBtn:'Kopioi robots.txt', downloadBtn:'Lataa robots.txt', copiedState:'Kopioitu leikepöydälle.', downloaded:'robots.txt ladattu.', emptyState:'robots.txt-esikatselusi näkyy tässä.', tipsTitle:'Nopea laatutarkistuslista', tip1:'Tekoälyn koulutusbottien estäminen ei vaikuta Google-sijoituksiisi.', tip2:'Pidä tekoälyhakubotit kuten OAI-SearchBot sallittuina, jos haluat tulla lainatuksi tekoälyvastauksissa.', tip3:'Lataa tiedosto domainisi juureen, jolloin se löytyy osoitteesta /robots.txt.', featuresEyebrow:'Ominaisuudet', featuresTitle:'Miksi käyttää tätä robots.txt-generaattoria', howEyebrow:'Vaihe vaiheelta', howTitle:'Näin luot robots.txt-tiedoston kolmessa vaiheessa', faqEyebrow:'UKK', faqTitle:'Usein kysytyt kysymykset', footerText:'robots.txt-tiedostosi luodaan kokonaan selaimessasi.' },
+    zh: { brandLine:'实用 Micro-SaaS 工具', allTools:'所有工具', language:'语言', eyebrow:'免费 robots.txt 生成器 — 决定哪些 AI 爬虫可以访问您的网站', heroTitle:'面向 AI 爬虫的 Robots.txt 生成器', heroDesc:'为 GPTBot、ClaudeBot、Google-Extended 等创建 robots.txt 规则。允许 AI 搜索爬虫，阻止 AI 训练爬虫，实时预览，然后复制或下载 — 一切都在您的浏览器中运行。', badge1:'16 条 AI 爬虫规则', badge2:'实时预览', badge3:'100% 客户端运行', heroCardTitle:'掌控 AI 爬虫', heroCardDesc:'AI 爬虫分为两类：引用您页面的回答引擎和收集数据的训练爬虫。通过 robots.txt，您可以欢迎前者、拒绝后者。', adTop:'广告位（Leaderboard）', formEyebrow:'生成器', formTitle:'创建您的 robots.txt', domainLabel:'网站域名', domainPlaceholder:'https://example.com', presetsTitle:'快速预设', presetAllowAll:'全部允许', presetSearchBlock:'允许搜索，阻止训练', presetBlockAll:'全部阻止', presetReset:'恢复默认', groupSearchTitle:'AI 助手与回答引擎', groupSearchDesc:'抓取页面以引用或回答用户的爬虫', groupTrainingTitle:'AI 训练爬虫', groupTrainingDesc:'收集内容用于训练模型的爬虫', stateAllow:'允许', stateBlock:'阻止', stateDefault:'默认', extraLabel:'额外屏蔽路径（对所有爬虫生效）', extraPlaceholder:'/admin/\n/private/\n/cart', sitemapLabel:'包含 Sitemap 行', sitemapHint:'在末尾附加您的 sitemap.xml 地址', previewEyebrow:'实时预览', previewTitle:'每次点击都会实时更新 robots.txt', copyBtn:'复制 robots.txt', downloadBtn:'下载 robots.txt', copiedState:'已复制到剪贴板。', downloaded:'robots.txt 已下载。', emptyState:'您的 robots.txt 预览将显示在这里。', tipsTitle:'快速质量检查清单', tip1:'阻止 AI 训练爬虫不会影响您的 Google 排名。', tip2:'如果希望在 AI 回答中被引用，请保持 OAI-SearchBot 等 AI 搜索爬虫为允许状态。', tip3:'将文件上传到域名根目录，使其可通过 /robots.txt 访问。', featuresEyebrow:'功能', featuresTitle:'为什么使用这款 robots.txt 生成器', howEyebrow:'分步指南', howTitle:'三步创建 robots.txt 文件', faqEyebrow:'常见问题', faqTitle:'常见问题解答', footerText:'您的 robots.txt 完全在浏览器中生成。' }
+  };
+  const BOTS = {
+    aiSearch: [
+      { id: 'oai-searchbot', ua: 'OAI-SearchBot', owner: 'OpenAI' },
+      { id: 'chatgpt-user', ua: 'ChatGPT-User', owner: 'OpenAI' },
+      { id: 'perplexitybot', ua: 'PerplexityBot', owner: 'Perplexity' },
+      { id: 'claudebot', ua: 'ClaudeBot', owner: 'Anthropic' },
+      { id: 'duckassistbot', ua: 'DuckAssistBot', owner: 'DuckDuckGo' },
+      { id: 'applebot', ua: 'Applebot', owner: 'Apple' }
+    ],
+    aiTraining: [
+      { id: 'gptbot', ua: 'GPTBot', owner: 'OpenAI' },
+      { id: 'ccbot', ua: 'CCBot', owner: 'Common Crawl' },
+      { id: 'google-extended', ua: 'Google-Extended', owner: 'Google' },
+      { id: 'bytespider', ua: 'Bytespider', owner: 'ByteDance' },
+      { id: 'amazonbot', ua: 'Amazonbot', owner: 'Amazon' },
+      { id: 'applebot-extended', ua: 'Applebot-Extended', owner: 'Apple' },
+      { id: 'meta-externalagent', ua: 'Meta-ExternalAgent', owner: 'Meta' },
+      { id: 'anthropic-ai', ua: 'anthropic-ai', owner: 'Anthropic' }
+    ]
+  };
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' }[c]));
+
+  function routeLanguage() {
+    const first = window.location.pathname.split('/').filter(Boolean)[0];
+    return LANGUAGES.includes(first) ? first : 'en';
+  }
+  let lang = routeLanguage() || 'en';
+  if (!LANGUAGES.includes(lang)) lang = 'en';
+
+  const t = (key) => (T[lang] && T[lang][key]) ?? T.en[key] ?? key;
+
+  function applyI18n() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+    $('languageSelect').value = lang;
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = $('toast');
+    el.textContent = msg;
+    el.classList.remove('hidden');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.add('hidden'), 2200);
+  }
+
+  const state = {};
+  for (const bot of [...BOTS.aiSearch, ...BOTS.aiTraining]) state[bot.id] = 'default';
+
+  function botRowHtml(bot) {
+    return `
+      <div class="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3">
+        <div class="min-w-0">
+          <p class="text-sm font-black text-slate-950">${esc(bot.ua)}</p>
+          <p class="text-xs font-semibold text-slate-500">${esc(bot.owner)}</p>
+        </div>
+        <div class="flex shrink-0 rounded-xl border border-slate-200 bg-slate-50 p-1">
+          <button type="button" data-bot="${bot.id}" data-state="allow" class="state-btn rounded-lg px-2 py-1 text-xs font-black transition">${esc(t('stateAllow'))}</button>
+          <button type="button" data-bot="${bot.id}" data-state="block" class="state-btn rounded-lg px-2 py-1 text-xs font-black transition">${esc(t('stateBlock'))}</button>
+          <button type="button" data-bot="${bot.id}" data-state="default" class="state-btn rounded-lg px-2 py-1 text-xs font-black transition">${esc(t('stateDefault'))}</button>
+        </div>
+      </div>`;
+  }
+
+  function styleStateButtons() {
+    document.querySelectorAll('.state-btn').forEach((btn) => {
+      const current = state[btn.dataset.bot];
+      const active = current === btn.dataset.state;
+      btn.classList.remove('bg-emerald-100', 'text-emerald-700', 'bg-red-100', 'text-red-600', 'bg-slate-200', 'text-slate-700', 'text-slate-400');
+      if (!active) { btn.classList.add('text-slate-400'); return; }
+      if (btn.dataset.state === 'allow') { btn.classList.add('bg-emerald-100', 'text-emerald-700'); }
+      else if (btn.dataset.state === 'block') { btn.classList.add('bg-red-100', 'text-red-600'); }
+      else { btn.classList.add('bg-slate-200', 'text-slate-700'); }
+    });
+  }
+
+  function renderBots() {
+    $('searchBots').innerHTML = BOTS.aiSearch.map(botRowHtml).join('');
+    $('trainingBots').innerHTML = BOTS.aiTraining.map(botRowHtml).join('');
+    styleStateButtons();
+  }
+
+  function clearPresetActive() {
+    document.querySelectorAll('.preset-btn').forEach((btn) => btn.classList.remove('ring-2', 'ring-offset-1', 'ring-blue-400'));
+  }
+
+  function markPresetActive(preset) {
+    clearPresetActive();
+    const btn = document.querySelector(`.preset-btn[data-preset="${preset}"]`);
+    if (btn) btn.classList.add('ring-2', 'ring-offset-1', 'ring-blue-400');
+  }
+
+  function applyPreset(preset) {
+    for (const bot of BOTS.aiSearch) {
+      state[bot.id] = preset === 'blockAll' ? 'block' : preset === 'reset' ? 'default' : 'allow';
+    }
+    for (const bot of BOTS.aiTraining) {
+      state[bot.id] = preset === 'allowAll' ? 'allow' : preset === 'reset' ? 'default' : 'block';
+    }
+    markPresetActive(preset);
+    renderBots();
+    render();
+  }
+
+  function normalizeDomain(value) {
+    return value.trim().replace(/\/+$/, '');
+  }
+
+  function buildRobots() {
+    const domain = normalizeDomain($('domainInput').value);
+    const extraPaths = $('extraInput').value.split('\n').map((s) => s.trim()).filter(Boolean);
+    const includeSitemap = $('sitemapToggle').checked && domain.length > 0;
+    const lines = [];
+    for (const group of [BOTS.aiSearch, BOTS.aiTraining]) {
+      for (const bot of group) {
+        const st = state[bot.id] || 'default';
+        if (st === 'block') { lines.push(`User-agent: ${bot.ua}`, 'Disallow: /', ''); }
+        else if (st === 'allow') { lines.push(`User-agent: ${bot.ua}`, 'Allow: /', ''); }
+      }
+    }
+    if (extraPaths.length) {
+      lines.push('User-agent: *');
+      for (const p of extraPaths) lines.push(`Disallow: ${p.startsWith('/') ? p : '/' + p}`);
+      lines.push('');
+    }
+    if (includeSitemap) lines.push(`Sitemap: ${domain}/sitemap.xml`, '');
+    return { text: lines.join('\n'), hasRules: Object.values(state).some((v) => v !== 'default') || extraPaths.length > 0 || includeSitemap };
+  }
+
+  let lastContent = '';
+  function render() {
+    lastContent = '';
+    const { text, hasRules } = buildRobots();
+    lastContent = text;
+    $('robotsOutput').textContent = hasRules && text.trim() ? text : t('emptyState');
+  }
+
+  function copyRobots() {
+    if (!lastContent.trim()) return;
+    navigator.clipboard.writeText(lastContent).then(() => toast(t('copiedState'))).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = lastContent;
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+      toast(t('copiedState'));
+    });
+  }
+
+  function downloadRobots() {
+    if (!lastContent.trim()) return;
+    const blob = new Blob([lastContent], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'robots.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast(t('downloaded'));
+  }
+
+  $('languageSelect').addEventListener('change', (e) => {
+    lang = e.target.value;
+    localStorage.setItem('robotsPratixLang', lang);
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length && LANGUAGES.includes(segments[0])) {
+      segments[0] = lang;
+      segments[1] = SLUGS[lang];
+      window.history.replaceState(null, '', '/' + segments.join('/') + '/');
+    } else {
+      window.location.assign('https://www.pratix.io/' + lang + '/' + SLUGS[lang] + '/');
+      return;
+    }
+    applyI18n();
+    renderBots();
+    render();
+  });
+  $('domainInput').addEventListener('input', render);
+  $('extraInput').addEventListener('input', render);
+  $('sitemapToggle').addEventListener('change', render);
+  document.querySelectorAll('.preset-btn').forEach((btn) => btn.addEventListener('click', () => applyPreset(btn.dataset.preset)));
+  for (const containerId of ['searchBots', 'trainingBots']) {
+    $(containerId).addEventListener('click', (e) => {
+      const btn = e.target.closest('.state-btn');
+      if (!btn) return;
+      state[btn.dataset.bot] = btn.dataset.state;
+      clearPresetActive();
+      styleStateButtons();
+      render();
+    });
+  }
+  $('copyBtn').addEventListener('click', copyRobots);
+  $('downloadBtn').addEventListener('click', downloadRobots);
+
+  applyI18n();
+  applyPreset('searchBlock');
+})();
+</script>
+</body>
+</html>

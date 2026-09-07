@@ -48,6 +48,20 @@ const TITLE_OVERRIDES = {
     fi: 'Ilmainen llms.txt-generaattori — tekoälyyn',
     zh: '免费 llms.txt 生成器 — AI 友好网站',
   },
+  'robots-txt-generator': {
+    en: 'Free Robots.txt Generator — AI Bot Rules',
+    tr: 'Ücretsiz Robots.txt Oluşturucu — AI Botlar',
+    de: 'Kostenloser Robots.txt-Generator — KI-Bots',
+    fr: 'Générateur de robots.txt Gratuit — Bots IA',
+    es: 'Generador de robots.txt Gratis — Bots de IA',
+    it: 'Generatore di robots.txt Gratuito — Bot IA',
+    nl: 'Gratis robots.txt-generator — AI-bots',
+    sv: 'Gratis robots.txt-generator — AI-robotar',
+    da: 'Gratis robots.txt-generator — AI-botter',
+    no: 'Gratis robots.txt-generator — AI-boter',
+    fi: 'Ilmainen robots.txt-generaattori — tekoälybotit',
+    zh: '免费 robots.txt 生成器 — AI 爬虫规则',
+  },
 };
 
 const DESCRIPTION_SUFFIXES = {
@@ -122,6 +136,20 @@ const DESCRIPTION_OVERRIDES = {
     no: 'Lag en standardisert llms.txt-fil for ChatGPT, Perplexity og Claude. Legg til seksjoner og lenker, forhåndsvis live, kopier eller last ned.',
     fi: 'Luo standardin mukainen llms.txt-tiedosto ChatGPT:lle, Perplexitylle ja Claudelle. Lisää osioita ja linkkejä, esikatsele reaaliajassa ja kopioi.',
     zh: '创建符合标准的 llms.txt 文件，帮助 ChatGPT、Perplexity 和 Claude 理解您的网站。添加分区与链接，实时预览，一键复制或下载，全部在浏览器本地完成。',
+  },
+  'robots-txt-generator': {
+    en: 'Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live.',
+    tr: 'GPTBot, ClaudeBot, Google-Extended ve daha fazlası için robots.txt kuralları oluşturun. AI arama botlarına izin verin, eğitim botlarını engelleyin.',
+    de: 'Erstellen Sie robots.txt-Regeln für GPTBot, ClaudeBot, Google-Extended und mehr. Erlauben Sie KI-Such-Bots und blockieren Sie KI-Training-Crawler.',
+    fr: "Créez des règles robots.txt pour GPTBot, ClaudeBot, Google-Extended et plus. Autorisez les bots de recherche IA, bloquez les crawlers d'entraînement.",
+    es: 'Crea reglas de robots.txt para GPTBot, ClaudeBot, Google-Extended y más. Permite los bots de búsqueda de IA y bloquea los rastreadores de entrenamiento.',
+    it: 'Crea regole robots.txt per GPTBot, ClaudeBot, Google-Extended e altri. Consenti ai bot di ricerca IA e blocca i crawler di addestramento.',
+    nl: 'Maak robots.txt-regels voor GPTBot, ClaudeBot, Google-Extended en meer. Sta AI-zoekbots toe en blokkeer AI-trainingscrawlers, bekijk live.',
+    sv: 'Skapa robots.txt-regler för GPTBot, ClaudeBot, Google-Extended med flera. Tillåt AI-sökrobotar, blockera AI-träningscrawlers, förhandsgranska.',
+    da: 'Opret robots.txt-regler for GPTBot, ClaudeBot, Google-Extended m.fl. Tillad AI-søgebotter, bloker AI-træningscrawlers, forhåndsvis live.',
+    no: 'Lag robots.txt-regler for GPTBot, ClaudeBot, Google-Extended med flere. Tillat AI-søkeboter, blokker AI-treningscrawlere, forhåndsvisning.',
+    fi: 'Luo robots.txt-säännöt GPTBotille, ClaudeBotille, Google-Extendedille ja muille. Salli tekoälyhakubotit ja estä koulutuscrawlerit.',
+    zh: '为 GPTBot、ClaudeBot、Google-Extended 等创建 robots.txt 规则，允许 AI 搜索爬虫、阻止 AI 训练爬虫，实时预览，一键复制或下载，全部在浏览器本地完成。',
   },
 };
 
