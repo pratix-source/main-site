@@ -6,6 +6,20 @@ const TITLE_OVERRIDES = {
     sv: 'Annons- och bannergenerator',
     fi: 'Mainos- ja bannertyökalu',
   },
+  'schema-generator': {
+    en: 'Free Schema Generator — JSON-LD Structured Data',
+    tr: 'Ücretsiz Schema Oluşturucu — JSON-LD Veri',
+    de: 'Kostenloser Schema-Generator — JSON-LD Daten',
+    fr: 'Générateur de Schema JSON-LD Gratuit',
+    es: 'Generador de Schema JSON-LD Gratis',
+    it: 'Generatore di Schema JSON-LD Gratuito',
+    nl: 'Gratis Schema Generator — JSON-LD Data',
+    sv: 'Gratis Schema Generator — JSON-LD Data',
+    da: 'Gratis Schema Generator — JSON-LD Data',
+    no: 'Gratis Skjemagenerator — JSON-LD Data',
+    fi: 'Ilmainen Skeemageneraattori — JSON-LD',
+    zh: '免费 Schema 生成器 — JSON-LD 结构化数据',
+  },
 };
 
 const DESCRIPTION_SUFFIXES = {
@@ -38,8 +52,26 @@ function trimAtWord(value, limit) {
   return `${base.slice(0, limit - 1).trim()}.`;
 }
 
-function normalizeDescription(value, language) {
-  let description = clean(value);
+const DESCRIPTION_OVERRIDES = {
+  'schema-generator': {
+    en: 'Free JSON-LD schema generator for structured data: create valid markup for rich results in your browser. No signup, no uploads, unlimited use.',
+    tr: 'JSON-LD şema oluşturucu ile yapılandırılmış verinizi saniyeler içinde üretin. Zengin sonuçlar için ücretsiz schema generator; tarayıcınızda çalışır.',
+    de: 'JSON-LD Schema-Generator für strukturierte Daten: Erstellen Sie gültiges Markup für Rich Results direkt im Browser — ohne Anmeldung, ohne Upload.',
+    fr: 'Générateur de schéma JSON-LD pour données structurées : créez un balisage valide pour les rich results dans votre navigateur, sans inscription.',
+    es: 'Generador de esquema JSON-LD para datos estructurados: crea marcado válido para resultados enriquecidos en tu navegador, sin registro ni subidas.',
+    it: 'Generatore di schema JSON-LD per dati strutturati: crea markup validi per i rich results direttamente nel browser, senza registrazione né upload.',
+    nl: 'JSON-LD schema generator voor gestructureerde data: maak geldige markup voor rich results direct in je browser, zonder registratie of uploads.',
+    sv: 'JSON-LD schemagenerator för strukturerad data: skapa giltig markup för rich results direkt i webbläsaren, utan registrering eller uppladdning.',
+    da: 'JSON-LD skemagenerator til strukturerede data: opret gyldig markup til rich results direkte i browseren, uden registrering eller upload.',
+    no: 'JSON-LD skjemagenerator for strukturerte data: lag gyldig markup for rich results direkte i nettleseren, uten registrering eller opplasting.',
+    fi: 'JSON-LD skeemageneraattori rakenteiselle datalle: luo kelvollinen merkintä rich results -tuloksiin suoraan selaimessa ilman rekisteröitymistä.',
+    zh: '免费的 JSON-LD Schema 生成器：在浏览器中为结构化数据生成有效标记，助力 Google 搜索富结果展示，无需注册、无需上传文件，适合 Shopify、WooCommerce、Webflow、Wix、Squarespace 与 Magento 等平台的站长与开发者，即开即用。',
+  },
+};
+
+function normalizeDescription(value, language, toolId) {
+  const override = DESCRIPTION_OVERRIDES[toolId]?.[language];
+  let description = clean(override || value);
   const suffix = DESCRIPTION_SUFFIXES[language] || DESCRIPTION_SUFFIXES.en;
   if (description.length < MIN_DESCRIPTION_LENGTH) description = `${description}${suffix}`;
   return trimAtWord(description, MAX_DESCRIPTION_LENGTH);
@@ -54,7 +86,7 @@ function normalizeTitle(value, language, toolId) {
 function getSeoCopy({ language, toolId = null, name, description }) {
   return {
     title: normalizeTitle(name, language, toolId),
-    description: normalizeDescription(description, language),
+    description: normalizeDescription(description, language, toolId),
   };
 }
 

@@ -6,7 +6,7 @@ const sourcePath = path.join(root, 'index.html');
 const distPath = path.join(root, 'dist');
 const source = fs.readFileSync(sourcePath, 'utf8');
 const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh'];
-const siteOrigin = 'https://pratix.io';
+const siteOrigin = 'https://www.pratix.io';
 const { getSeoCopy } = require('./seo-copy');
 
 function escapeHtml(value) {
@@ -127,16 +127,48 @@ function writePage(relativePath, language, toolId = null) {
   fs.writeFileSync(outputPath, setStaticMetadata(source, language, toolId));
 }
 
+function buildSitemap() {
+  const lastmod = new Date().toISOString().slice(0, 10);
+  const groups = [{ toolId: null, urls: languages.map(language => absoluteUrl(language)) }];
+  for (const toolId of localizedToolIds) {
+    groups.push({ toolId, urls: languages.map(language => absoluteUrl(language, toolId)) });
+  }
+
+  const urlBlocks = [];
+  for (const group of groups) {
+    const alternates = [
+      ...group.urls.map((url, index) => `    <xhtml:link rel="alternate" hreflang="${languages[index]}" href="${url}" />`),
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl('en', group.toolId)}" />`,
+    ].join('\n');
+    for (const [index, url] of group.urls.entries()) {
+      const isPrimary = languages[index] === 'en';
+      const priority = group.toolId === null ? (isPrimary ? '1.0' : '0.9') : (isPrimary ? '0.9' : '0.8');
+      urlBlocks.push([
+        '  <url>',
+        `    <loc>${url}</loc>`,
+        `    <lastmod>${lastmod}</lastmod>`,
+        '    <changefreq>weekly</changefreq>',
+        `    <priority>${priority}</priority>`,
+        alternates,
+        '  </url>',
+      ].join('\n'));
+    }
+  }
+
+  return `<?xml version='1.0' encoding='utf-8'?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlBlocks.join('\n')}\n</urlset>\n`;
+}
+
 fs.rmSync(distPath, { recursive: true, force: true });
 fs.mkdirSync(distPath, { recursive: true });
 writePage('index.html', 'en');
 for (const language of languages) writePage(`${language}/index.html`, language);
 // Tool routes belong to the external tool deployments. Do not emit local tool-path
 // index files here, or Vercel's filesystem can shadow the external rewrites.
-for (const staticFile of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html']) {
+for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html']) {
   const staticSource = path.join(root, staticFile);
   if (fs.existsSync(staticSource)) fs.copyFileSync(staticSource, path.join(distPath, staticFile));
 }
+fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
 
 console.log(`Prerendered ${1 + languages.length} hub pages into ${path.relative(root, distPath)}/`);
 console.log(`Localized tools: ${localizedToolIds.length}; languages: ${languages.length}`);

@@ -1686,6 +1686,31 @@
       "source": "/creator-studio/",
       "destination": "/en/content-creator-studio",
       "permanent": true
+    },
+    {
+      "source": "/content-creator-studio",
+      "destination": "/en/content-creator-studio",
+      "permanent": true
+    },
+    {
+      "source": "/content-creator-studio/",
+      "destination": "/en/content-creator-studio",
+      "permanent": true
+    },
+    {
+      "source": "/tools/vat-calculator.html",
+      "destination": "/vatcalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/auto-loan-calculator.html",
+      "destination": "/autoloancalculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/retirement-savings-calculator.html",
+      "destination": "/retirementsavingscalculator",
+      "permanent": true
     }
   ]
 }
