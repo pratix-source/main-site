@@ -1564,6 +1564,102 @@
       "destination": "/tools/qr-code-generator.html"
     },
     {
+      "source": "/en/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/en/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/tr/llms-txt-olusturucu",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/tr/llms-txt-olusturucu/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/de/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/de/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/fr/generateur-llms-txt",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/fr/generateur-llms-txt/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/es/generador-llms-txt",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/es/generador-llms-txt/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/it/generatore-llms-txt",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/it/generatore-llms-txt/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/nl/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/nl/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/sv/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/sv/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/da/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/da/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/no/llms-txt-generator",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/no/llms-txt-generator/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/fi/llms-txt-generaattori",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/fi/llms-txt-generaattori/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/zh/llms-wenjian-shengchengqi",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
+      "source": "/zh/llms-wenjian-shengchengqi/",
+      "destination": "/tools/llms-txt-generator.html"
+    },
+    {
       "source": "/tr/qr-kod-olusturucu",
       "destination": "/tools/qr-code-generator.html"
     },

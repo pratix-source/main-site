@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Free llms.txt Generator for AI-Friendly Websites | Pratix.io</title>
+<meta name="description" content="Create a standards-compliant llms.txt file that tells ChatGPT, Perplexity and Claude what your site is about. Preview live, then copy or download — right in your browser." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Pratix.io" />
+<link rel="canonical" href="https://www.pratix.io/en/llms-txt-generator" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pratix.io" />
+<meta property="og:title" content="Free llms.txt Generator for AI-Friendly Websites | Pratix.io" />
+<meta property="og:description" content="Create a standards-compliant llms.txt file that tells ChatGPT, Perplexity and Claude what your site is about. Preview live, then copy or download — right in your browser." />
+<meta property="og:url" content="https://www.pratix.io/en/llms-txt-generator" />
+<meta property="og:locale" content="en" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Free llms.txt Generator for AI-Friendly Websites | Pratix.io" />
+<meta name="twitter:description" content="Create a standards-compliant llms.txt file that tells ChatGPT, Perplexity and Claude what your site is about. Preview live, then copy or download — right in your browser." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/pratix-standard.css" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { width: auto !important; margin-inline: 0 !important; }
+  h1[data-i18n="heroTitle"] { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.02; overflow-wrap: anywhere; }
+  .llms-output { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+  @media (max-width: 640px) { h1[data-i18n="heroTitle"] { font-size: clamp(1.9rem, 9vw, 2.6rem); } }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is an llms.txt file?","acceptedAnswer":{"@type":"Answer","text":"llms.txt is a proposed standard file at your domain root that gives AI engines like ChatGPT, Perplexity and Claude a concise, markdown-formatted map of your best content."}},{"@type":"Question","name":"Is this llms.txt generator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every feature, including copy and download, is free and unlimited — there is no sign-up and your input never leaves your browser."}},{"@type":"Question","name":"Where should I upload the llms.txt file?","acceptedAnswer":{"@type":"Answer","text":"Upload it to the root of your domain so it resolves directly at /llms.txt, next to your robots.txt and sitemap.xml."}},{"@type":"Question","name":"Is my data uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Generation runs entirely in your browser with JavaScript; nothing you type is sent to any server."}},{"@type":"Question","name":"Does llms.txt replace a sitemap?","acceptedAnswer":{"@type":"Answer","text":"No. A sitemap lists every crawlable URL for search engines, while llms.txt curates your most valuable pages specifically for AI engines."}}]}
+</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-950">
+
+<header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+    <a href="https://www.pratix.io/" class="flex items-center gap-3" aria-label="Pratix.io home">
+      <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 to-sky-400 text-lg font-black text-white shadow-sm">P</span>
+      <span>
+        <span class="block text-base font-black tracking-tight">pratix.io</span>
+        <span class="block text-xs font-semibold text-slate-500" data-i18n="brandLine">Practical Micro-SaaS Tools</span>
+      </span>
+    </a>
+    <div class="flex items-center gap-3">
+      <a href="https://www.pratix.io/" class="hidden rounded-full border border-slate-200 px-4 py-2 text-sm font-bold text-slate-700 transition hover:border-blue-300 hover:text-blue-700 sm:inline-flex" data-i18n="allTools">All tools</a>
+      <label class="sr-only" for="languageSelect" data-i18n="language">Language</label>
+      <select id="languageSelect" class="rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-800 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100">
+        <option value="en">English (EN)</option>
+        <option value="tr">Türkçe (TR)</option>
+        <option value="de">Deutsch (DE)</option>
+        <option value="fr">Français (FR)</option>
+        <option value="es">Español (ES)</option>
+        <option value="it">Italiano (IT)</option>
+        <option value="nl">Nederlands (NL)</option>
+        <option value="sv">Svenska (SV)</option>
+        <option value="da">Dansk (DA)</option>
+        <option value="no">Norsk (NO)</option>
+        <option value="fi">Suomi (FI)</option>
+        <option value="zh">中文 (ZH)</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
+    <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+  </div>
+  <section class="border-b border-slate-200 bg-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.15fr_.85fr] lg:px-8 lg:py-16">
+      <div>
+        <p class="text-sm font-black uppercase tracking-[.22em] text-blue-600" data-i18n="eyebrow">Free llms.txt generator — help AI engines understand your site</p>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl" data-i18n="heroTitle">llms.txt Generator for AI-Friendly Websites</h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600" data-i18n="heroDesc">Create a standards-compliant llms.txt file that tells ChatGPT, Perplexity and Claude what your site is about. Add sections and links, preview live, then copy or download — everything runs in your browser.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <span class="rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700" data-i18n="badge1">llmstxt.org standard</span>
+          <span class="rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700" data-i18n="badge2">Live preview</span>
+          <span class="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-bold text-slate-700" data-i18n="badge3">100% client-side</span>
+        </div>
+      </div>
+      <aside class="space-y-5 lg:pt-2">
+        <div class="rounded-[2rem] bg-slate-950 p-7 text-white shadow-xl shadow-slate-300/40">
+          <h2 class="text-lg font-black" data-i18n="heroCardTitle">Built for the AI search era</h2>
+          <p class="mt-3 text-base leading-7 text-slate-300" data-i18n="heroCardDesc">AI engines increasingly cite sites they can parse quickly. A clean llms.txt gives them a curated map of your best pages in a format they read natively.</p>
+        </div>
+        <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="tool" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="grid gap-8 lg:grid-cols-2">
+      <section class="rounded-[2rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-7">
+        <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="formEyebrow">Generator</p>
+        <h2 class="mt-2 text-2xl font-black tracking-tight text-slate-950" data-i18n="formTitle">Build your llms.txt</h2>
+        <div class="mt-6 space-y-4">
+          <div>
+            <label for="nameInput" class="block text-sm font-black text-slate-950" data-i18n="nameLabel">Project name</label>
+            <input id="nameInput" type="text" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="e.g. Pratix Tools" data-i18n-placeholder="namePlaceholder" />
+          </div>
+          <div>
+            <label for="urlInput" class="block text-sm font-black text-slate-950" data-i18n="urlLabel">Website URL</label>
+            <input id="urlInput" type="url" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="https://example.com" data-i18n-placeholder="urlPlaceholder" />
+          </div>
+          <div>
+            <label for="descInput" class="block text-sm font-black text-slate-950" data-i18n="descLabel">Short description</label>
+            <textarea id="descInput" rows="3" class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" placeholder="One or two sentences about your site…" data-i18n-placeholder="descPlaceholder"></textarea>
+          </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <label for="sectionInput" class="text-sm font-black text-slate-950" data-i18n="sectionLabel">Section heading</label>
+              <input id="sectionInput" type="text" value="Docs" class="w-40 rounded-2xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-900 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" />
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <h3 class="text-sm font-black text-slate-950" data-i18n="linksTitle">Links</h3>
+              <button id="addLink" type="button" class="rounded-2xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100" data-i18n="addLink">+ Add link</button>
+            </div>
+            <div id="linksContainer" class="mt-3 space-y-4"></div>
+          </div>
+          <p id="llmsError" class="hidden rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-bold text-red-600"></p>
+          <div class="grid grid-cols-2 gap-3">
+            <button id="copyBtn" type="button" class="rounded-2xl bg-blue-600 px-4 py-3 text-sm font-black text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700" data-i18n="copyBtn">Copy llms.txt</button>
+            <button id="downloadBtn" type="button" class="rounded-2xl bg-slate-950 px-4 py-3 text-sm font-black text-white transition hover:bg-slate-800" data-i18n="downloadBtn">Download .txt</button>
+          </div>
+        </div>
+      </section>
+
+      <aside id="output" class="space-y-5 lg:sticky lg:top-24 lg:self-start">
+        <div class="rounded-[1.75rem] border border-slate-200 bg-slate-950 p-5 shadow-sm">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <p class="text-xs font-black uppercase tracking-wide text-sky-400" data-i18n="previewEyebrow">Live preview</p>
+              <h3 class="mt-1 text-base font-black text-white" data-i18n="previewTitle">Your llms.txt updates as you type</h3>
+            </div>
+            <span class="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-black text-emerald-400">llms.txt</span>
+          </div>
+          <pre id="llmsOutput" class="llms-output mt-4 max-h-[420px] overflow-auto rounded-2xl bg-black/40 p-4 text-sm leading-6 text-emerald-300"></pre>
+        </div>
+        <div class="rounded-[1.75rem] border border-slate-200 bg-white p-5">
+          <h3 class="text-sm font-black text-slate-950" data-i18n="tipsTitle">Quick quality checklist</h3>
+          <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip1">Keep the description under two sentences — AI engines favor concise summaries.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip2">Link your 5–10 best pages, not every URL you have.</span></li>
+            <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500"></span><span data-i18n="tip3">Upload the file to your domain root so it resolves at /llms.txt.</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="ad-slot mt-8 flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+  </section>
+
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="featuresEyebrow">Features</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="featuresTitle">Why use this llms.txt generator</h2>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Standards-compliant output</h3><p class="mt-2 text-sm leading-6 text-slate-600">Follows the llmstxt.org convention: an H1 title, a blockquote summary and markdown link sections AI engines parse natively.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Live markdown preview</h3><p class="mt-2 text-sm leading-6 text-slate-600">See the exact file content update as you type — no guessing, no post-fixing, no build step required.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Flexible link sections</h3><p class="mt-2 text-sm leading-6 text-slate-600">Group documentation, guides and key pages under custom section headings with optional per-link descriptions.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Privacy by design</h3><p class="mt-2 text-sm leading-6 text-slate-600">Everything is generated in your browser with JavaScript — your site details never leave your device.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Copy or download instantly</h3><p class="mt-2 text-sm leading-6 text-slate-600">Copy to clipboard for a quick paste into your repo, or download a ready-to-upload llms.txt file.</p></article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><h3 class="text-lg font-black text-slate-950">Built for every site</h3><p class="mt-2 text-sm leading-6 text-slate-600">Works for blogs, SaaS products, docs and e-commerce — anywhere AI engines benefit from a curated content map.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="howEyebrow">Step by step</p>
+    <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="howTitle">How to create an llms.txt file in three steps</h2>
+    <ol class="mt-8 grid gap-4 md:grid-cols-3">
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">1</span><div><h3 class="text-base font-black text-slate-950">Describe your site</h3><p class="mt-2 text-sm leading-6 text-slate-600">Enter your project name, website URL and a concise one-to-two-sentence summary.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">2</span><div><h3 class="text-base font-black text-slate-950">Add your best links</h3><p class="mt-2 text-sm leading-6 text-slate-600">List the 5–10 pages you most want AI engines to find, grouped under a section heading.</p></div></li>
+      <li class="flex gap-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-sm"><span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-black text-white">3</span><div><h3 class="text-base font-black text-slate-950">Publish to your domain root</h3><p class="mt-2 text-sm leading-6 text-slate-600">Download the file, upload it to your site root and verify it loads at /llms.txt.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="faq" class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+      <p class="text-sm font-black uppercase tracking-wide text-blue-600" data-i18n="faqEyebrow">FAQ</p>
+      <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950" data-i18n="faqTitle">Frequently asked questions</h2>
+      <div class="mt-8 space-y-4">
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5" open><summary class="cursor-pointer text-base font-black text-slate-950">What is an llms.txt file?</summary><p class="mt-3 text-sm leading-6 text-slate-600">llms.txt is a proposed standard file at your domain root that gives AI engines like ChatGPT, Perplexity and Claude a concise, markdown-formatted map of your best content.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Is this llms.txt generator free?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Yes. Every feature, including copy and download, is free and unlimited — there is no sign-up and your input never leaves your browser.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Where should I upload the llms.txt file?</summary><p class="mt-3 text-sm leading-6 text-slate-600">Upload it to the root of your domain so it resolves directly at /llms.txt, next to your robots.txt and sitemap.xml.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Is my data uploaded anywhere?</summary><p class="mt-3 text-sm leading-6 text-slate-600">No. Generation runs entirely in your browser with JavaScript; nothing you type is sent to any server.</p></details>
+        <details class="rounded-3xl border border-slate-200 bg-slate-50 p-5"><summary class="cursor-pointer text-base font-black text-slate-950">Does llms.txt replace a sitemap?</summary><p class="mt-3 text-sm leading-6 text-slate-600">No. A sitemap lists every crawlable URL for search engines, while llms.txt curates your most valuable pages specifically for AI engines.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+  <div class="ad-slot flex min-h-[90px] items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm font-bold text-slate-500"><span data-i18n="adTop">Advertisement Space (Leaderboard)</span></div>
+</div>
+
+<footer class="border-t border-slate-200 bg-white">
+  <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+    <p><strong class="text-slate-950">pratix.io</strong> — <span data-i18n="footerText">Your llms.txt is generated entirely in your browser.</span></p>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://www.pratix.io/" class="font-bold text-blue-700">pratix.io</a>
+      <a href="https://www.pratix.io/en/schema-generator" class="font-bold text-slate-700">Schema Generator</a>
+      <a href="https://www.pratix.io/en/qr-code-generator" class="font-bold text-slate-700">QR Code Generator</a>
+      <a href="https://www.pratix.io/en/pdf-editor" class="font-bold text-slate-700">PDF Editor</a>
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-2xl bg-slate-950 px-5 py-3 text-sm font-black text-white shadow-2xl hidden"></div>
+
+<script>
+(() => {
+  'use strict';
+  const LANGUAGES = ['en','tr','de','fr','es','it','nl','sv','da','no','fi','zh'];
+  const SLUGS = { en:'llms-txt-generator', tr:'llms-txt-olusturucu', de:'llms-txt-generator', fr:'generateur-llms-txt', es:'generador-llms-txt', it:'generatore-llms-txt', nl:'llms-txt-generator', sv:'llms-txt-generator', da:'llms-txt-generator', no:'llms-txt-generator', fi:'llms-txt-generaattori', zh:'llms-wenjian-shengchengqi' };
+  const T = {
+    en: { brandLine:'Practical Micro-SaaS Tools', allTools:'All tools', language:'Language', eyebrow:'Free llms.txt generator — help AI engines understand your site', heroTitle:'llms.txt Generator for AI-Friendly Websites', heroDesc:'Create a standards-compliant llms.txt file that tells ChatGPT, Perplexity and Claude what your site is about. Add sections and links, preview live, then copy or download — everything runs in your browser.', badge1:'llmstxt.org standard', badge2:'Live preview', badge3:'100% client-side', heroCardTitle:'Built for the AI search era', heroCardDesc:'AI engines increasingly cite sites they can parse quickly. A clean llms.txt gives them a curated map of your best pages in a format they read natively.', adTop:'Advertisement Space (Leaderboard)', formEyebrow:'Generator', formTitle:'Build your llms.txt', nameLabel:'Project name', namePlaceholder:'e.g. Pratix Tools', urlLabel:'Website URL', urlPlaceholder:'https://example.com', descLabel:'Short description', descPlaceholder:'One or two sentences about your site…', sectionLabel:'Section heading', linksTitle:'Links', addLink:'+ Add link', removeLink:'Remove', linkTitleLabel:'Link title', linkUrlLabel:'URL', linkDescLabel:'Description (optional)', previewEyebrow:'Live preview', previewTitle:'Your llms.txt updates as you type', copyBtn:'Copy llms.txt', downloadBtn:'Download .txt', copiedState:'Copied to clipboard.', downloaded:'llms.txt downloaded.', emptyState:'Your llms.txt preview will appear here.', errorName:'Enter a project name.', errorUrl:'Enter a valid website URL (https://…).', tipsTitle:'Quick quality checklist', tip1:'Keep the description under two sentences — AI engines favor concise summaries.', tip2:'Link your 5–10 best pages, not every URL you have.', tip3:'Upload the file to your domain root so it resolves at /llms.txt.', featuresEyebrow:'Features', featuresTitle:'Why use this llms.txt generator', howEyebrow:'Step by step', howTitle:'How to create an llms.txt file in three steps', faqEyebrow:'FAQ', faqTitle:'Frequently asked questions', footerText:'Your llms.txt is generated entirely in your browser.' },
+    tr: { brandLine:'Pratik Mikro-SaaS Araçları', allTools:'Tüm araçlar', language:'Dil', eyebrow:'Ücretsiz llms.txt oluşturucu — yapay zekâ motorları sitenizi anlasın', heroTitle:'Yapay Zekâ Dostu Siteler için llms.txt Oluşturucu', heroDesc:'ChatGPT, Perplexity ve Claude’ın sitenizi anlamasını sağlayan standartlara uygun bir llms.txt dosyası oluşturun. Bölüm ve bağlantı ekleyin, canlı önizleyin, kopyalayın veya indirin — her şey tarayıcınızda çalışır.', badge1:'llmstxt.org standardı', badge2:'Canlı önizleme', badge3:'%100 istemci tarafı', heroCardTitle:'Yapay zekâ arama çağı için hazır', heroCardDesc:'Yapay zekâ motorları hızlı yorumlanabilen siteleri giderek daha çok kaynak gösteriyor. Temiz bir llms.txt, en iyi sayfalarınızın özenli haritasını doğrudan okuyabilecekleri biçimde sunar.', adTop:'Reklam Alanı (Leaderboard)', formEyebrow:'Oluşturucu', formTitle:'llms.txt dosyanızı oluşturun', nameLabel:'Proje adı', namePlaceholder:'örn. Pratix Araçları', urlLabel:'Web sitesi URL’si', urlPlaceholder:'https://ornek.com', descLabel:'Kısa açıklama', descPlaceholder:'Siteniz hakkında bir iki cümle…', sectionLabel:'Bölüm başlığı', linksTitle:'Bağlantılar', addLink:'+ Bağlantı ekle', removeLink:'Kaldır', linkTitleLabel:'Bağlantı başlığı', linkUrlLabel:'URL', linkDescLabel:'Açıklama (isteğe bağlı)', previewEyebrow:'Canlı önizleme', previewTitle:'llms.txt dosyanız yazdıkça güncellenir', copyBtn:'llms.txt kopyala', downloadBtn:'.txt indir', copiedState:'Panoya kopyalandı.', downloaded:'llms.txt indirildi.', emptyState:'llms.txt önizlemeniz burada görünecek.', errorName:'Bir proje adı girin.', errorUrl:'Geçerli bir web sitesi URL’si girin (https://…).', tipsTitle:'Hızlı kalite kontrol listesi', tip1:'Açıklamayı iki cümlenin altında tutun — yapay zekâ motorları öz özetleri sever.', tip2:'Elinizdeki her URL yerine en iyi 5–10 sayfanızı bağlantılandırın.', tip3:'Dosyayı alan adınızın köküne yükleyin, /llms.txt adresinde açılsın.', featuresEyebrow:'Özellikler', featuresTitle:'Bu llms.txt oluşturucuyu neden kullanmalısınız', howEyebrow:'Adım adım', howTitle:'Üç adımda llms.txt dosyası oluşturma', faqEyebrow:'SSS', faqTitle:'Sıkça sorulan sorular', footerText:'llms.txt dosyanız tamamen tarayıcınızda üretilir.' },
+    de: { brandLine:'Praktische Micro-SaaS-Tools', allTools:'Alle Tools', language:'Sprache', eyebrow:'Kostenloser llms.txt-Generator — helfe KI-Engines, deine Website zu verstehen', heroTitle:'llms.txt-Generator für KI-freundliche Websites', heroDesc:'Erstelle eine standardkonforme llms.txt-Datei, die ChatGPT, Perplexity und Claude zeigt, worum es auf deiner Website geht. Abschnitte und Links hinzufügen, live ansehen, kopieren oder herunterladen — alles läuft im Browser.', badge1:'llmstxt.org-Standard', badge2:'Live-Vorschau', badge3:'100 % clientseitig', heroCardTitle:'Für die Ära der KI-Suche gebaut', heroCardDesc:'KI-Engines zitieren zunehmend Seiten, die sich schnell parsen lassen. Eine saubere llms.txt liefert eine kuratierte Karte deiner besten Seiten in einem Format, das sie nativ lesen.', adTop:'Werbefläche (Leaderboard)', formEyebrow:'Generator', formTitle:'Deine llms.txt erstellen', nameLabel:'Projektname', namePlaceholder:'z. B. Pratix Tools', urlLabel:'Website-URL', urlPlaceholder:'https://beispiel.de', descLabel:'Kurzbeschreibung', descPlaceholder:'Ein bis zwei Sätze über deine Website…', sectionLabel:'Abschnittsüberschrift', linksTitle:'Links', addLink:'+ Link hinzufügen', removeLink:'Entfernen', linkTitleLabel:'Linktitel', linkUrlLabel:'URL', linkDescLabel:'Beschreibung (optional)', previewEyebrow:'Live-Vorschau', previewTitle:'Deine llms.txt aktualisiert sich beim Tippen', copyBtn:'llms.txt kopieren', downloadBtn:'.txt herunterladen', copiedState:'In die Zwischenablage kopiert.', downloaded:'llms.txt heruntergeladen.', emptyState:'Hier erscheint deine llms.txt-Vorschau.', errorName:'Gib einen Projektnamen ein.', errorUrl:'Gib eine gültige Website-URL ein (https://…).', tipsTitle:'Kurze Qualitätscheckliste', tip1:'Halte die Beschreibung unter zwei Sätzen — KI-Engines bevorzugen prägnante Zusammenfassungen.', tip2:'Verlinke deine 5–10 besten Seiten, nicht jede URL, die du hast.', tip3:'Lade die Datei in das Stammverzeichnis deiner Domain, damit sie unter /llms.txt erreichbar ist.', featuresEyebrow:'Funktionen', featuresTitle:'Warum diesen llms.txt-Generator nutzen', howEyebrow:'Schritt für Schritt', howTitle:'So erstellst du in drei Schritten eine llms.txt-Datei', faqEyebrow:'FAQ', faqTitle:'Häufig gestellte Fragen', footerText:'Deine llms.txt wird vollständig in deinem Browser erzeugt.' },
+    fr: { brandLine:'Outils Micro-SaaS pratiques', allTools:'Tous les outils', language:'Langue', eyebrow:'Générateur de llms.txt gratuit — aidez les moteurs IA à comprendre votre site', heroTitle:'Générateur de llms.txt pour sites compatibles IA', heroDesc:'Créez un fichier llms.txt conforme au standard qui indique à ChatGPT, Perplexity et Claude de quoi parle votre site. Ajoutez sections et liens, prévisualisez en direct, puis copiez ou téléchargez — tout s’exécute dans votre navigateur.', badge1:'Standard llmstxt.org', badge2:'Aperçu en direct', badge3:'100 % côté client', heroCardTitle:'Conçu pour l’ère de la recherche IA', heroCardDesc:'Les moteurs IA citent de plus en plus les sites qu’ils peuvent analyser rapidement. Un llms.txt propre leur offre une carte organisée de vos meilleures pages dans un format qu’ils lisent nativement.', adTop:'Espace publicitaire (Leaderboard)', formEyebrow:'Générateur', formTitle:'Créez votre llms.txt', nameLabel:'Nom du projet', namePlaceholder:'ex. Outils Pratix', urlLabel:'URL du site', urlPlaceholder:'https://exemple.com', descLabel:'Description courte', descPlaceholder:'Une ou deux phrases sur votre site…', sectionLabel:'Titre de section', linksTitle:'Liens', addLink:'+ Ajouter un lien', removeLink:'Supprimer', linkTitleLabel:'Titre du lien', linkUrlLabel:'URL', linkDescLabel:'Description (facultatif)', previewEyebrow:'Aperçu en direct', previewTitle:'Votre llms.txt se met à jour en temps réel', copyBtn:'Copier le llms.txt', downloadBtn:'Télécharger .txt', copiedState:'Copié dans le presse-papiers.', downloaded:'llms.txt téléchargé.', emptyState:'Votre aperçu llms.txt apparaîtra ici.', errorName:'Saisissez un nom de projet.', errorUrl:'Saisissez une URL de site valide (https://…).', tipsTitle:'Liste de contrôle qualité', tip1:'Gardez la description sous deux phrases — les moteurs IA préfèrent les résumés concis.', tip2:'Reliez vos 5 à 10 meilleures pages, pas chaque URL que vous possédez.', tip3:'Téléversez le fichier à la racine de votre domaine pour qu’il réponde sur /llms.txt.', featuresEyebrow:'Fonctionnalités', featuresTitle:'Pourquoi utiliser ce générateur de llms.txt', howEyebrow:'Étape par étape', howTitle:'Créer un fichier llms.txt en trois étapes', faqEyebrow:'FAQ', faqTitle:'Questions fréquentes', footerText:'Votre llms.txt est généré entièrement dans votre navigateur.' },
+    es: { brandLine:'Herramientas Micro-SaaS prácticas', allTools:'Todas las herramientas', language:'Idioma', eyebrow:'Generador de llms.txt gratis — ayuda a los motores de IA a entender tu sitio', heroTitle:'Generador de llms.txt para sitios web compatibles con IA', heroDesc:'Crea un archivo llms.txt que cumple el estándar y dile a ChatGPT, Perplexity y Claude de qué va tu sitio. Añade secciones y enlaces, previsualiza en vivo y copia o descarga — todo se ejecuta en tu navegador.', badge1:'Estándar llmstxt.org', badge2:'Vista previa en vivo', badge3:'100 % del lado del cliente', heroCardTitle:'Hecho para la era de la búsqueda con IA', heroCardDesc:'Los motores de IA citan cada vez más sitios que pueden procesar rápido. Un llms.txt limpio les da un mapa curado de tus mejores páginas en un formato que leen de forma nativa.', adTop:'Espacio publicitario (Leaderboard)', formEyebrow:'Generador', formTitle:'Crea tu llms.txt', nameLabel:'Nombre del proyecto', namePlaceholder:'p. ej. Herramientas Pratix', urlLabel:'URL del sitio web', urlPlaceholder:'https://ejemplo.com', descLabel:'Descripción corta', descPlaceholder:'Una o dos frases sobre tu sitio…', sectionLabel:'Encabezado de sección', linksTitle:'Enlaces', addLink:'+ Añadir enlace', removeLink:'Quitar', linkTitleLabel:'Título del enlace', linkUrlLabel:'URL', linkDescLabel:'Descripción (opcional)', previewEyebrow:'Vista previa', previewTitle:'Tu llms.txt se actualiza mientras escribes', copyBtn:'Copiar llms.txt', downloadBtn:'Descargar .txt', copiedState:'Copiado al portapapeles.', downloaded:'llms.txt descargado.', emptyState:'Tu vista previa de llms.txt aparecerá aquí.', errorName:'Introduce un nombre de proyecto.', errorUrl:'Introduce una URL válida (https://…).', tipsTitle:'Lista de control de calidad', tip1:'Mantén la descripción en menos de dos frases: los motores de IA prefieren resúmenes concisos.', tip2:'Enlaza tus 5–10 mejores páginas, no todas las URL que tengas.', tip3:'Sube el archivo a la raíz de tu dominio para que responda en /llms.txt.', featuresEyebrow:'Funciones', featuresTitle:'Por qué usar este generador de llms.txt', howEyebrow:'Paso a paso', howTitle:'Cómo crear un archivo llms.txt en tres pasos', faqEyebrow:'FAQ', faqTitle:'Preguntas frecuentes', footerText:'Tu llms.txt se genera por completo en tu navegador.' },
+    it: { brandLine:'Strumenti Micro-SaaS pratici', allTools:'Tutti gli strumenti', language:'Lingua', eyebrow:'Generatore di llms.txt gratuito — aiuta i motori IA a capire il tuo sito', heroTitle:'Generatore di llms.txt per siti web amici dell’IA', heroDesc:'Crea un file llms.txt conforme allo standard che dice a ChatGPT, Perplexity e Claude di cosa parla il tuo sito. Aggiungi sezioni e link, visualizza l’anteprima live, poi copia o scarica — tutto avviene nel tuo browser.', badge1:'Standard llmstxt.org', badge2:'Anteprima live', badge3:'100% lato client', heroCardTitle:'Pensato per l’era della ricerca IA', heroCardDesc:'I motori IA citano sempre più siti che riescono a interpretare rapidamente. Un llms.txt pulito offre una mappa curata delle tue migliori pagine in un formato che leggono nativamente.', adTop:'Spazio pubblicitario (Leaderboard)', formEyebrow:'Generatore', formTitle:'Crea il tuo llms.txt', nameLabel:'Nome del progetto', namePlaceholder:'es. Strumenti Pratix', urlLabel:'URL del sito', urlPlaceholder:'https://esempio.com', descLabel:'Descrizione breve', descPlaceholder:'Una o due frasi sul tuo sito…', sectionLabel:'Titolo della sezione', linksTitle:'Link', addLink:'+ Aggiungi link', removeLink:'Rimuovi', linkTitleLabel:'Titolo del link', linkUrlLabel:'URL', linkDescLabel:'Descrizione (opzionale)', previewEyebrow:'Anteprima live', previewTitle:'Il tuo llms.txt si aggiorna mentre digiti', copyBtn:'Copia llms.txt', downloadBtn:'Scarica .txt', copiedState:'Copiato negli appunti.', downloaded:'llms.txt scaricato.', emptyState:'L’anteprima del tuo llms.txt apparirà qui.', errorName:'Inserisci un nome di progetto.', errorUrl:'Inserisci un URL valido (https://…).', tipsTitle:'Checklist di qualità rapida', tip1:'Mantieni la descrizione sotto le due frasi — i motori IA preferiscono riassunti concisi.', tip2:'Linka le tue 5–10 pagine migliori, non ogni URL che possiedi.', tip3:'Carica il file nella radice del dominio così risponde su /llms.txt.', featuresEyebrow:'Funzionalità', featuresTitle:'Perché usare questo generatore di llms.txt', howEyebrow:'Passo per passo', howTitle:'Come creare un file llms.txt in tre passaggi', faqEyebrow:'FAQ', faqTitle:'Domande frequenti', footerText:'Il tuo llms.txt viene generato interamente nel browser.' },
+    nl: { brandLine:'Praktische Micro-SaaS tools', allTools:'Alle tools', language:'Taal', eyebrow:'Gratis llms.txt-generator — help AI-engines je site begrijpen', heroTitle:'llms.txt-generator voor AI-vriendelijke websites', heroDesc:'Maak een llms.txt-bestand volgens de standaard dat ChatGPT, Perplexity en Claude vertelt waar je site over gaat. Voeg secties en links toe, bekijk live en kopieer of download — alles draait in je browser.', badge1:'llmstxt.org-standaard', badge2:'Live voorbeeld', badge3:'100% client-side', heroCardTitle:'Gemaakt voor het AI-zoektijdperk', heroCardDesc:'AI-engines citeren steeds vaker sites die ze snel kunnen parsen. Een strakke llms.txt geeft hen een gecureerde kaart van je beste pagina’s in een formaat dat ze van nature lezen.', adTop:'Advertentieruimte (Leaderboard)', formEyebrow:'Generator', formTitle:'Maak je llms.txt', nameLabel:'Projectnaam', namePlaceholder:'bijv. Pratix Tools', urlLabel:'Website-URL', urlPlaceholder:'https://voorbeeld.com', descLabel:'Korte omschrijving', descPlaceholder:'Een of twee zinnen over je site…', sectionLabel:'Sectiekop', linksTitle:'Links', addLink:'+ Link toevoegen', removeLink:'Verwijderen', linkTitleLabel:'Linktitel', linkUrlLabel:'URL', linkDescLabel:'Omschrijving (optioneel)', previewEyebrow:'Live voorbeeld', previewTitle:'Je llms.txt wordt bijgewerkt terwijl je typt', copyBtn:'llms.txt kopiëren', downloadBtn:'.txt downloaden', copiedState:'Gekopieerd naar het klembord.', downloaded:'llms.txt gedownload.', emptyState:'Je llms.txt-voorbeeld verschijnt hier.', errorName:'Voer een projectnaam in.', errorUrl:'Voer een geldige website-URL in (https://…).', tipsTitle:'Snelle kwaliteitschecklist', tip1:'Houd de omschrijving onder twee zinnen — AI-engines geven de voorkeur aan beknopte samenvattingen.', tip2:'Link je 5–10 beste pagina’s, niet elke URL die je hebt.', tip3:'Upload het bestand in de root van je domein zodat het bereikbaar is op /llms.txt.', featuresEyebrow:'Functies', featuresTitle:'Waarom deze llms.txt-generator gebruiken', howEyebrow:'Stap voor stap', howTitle:'Zo maak je in drie stappen een llms.txt-bestand', faqEyebrow:'FAQ', faqTitle:'Veelgestelde vragen', footerText:'Je llms.txt wordt volledig in je browser gegenereerd.' },
+    sv: { brandLine:'Praktiska Micro-SaaS-verktyg', allTools:'Alla verktyg', language:'Språk', eyebrow:'Gratis llms.txt-generator — hjälp AI-motorer förstå din webbplats', heroTitle:'llms.txt-generator för AI-vänliga webbplatser', heroDesc:'Skapa en standardmässig llms.txt-fil som berättar för ChatGPT, Perplexity och Claude vad din webbplats handlar om. Lägg till sektioner och länkar, förhandsgranska live och kopiera eller ladda ner — allt körs i din webbläsare.', badge1:'llmstxt.org-standarden', badge2:'Live-förhandsvisning', badge3:'100% på klientsidan', heroCardTitle:'Byggd för AI-sökningens era', heroCardDesc:'AI-motorer citerar allt oftare webbplatser de snabbt kan tolka. En ren llms.txt ger dem en kurerad karta över dina bästa sidor i ett format de läser nativt.', adTop:'Annonsyta (Leaderboard)', formEyebrow:'Generator', formTitle:'Skapa din llms.txt', nameLabel:'Projektnamn', namePlaceholder:'t.ex. Pratix-verktyg', urlLabel:'Webbplatsens URL', urlPlaceholder:'https://exempel.se', descLabel:'Kort beskrivning', descPlaceholder:'En eller två meningar om din webbplats…', sectionLabel:'Sektionsrubrik', linksTitle:'Länkar', addLink:'+ Lägg till länk', removeLink:'Ta bort', linkTitleLabel:'Länktitel', linkUrlLabel:'URL', linkDescLabel:'Beskrivning (valfritt)', previewEyebrow:'Live-förhandsvisning', previewTitle:'Din llms.txt uppdateras medan du skriver', copyBtn:'Kopiera llms.txt', downloadBtn:'Ladda ner .txt', copiedState:'Kopierat till urklipp.', downloaded:'llms.txt nedladdad.', emptyState:'Din llms.txt-förhandsvisning visas här.', errorName:'Ange ett projektnamn.', errorUrl:'Ange en giltig webbadress (https://…).', tipsTitle:'Snabb kvalitetschecklista', tip1:'Håll beskrivningen under två meningar — AI-motorer föredrar koncisa sammanfattningar.', tip2:'Länka dina 5–10 bästa sidor, inte varje URL du har.', tip3:'Ladda upp filen i domänens rot så att den nås på /llms.txt.', featuresEyebrow:'Funktioner', featuresTitle:'Varför använda denna llms.txt-generator', howEyebrow:'Steg för steg', howTitle:'Skapa en llms.txt-fil i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanliga frågor', footerText:'Din llms.txt genereras helt i din webbläsare.' },
+    da: { brandLine:'Praktiske Micro-SaaS-værktøjer', allTools:'Alle værktøjer', language:'Sprog', eyebrow:'Gratis llms.txt-generator — hjælp AI-motorer med at forstå dit website', heroTitle:'llms.txt-generator til AI-venlige websites', heroDesc:'Opret en standardoverensstemmende llms.txt-fil, der fortæller ChatGPT, Perplexity og Claude, hvad dit website handler om. Tilføj sektioner og links, forhåndsvis live og kopier eller download — alt kører i din browser.', badge1:'llmstxt.org-standarden', badge2:'Live forhåndsvisning', badge3:'100% på klientsiden', heroCardTitle:'Bygget til AI-søgningens tidsalder', heroCardDesc:'AI-motorer citerer i stigende grad websites, de hurtigt kan aflæse. En ren llms.txt giver dem et kurateret kort over dine bedste sider i et format, de læser nativt.', adTop:'Annonceplads (Leaderboard)', formEyebrow:'Generator', formTitle:'Opret din llms.txt', nameLabel:'Projektnavn', namePlaceholder:'f.eks. Pratix-værktøjer', urlLabel:'Website-URL', urlPlaceholder:'https://eksempel.dk', descLabel:'Kort beskrivelse', descPlaceholder:'En eller to sætninger om dit website…', sectionLabel:'Sektionsoverskrift', linksTitle:'Links', addLink:'+ Tilføj link', removeLink:'Fjern', linkTitleLabel:'Linktitel', linkUrlLabel:'URL', linkDescLabel:'Beskrivelse (valgfri)', previewEyebrow:'Live forhåndsvisning', previewTitle:'Din llms.txt opdateres, mens du skriver', copyBtn:'Kopiér llms.txt', downloadBtn:'Download .txt', copiedState:'Kopieret til udklipsholderen.', downloaded:'llms.txt downloadet.', emptyState:'Din llms.txt-forhåndsvisning vises her.', errorName:'Indtast et projektnavn.', errorUrl:'Indtast en gyldig website-URL (https://…).', tipsTitle:'Hurtig kvalitetstjekliste', tip1:'Hold beskrivelsen under to sætninger — AI-motorer foretrækker koncise resuméer.', tip2:'Link dine 5–10 bedste sider, ikke hver eneste URL.', tip3:'Upload filen til dit domænes rod, så den er tilgængelig på /llms.txt.', featuresEyebrow:'Funktioner', featuresTitle:'Hvorfor bruge denne llms.txt-generator', howEyebrow:'Trin for trin', howTitle:'Sådan opretter du en llms.txt-fil i tre trin', faqEyebrow:'FAQ', faqTitle:'Ofte stillede spørgsmål', footerText:'Din llms.txt genereres helt i din browser.' },
+    no: { brandLine:'Praktiske Micro-SaaS-verktøy', allTools:'Alle verktøy', language:'Språk', eyebrow:'Gratis llms.txt-generator — hjelp AI-motorer å forstå nettstedet ditt', heroTitle:'llms.txt-generator for AI-vennlige nettsteder', heroDesc:'Lag en standardisert llms.txt-fil som forteller ChatGPT, Perplexity og Claude hva nettstedet ditt handler om. Legg til seksjoner og lenker, forhåndsvis live og kopier eller last ned — alt kjører i nettleseren.', badge1:'llmstxt.org-standarden', badge2:'Forhåndsvisning', badge3:'100% på klientsiden', heroCardTitle:'Bygget for AI-søkets tidsalder', heroCardDesc:'AI-motorer siterer i økende grad nettsteder de raskt kan tolke. En ryddig llms.txt gir dem et kuratert kart over dine beste sider i et format de leser nativt.', adTop:'Annonseplass (Leaderboard)', formEyebrow:'Generator', formTitle:'Lag llms.txt-filen din', nameLabel:'Prosjektnavn', namePlaceholder:'f.eks. Pratix-verktøy', urlLabel:'Nettstedets URL', urlPlaceholder:'https://eksempel.no', descLabel:'Kort beskrivelse', descPlaceholder:'Én eller to setninger om nettstedet ditt…', sectionLabel:'Seksjonsoverskrift', linksTitle:'Lenker', addLink:'+ Legg til lenke', removeLink:'Fjern', linkTitleLabel:'Lenketittel', linkUrlLabel:'URL', linkDescLabel:'Beskrivelse (valgfritt)', previewEyebrow:'Forhåndsvisning', previewTitle:'llms.txt-filen din oppdateres mens du skriver', copyBtn:'Kopier llms.txt', downloadBtn:'Last ned .txt', copiedState:'Kopiert til utklippstavlen.', downloaded:'llms.txt nedlastet.', emptyState:'Forhåndsvisningen din vises her.', errorName:'Skriv inn et prosjektnavn.', errorUrl:'Skriv inn en gyldig nettadresse (https://…).', tipsTitle:'Rask kvalitetssjekkliste', tip1:'Hold beskrivelsen under to setninger — AI-motorer foretrekker konsise sammendrag.', tip2:'Lenk dine 5–10 beste sider, ikke hver eneste URL du har.', tip3:'Last opp filen i domeneroten slik at den er tilgjengelig på /llms.txt.', featuresEyebrow:'Funksjoner', featuresTitle:'Hvorfor bruke denne llms.txt-generatoren', howEyebrow:'Steg for steg', howTitle:'Slik lager du en llms.txt-fil i tre steg', faqEyebrow:'FAQ', faqTitle:'Vanlige spørsmål', footerText:'llms.txt-filen din genereres helt i nettleseren din.' },
+    fi: { brandLine:'Käytännöllisiä Micro-SaaS-työkaluja', allTools:'Kaikki työkalut', language:'Kieli', eyebrow:'Ilmainen llms.txt-generaattori — auta tekoälymoottoreita ymmärtämään sivustosi', heroTitle:'llms.txt-generaattori tekoälyystävällisille sivustoille', heroDesc:'Luo standardin mukainen llms.txt-tiedosto, joka kertoo ChatGPT:lle, Perplexitylle ja Claudelle, mistä sivustosi kertoo. Lisää osioita ja linkkejä, esikatsele reaaliajassa ja kopioi tai lataa — kaikki toimii selaimessasi.', badge1:'llmstxt.org-standardi', badge2:'Live-esikatselu', badge3:'100 % asiakaspuolella', heroCardTitle:'Suunniteltu tekoälyhaun aikakauteen', heroCardDesc:'Tekoälymoottorit lainaavat yhä useammin sivustoja, jotka ne jäsentävät nopeasti. Siisti llms.txt tarjoaa parhaiden sivujesi kuratoidun kartan muodossa, jota ne lukevat natiivisti.', adTop:'Mainostila (Leaderboard)', formEyebrow:'Generaattori', formTitle:'Luo llms.txt-tiedostosi', nameLabel:'Projektin nimi', namePlaceholder:'esim. Pratix-työkalut', urlLabel:'Sivuston URL', urlPlaceholder:'https://esimerkki.fi', descLabel:'Lyhyt kuvaus', descPlaceholder:'Yksi tai kaksi lausetta sivustostasi…', sectionLabel:'Osion otsikko', linksTitle:'Linkit', addLink:'+ Lisää linkki', removeLink:'Poista', linkTitleLabel:'Linkin otsikko', linkUrlLabel:'URL', linkDescLabel:'Kuvaus (valinnainen)', previewEyebrow:'Live-esikatselu', previewTitle:'llms.txt-tiedostosi päivittyy kirjoittaessasi', copyBtn:'Kopioi llms.txt', downloadBtn:'Lataa .txt', copiedState:'Kopioitu leikepöydälle.', downloaded:'llms.txt ladattu.', emptyState:'llms.txt-esikatselusi näkyy tässä.', errorName:'Syötä projektin nimi.', errorUrl:'Syötä kelvollinen sivuston URL (https://…).', tipsTitle:'Nopea laatutarkistuslista', tip1:'Pidä kuvaus alle kahdessa lauseessa — tekoälymoottorit suosivat tiiviitä yhteenvetoja.', tip2:'Linkitä 5–10 parasta sivuasi, ei jokaista URL-osoitetta.', tip3:'Lataa tiedosto domainisi juureen, jolloin se löytyy osoitteesta /llms.txt.', featuresEyebrow:'Ominaisuudet', featuresTitle:'Miksi käyttää tätä llms.txt-generaattoria', howEyebrow:'Vaihe vaiheelta', howTitle:'Näin luot llms.txt-tiedoston kolmessa vaiheessa', faqEyebrow:'UKK', faqTitle:'Usein kysytyt kysymykset', footerText:'llms.txt-tiedostosi luodaan kokonaan selaimessasi.' },
+    zh: { brandLine:'实用 Micro-SaaS 工具', allTools:'所有工具', language:'语言', eyebrow:'免费 llms.txt 生成器 — 让 AI 引擎读懂您的网站', heroTitle:'面向 AI 友好网站的 llms.txt 生成器', heroDesc:'创建符合标准的 llms.txt 文件，告诉 ChatGPT、Perplexity 和 Claude 您的网站是关于什么的。添加分区和链接，实时预览，然后复制或下载 — 一切都在您的浏览器中运行。', badge1:'llmstxt.org 标准', badge2:'实时预览', badge3:'100% 客户端运行', heroCardTitle:'为 AI 搜索时代而生', heroCardDesc:'AI 引擎越来越多地引用能够快速解析的网站。一份干净的 llms.txt 以它们原生读取的格式提供您优质页面的精心策展地图。', adTop:'广告位（Leaderboard）', formEyebrow:'生成器', formTitle:'创建您的 llms.txt', nameLabel:'项目名称', namePlaceholder:'例如 Pratix 工具', urlLabel:'网站 URL', urlPlaceholder:'https://example.com', descLabel:'简短描述', descPlaceholder:'用一两句话介绍您的网站…', sectionLabel:'分区标题', linksTitle:'链接', addLink:'+ 添加链接', removeLink:'移除', linkTitleLabel:'链接标题', linkUrlLabel:'URL', linkDescLabel:'描述（可选）', previewEyebrow:'实时预览', previewTitle:'llms.txt 随输入实时更新', copyBtn:'复制 llms.txt', downloadBtn:'下载 .txt', copiedState:'已复制到剪贴板。', downloaded:'llms.txt 已下载。', emptyState:'您的 llms.txt 预览将显示在这里。', errorName:'请输入项目名称。', errorUrl:'请输入有效的网站 URL（https://…）。', tipsTitle:'快速质量检查清单', tip1:'描述保持在两句话以内 — AI 引擎偏爱简洁的摘要。', tip2:'链接您最好的 5–10 个页面，而不是所有 URL。', tip3:'将文件上传到域名根目录，使其可通过 /llms.txt 访问。', featuresEyebrow:'功能', featuresTitle:'为什么使用这款 llms.txt 生成器', howEyebrow:'分步指南', howTitle:'三步创建 llms.txt 文件', faqEyebrow:'常见问题', faqTitle:'常见问题解答', footerText:'您的 llms.txt 完全在浏览器中生成。' }
+  };
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;' }[c]));
+
+  function routeLanguage() {
+    const first = window.location.pathname.split('/').filter(Boolean)[0];
+    return LANGUAGES.includes(first) ? first : 'en';
+  }
+  let lang = routeLanguage() || 'en';
+  if (!LANGUAGES.includes(lang)) lang = 'en';
+
+  const t = (key) => (T[lang] && T[lang][key]) ?? T.en[key] ?? key;
+
+  function applyI18n() {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+    $('languageSelect').value = lang;
+  }
+
+  let toastTimer;
+  function toast(msg) {
+    const el = $('toast');
+    el.textContent = msg;
+    el.classList.remove('hidden');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.add('hidden'), 2200);
+  }
+
+  function addLinkRow(title = '', url = '', desc = '') {
+    const row = document.createElement('div');
+    row.className = 'link-row rounded-2xl border border-slate-200 bg-white p-3';
+    row.innerHTML = `
+      <div class="grid gap-3 sm:grid-cols-2">
+        <div>
+          <label class="block text-xs font-black text-slate-500">${esc(t('linkTitleLabel'))}</label>
+          <input type="text" data-field="title" value="${esc(title)}" class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" />
+        </div>
+        <div>
+          <label class="block text-xs font-black text-slate-500">${esc(t('linkUrlLabel'))}</label>
+          <input type="url" data-field="url" value="${esc(url)}" class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" />
+        </div>
+      </div>
+      <div class="mt-3 flex items-end gap-3">
+        <div class="flex-1">
+          <label class="block text-xs font-black text-slate-500">${esc(t('linkDescLabel'))}</label>
+          <input type="text" data-field="desc" value="${esc(desc)}" class="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-100" />
+        </div>
+        <button type="button" data-action="remove" class="rounded-xl border border-red-200 bg-red-50 px-3 py-2 text-xs font-black text-red-600 transition hover:bg-red-100">${esc(t('removeLink'))}</button>
+      </div>`;
+    row.querySelector('[data-action="remove"]').addEventListener('click', () => { row.remove(); render(); });
+    row.querySelectorAll('input').forEach((input) => input.addEventListener('input', render));
+    $('linksContainer').appendChild(row);
+  }
+
+  function readLinks() {
+    return Array.from(document.querySelectorAll('.link-row')).map((row) => ({
+      title: row.querySelector('[data-field="title"]').value.trim(),
+      url: row.querySelector('[data-field="url"]').value.trim(),
+      desc: row.querySelector('[data-field="desc"]').value.trim()
+    })).filter((l) => l.title && l.url);
+  }
+
+  function buildLlms() {
+    const name = $('nameInput').value.trim();
+    const siteUrl = $('urlInput').value.trim();
+    const desc = $('descInput').value.trim();
+    const section = $('sectionInput').value.trim() || 'Docs';
+    const links = readLinks();
+    const lines = [];
+    lines.push(`# ${name}`);
+    if (desc) { lines.push(''); lines.push(`> ${desc}`); }
+    if (siteUrl) { lines.push(''); lines.push(`- [${name}](${siteUrl})`); }
+    if (links.length) {
+      lines.push('');
+      lines.push(`## ${section}`);
+      lines.push('');
+      for (const link of links) lines.push(`- [${link.title}](${link.url})${link.desc ? ': ' + link.desc : ''}`);
+    }
+    return { text: lines.join('\n') + '\n', name, siteUrl };
+  }
+
+  let lastContent = '';
+  function render() {
+    const name = $('nameInput').value.trim();
+    const siteUrl = $('urlInput').value.trim();
+    const errorEl = $('llmsError');
+    errorEl.classList.add('hidden');
+    lastContent = '';
+    const { text } = buildLlms();
+    lastContent = text;
+    $('llmsOutput').textContent = name || siteUrl || readLinks().length ? text : (text.trim() || t('emptyState'));
+  }
+
+  function validate() {
+    const name = $('nameInput').value.trim();
+    const siteUrl = $('urlInput').value.trim();
+    const errorEl = $('llmsError');
+    if (!name) {
+      errorEl.textContent = t('errorName');
+      errorEl.classList.remove('hidden');
+      return null;
+    }
+    if (siteUrl && !/^https?:\/\/.+/i.test(siteUrl)) {
+      errorEl.textContent = t('errorUrl');
+      errorEl.classList.remove('hidden');
+      return null;
+    }
+    return lastContent;
+  }
+
+  function copyLlms() {
+    const content = validate();
+    if (!content) return;
+    navigator.clipboard.writeText(content).then(() => toast(t('copiedState'))).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = content;
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+      toast(t('copiedState'));
+    });
+  }
+
+  function downloadLlms() {
+    const content = validate();
+    if (!content) return;
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'llms.txt';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    toast(t('downloaded'));
+  }
+
+  $('languageSelect').addEventListener('change', (e) => {
+    lang = e.target.value;
+    localStorage.setItem('llmsPratixLang', lang);
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    if (segments.length && LANGUAGES.includes(segments[0])) {
+      segments[0] = lang;
+      segments[1] = SLUGS[lang];
+      window.history.replaceState(null, '', '/' + segments.join('/') + '/');
+    } else {
+      window.location.assign('https://www.pratix.io/' + lang + '/' + SLUGS[lang] + '/');
+      return;
+    }
+    applyI18n();
+    render();
+  });
+  ['nameInput', 'urlInput', 'descInput', 'sectionInput'].forEach((id) => {
+    $(id).addEventListener('input', render);
+    $(id).addEventListener('change', render);
+  });
+  $('addLink').addEventListener('click', () => addLinkRow());
+  $('copyBtn').addEventListener('click', copyLlms);
+  $('downloadBtn').addEventListener('click', downloadLlms);
+
+  applyI18n();
+  addLinkRow();
+  render();
+})();
+</script>
+</body>
+</html>

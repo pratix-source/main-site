@@ -34,6 +34,20 @@ const TITLE_OVERRIDES = {
     fi: 'Ilmainen QR-koodigeneraattori — Linkki, Wi-Fi',
     zh: '免费二维码生成器 — 链接、Wi-Fi、名片',
   },
+  'llms-txt-generator': {
+    en: 'Free llms.txt Generator — AI-Friendly Sites',
+    tr: 'Ücretsiz llms.txt Oluşturucu — Yapay Zekâ',
+    de: 'Kostenloser llms.txt-Generator — KI-Websites',
+    fr: 'Générateur de llms.txt Gratuit — Sites IA',
+    es: 'Generador de llms.txt Gratis — Webs para IA',
+    it: 'Generatore di llms.txt Gratis — Siti Web AI',
+    nl: 'Gratis llms.txt-generator — AI-vriendelijk',
+    sv: 'Gratis llms.txt-generator — AI-vänliga sajter',
+    da: 'Gratis llms.txt-generator — AI-venlige websites',
+    no: 'Gratis llms.txt-generator — AI-vennlig nettsted',
+    fi: 'Ilmainen llms.txt-generaattori — tekoälyyn',
+    zh: '免费 llms.txt 生成器 — AI 友好网站',
+  },
 };
 
 const DESCRIPTION_SUFFIXES = {
@@ -94,6 +108,20 @@ const DESCRIPTION_OVERRIDES = {
     no: 'Lag egendefinerte QR-koder for URL-er, tekst, Wi-Fi og kontaktkort i nettleseren. Velg farger og størrelse og last ned utskriftsklare PNG- eller SVG-filer.',
     fi: 'Luo mukautettuja QR-koodeja linkkejä, tekstiä, Wi-Fi-yhteyksiä ja yhteystietoja varten selaimessa. Valitse värit ja koko ja lataa painovalmis PNG tai SVG.',
     zh: '在浏览器中为网址、文本、Wi-Fi 和联系人名片创建自定义二维码，自由调整颜色与尺寸，导出高清 PNG 或矢量 SVG，适用于海报、包装与名片印刷，无需注册，内容不上传服务器。',
+  },
+  'llms-txt-generator': {
+    en: 'Create a standards-compliant llms.txt file that helps ChatGPT, Perplexity and Claude understand your site. Preview live, then copy or download.',
+    tr: 'ChatGPT, Perplexity ve Claude için standartlara uygun llms.txt dosyası oluşturun. Bölüm ve bağlantı ekleyin, canlı önizleyin, kopyalayın.',
+    de: 'Erstellen Sie eine standardkonforme llms.txt-Datei für ChatGPT, Perplexity und Claude. Abschnitte und Links hinzufügen, live ansehen, kopieren.',
+    fr: 'Créez un fichier llms.txt conforme au standard pour ChatGPT, Perplexity et Claude. Ajoutez sections et liens, prévisualisez en direct, copiez.',
+    es: 'Crea un archivo llms.txt que cumple el estándar para ChatGPT, Perplexity y Claude. Añade secciones y enlaces, previsualiza en vivo y cópialo.',
+    it: 'Crea un file llms.txt conforme allo standard per ChatGPT, Perplexity e Claude. Aggiungi sezioni e link, visualizza anteprima e copia o scarica.',
+    nl: 'Maak een llms.txt-bestand volgens de standaard voor ChatGPT, Perplexity en Claude. Voeg secties en links toe, bekijk live en kopieer of download.',
+    sv: 'Skapa en standardmässig llms.txt-fil för ChatGPT, Perplexity och Claude. Lägg till sektioner och länkar, förhandsgranska live och kopiera.',
+    da: 'Opret en standardoverensstemmende llms.txt-fil til ChatGPT, Perplexity og Claude. Tilføj sektioner og links, forhåndsvis live og kopier eller download.',
+    no: 'Lag en standardisert llms.txt-fil for ChatGPT, Perplexity og Claude. Legg til seksjoner og lenker, forhåndsvis live, kopier eller last ned.',
+    fi: 'Luo standardin mukainen llms.txt-tiedosto ChatGPT:lle, Perplexitylle ja Claudelle. Lisää osioita ja linkkejä, esikatsele reaaliajassa ja kopioi.',
+    zh: '创建符合标准的 llms.txt 文件，帮助 ChatGPT、Perplexity 和 Claude 理解您的网站。添加分区与链接，实时预览，一键复制或下载，全部在浏览器本地完成。',
   },
 };
 
