@@ -12,6 +12,102 @@
       "destination": "/index.html"
     },
     {
+      "source": "/en/secure-note",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/en/secure-note/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/tr/sifreli-not",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/tr/sifreli-not/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/de/sichere-notiz",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/de/sichere-notiz/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/fr/note-securisee",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/fr/note-securisee/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/es/nota-segura",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/es/nota-segura/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/it/nota-sicura",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/it/nota-sicura/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/nl/veilige-notitie",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/nl/veilige-notitie/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/sv/saker-anteckning",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/sv/saker-anteckning/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/da/sikker-note",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/da/sikker-note/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/no/sikkert-notat",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/no/sikkert-notat/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/fi/suojattu-muistiinpano",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/fi/suojattu-muistiinpano/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/zh/anquan-bianjian",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
+      "source": "/zh/anquan-bianjian/",
+      "destination": "https://pratix-secure-note.vercel.app/"
+    },
+    {
       "source": "/en/excel-data-cleaner",
       "destination": "https://excel-data-cleaner-iota.vercel.app/"
     },

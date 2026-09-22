@@ -1,4 +1,18 @@
 const TITLE_OVERRIDES = {
+  'secure-note': {
+    en: 'Free Secure Note — AES-256-GCM Encryption',
+    tr: 'Ücretsiz Şifreli Not — AES-256-GCM Şifreleme',
+    de: 'Kostenlose sichere Notiz — AES-256-GCM-Verschlüsselung',
+    fr: 'Note sécurisée gratuite — Chiffrement AES-256-GCM',
+    es: 'Nota segura gratis — Cifrado AES-256-GCM',
+    it: 'Nota sicura gratuita — Crittografia AES-256-GCM',
+    nl: 'Gratis veilige notitie — AES-256-GCM-versleuteling',
+    sv: 'Gratis säker anteckning — AES-256-GCM-kryptering',
+    da: 'Gratis sikker note — AES-256-GCM-kryptering',
+    no: 'Gratis sikkert notat — AES-256-GCM-kryptering',
+    fi: 'Ilmainen suojattu muistiinpano — AES-256-GCM-salaus',
+    zh: '免费安全便笺 — AES-256-GCM 加密',
+  },
   'ad-layout---banner-placeholder-generator': {
     fr: 'Outil de mise en page publicitaire et bannière',
     es: 'Diseño de anuncios y banners',
@@ -95,6 +109,20 @@ function trimAtWord(value, limit) {
 }
 
 const DESCRIPTION_OVERRIDES = {
+  'secure-note': {
+    en: 'Free private note encryption in your browser with AES-256-GCM. No uploads, account, or tracking. Create an encrypted bundle and keep your note on your device.',
+    tr: 'AES-256-GCM ile tarayıcınızda ücretsiz özel not şifreleme. Yükleme, hesap veya takip yok. Şifreli paket oluşturun ve notunuzu cihazınızda tutun.',
+    de: 'Kostenlose private Notizverschlüsselung mit AES-256-GCM im Browser. Keine Uploads, Konten oder Tracking. Erstellen Sie ein verschlüsseltes Bundle.',
+    fr: 'Chiffrement gratuit de notes privées avec AES-256-GCM dans votre navigateur. Sans téléversement, compte ni suivi. Créez un bundle chiffré.',
+    es: 'Cifrado gratuito de notas privadas con AES-256-GCM en tu navegador. Sin subidas, cuentas ni seguimiento. Crea un paquete cifrado.',
+    it: 'Crittografia gratuita di note private con AES-256-GCM nel browser. Nessun upload, account o tracking. Crea un pacchetto criptato.',
+    nl: 'Versleutel gratis privénotities met AES-256-GCM in je browser. Geen uploads, accounts of tracking. Maak een versleutelde bundel.',
+    sv: 'Gratis kryptering av privata anteckningar med AES-256-GCM i webbläsaren. Inga uppladdningar, konton eller spårning.',
+    da: 'Gratis kryptering af private noter med AES-256-GCM i browseren. Ingen upload, konto eller sporing.',
+    no: 'Gratis kryptering av private notater med AES-256-GCM i nettleseren. Ingen opplasting, konto eller sporing.',
+    fi: 'Salaa yksityiset muistiinpanot ilmaiseksi AES-256-GCM:llä selaimessa. Ei latauksia, tilejä tai seurantaa.',
+    zh: '在浏览器中使用 AES-256-GCM 免费加密私人便笺。无需上传、账号或追踪，创建加密数据包。',
+  },
   'schema-generator': {
     en: 'Free JSON-LD schema generator for structured data: create valid markup for rich results in your browser. No signup, no uploads, unlimited use.',
     tr: 'JSON-LD şema oluşturucu ile yapılandırılmış verinizi saniyeler içinde üretin. Zengin sonuçlar için ücretsiz schema generator; tarayıcınızda çalışır.',
