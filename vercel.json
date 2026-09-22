@@ -108,6 +108,102 @@
       "destination": "https://pratix-secure-note.vercel.app/"
     },
     {
+      "source": "/en/privacy-file-inspector",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/en/privacy-file-inspector/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/tr/dosya-gizlilik-kontrolu",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/tr/dosya-gizlilik-kontrolu/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/de/datei-datenschutzpruefer",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/de/datei-datenschutzpruefer/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/fr/inspecteur-confidentialite-fichiers",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/fr/inspecteur-confidentialite-fichiers/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/es/inspector-privacidad-archivos",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/es/inspector-privacidad-archivos/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/it/ispettore-privacy-file",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/it/ispettore-privacy-file/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/nl/bestandsprivacy-controle",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/nl/bestandsprivacy-controle/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/sv/filintegritetskontroll",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/sv/filintegritetskontroll/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/da/fil-privatlivstjek",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/da/fil-privatlivstjek/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/no/filpersonvernkontroll",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/no/filpersonvernkontroll/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/fi/tiedoston-yksityisyystarkistus",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/fi/tiedoston-yksityisyystarkistus/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/zh/wenjian-yinsi-jiancha",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
+      "source": "/zh/wenjian-yinsi-jiancha/",
+      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+    },
+    {
       "source": "/en/excel-data-cleaner",
       "destination": "https://excel-data-cleaner-iota.vercel.app/"
     },

@@ -1,4 +1,5 @@
 const TITLE_OVERRIDES = {
+  'privacy-file-inspector': { en: 'Privacy File Inspector — Clean Hidden File Data', tr: 'Dosya Gizlilik Kontrolü — Gizli Verileri Temizleyin', de: 'Datei-Datenschutz-Prüfer — Metadaten bereinigen', fr: 'Inspecteur de fichiers — Nettoyez les métadonnées', es: 'Inspector de archivos — Limpia los metadatos', it: 'Ispettore file — Pulisci i metadati', nl: 'Bestandsprivacy-controle — Metadata opschonen', sv: 'Sekretesskontroll — Rensa metadata', da: 'Privatlivstjek — Rens metadata', no: 'Personvernkontroll — Rens metadata', fi: 'Yksityisyystarkistus — Puhdista metadata', zh: '文件隐私检查器 — 清理隐藏数据' },
   'secure-note': {
     en: 'Free Secure Note — AES-256-GCM Encryption',
     tr: 'Ücretsiz Şifreli Not — AES-256-GCM Şifreleme',
@@ -109,6 +110,7 @@ function trimAtWord(value, limit) {
 }
 
 const DESCRIPTION_OVERRIDES = {
+  'privacy-file-inspector': { en: 'Inspect hidden metadata, remove EXIF from images, and verify SHA-256 locally. A privacy-first browser tool with no uploads, accounts, or tracking.', tr: 'İşaretli dosyalardaki gizli metadata’yı inceleyin, görsellerden EXIF’i kaldırın ve SHA-256 değerini yerel olarak doğrulayın. Yükleme yok.', de: 'Prüfen Sie versteckte Metadaten, entfernen Sie EXIF und verifizieren Sie SHA-256 lokal. Keine Uploads.', fr: 'Inspectez les métadonnées, supprimez l’EXIF et vérifiez SHA-256 localement. Aucun envoi.', es: 'Inspeccione metadatos, elimine EXIF y verifique SHA-256 localmente. Sin cargas.', it: 'Ispeziona i metadati, rimuovi EXIF e verifica SHA-256 localmente. Nessun upload.', nl: 'Controleer metadata, verwijder EXIF en verifieer SHA-256 lokaal. Geen uploads.', sv: 'Kontrollera metadata, ta bort EXIF och verifiera SHA-256 lokalt. Inga uppladdningar.', da: 'Undersøg metadata, fjern EXIF og verificer SHA-256 lokalt. Ingen uploads.', no: 'Kontroller metadata, fjern EXIF og verifiser SHA-256 lokalt. Ingen opplastinger.', fi: 'Tarkista metadata, poista EXIF ja vahvista SHA-256 paikallisesti. Ei latauksia.', zh: '检查隐藏元数据、移除图片 EXIF，并在本地验证 SHA-256。无需上传。' },
   'secure-note': {
     en: 'Free private note encryption in your browser with AES-256-GCM. No uploads, account, or tracking. Create an encrypted bundle and keep your note on your device.',
     tr: 'AES-256-GCM ile tarayıcınızda ücretsiz özel not şifreleme. Yükleme, hesap veya takip yok. Şifreli paket oluşturun ve notunuzu cihazınızda tutun.',
