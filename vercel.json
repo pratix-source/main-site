@@ -5,99 +5,99 @@
   "rewrites": [
     {
       "source": "/en/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
     },
     {
       "source": "/en/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
     },
     {
       "source": "/tr/icerik-donusturucu",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=tr"
     },
     {
       "source": "/tr/icerik-donusturucu/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=tr"
     },
     {
       "source": "/de/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=de"
     },
     {
       "source": "/de/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=de"
     },
     {
       "source": "/fr/reutilisateur-de-contenu",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fr"
     },
     {
       "source": "/fr/reutilisateur-de-contenu/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fr"
     },
     {
       "source": "/es/reutilizador-de-contenido",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=es"
     },
     {
       "source": "/es/reutilizador-de-contenido/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=es"
     },
     {
       "source": "/it/riutilizzatore-contenuti",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=it"
     },
     {
       "source": "/it/riutilizzatore-contenuti/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=it"
     },
     {
       "source": "/nl/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=nl"
     },
     {
       "source": "/nl/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=nl"
     },
     {
       "source": "/sv/innehallsanpassare",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=sv"
     },
     {
       "source": "/sv/innehallsanpassare/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=sv"
     },
     {
       "source": "/da/indholdsgenbruger",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=da"
     },
     {
       "source": "/da/indholdsgenbruger/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=da"
     },
     {
       "source": "/no/innholdsfornyer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=no"
     },
     {
       "source": "/no/innholdsfornyer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=no"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fi"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fi"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=zh"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=zh"
     },
     {
       "source": "/en/utm-builder",
