@@ -4,6 +4,102 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/en/utm-builder",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/en/utm-builder"
+    },
+    {
+      "source": "/en/utm-builder/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/en/utm-builder"
+    },
+    {
+      "source": "/tr/utm-olusturucu",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/tr/utm-olusturucu"
+    },
+    {
+      "source": "/tr/utm-olusturucu/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/tr/utm-olusturucu"
+    },
+    {
+      "source": "/de/utm-builder",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/de/utm-builder"
+    },
+    {
+      "source": "/de/utm-builder/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/de/utm-builder"
+    },
+    {
+      "source": "/fr/generateur-utm",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/fr/generateur-utm"
+    },
+    {
+      "source": "/fr/generateur-utm/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/fr/generateur-utm"
+    },
+    {
+      "source": "/es/generador-utm",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/es/generador-utm"
+    },
+    {
+      "source": "/es/generador-utm/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/es/generador-utm"
+    },
+    {
+      "source": "/it/generatore-utm",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/it/generatore-utm"
+    },
+    {
+      "source": "/it/generatore-utm/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/it/generatore-utm"
+    },
+    {
+      "source": "/nl/utm-generator",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/nl/utm-generator"
+    },
+    {
+      "source": "/nl/utm-generator/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/nl/utm-generator"
+    },
+    {
+      "source": "/sv/utm-generator",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/sv/utm-generator"
+    },
+    {
+      "source": "/sv/utm-generator/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/sv/utm-generator"
+    },
+    {
+      "source": "/da/utm-generator",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/da/utm-generator"
+    },
+    {
+      "source": "/da/utm-generator/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/da/utm-generator"
+    },
+    {
+      "source": "/no/utm-generator",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/no/utm-generator"
+    },
+    {
+      "source": "/no/utm-generator/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/no/utm-generator"
+    },
+    {
+      "source": "/fi/utm-generaattori",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/fi/utm-generaattori"
+    },
+    {
+      "source": "/fi/utm-generaattori/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/fi/utm-generaattori"
+    },
+    {
+      "source": "/zh/utm-jingzhui-shengchengqi",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/zh/utm-jingzhui-shengchengqi"
+    },
+    {
+      "source": "/zh/utm-jingzhui-shengchengqi/",
+      "destination": "https://pratix-utm-campaign-builder.vercel.app/zh/utm-jingzhui-shengchengqi"
+    },
+    {
       "source": "/en/",
       "destination": "/index.html"
     },
