@@ -4,6 +4,294 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/zh/zhineng-shuipingyi/",
+      "destination": "https://pratix-smart-level.vercel.app/zh/"
+    },
+    {
+      "source": "/zh/zhineng-shuipingyi",
+      "destination": "https://pratix-smart-level.vercel.app/zh/"
+    },
+    {
+      "source": "/fi/vesivaaka-ja-kulma/",
+      "destination": "https://pratix-smart-level.vercel.app/fi/"
+    },
+    {
+      "source": "/fi/vesivaaka-ja-kulma",
+      "destination": "https://pratix-smart-level.vercel.app/fi/"
+    },
+    {
+      "source": "/no/vater-vinkel/",
+      "destination": "https://pratix-smart-level.vercel.app/no/"
+    },
+    {
+      "source": "/no/vater-vinkel",
+      "destination": "https://pratix-smart-level.vercel.app/no/"
+    },
+    {
+      "source": "/da/vaterpas-vinkel/",
+      "destination": "https://pratix-smart-level.vercel.app/da/"
+    },
+    {
+      "source": "/da/vaterpas-vinkel",
+      "destination": "https://pratix-smart-level.vercel.app/da/"
+    },
+    {
+      "source": "/sv/vattenpass-vinkel/",
+      "destination": "https://pratix-smart-level.vercel.app/sv/"
+    },
+    {
+      "source": "/sv/vattenpass-vinkel",
+      "destination": "https://pratix-smart-level.vercel.app/sv/"
+    },
+    {
+      "source": "/nl/waterpas-en-hoek/",
+      "destination": "https://pratix-smart-level.vercel.app/nl/"
+    },
+    {
+      "source": "/nl/waterpas-en-hoek",
+      "destination": "https://pratix-smart-level.vercel.app/nl/"
+    },
+    {
+      "source": "/it/livella-e-angolo/",
+      "destination": "https://pratix-smart-level.vercel.app/it/"
+    },
+    {
+      "source": "/it/livella-e-angolo",
+      "destination": "https://pratix-smart-level.vercel.app/it/"
+    },
+    {
+      "source": "/es/nivel-y-angulo/",
+      "destination": "https://pratix-smart-level.vercel.app/es/"
+    },
+    {
+      "source": "/es/nivel-y-angulo",
+      "destination": "https://pratix-smart-level.vercel.app/es/"
+    },
+    {
+      "source": "/fr/niveau-et-angle/",
+      "destination": "https://pratix-smart-level.vercel.app/fr/"
+    },
+    {
+      "source": "/fr/niveau-et-angle",
+      "destination": "https://pratix-smart-level.vercel.app/fr/"
+    },
+    {
+      "source": "/de/wasserwaage-winkelmesser/",
+      "destination": "https://pratix-smart-level.vercel.app/de/"
+    },
+    {
+      "source": "/de/wasserwaage-winkelmesser",
+      "destination": "https://pratix-smart-level.vercel.app/de/"
+    },
+    {
+      "source": "/tr/akilli-su-terazisi/",
+      "destination": "https://pratix-smart-level.vercel.app/tr/"
+    },
+    {
+      "source": "/tr/akilli-su-terazisi",
+      "destination": "https://pratix-smart-level.vercel.app/tr/"
+    },
+    {
+      "source": "/en/smart-level/",
+      "destination": "https://pratix-smart-level.vercel.app/en/"
+    },
+    {
+      "source": "/en/smart-level",
+      "destination": "https://pratix-smart-level.vercel.app/en/"
+    },
+    {
+      "source": "/zh/kou-dai-bai-ban/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/zh/"
+    },
+    {
+      "source": "/zh/kou-dai-bai-ban",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/zh/"
+    },
+    {
+      "source": "/fi/taskuvalkotaulu/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/fi/"
+    },
+    {
+      "source": "/fi/taskuvalkotaulu",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/fi/"
+    },
+    {
+      "source": "/no/lomme-whiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/no/"
+    },
+    {
+      "source": "/no/lomme-whiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/no/"
+    },
+    {
+      "source": "/da/lomme-whiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/da/"
+    },
+    {
+      "source": "/da/lomme-whiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/da/"
+    },
+    {
+      "source": "/sv/fickwhiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/sv/"
+    },
+    {
+      "source": "/sv/fickwhiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/sv/"
+    },
+    {
+      "source": "/nl/zakelijk-whiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/nl/"
+    },
+    {
+      "source": "/nl/zakelijk-whiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/nl/"
+    },
+    {
+      "source": "/it/lavagna-tascabile/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/it/"
+    },
+    {
+      "source": "/it/lavagna-tascabile",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/it/"
+    },
+    {
+      "source": "/es/pizarra-de-bolsillo/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/es/"
+    },
+    {
+      "source": "/es/pizarra-de-bolsillo",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/es/"
+    },
+    {
+      "source": "/fr/tableau-blanc-de-poche/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/fr/"
+    },
+    {
+      "source": "/fr/tableau-blanc-de-poche",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/fr/"
+    },
+    {
+      "source": "/de/pocket-whiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/de/"
+    },
+    {
+      "source": "/de/pocket-whiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/de/"
+    },
+    {
+      "source": "/tr/cep-beyaz-tahta/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/tr/"
+    },
+    {
+      "source": "/tr/cep-beyaz-tahta",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/tr/"
+    },
+    {
+      "source": "/en/pocket-whiteboard/",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/en/"
+    },
+    {
+      "source": "/en/pocket-whiteboard",
+      "destination": "https://pratix-pocket-whiteboard.vercel.app/en/"
+    },
+    {
+      "source": "/zh/pingmiantu-ce-liang/",
+      "destination": "https://pratix-plan-measurement.vercel.app/zh/"
+    },
+    {
+      "source": "/zh/pingmiantu-ce-liang",
+      "destination": "https://pratix-plan-measurement.vercel.app/zh/"
+    },
+    {
+      "source": "/fi/pohjapiirroksen-mittaus/",
+      "destination": "https://pratix-plan-measurement.vercel.app/fi/"
+    },
+    {
+      "source": "/fi/pohjapiirroksen-mittaus",
+      "destination": "https://pratix-plan-measurement.vercel.app/fi/"
+    },
+    {
+      "source": "/no/planmaling/",
+      "destination": "https://pratix-plan-measurement.vercel.app/no/"
+    },
+    {
+      "source": "/no/planmaling",
+      "destination": "https://pratix-plan-measurement.vercel.app/no/"
+    },
+    {
+      "source": "/da/planmaling/",
+      "destination": "https://pratix-plan-measurement.vercel.app/da/"
+    },
+    {
+      "source": "/da/planmaling",
+      "destination": "https://pratix-plan-measurement.vercel.app/da/"
+    },
+    {
+      "source": "/sv/planmatning/",
+      "destination": "https://pratix-plan-measurement.vercel.app/sv/"
+    },
+    {
+      "source": "/sv/planmatning",
+      "destination": "https://pratix-plan-measurement.vercel.app/sv/"
+    },
+    {
+      "source": "/nl/plattegrondmeting/",
+      "destination": "https://pratix-plan-measurement.vercel.app/nl/"
+    },
+    {
+      "source": "/nl/plattegrondmeting",
+      "destination": "https://pratix-plan-measurement.vercel.app/nl/"
+    },
+    {
+      "source": "/it/misurazione-planimetria/",
+      "destination": "https://pratix-plan-measurement.vercel.app/it/"
+    },
+    {
+      "source": "/it/misurazione-planimetria",
+      "destination": "https://pratix-plan-measurement.vercel.app/it/"
+    },
+    {
+      "source": "/es/medicion-de-planos/",
+      "destination": "https://pratix-plan-measurement.vercel.app/es/"
+    },
+    {
+      "source": "/es/medicion-de-planos",
+      "destination": "https://pratix-plan-measurement.vercel.app/es/"
+    },
+    {
+      "source": "/fr/mesure-de-plans/",
+      "destination": "https://pratix-plan-measurement.vercel.app/fr/"
+    },
+    {
+      "source": "/fr/mesure-de-plans",
+      "destination": "https://pratix-plan-measurement.vercel.app/fr/"
+    },
+    {
+      "source": "/de/planmessung/",
+      "destination": "https://pratix-plan-measurement.vercel.app/de/"
+    },
+    {
+      "source": "/de/planmessung",
+      "destination": "https://pratix-plan-measurement.vercel.app/de/"
+    },
+    {
+      "source": "/tr/plan-olcum/",
+      "destination": "https://pratix-plan-measurement.vercel.app/tr/"
+    },
+    {
+      "source": "/tr/plan-olcum",
+      "destination": "https://pratix-plan-measurement.vercel.app/tr/"
+    },
+    {
+      "source": "/en/plan-measurement/",
+      "destination": "https://pratix-plan-measurement.vercel.app/en/"
+    },
+    {
+      "source": "/en/plan-measurement",
+      "destination": "https://pratix-plan-measurement.vercel.app/en/"
+    },
+    {
       "source": "/en/content-repurposer",
       "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
     },
