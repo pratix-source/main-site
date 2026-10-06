@@ -16,7 +16,7 @@ const hubFiles = htmlFiles.filter(file => {
   const relative = path.relative(dist, file).split(path.sep);
   return relative.length <= 2;
 });
-if (hubFiles.length !== 13) throw new Error(`Expected 13 generated hub pages, found ${hubFiles.length}`);
+if (hubFiles.length !== 14) throw new Error(`Expected 14 generated hub pages, found ${hubFiles.length}`);
 const failures = [];
 for (const file of hubFiles) {
   const html = fs.readFileSync(file, 'utf8');
@@ -29,7 +29,7 @@ for (const file of hubFiles) {
   if (!title || title.length > 60) failures.push(`${file}: title length ${title.length}`);
   if (decodedDescription.length < 120 || decodedDescription.length > 155) failures.push(`${file}: description length ${decodedDescription.length}`);
   if (!canonical.startsWith('https://www.pratix.io/')) failures.push(`${file}: canonical ${canonical}`);
-  if (hreflangCount !== 13) failures.push(`${file}: hreflang count ${hreflangCount}`);
+  if (hreflangCount !== 14) failures.push(`${file}: hreflang count ${hreflangCount}`);
   if (jsonLdCount !== 1) failures.push(`${file}: JSON-LD count ${jsonLdCount}`);
 }
 for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html', 'tools/qr-code-generator.html', 'tools/llms-txt-generator.html', 'tools/robots-txt-generator.html']) {
@@ -37,7 +37,7 @@ for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html', 
 }
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-const expectedUrlCount = 12 + 12 * 26;
+const expectedUrlCount = 13 + 13 * 26;
 if (sitemapUrls.length !== expectedUrlCount) failures.push(`sitemap.xml: ${sitemapUrls.length} URLs, expected ${expectedUrlCount}`);
 for (const url of sitemapUrls) {
   if (!url.startsWith('https://www.pratix.io/')) failures.push(`sitemap.xml: non-www URL ${url}`);
