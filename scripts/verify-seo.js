@@ -12,9 +12,13 @@ function walk(directory) {
   }
 }
 walk(dist);
-if (htmlFiles.length !== 13) throw new Error(`Expected 13 generated hub pages, found ${htmlFiles.length}`);
+const hubFiles = htmlFiles.filter(file => {
+  const relative = path.relative(dist, file).split(path.sep);
+  return relative.length <= 2;
+});
+if (hubFiles.length !== 13) throw new Error(`Expected 13 generated hub pages, found ${hubFiles.length}`);
 const failures = [];
-for (const file of htmlFiles) {
+for (const file of hubFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const title = html.match(/<title>([\s\S]*?)<\/title>/)?.[1] || '';
   const description = html.match(/<meta name="description" content="([^"]*)">/)?.[1] || '';
@@ -45,4 +49,4 @@ for (const fragment of legacyFragments) {
 const robotsText = fs.readFileSync(path.join(dist, 'robots.txt'), 'utf8');
 if (!robotsText.includes('Sitemap: https://www.pratix.io/sitemap.xml')) failures.push('robots.txt: www sitemap declaration missing');
 if (failures.length) throw new Error(failures.slice(0, 20).join('\n'));
-console.log(`SEO validation passed for ${htmlFiles.length} hub pages: title <= 60, description 120-155, canonical, hreflang, JSON-LD, sitemap and robots.`);
+console.log(`SEO validation passed for ${hubFiles.length} hub pages: title <= 60, description 120-155, canonical, hreflang, JSON-LD, sitemap and robots.`);

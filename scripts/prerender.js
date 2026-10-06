@@ -171,6 +171,22 @@ for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html', 'pratix-s
     fs.copyFileSync(staticSource, path.join(distPath, staticFile));
   }
 }
+// Bundle the three mobile utilities into the main deployment so their localized routes never depend on an undeployed external project.
+const mobileSlugs = {
+  'plan-measurement': { en: 'plan-measurement', tr: 'plan-olcum', de: 'planmessung', fr: 'mesure-de-plans', es: 'medicion-de-planos', it: 'misurazione-planimetria', nl: 'plattegrondmeting', sv: 'planmatning', da: 'planmaling', no: 'planmaling', fi: 'pohjapiirroksen-mittaus', zh: 'pingmiantu-ce-liang' },
+  'pocket-whiteboard': { en: 'pocket-whiteboard', tr: 'cep-beyaz-tahta', de: 'pocket-whiteboard', fr: 'tableau-blanc-de-poche', es: 'pizarra-de-bolsillo', it: 'lavagna-tascabile', nl: 'zakelijk-whiteboard', sv: 'fickwhiteboard', da: 'lomme-whiteboard', no: 'lomme-whiteboard', fi: 'taskuvalkotaulu', zh: 'kou-dai-bai-ban' },
+  'smart-level': { en: 'smart-level', tr: 'akilli-su-terazisi', de: 'wasserwaage-winkelmesser', fr: 'niveau-et-angle', es: 'nivel-y-angulo', it: 'livella-e-angolo', nl: 'waterpas-en-hoek', sv: 'vattenpass-vinkel', da: 'vaterpas-vinkel', no: 'vater-vinkel', fi: 'vesivaaka-ja-kulma', zh: 'zhineng-shuipingyi' },
+};
+for (const [toolId, slugs] of Object.entries(mobileSlugs)) {
+  for (const language of languages) {
+    const sourceToolPage = path.join(root, 'mobile-tools', toolId, language, 'index.html');
+    if (!fs.existsSync(sourceToolPage)) continue;
+    const destination = path.join(distPath, language, slugs[language], 'index.html');
+    fs.mkdirSync(path.dirname(destination), { recursive: true });
+    fs.copyFileSync(sourceToolPage, destination);
+  }
+}
+
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
 
 console.log(`Prerendered ${1 + languages.length} hub pages into ${path.relative(root, distPath)}/`);
