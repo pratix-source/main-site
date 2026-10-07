@@ -14726,6 +14726,7 @@ body:has(nav.nav):not(.light) footer {
           <button class="lang-option w-full text-left px-3 py-1.5 text-sm rounded-lg hover:bg-zinc-100 transition cursor-pointer" data-lang="no">Norsk (NO)</button>
           <button class="lang-option w-full text-left px-3 py-1.5 text-sm rounded-lg hover:bg-zinc-100 transition cursor-pointer" data-lang="fi">Suomi (FI)</button>
           <button class="lang-option w-full text-left px-3 py-1.5 text-sm rounded-lg hover:bg-zinc-100 transition cursor-pointer" data-lang="zh">中文 (ZH)</button>
+          <button class="lang-option w-full text-left px-3 py-1.5 text-sm rounded-lg hover:bg-zinc-100 transition cursor-pointer" data-lang="pt">Português (PT)</button>
         </div>
       </div>
     </div>
@@ -15023,7 +15024,8 @@ planning and are not financial advice.</p>
                   "da": "Marketing",
                   "no": "Markedsføring",
                   "fi": "Markkinointi",
-                  "zh": "营销"
+                  "zh": "营销",
+                  "pt": "Marketing"
               }
           },
           {
@@ -15041,7 +15043,8 @@ planning and are not financial advice.</p>
                   "da": "Finans",
                   "no": "Finans",
                   "fi": "Rahoitus",
-                  "zh": "财务"
+                  "zh": "财务",
+                  "pt": "Finanças"
               }
           },
           {
@@ -15059,7 +15062,8 @@ planning and are not financial advice.</p>
                   "da": "SEO",
                   "no": "SEO",
                   "fi": "SEO",
-                  "zh": "SEO"
+                  "zh": "SEO",
+                  "pt": "SEO"
               }
           },
           {
@@ -15077,7 +15081,8 @@ planning and are not financial advice.</p>
                   "da": "Ai værktøj",
                   "no": "Ai verktøy",
                   "fi": "Ai työkalut",
-                  "zh": "人工智能工具"
+                  "zh": "人工智能工具",
+                  "pt": "Ferramentas de IA"
               }
           },
           {
@@ -15095,7 +15100,8 @@ planning and are not financial advice.</p>
                   "da": "Data & Asset Optimization",
                   "no": "Data & Asset Optimization",
                   "fi": "Tietojen ja resurssien optimointi",
-                  "zh": "数据和资产优化"
+                  "zh": "数据和资产优化",
+                  "pt": "Otimização de dados e ativos"
               }
           }
       ];
@@ -15902,31 +15908,31 @@ planning and are not financial advice.</p>
     // URL is the source of truth for language selection. Every supported language uses a prefix.
     const SUPPORTED_LANGUAGES = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt'];
     const LOCALIZED_SLUGS = {
-      'cleaner': { en: 'excel-data-cleaner', tr: 'excel-veri-temizleyici', de: 'excel-datenbereinigung', fr: 'nettoyeur-de-donnees-excel', es: 'limpiador-de-datos-excel', it: 'pulizia-dati-excel', nl: 'excel-gegevensreiniger', sv: 'excel-datarensare', da: 'excel-datarenser', no: 'excel-datarenser', fi: 'excel-datan-puhdistaja', zh: 'excel-shuju-qingliqi' , pt: 'excel-data-cleaner' }
-      'schema-generator': { en: 'schema-generator', tr: 'schema-olusturucu', de: 'schema-generator', fr: 'generateur-de-schema', es: 'generador-de-schema', it: 'generatore-di-schema', nl: 'schema-generator', sv: 'schema-generator', da: 'schema-generator', no: 'skjemagenerator', fi: 'skeemageneraattori', zh: 'jiegouhua-shuju-shengchengqi' , pt: 'schema-generator' }
-      'revenue-calculator': { en: 'revenue-calculator', tr: 'gelir-hesaplayici', de: 'umsatzrechner', fr: 'calculateur-de-revenus', es: 'calculadora-de-ingresos', it: 'calcolatore-entrate', nl: 'inkomsten-calculator', sv: 'intaktskalkylator', da: 'indtaegtsberegner', no: 'inntektskalkulator', fi: 'tulolaskuri', zh: 'shouru-jisuanqi' , pt: 'revenue-calculator' }
-      'ad-layout---banner-placeholder-generator': { en: 'ad-layout-generator', tr: 'reklam-yerlesim-olusturucu', de: 'werbelayout-generator', fr: 'generateur-de-mise-en-page-publicitaire', es: 'generador-de-diseno-publicitario', it: 'generatore-layout-pubblicitario', nl: 'advertentie-layout-generator', sv: 'annonslayout-generator', da: 'annonce-layout-generator', no: 'annonselayout-generator', fi: 'mainosasettelun-generaattori', zh: 'guanggao-buju-shengchengqi' , pt: 'ad-layout-generator' }
-      'ai-prompt-generator': { en: 'ai-prompt-generator', tr: 'yapay-zeka-prompt-olusturucu', de: 'ki-prompt-generator', fr: 'generateur-de-prompts-ia', es: 'generador-de-prompts-ia', it: 'generatore-di-prompt-ia', nl: 'ai-promptgenerator', sv: 'ai-promptgenerator', da: 'ai-promptgenerator', no: 'ai-promptgenerator', fi: 'tekoaly-kehotegeneraattori', zh: 'rengong-zhineng-tishi-ci-shengchengqi' , pt: 'ai-prompt-generator' }
-      'compressor': { en: 'file-compressor', tr: 'dosya-sikistirici', de: 'dateikomprimierer', fr: 'compresseur-de-fichiers', es: 'compresor-de-archivos', it: 'compressore-di-file', nl: 'bestandscompressor', sv: 'filkompressor', da: 'filkompressor', no: 'filkompressor', fi: 'tiedostopakkaaja', zh: 'wenjian-yasuoqi' , pt: 'file-compressor' }
-      'commerce-studio': { en: 'commerce-studio', tr: 'ticaret-studyosu', de: 'commerce-studio', fr: 'studio-commerce', es: 'estudio-de-comercio', it: 'studio-commerce', nl: 'commerce-studio', sv: 'handelsstudio', da: 'handelsstudio', no: 'handelsstudio', fi: 'kaupankayntistudio', zh: 'dian-shang-gongzuoshi' , pt: 'commerce-studio' }
-      'free-pdf-editor---toolkit': { en: 'pdf-editor', tr: 'pdf-duzenleyici', de: 'pdf-editor', fr: 'editeur-pdf', es: 'editor-pdf', it: 'editor-pdf', nl: 'pdf-editor', sv: 'pdf-redigerare', da: 'pdf-editor', no: 'pdf-redigerer', fi: 'pdf-editori', zh: 'pdf-bianjiqi' , pt: 'pdf-editor' }
-      'loan-calculator': { en: 'loan-calculator', tr: 'kredi-hesaplayici', de: 'kreditrechner', fr: 'calculateur-de-pret', es: 'calculadora-de-prestamos', it: 'calcolatore-di-prestiti', nl: 'leningcalculator', sv: 'lanekalkylator', da: 'laaneberegner', no: 'lanekalkulator', fi: 'lainalaskuri', zh: 'daikuan-jisuanqi' , pt: 'loan-calculator' }
-      'debt-payoff-calculator': { en: 'debt-payoff-calculator', tr: 'borc-kapatma-hesaplayici', de: 'schuldentilgungsrechner', fr: 'calculateur-de-remboursement-de-dettes', es: 'calculadora-de-pago-de-deudas', it: 'calcolatore-estinzione-debiti', nl: 'schuldaflossingscalculator', sv: 'skuldavbetalningskalkylator', da: 'gaeldsafviklingsberegner', no: 'gjeldsnedbetalingskalkulator', fi: 'velanmaksulaskuri', zh: 'zhaiwu-huankuan-jisuanqi' , pt: 'debt-payoff-calculator' }
-      'net-worth-calculator': { en: 'net-worth-calculator', tr: 'net-deger-hesaplayici', de: 'nettovermoegensrechner', fr: 'calculateur-de-patrimoine-net', es: 'calculadora-de-patrimonio-neto', it: 'calcolatore-del-patrimonio-netto', nl: 'nettovermogen-calculator', sv: 'nettofoermoegenhetskalkylator', da: 'nettoformueberegner', no: 'nettoformuekalkulator', fi: 'nettovarallisuuslaskuri', zh: 'jing-zichan-jisuanqi' , pt: 'net-worth-calculator' }
-      'file-bridge': { en: 'file-bridge', tr: 'dosya-koprusu', de: 'dateibruecke', fr: 'pont-de-fichiers', es: 'puente-de-archivos', it: 'ponte-file', nl: 'bestandsbrug', sv: 'filbrygga', da: 'filbro', no: 'filbro', fi: 'tiedostosilta', zh: 'wenjian-qiaojie' , pt: 'file-bridge' }
-      'content-repurposer': { en: 'content-repurposer', tr: 'icerik-donusturucu', de: 'content-repurposer', fr: 'reutilisateur-de-contenu', es: 'reutilizador-de-contenido', it: 'riutilizzatore-contenuti', nl: 'content-repurposer', sv: 'innehallsanpassare', da: 'indholdsgenbruger', no: 'innholdsfornyer', fi: 'sisallon-uudelleenkayttaja', zh: 'neirong-chongzuo-gongju' , pt: 'content-repurposer' }
-      'content-creator-studio': { en: 'content-creator-studio', tr: 'icerik-uretici-studyosu', de: 'content-creator-studio', fr: 'studio-de-creation-de-contenu', es: 'estudio-de-creacion-de-contenido', it: 'studio-creazione-contenuti', nl: 'contentcreator-studio', sv: 'innehallsskaparstudio', da: 'indholdsskaber-studie', no: 'innholdsskaperstudio', fi: 'sisallontuottajan-studio', zh: 'neirong-chuangzuozhe-gongzuoshi' , pt: 'content-creator-studio' }
-      'privacy-file-inspector': { en: 'privacy-file-inspector', tr: 'dosya-gizlilik-kontrolu', de: 'datei-datenschutzpruefer', fr: 'inspecteur-confidentialite-fichiers', es: 'inspector-privacidad-archivos', it: 'ispettore-privacy-file', nl: 'bestandsprivacy-controle', sv: 'filintegritetskontroll', da: 'fil-privatlivstjek', no: 'filpersonvernkontroll', fi: 'tiedoston-yksityisyystarkistus', zh: 'wenjian-yinsi-jiancha' , pt: 'privacy-file-inspector' }
-      'secure-note': { en: 'secure-note', tr: 'sifreli-not', de: 'sichere-notiz', fr: 'note-securisee', es: 'nota-segura', it: 'nota-sicura', nl: 'veilige-notitie', sv: 'saker-anteckning', da: 'sikker-note', no: 'sikkert-notat', fi: 'suojattu-muistiinpano', zh: 'anquan-bianjian' , pt: 'secure-note' }
-      'qr-code-generator': { en: 'qr-code-generator', tr: 'qr-kod-olusturucu', de: 'qr-code-generator', fr: 'generateur-de-qr-code', es: 'generador-de-codigos-qr', it: 'generatore-di-qr-code', nl: 'qr-code-generator', sv: 'qr-kod-generator', da: 'qr-kode-generator', no: 'qr-kode-generator', fi: 'qr-koodigeneraattori', zh: 'erwei-ma-shengchengqi' , pt: 'qr-code-generator' }
-      'llms-txt-generator': { en: 'llms-txt-generator', tr: 'llms-txt-olusturucu', de: 'llms-txt-generator', fr: 'generateur-llms-txt', es: 'generador-llms-txt', it: 'generatore-llms-txt', nl: 'llms-txt-generator', sv: 'llms-txt-generator', da: 'llms-txt-generator', no: 'llms-txt-generator', fi: 'llms-txt-generaattori', zh: 'llms-wenjian-shengchengqi' , pt: 'llms-txt-generator' }
-      'robots-txt-generator': { en: 'robots-txt-generator', tr: 'robots-txt-olusturucu', de: 'robots-txt-generator', fr: 'generateur-robots-txt', es: 'generador-robots-txt', it: 'generatore-robots-txt', nl: 'robots-txt-generator', sv: 'robots-txt-generator', da: 'robots-txt-generator', no: 'robots-txt-generator', fi: 'robots-txt-generaattori', zh: 'robots-wenjian-shengchengqi' , pt: 'robots-txt-generator' }
-      'utm-campaign-builder': { en: 'utm-builder', tr: 'utm-olusturucu', de: 'utm-builder', fr: 'generateur-utm', es: 'generador-utm', it: 'generatore-utm', nl: 'utm-generator', sv: 'utm-generator', da: 'utm-generator', no: 'utm-generator', fi: 'utm-generaattori', zh: 'utm-jingzhui-shengchengqi' , pt: 'utm-builder' }
-      'plan-measurement': {en: 'plan-measurement', tr: 'plan-olcum', de: 'planmessung', fr: 'mesure-de-plans', es: 'medicion-de-planos', it: 'misurazione-planimetria', nl: 'plattegrondmeting', sv: 'planmatning', da: 'planmaling', no: 'planmaling', fi: 'pohjapiirroksen-mittaus', zh: 'pingmiantu-ce-liang', pt: 'plan-measurement' }
-      'pocket-whiteboard': {en: 'pocket-whiteboard', tr: 'cep-beyaz-tahta', de: 'pocket-whiteboard', fr: 'tableau-blanc-de-poche', es: 'pizarra-de-bolsillo', it: 'lavagna-tascabile', nl: 'zakelijk-whiteboard', sv: 'fickwhiteboard', da: 'lomme-whiteboard', no: 'lomme-whiteboard', fi: 'taskuvalkotaulu', zh: 'kou-dai-bai-ban', pt: 'pocket-whiteboard' }
-      'smart-level': {en: 'smart-level', tr: 'akilli-su-terazisi', de: 'wasserwaage-winkelmesser', fr: 'niveau-et-angle', es: 'nivel-y-angulo', it: 'livella-e-angolo', nl: 'waterpas-en-hoek', sv: 'vattenpass-vinkel', da: 'vaterpas-vinkel', no: 'vater-vinkel', fi: 'vesivaaka-ja-kulma', zh: 'zhineng-shuipingyi', pt: 'smart-level' }
-      'agent-readiness': {en: 'ai-agent-readiness-auditor', tr: 'ai-agent-hazirlik-denetleyicisi', de: 'ai-agent-bereitschaft', fr: 'audit-preparation-agent-ia', es: 'auditor-preparacion-agente-ia', it: 'audit-prontezza-agente-ia', nl: 'ai-agent-gereedheidsaudit', sv: 'ai-agent-beredskapsaudit', da: 'ai-agent-parathedsaudit', no: 'ai-agent-beredskapsaudit', fi: 'tekoaly-agentin-valmiusauditointi', zh: 'ai-agent-zbeil-shenji', pt: 'auditor-preparacao-agente-ia' }
-      'c2pa-inspector': {en: 'c2pa-content-credentials-inspector', tr: 'c2pa-icerik-kimlik-denetleyicisi', de: 'c2pa-content-credentials-pruefer', fr: 'inspecteur-content-credentials-c2pa', es: 'inspector-content-credentials-c2pa', it: 'ispettore-content-credentials-c2pa', nl: 'c2pa-content-credentials-inspecteur', sv: 'c2pa-content-credentials-inspektor', da: 'c2pa-content-credentials-inspektor', no: 'c2pa-content-credentials-inspektor', fi: 'c2pa-content-credentials-tarkistin', zh: 'c2pa-content-credentials-jiancha', pt: 'inspetor-content-credentials-c2pa' }
+      'cleaner': { en: 'excel-data-cleaner', tr: 'excel-veri-temizleyici', de: 'excel-datenbereinigung', fr: 'nettoyeur-de-donnees-excel', es: 'limpiador-de-datos-excel', it: 'pulizia-dati-excel', nl: 'excel-gegevensreiniger', sv: 'excel-datarensare', da: 'excel-datarenser', no: 'excel-datarenser', fi: 'excel-datan-puhdistaja', zh: 'excel-shuju-qingliqi' , pt: 'excel-data-cleaner' },
+      'schema-generator': { en: 'schema-generator', tr: 'schema-olusturucu', de: 'schema-generator', fr: 'generateur-de-schema', es: 'generador-de-schema', it: 'generatore-di-schema', nl: 'schema-generator', sv: 'schema-generator', da: 'schema-generator', no: 'skjemagenerator', fi: 'skeemageneraattori', zh: 'jiegouhua-shuju-shengchengqi' , pt: 'schema-generator' },
+      'revenue-calculator': { en: 'revenue-calculator', tr: 'gelir-hesaplayici', de: 'umsatzrechner', fr: 'calculateur-de-revenus', es: 'calculadora-de-ingresos', it: 'calcolatore-entrate', nl: 'inkomsten-calculator', sv: 'intaktskalkylator', da: 'indtaegtsberegner', no: 'inntektskalkulator', fi: 'tulolaskuri', zh: 'shouru-jisuanqi' , pt: 'revenue-calculator' },
+      'ad-layout---banner-placeholder-generator': { en: 'ad-layout-generator', tr: 'reklam-yerlesim-olusturucu', de: 'werbelayout-generator', fr: 'generateur-de-mise-en-page-publicitaire', es: 'generador-de-diseno-publicitario', it: 'generatore-layout-pubblicitario', nl: 'advertentie-layout-generator', sv: 'annonslayout-generator', da: 'annonce-layout-generator', no: 'annonselayout-generator', fi: 'mainosasettelun-generaattori', zh: 'guanggao-buju-shengchengqi' , pt: 'ad-layout-generator' },
+      'ai-prompt-generator': { en: 'ai-prompt-generator', tr: 'yapay-zeka-prompt-olusturucu', de: 'ki-prompt-generator', fr: 'generateur-de-prompts-ia', es: 'generador-de-prompts-ia', it: 'generatore-di-prompt-ia', nl: 'ai-promptgenerator', sv: 'ai-promptgenerator', da: 'ai-promptgenerator', no: 'ai-promptgenerator', fi: 'tekoaly-kehotegeneraattori', zh: 'rengong-zhineng-tishi-ci-shengchengqi' , pt: 'ai-prompt-generator' },
+      'compressor': { en: 'file-compressor', tr: 'dosya-sikistirici', de: 'dateikomprimierer', fr: 'compresseur-de-fichiers', es: 'compresor-de-archivos', it: 'compressore-di-file', nl: 'bestandscompressor', sv: 'filkompressor', da: 'filkompressor', no: 'filkompressor', fi: 'tiedostopakkaaja', zh: 'wenjian-yasuoqi' , pt: 'file-compressor' },
+      'commerce-studio': { en: 'commerce-studio', tr: 'ticaret-studyosu', de: 'commerce-studio', fr: 'studio-commerce', es: 'estudio-de-comercio', it: 'studio-commerce', nl: 'commerce-studio', sv: 'handelsstudio', da: 'handelsstudio', no: 'handelsstudio', fi: 'kaupankayntistudio', zh: 'dian-shang-gongzuoshi' , pt: 'commerce-studio' },
+      'free-pdf-editor---toolkit': { en: 'pdf-editor', tr: 'pdf-duzenleyici', de: 'pdf-editor', fr: 'editeur-pdf', es: 'editor-pdf', it: 'editor-pdf', nl: 'pdf-editor', sv: 'pdf-redigerare', da: 'pdf-editor', no: 'pdf-redigerer', fi: 'pdf-editori', zh: 'pdf-bianjiqi' , pt: 'pdf-editor' },
+      'loan-calculator': { en: 'loan-calculator', tr: 'kredi-hesaplayici', de: 'kreditrechner', fr: 'calculateur-de-pret', es: 'calculadora-de-prestamos', it: 'calcolatore-di-prestiti', nl: 'leningcalculator', sv: 'lanekalkylator', da: 'laaneberegner', no: 'lanekalkulator', fi: 'lainalaskuri', zh: 'daikuan-jisuanqi' , pt: 'loan-calculator' },
+      'debt-payoff-calculator': { en: 'debt-payoff-calculator', tr: 'borc-kapatma-hesaplayici', de: 'schuldentilgungsrechner', fr: 'calculateur-de-remboursement-de-dettes', es: 'calculadora-de-pago-de-deudas', it: 'calcolatore-estinzione-debiti', nl: 'schuldaflossingscalculator', sv: 'skuldavbetalningskalkylator', da: 'gaeldsafviklingsberegner', no: 'gjeldsnedbetalingskalkulator', fi: 'velanmaksulaskuri', zh: 'zhaiwu-huankuan-jisuanqi' , pt: 'debt-payoff-calculator' },
+      'net-worth-calculator': { en: 'net-worth-calculator', tr: 'net-deger-hesaplayici', de: 'nettovermoegensrechner', fr: 'calculateur-de-patrimoine-net', es: 'calculadora-de-patrimonio-neto', it: 'calcolatore-del-patrimonio-netto', nl: 'nettovermogen-calculator', sv: 'nettofoermoegenhetskalkylator', da: 'nettoformueberegner', no: 'nettoformuekalkulator', fi: 'nettovarallisuuslaskuri', zh: 'jing-zichan-jisuanqi' , pt: 'net-worth-calculator' },
+      'file-bridge': { en: 'file-bridge', tr: 'dosya-koprusu', de: 'dateibruecke', fr: 'pont-de-fichiers', es: 'puente-de-archivos', it: 'ponte-file', nl: 'bestandsbrug', sv: 'filbrygga', da: 'filbro', no: 'filbro', fi: 'tiedostosilta', zh: 'wenjian-qiaojie' , pt: 'file-bridge' },
+      'content-repurposer': { en: 'content-repurposer', tr: 'icerik-donusturucu', de: 'content-repurposer', fr: 'reutilisateur-de-contenu', es: 'reutilizador-de-contenido', it: 'riutilizzatore-contenuti', nl: 'content-repurposer', sv: 'innehallsanpassare', da: 'indholdsgenbruger', no: 'innholdsfornyer', fi: 'sisallon-uudelleenkayttaja', zh: 'neirong-chongzuo-gongju' , pt: 'content-repurposer' },
+      'content-creator-studio': { en: 'content-creator-studio', tr: 'icerik-uretici-studyosu', de: 'content-creator-studio', fr: 'studio-de-creation-de-contenu', es: 'estudio-de-creacion-de-contenido', it: 'studio-creazione-contenuti', nl: 'contentcreator-studio', sv: 'innehallsskaparstudio', da: 'indholdsskaber-studie', no: 'innholdsskaperstudio', fi: 'sisallontuottajan-studio', zh: 'neirong-chuangzuozhe-gongzuoshi' , pt: 'content-creator-studio' },
+      'privacy-file-inspector': { en: 'privacy-file-inspector', tr: 'dosya-gizlilik-kontrolu', de: 'datei-datenschutzpruefer', fr: 'inspecteur-confidentialite-fichiers', es: 'inspector-privacidad-archivos', it: 'ispettore-privacy-file', nl: 'bestandsprivacy-controle', sv: 'filintegritetskontroll', da: 'fil-privatlivstjek', no: 'filpersonvernkontroll', fi: 'tiedoston-yksityisyystarkistus', zh: 'wenjian-yinsi-jiancha' , pt: 'privacy-file-inspector' },
+      'secure-note': { en: 'secure-note', tr: 'sifreli-not', de: 'sichere-notiz', fr: 'note-securisee', es: 'nota-segura', it: 'nota-sicura', nl: 'veilige-notitie', sv: 'saker-anteckning', da: 'sikker-note', no: 'sikkert-notat', fi: 'suojattu-muistiinpano', zh: 'anquan-bianjian' , pt: 'secure-note' },
+      'qr-code-generator': { en: 'qr-code-generator', tr: 'qr-kod-olusturucu', de: 'qr-code-generator', fr: 'generateur-de-qr-code', es: 'generador-de-codigos-qr', it: 'generatore-di-qr-code', nl: 'qr-code-generator', sv: 'qr-kod-generator', da: 'qr-kode-generator', no: 'qr-kode-generator', fi: 'qr-koodigeneraattori', zh: 'erwei-ma-shengchengqi' , pt: 'qr-code-generator' },
+      'llms-txt-generator': { en: 'llms-txt-generator', tr: 'llms-txt-olusturucu', de: 'llms-txt-generator', fr: 'generateur-llms-txt', es: 'generador-llms-txt', it: 'generatore-llms-txt', nl: 'llms-txt-generator', sv: 'llms-txt-generator', da: 'llms-txt-generator', no: 'llms-txt-generator', fi: 'llms-txt-generaattori', zh: 'llms-wenjian-shengchengqi' , pt: 'llms-txt-generator' },
+      'robots-txt-generator': { en: 'robots-txt-generator', tr: 'robots-txt-olusturucu', de: 'robots-txt-generator', fr: 'generateur-robots-txt', es: 'generador-robots-txt', it: 'generatore-robots-txt', nl: 'robots-txt-generator', sv: 'robots-txt-generator', da: 'robots-txt-generator', no: 'robots-txt-generator', fi: 'robots-txt-generaattori', zh: 'robots-wenjian-shengchengqi' , pt: 'robots-txt-generator' },
+      'utm-campaign-builder': { en: 'utm-builder', tr: 'utm-olusturucu', de: 'utm-builder', fr: 'generateur-utm', es: 'generador-utm', it: 'generatore-utm', nl: 'utm-generator', sv: 'utm-generator', da: 'utm-generator', no: 'utm-generator', fi: 'utm-generaattori', zh: 'utm-jingzhui-shengchengqi' , pt: 'utm-builder' },
+      'plan-measurement': {en: 'plan-measurement', tr: 'plan-olcum', de: 'planmessung', fr: 'mesure-de-plans', es: 'medicion-de-planos', it: 'misurazione-planimetria', nl: 'plattegrondmeting', sv: 'planmatning', da: 'planmaling', no: 'planmaling', fi: 'pohjapiirroksen-mittaus', zh: 'pingmiantu-ce-liang', pt: 'plan-measurement' },
+      'pocket-whiteboard': {en: 'pocket-whiteboard', tr: 'cep-beyaz-tahta', de: 'pocket-whiteboard', fr: 'tableau-blanc-de-poche', es: 'pizarra-de-bolsillo', it: 'lavagna-tascabile', nl: 'zakelijk-whiteboard', sv: 'fickwhiteboard', da: 'lomme-whiteboard', no: 'lomme-whiteboard', fi: 'taskuvalkotaulu', zh: 'kou-dai-bai-ban', pt: 'pocket-whiteboard' },
+      'smart-level': {en: 'smart-level', tr: 'akilli-su-terazisi', de: 'wasserwaage-winkelmesser', fr: 'niveau-et-angle', es: 'nivel-y-angulo', it: 'livella-e-angolo', nl: 'waterpas-en-hoek', sv: 'vattenpass-vinkel', da: 'vaterpas-vinkel', no: 'vater-vinkel', fi: 'vesivaaka-ja-kulma', zh: 'zhineng-shuipingyi', pt: 'smart-level' },
+      'agent-readiness': {en: 'ai-agent-readiness-auditor', tr: 'ai-agent-hazirlik-denetleyicisi', de: 'ai-agent-bereitschaft', fr: 'audit-preparation-agent-ia', es: 'auditor-preparacion-agente-ia', it: 'audit-prontezza-agente-ia', nl: 'ai-agent-gereedheidsaudit', sv: 'ai-agent-beredskapsaudit', da: 'ai-agent-parathedsaudit', no: 'ai-agent-beredskapsaudit', fi: 'tekoaly-agentin-valmiusauditointi', zh: 'ai-agent-zbeil-shenji', pt: 'auditor-preparacao-agente-ia' },
+      'c2pa-inspector': {en: 'c2pa-content-credentials-inspector', tr: 'c2pa-icerik-kimlik-denetleyicisi', de: 'c2pa-content-credentials-pruefer', fr: 'inspecteur-content-credentials-c2pa', es: 'inspector-content-credentials-c2pa', it: 'ispettore-content-credentials-c2pa', nl: 'c2pa-content-credentials-inspecteur', sv: 'c2pa-content-credentials-inspektor', da: 'c2pa-content-credentials-inspektor', no: 'c2pa-content-credentials-inspektor', fi: 'c2pa-content-credentials-tarkistin', zh: 'c2pa-content-credentials-jiancha', pt: 'inspetor-content-credentials-c2pa' },
       'passkey-checker': {en: 'passkey-readiness-checker', tr: 'passkey-hazirlik-kontrolu', de: 'passkey-bereitschaftstest', fr: 'test-de-preparation-passkey', es: 'comprobador-preparacion-passkey', it: 'verifica-prontezza-passkey', nl: 'passkey-gereedheidschecker', sv: 'passkey-beredskapstest', da: 'passkey-parathedstest', no: 'passkey-beredskapstest', fi: 'passkey-valmiustarkistus', zh: 'passkey-zbeil-jiancha', pt: 'verificador-prontidao-passkey' }
     };
     const LOCALIZED_TOOL_IDS = new Set(Object.keys(LOCALIZED_SLUGS));
