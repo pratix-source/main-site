@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'index.html');
 const distPath = path.join(root, 'dist');
 const source = fs.readFileSync(sourcePath, 'utf8');
-const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt', 'pt'];
+const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt'];
 const siteOrigin = 'https://www.pratix.io';
 const { getSeoCopy } = require('./seo-copy');
 

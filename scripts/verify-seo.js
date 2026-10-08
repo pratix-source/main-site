@@ -37,7 +37,7 @@ for (const file of ['sitemap.xml', 'robots.txt', 'google6ddf2b84ffac0dd8.html', 
 }
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-const expectedUrlCount = 13 + 13 * 26;
+const expectedUrlCount = 13 + 13 * 29;
 if (sitemapUrls.length !== expectedUrlCount) failures.push(`sitemap.xml: ${sitemapUrls.length} URLs, expected ${expectedUrlCount}`);
 for (const url of sitemapUrls) {
   if (!url.startsWith('https://www.pratix.io/')) failures.push(`sitemap.xml: non-www URL ${url}`);
