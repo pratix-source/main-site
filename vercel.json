@@ -196,6 +196,318 @@
       "destination": "https://pratix-utm-campaign-builder.vercel.app/zh/utm-jingzhui-shengchengqi"
     },
     {
+      "source": "/en/delivery-zone-map",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/en/delivery-zone-map/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/tr/teslimat-bolgesi-haritasi",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/tr/teslimat-bolgesi-haritasi/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/de/liefergebiet-karte",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/de/liefergebiet-karte/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/fr/carte-zone-livraison",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/fr/carte-zone-livraison/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/es/mapa-zona-entrega",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/es/mapa-zona-entrega/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/it/mappa-zona-consegna",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/it/mappa-zona-consegna/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/nl/bezorggebied-kaart",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/nl/bezorggebied-kaart/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/sv/leveransomradeskarta",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/sv/leveransomradeskarta/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/da/leveringsomradekort",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/da/leveringsomradekort/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/no/leveringsomradekart",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/no/leveringsomradekart/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/fi/toimitusaluekartta",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/fi/toimitusaluekartta/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/zh/peisong-fanwei-ditu",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/zh/peisong-fanwei-ditu/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/pt/mapa-area-entrega",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pt/mapa-area-entrega/",
+      "destination": "https://pratix-delivery-zone-map.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/en/field-visit-map",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/en/field-visit-map/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/tr/saha-ziyaret-haritasi",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/tr/saha-ziyaret-haritasi/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/de/feldbesuchs-karte",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/de/feldbesuchs-karte/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/fr/carte-visites-terrain",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/fr/carte-visites-terrain/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/es/mapa-visitas-campo",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/es/mapa-visitas-campo/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/it/mappa-visite-territorio",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/it/mappa-visite-territorio/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/nl/veldbezoek-kaart",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/nl/veldbezoek-kaart/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/sv/faltbesokskarta",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/sv/faltbesokskarta/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/da/markbesogskort",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/da/markbesogskort/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/no/feltbesokskart",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/no/feltbesokskart/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/fi/kenttakayntikartta",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/fi/kenttakayntikartta/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/zh/waichu-fangwen-ditu",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/zh/waichu-fangwen-ditu/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/pt/mapa-visitas-campo",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pt/mapa-visitas-campo/",
+      "destination": "https://pratix-field-visit-map.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/en/event-parking-map",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/en/event-parking-map/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=en"
+    },
+    {
+      "source": "/tr/etkinlik-otopark-haritasi",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/tr/etkinlik-otopark-haritasi/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/de/event-parkplatz-karte",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/de/event-parkplatz-karte/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=de"
+    },
+    {
+      "source": "/fr/carte-evenement-parking",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/fr/carte-evenement-parking/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/es/mapa-evento-aparcamiento",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/es/mapa-evento-aparcamiento/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=es"
+    },
+    {
+      "source": "/it/mappa-evento-parcheggio",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/it/mappa-evento-parcheggio/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=it"
+    },
+    {
+      "source": "/nl/evenement-parkeerkaart",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/nl/evenement-parkeerkaart/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/sv/evenemangsparkering-karta",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/sv/evenemangsparkering-karta/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/da/event-parkeringskort",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/da/event-parkeringskort/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=da"
+    },
+    {
+      "source": "/no/event-parkeringskart",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/no/event-parkeringskart/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=no"
+    },
+    {
+      "source": "/fi/tapahtuma-pysakointikartta",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/fi/tapahtuma-pysakointikartta/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/zh/huodong-tingche-ditu",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/zh/huodong-tingche-ditu/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/pt/mapa-evento-estacionamento",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pt/mapa-evento-estacionamento/",
+      "destination": "https://pratix-event-parking-map.vercel.app/?lang=pt"
+    },
+    {
       "source": "/en/",
       "destination": "/index.html"
     },

@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'index.html');
 const distPath = path.join(root, 'dist');
 const source = fs.readFileSync(sourcePath, 'utf8');
-const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt'];
+const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt', 'pt'];
 const siteOrigin = 'https://www.pratix.io';
 const { getSeoCopy } = require('./seo-copy');
 
@@ -34,7 +34,7 @@ function parseSlugMap() {
 }
 
 function parseQuotedMap(block) {
-  return Object.fromEntries([...block.matchAll(/"(en|tr|de|fr|es|it|nl|sv|da|no|fi|zh)": "([^"]*)"/g)].map(match => [match[1], match[2]]));
+  return Object.fromEntries([...block.matchAll(/"(en|tr|de|fr|es|it|nl|sv|da|no|fi|zh|pt)": "([^"]*)"/g)].map(match => [match[1], match[2]]));
 }
 
 function parseTools(slugMap) {
@@ -71,7 +71,7 @@ const localizedToolIds = Object.keys(slugMap);
 
 function absoluteUrl(language, toolId = null) {
   if (!toolId) return `${siteOrigin}/${language}/`;
-  return `${siteOrigin}/${language}/${slugMap[toolId][language]}`;
+  return `${siteOrigin}/${language}/${slugMap[toolId][language] || slugMap[toolId].en || slugMap[toolId].en}`;
 }
 
 function replaceOrInsert(html, matcher, replacement, insertionPoint = '</head>') {
