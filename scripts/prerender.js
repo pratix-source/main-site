@@ -190,6 +190,17 @@ for (const [toolId, slugs] of Object.entries(mobileSlugs)) {
   }
 }
 
+// Bundle the multilingual hreflang/sitemap auditor so the Vercel rewrites resolve
+// to real files in the production output instead of returning 404.
+const hreflangAuditorDir = path.join(root, 'tools', 'hreflang-sitemap-auditor');
+for (const language of languages) {
+  const sourceToolPage = path.join(hreflangAuditorDir, `${language}.html`);
+  if (!fs.existsSync(sourceToolPage)) continue;
+  const destination = path.join(distPath, 'tools', 'hreflang-sitemap-auditor', `${language}.html`);
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  fs.copyFileSync(sourceToolPage, destination);
+}
+
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
 
 console.log(`Prerendered ${1 + languages.length} hub pages into ${path.relative(root, distPath)}/`);
