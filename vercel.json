@@ -4,6 +4,110 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/en/hreflang-sitemap-auditor",
+      "destination": "/tools/hreflang-sitemap-auditor/en.html"
+    },
+    {
+      "source": "/en/hreflang-sitemap-auditor/",
+      "destination": "/tools/hreflang-sitemap-auditor/en.html"
+    },
+    {
+      "source": "/tr/hreflang-sitemap-denetleyicisi",
+      "destination": "/tools/hreflang-sitemap-auditor/tr.html"
+    },
+    {
+      "source": "/tr/hreflang-sitemap-denetleyicisi/",
+      "destination": "/tools/hreflang-sitemap-auditor/tr.html"
+    },
+    {
+      "source": "/de/hreflang-sitemap-pruefer",
+      "destination": "/tools/hreflang-sitemap-auditor/de.html"
+    },
+    {
+      "source": "/de/hreflang-sitemap-pruefer/",
+      "destination": "/tools/hreflang-sitemap-auditor/de.html"
+    },
+    {
+      "source": "/fr/auditeur-hreflang-sitemap",
+      "destination": "/tools/hreflang-sitemap-auditor/fr.html"
+    },
+    {
+      "source": "/fr/auditeur-hreflang-sitemap/",
+      "destination": "/tools/hreflang-sitemap-auditor/fr.html"
+    },
+    {
+      "source": "/es/auditor-hreflang-sitemap",
+      "destination": "/tools/hreflang-sitemap-auditor/es.html"
+    },
+    {
+      "source": "/es/auditor-hreflang-sitemap/",
+      "destination": "/tools/hreflang-sitemap-auditor/es.html"
+    },
+    {
+      "source": "/it/audit-hreflang-sitemap",
+      "destination": "/tools/hreflang-sitemap-auditor/it.html"
+    },
+    {
+      "source": "/it/audit-hreflang-sitemap/",
+      "destination": "/tools/hreflang-sitemap-auditor/it.html"
+    },
+    {
+      "source": "/nl/hreflang-sitemap-auditor",
+      "destination": "/tools/hreflang-sitemap-auditor/nl.html"
+    },
+    {
+      "source": "/nl/hreflang-sitemap-auditor/",
+      "destination": "/tools/hreflang-sitemap-auditor/nl.html"
+    },
+    {
+      "source": "/sv/hreflang-sitemap-granskare",
+      "destination": "/tools/hreflang-sitemap-auditor/sv.html"
+    },
+    {
+      "source": "/sv/hreflang-sitemap-granskare/",
+      "destination": "/tools/hreflang-sitemap-auditor/sv.html"
+    },
+    {
+      "source": "/da/hreflang-sitemap-revisor",
+      "destination": "/tools/hreflang-sitemap-auditor/da.html"
+    },
+    {
+      "source": "/da/hreflang-sitemap-revisor/",
+      "destination": "/tools/hreflang-sitemap-auditor/da.html"
+    },
+    {
+      "source": "/no/hreflang-sitemap-revisor",
+      "destination": "/tools/hreflang-sitemap-auditor/no.html"
+    },
+    {
+      "source": "/no/hreflang-sitemap-revisor/",
+      "destination": "/tools/hreflang-sitemap-auditor/no.html"
+    },
+    {
+      "source": "/fi/hreflang-sitemap-tarkistin",
+      "destination": "/tools/hreflang-sitemap-auditor/fi.html"
+    },
+    {
+      "source": "/fi/hreflang-sitemap-tarkistin/",
+      "destination": "/tools/hreflang-sitemap-auditor/fi.html"
+    },
+    {
+      "source": "/zh/hreflang-sitemap-shenji",
+      "destination": "/tools/hreflang-sitemap-auditor/zh.html"
+    },
+    {
+      "source": "/zh/hreflang-sitemap-shenji/",
+      "destination": "/tools/hreflang-sitemap-auditor/zh.html"
+    },
+    {
+      "source": "/pt/auditor-hreflang-sitemap",
+      "destination": "/tools/hreflang-sitemap-auditor/pt.html"
+    },
+    {
+      "source": "/pt/auditor-hreflang-sitemap/",
+      "destination": "/tools/hreflang-sitemap-auditor/pt.html"
+    },
+    {
       "source": "/en/content-repurposer",
       "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
     },
