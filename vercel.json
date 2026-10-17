@@ -165,43 +165,43 @@
     },
     {
       "source": "/sv/innehallsanpassare",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=sv"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=pl"
     },
     {
       "source": "/sv/innehallsanpassare/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=sv"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=pl"
     },
     {
       "source": "/da/indholdsgenbruger",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=da"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ru"
     },
     {
       "source": "/da/indholdsgenbruger/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=da"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ru"
     },
     {
       "source": "/no/innholdsfornyer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=no"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ar"
     },
     {
       "source": "/no/innholdsfornyer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=no"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ar"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fi"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ja"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fi"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ja"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=zh"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ko"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=zh"
+      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ko"
     },
     {
       "source": "/en/utm-builder",
@@ -2700,44 +2700,44 @@
       "destination": "https://pratix-seo-metadata.vercel.app/?lang=nl"
     },
     {
-      "source": "/sv/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=sv"
+      "source": "/pl/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pl"
     },
     {
-      "source": "/sv/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=sv"
+      "source": "/pl/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pl"
     },
     {
-      "source": "/da/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=da"
+      "source": "/ru/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ru"
     },
     {
-      "source": "/da/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=da"
+      "source": "/ru/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ru"
     },
     {
-      "source": "/no/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=no"
+      "source": "/ar/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ar"
     },
     {
-      "source": "/no/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=no"
+      "source": "/ar/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ar"
     },
     {
-      "source": "/fi/seo-metatietojen-generaattori",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fi"
+      "source": "/ja/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ja"
     },
     {
-      "source": "/fi/seo-metatietojen-generaattori/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fi"
+      "source": "/ja/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ja"
     },
     {
-      "source": "/zh/seo-yuanshu-ju-shengchengqi",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=zh"
+      "source": "/ko/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ko"
     },
     {
-      "source": "/zh/seo-yuanshu-ju-shengchengqi/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=zh"
+      "source": "/ko/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ko"
     },
     {
       "source": "/pt/gerador-de-metadados-seo",
