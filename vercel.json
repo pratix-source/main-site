@@ -2642,6 +2642,110 @@
     {
       "source": "/zh/erwei-ma-shengchengqi/",
       "destination": "/tools/qr-code-generator.html"
+    },
+    {
+      "source": "/en/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=en"
+    },
+    {
+      "source": "/en/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=en"
+    },
+    {
+      "source": "/tr/seo-metadata-olusturucu",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/tr/seo-metadata-olusturucu/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/de/seo-metadaten-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=de"
+    },
+    {
+      "source": "/de/seo-metadaten-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=de"
+    },
+    {
+      "source": "/fr/generateur-de-metadonnees-seo",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/fr/generateur-de-metadonnees-seo/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/es/generador-de-metadatos-seo",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=es"
+    },
+    {
+      "source": "/es/generador-de-metadatos-seo/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=es"
+    },
+    {
+      "source": "/it/generatore-metadati-seo",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=it"
+    },
+    {
+      "source": "/it/generatore-metadati-seo/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=it"
+    },
+    {
+      "source": "/nl/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/nl/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/sv/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/sv/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/da/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=da"
+    },
+    {
+      "source": "/da/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=da"
+    },
+    {
+      "source": "/no/seo-metadata-generator",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=no"
+    },
+    {
+      "source": "/no/seo-metadata-generator/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=no"
+    },
+    {
+      "source": "/fi/seo-metatietojen-generaattori",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/fi/seo-metatietojen-generaattori/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/zh/seo-yuanshu-ju-shengchengqi",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/zh/seo-yuanshu-ju-shengchengqi/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/pt/gerador-de-metadados-seo",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pt/gerador-de-metadados-seo/",
+      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pt"
     }
   ],
   "redirects": [
