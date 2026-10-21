@@ -69,6 +69,9 @@ const TITLE_OVERRIDES = {
     fi: 'Ilmainen llms.txt-generaattori — tekoälyyn',
     zh: '免费 llms.txt 生成器 — AI 友好网站',
   },
+  'cv-builder': {
+    en: 'Free CV Builder & Resume Maker — 10 Templates, Photo and PDF', tr: 'Ücretsiz CV Oluşturucu — 10 Şablon, Fotoğraf ve PDF', de: 'Kostenloser CV-Builder — 10 Vorlagen, Foto und PDF', fr: 'Créateur de CV gratuit — 10 modèles, photo et PDF', es: 'Creador de CV gratis — 10 plantillas, foto y PDF', it: 'Creatore di CV gratuito — 10 modelli, foto e PDF', nl: 'Gratis CV-maker — 10 sjablonen, foto en PDF', sv: 'Gratis CV-byggare — 10 mallar, foto och PDF', da: 'Gratis CV-bygger — 10 skabeloner, foto og PDF', no: 'Gratis CV-bygger — 10 maler, foto og PDF', fi: 'Ilmainen CV-työkalu — 10 mallia, kuva ja PDF', zh: '免费简历制作工具 — 10 个模板、照片和 PDF', pt: 'Criador de CV gratuito — 10 modelos, foto e PDF', pl: 'Darmowy kreator CV — 10 szablonów, zdjęcie i PDF', ru: 'Бесплатный создатель резюме — 10 шаблонов, фото и PDF', ar: 'منشئ سيرة ذاتية مجاني — 10 قوالب وصورة وPDF', ja: '無料履歴書メーカー — 10種類のテンプレートとPDF', ko: '무료 이력서 작성기 — 10개 템플릿과 PDF',
+  },
   'seo-metadata-generator': {
     en: 'Free SEO Metadata & Open Graph Generator',
     tr: 'Ücretsiz SEO Metadata ve Open Graph Oluşturucu',

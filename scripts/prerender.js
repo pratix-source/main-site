@@ -25,7 +25,7 @@ function parseSlugMap() {
   const entryPattern = /'([^']+)': \{([^}]+)\}/g;
   for (const entry of sectionMatch[1].matchAll(entryPattern)) {
     const perLanguage = {};
-    for (const pair of entry[2].matchAll(/(en|tr|de|fr|es|it|nl|sv|da|no|fi|zh|pt): '([^']+)'/g)) {
+    for (const pair of entry[2].matchAll(/(en|tr|de|fr|es|it|nl|sv|da|no|fi|zh|pt|pl|ru|ar|ja|ko): '([^']+)'/g)) {
       perLanguage[pair[1]] = pair[2];
     }
     map[entry[1]] = perLanguage;
@@ -129,19 +129,21 @@ function writePage(relativePath, language, toolId = null) {
 
 function buildSitemap() {
   const lastmod = new Date().toISOString().slice(0, 10);
-  const groups = [{ toolId: null, urls: languages.map(language => absoluteUrl(language)) }];
+  const cvLanguages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'pt', 'pl', 'ru', 'ar', 'ja', 'ko'];
+  const groups = [{ toolId: null, languages, urls: languages.map(language => absoluteUrl(language)) }];
   for (const toolId of localizedToolIds) {
-    groups.push({ toolId, urls: languages.map(language => absoluteUrl(language, toolId)) });
+    const groupLanguages = toolId === 'cv-builder' ? cvLanguages : languages;
+    groups.push({ toolId, languages: groupLanguages, urls: groupLanguages.map(language => absoluteUrl(language, toolId)) });
   }
 
   const urlBlocks = [];
   for (const group of groups) {
     const alternates = [
-      ...group.urls.map((url, index) => `    <xhtml:link rel="alternate" hreflang="${languages[index]}" href="${url}" />`),
+      ...group.urls.map((url, index) => `    <xhtml:link rel="alternate" hreflang="${group.languages[index]}" href="${url}" />`),
       `    <xhtml:link rel="alternate" hreflang="x-default" href="${absoluteUrl('en', group.toolId)}" />`,
     ].join('\n');
     for (const [index, url] of group.urls.entries()) {
-      const isPrimary = languages[index] === 'en';
+      const isPrimary = group.languages[index] === 'en';
       const priority = group.toolId === null ? (isPrimary ? '1.0' : '0.9') : (isPrimary ? '0.9' : '0.8');
       urlBlocks.push([
         '  <url>',
