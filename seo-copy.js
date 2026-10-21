@@ -1,0 +1,239 @@
+const TITLE_OVERRIDES = {
+  'delivery-zone-map': { en: 'Free Delivery Zone Map Generator', tr: 'Ücretsiz Teslimat Bölgesi Haritası', pt: 'Gerador de mapa de área de entrega' },
+  'field-visit-map': { en: 'Free CSV Field Visit Map Planner', tr: 'Ücretsiz CSV Saha Ziyaret Haritası', pt: 'Planeador de visitas de campo CSV' },
+  'event-parking-map': { en: 'Free Event Parking Map Planner', tr: 'Ücretsiz Etkinlik Otopark Haritası', pt: 'Mapa de estacionamento para eventos' },
+
+  'content-repurposer': {"en": "Free Short-Form Content Repurposer — Hooks & Captions", "tr": "Kısa İçerik Dönüştürücü — Hook ve Açıklama", "de": "Kurzformat-Content-Repurposer", "fr": "Adaptateur de contenu court", "es": "Reutilizador de contenido corto", "it": "Riutilizzatore di contenuti brevi", "nl": "Shortform-contentrepurposer", "sv": "Återanvändare för kortformat", "da": "Genbruger af kortformatindhold", "no": "Gjenbruker for kortformat", "fi": "Lyhytmuotoisen sisällön uudelleenkäyttö", "zh": "短内容改写工具"},
+  'utm-campaign-builder': { en: 'Free UTM Builder — Campaign URLs', tr: 'Ücretsiz UTM Oluşturucu — Kampanya Linkleri', de: 'Kostenloser UTM-Generator — Kampagnenlinks', fr: 'Générateur UTM Gratuit — Liens de Campagne', es: 'Generador UTM Gratis — Enlaces de Campaña', it: 'Generatore UTM Gratuito — Link Campagna', nl: 'Gratis UTM-generator — Campagnelinks', sv: 'Gratis UTM-generator — Kampanjlänkar', da: 'Gratis UTM-generator — Kampagnelinks', no: 'Gratis UTM-generator — Kampanjelenker', fi: 'Ilmainen UTM-generaattori — Kampanjalinkit', zh: '免费 UTM 生成器 — 营销活动链接' },
+  'privacy-file-inspector': { en: 'Privacy File Inspector — Clean Hidden File Data', tr: 'Dosya Gizlilik Kontrolü — Gizli Verileri Temizleyin', de: 'Datei-Datenschutz-Prüfer — Metadaten bereinigen', fr: 'Inspecteur de fichiers — Nettoyez les métadonnées', es: 'Inspector de archivos — Limpia los metadatos', it: 'Ispettore file — Pulisci i metadati', nl: 'Bestandsprivacy-controle — Metadata opschonen', sv: 'Sekretesskontroll — Rensa metadata', da: 'Privatlivstjek — Rens metadata', no: 'Personvernkontroll — Rens metadata', fi: 'Yksityisyystarkistus — Puhdista metadata', zh: '文件隐私检查器 — 清理隐藏数据' },
+  'secure-note': {
+    en: 'Free Secure Note — AES-256-GCM Encryption',
+    tr: 'Ücretsiz Şifreli Not — AES-256-GCM Şifreleme',
+    de: 'Kostenlose sichere Notiz — AES-256-GCM-Verschlüsselung',
+    fr: 'Note sécurisée gratuite — Chiffrement AES-256-GCM',
+    es: 'Nota segura gratis — Cifrado AES-256-GCM',
+    it: 'Nota sicura gratuita — Crittografia AES-256-GCM',
+    nl: 'Gratis veilige notitie — AES-256-GCM-versleuteling',
+    sv: 'Gratis säker anteckning — AES-256-GCM-kryptering',
+    da: 'Gratis sikker note — AES-256-GCM-kryptering',
+    no: 'Gratis sikkert notat — AES-256-GCM-kryptering',
+    fi: 'Ilmainen suojattu muistiinpano — AES-256-GCM-salaus',
+    zh: '免费安全便笺 — AES-256-GCM 加密',
+  },
+  'ad-layout---banner-placeholder-generator': {
+    fr: 'Outil de mise en page publicitaire et bannière',
+    es: 'Diseño de anuncios y banners',
+    nl: 'Advertentie- en bannertool',
+    sv: 'Annons- och bannergenerator',
+    fi: 'Mainos- ja bannertyökalu',
+  },
+  'schema-generator': {
+    en: 'Free Schema Generator — JSON-LD Structured Data',
+    tr: 'Ücretsiz Schema Oluşturucu — JSON-LD Veri',
+    de: 'Kostenloser Schema-Generator — JSON-LD Daten',
+    fr: 'Générateur de Schema JSON-LD Gratuit',
+    es: 'Generador de Schema JSON-LD Gratis',
+    it: 'Generatore di Schema JSON-LD Gratuito',
+    nl: 'Gratis Schema Generator — JSON-LD Data',
+    sv: 'Gratis Schema Generator — JSON-LD Data',
+    da: 'Gratis Schema Generator — JSON-LD Data',
+    no: 'Gratis Skjemagenerator — JSON-LD Data',
+    fi: 'Ilmainen Skeemageneraattori — JSON-LD',
+    zh: '免费 Schema 生成器 — JSON-LD 结构化数据',
+  },
+  'qr-code-generator': {
+    en: 'Free QR Code Generator — Links, Wi-Fi, vCard',
+    tr: 'Ücretsiz QR Kod Oluşturucu — Link, Wi-Fi, vCard',
+    de: 'Kostenloser QR-Code-Generator — WLAN, vCard',
+    fr: 'Générateur de QR Code Gratuit — Lien, Wi-Fi',
+    es: 'Generador de Códigos QR Gratis — Wi-Fi, vCard',
+    it: 'Generatore di QR Code Gratuito — Wi-Fi, vCard',
+    nl: 'Gratis QR-codegenerator — Link, Wifi, vCard',
+    sv: 'Gratis QR-kodsgenerator — Länk, Wi-Fi, vCard',
+    da: 'Gratis QR-kodegenerator — Link, Wi-Fi, vCard',
+    no: 'Gratis QR-kodegenerator — Lenke, Wi-Fi, vCard',
+    fi: 'Ilmainen QR-koodigeneraattori — Linkki, Wi-Fi',
+    zh: '免费二维码生成器 — 链接、Wi-Fi、名片',
+  },
+  'llms-txt-generator': {
+    en: 'Free llms.txt Generator — AI-Friendly Sites',
+    tr: 'Ücretsiz llms.txt Oluşturucu — Yapay Zekâ',
+    de: 'Kostenloser llms.txt-Generator — KI-Websites',
+    fr: 'Générateur de llms.txt Gratuit — Sites IA',
+    es: 'Generador de llms.txt Gratis — Webs para IA',
+    it: 'Generatore di llms.txt Gratis — Siti Web AI',
+    nl: 'Gratis llms.txt-generator — AI-vriendelijk',
+    sv: 'Gratis llms.txt-generator — AI-vänliga sajter',
+    da: 'Gratis llms.txt-generator — AI-venlige websites',
+    no: 'Gratis llms.txt-generator — AI-vennlig nettsted',
+    fi: 'Ilmainen llms.txt-generaattori — tekoälyyn',
+    zh: '免费 llms.txt 生成器 — AI 友好网站',
+  },
+  'cv-builder': {
+    en: 'Free CV Builder & Resume Maker — 10 Templates, Photo and PDF', tr: 'Ücretsiz CV Oluşturucu — 10 Şablon, Fotoğraf ve PDF', de: 'Kostenloser CV-Builder — 10 Vorlagen, Foto und PDF', fr: 'Créateur de CV gratuit — 10 modèles, photo et PDF', es: 'Creador de CV gratis — 10 plantillas, foto y PDF', it: 'Creatore di CV gratuito — 10 modelli, foto e PDF', nl: 'Gratis CV-maker — 10 sjablonen, foto en PDF', sv: 'Gratis CV-byggare — 10 mallar, foto och PDF', da: 'Gratis CV-bygger — 10 skabeloner, foto og PDF', no: 'Gratis CV-bygger — 10 maler, foto og PDF', fi: 'Ilmainen CV-työkalu — 10 mallia, kuva ja PDF', zh: '免费简历制作工具 — 10 个模板、照片和 PDF', pt: 'Criador de CV gratuito — 10 modelos, foto e PDF', pl: 'Darmowy kreator CV — 10 szablonów, zdjęcie i PDF', ru: 'Бесплатный создатель резюме — 10 шаблонов, фото и PDF', ar: 'منشئ سيرة ذاتية مجاني — 10 قوالب وصورة وPDF', ja: '無料履歴書メーカー — 10種類のテンプレートとPDF', ko: '무료 이력서 작성기 — 10개 템플릿과 PDF',
+  },
+  'seo-metadata-generator': {
+    en: 'Free SEO Metadata & Open Graph Generator',
+    tr: 'Ücretsiz SEO Metadata ve Open Graph Oluşturucu',
+    de: 'Kostenloser SEO-Metadaten- und Open-Graph-Generator',
+    fr: 'Générateur gratuit de métadonnées SEO et Open Graph',
+    es: 'Generador gratuito de metadatos SEO y Open Graph',
+    it: 'Generatore gratuito di metadati SEO e Open Graph',
+    nl: 'Gratis SEO-metadata- en Open Graph-generator',
+    sv: 'Gratis SEO-metadata- och Open Graph-generator',
+    da: 'Gratis SEO-metadata- og Open Graph-generator',
+    no: 'Gratis SEO-metadata- og Open Graph-generator',
+    fi: 'Ilmainen SEO-metatietojen ja Open Graph -generaattori',
+    zh: '免费 SEO 元数据与 Open Graph 生成器',
+    pt: 'Gerador gratuito de metadados SEO e Open Graph',
+  },
+  'robots-txt-generator': {
+    en: 'Free Robots.txt Generator — AI Bot Rules',
+    tr: 'Ücretsiz Robots.txt Oluşturucu — AI Botlar',
+    de: 'Kostenloser Robots.txt-Generator — KI-Bots',
+    fr: 'Générateur de robots.txt Gratuit — Bots IA',
+    es: 'Generador de robots.txt Gratis — Bots de IA',
+    it: 'Generatore di robots.txt Gratuito — Bot IA',
+    nl: 'Gratis robots.txt-generator — AI-bots',
+    sv: 'Gratis robots.txt-generator — AI-robotar',
+    da: 'Gratis robots.txt-generator — AI-botter',
+    no: 'Gratis robots.txt-generator — AI-boter',
+    fi: 'Ilmainen robots.txt-generaattori — tekoälybotit',
+    zh: '免费 robots.txt 生成器 — AI 爬虫规则',
+  },
+};
+
+const DESCRIPTION_SUFFIXES = {
+  en: ' Runs in your browser without uploads. Simple, private, and ready when you are.',
+  tr: ' Tarayıcınızda çalışır; yükleme veya sunucu gerektirmez. Hızlı, özel ve kullanıma hazırdır.',
+  de: ' Läuft direkt im Browser – ohne Upload und ohne Server. Schnell, einfach und privat.',
+  fr: ' Fonctionne directement dans votre navigateur, sans téléversement ni serveur. Rapide, simple et privé.',
+  es: ' Funciona directamente en su navegador, sin cargas ni servidor. Rápido, sencillo y privado.',
+  it: ' Funziona direttamente nel browser, senza caricamenti né server. Semplice, veloce e privato.',
+  nl: ' Werkt direct in je browser, zonder upload of server. Snel, eenvoudig en privé.',
+  sv: ' Körs direkt i webbläsaren utan uppladdning eller server. Snabbt, enkelt och privat.',
+  da: ' Kører direkte i browseren uden upload eller server. Hurtigt, enkelt og privat.',
+  no: ' Kjører direkte i nettleseren uten opplasting eller server. Raskt, enkelt og privat.',
+  fi: ' Toimii suoraan selaimessa ilman latausta tai palvelinta. Nopeaa, helppoa ja yksityistä.',
+  pt: ' Funciona diretamente no navegador, sem uploads nem servidor. Rápido, simples e privado.',
+  pt: ' Funciona diretamente no navegador, sem uploads nem servidor. Rápido, simples e privado.',
+  zh: ' 所有处理都在浏览器本地完成，无需上传文件或连接服务器。界面清晰、操作快速，并以隐私保护为优先，适合日常工作、内容制作、数据整理、网站优化和日常计算。无需注册即可开始使用，输入内容不会发送到远程服务，适合个人、团队和企业在日常工作中快速完成任务。',
+};
+
+const MAX_DESCRIPTION_LENGTH = 155;
+const MIN_DESCRIPTION_LENGTH = 120;
+
+function clean(value) {
+  return String(value || '').replaceAll('\\n', ' ').replace(/\s+/g, ' ').trim();
+}
+
+function trimAtWord(value, limit) {
+  if (value.length <= limit) return value;
+  const clipped = value.slice(0, limit);
+  const boundary = clipped.lastIndexOf(' ');
+  const base = clipped.slice(0, boundary >= limit - 30 ? boundary : limit - 1).replace(/[,:;–—-]+$/, '').trim();
+  return `${base.slice(0, limit - 1).trim()}.`;
+}
+
+const DESCRIPTION_OVERRIDES = {
+  'delivery-zone-map': { en: 'Create delivery zones and service areas for local businesses without uploading addresses. Private, simple and browser-based.', tr: 'Adres yüklemeden yerel işletmeniz için teslimat ve hizmet bölgeleri oluşturun. Özel, basit ve tarayıcı tabanlı.', pt: 'Crie áreas de entrega para negócios locais sem carregar endereços. Privado, simples e funciona no navegador.' },
+  'field-visit-map': { en: 'Turn a private CSV list into a grouped field visit map for sales teams and technicians. No upload or account required.', tr: 'Özel CSV listenizi satış ve teknik ekipler için gruplanmış saha ziyaret haritasına dönüştürün. Yükleme veya hesap gerekmez.', pt: 'Transforme uma lista CSV privada num mapa de visitas de campo agrupado. Sem upload ou conta.' },
+  'event-parking-map': { en: 'Plan entrances, parking, accessible routes and visitor points on a clear event venue map. Export it locally.', tr: 'Giriş, otopark, erişilebilir rota ve ziyaretçi noktalarını net bir etkinlik haritasında planlayın. Yerel olarak dışa aktarın.', pt: 'Planeie entradas, estacionamento e pontos de visitantes num mapa de evento claro. Exporte localmente.' },
+
+  'content-repurposer': {"en": "Turn one idea into platform-ready hooks, titles, captions, hashtags and calls to action for TikTok, Reels, YouTube Shorts and X. Private and browser-only.", "tr": "Tek bir fikri TikTok, Reels, YouTube Shorts ve X için platforma hazır hook, başlık, açıklama, hashtag ve aksiyon çağrılarına dönüştürün. Özel ve tarayıcı tabanlı.", "de": "Verwandle eine Idee in plattformfertige Hooks, Titel, Captions, Hashtags und CTAs für TikTok, Reels, YouTube Shorts und X. Privat und browserbasiert.", "fr": "Transformez une idée en hooks, titres, légendes, hashtags et appels à l’action pour TikTok, Reels, YouTube Shorts et X. Privé et dans le navigateur.", "es": "Convierte una idea en hooks, títulos, captions, hashtags y llamadas a la acción para TikTok, Reels, YouTube Shorts y X. Privado y en el navegador.", "it": "Trasforma un’idea in hook, titoli, caption, hashtag e CTA pronti per TikTok, Reels, YouTube Shorts e X. Privato e nel browser.", "nl": "Zet één idee om in platformklare hooks, titels, captions, hashtags en CTA’s voor TikTok, Reels, YouTube Shorts en X. Privé in je browser.", "sv": "Gör en idé till plattformsklara hooks, titlar, captions, hashtags och CTA:er för TikTok, Reels, YouTube Shorts och X. Privat i webbläsaren.", "da": "Gør én idé til platformsklare hooks, titler, captions, hashtags og CTA’er til TikTok, Reels, YouTube Shorts og X. Privat i browseren.", "no": "Gjør én idé om til plattformsklare hooks, titler, captions, hashtags og CTA-er for TikTok, Reels, YouTube Shorts og X. Privat i nettleseren.", "fi": "Muunna yksi idea TikTok-, Reels-, YouTube Shorts- ja X-valmiiksi hookeiksi, otsikoiksi, kuvateksteiksi, hashtageiksi ja CTA-kutsuiksi. Yksityinen selain-työkalu.", "zh": "将一个创意转换为适用于 TikTok、Reels、YouTube Shorts 和 X 的标题、文案、标签与行动号召。浏览器本地处理，保护隐私。"},
+  'utm-campaign-builder': { en: 'Create clean UTM campaign URLs for Google Analytics, ads, newsletters and social media. Copy or export links privately in your browser.', tr: 'Google Analytics, reklam, bülten ve sosyal medya için temiz UTM kampanya URL’leri oluşturun. Linkleri tarayıcınızda özel olarak kopyalayın veya dışa aktarın.', de: 'Erstellen Sie saubere UTM-Kampagnen-URLs für Analytics, Anzeigen, Newsletter und Social Media. Privat im Browser kopieren oder exportieren.', fr: 'Créez des URL de campagne UTM propres pour Analytics, publicités, newsletters et réseaux sociaux. Copiez ou exportez en privé dans le navigateur.', es: 'Crea URL UTM limpias para Analytics, anuncios, newsletters y redes sociales. Copia o exporta tus enlaces de forma privada en el navegador.', it: 'Crea URL UTM pulite per Analytics, annunci, newsletter e social. Copia o esporta i link privatamente nel browser.', nl: 'Maak schone UTM-campagne-URL’s voor Analytics, advertenties, nieuwsbrieven en social media. Kopieer of exporteer privé in je browser.', sv: 'Skapa rena UTM-kampanj-URL:er för Analytics, annonser, nyhetsbrev och sociala medier. Kopiera eller exportera privat i webbläsaren.', da: 'Opret rene UTM-kampagne-URL’er til Analytics, annoncer, nyhedsbreve og sociale medier. Kopiér eller eksportér privat i browseren.', no: 'Lag rene UTM-kampanje-URL-er for Analytics, annonser, nyhetsbrev og sosiale medier. Kopier eller eksporter privat i nettleseren.', fi: 'Luo siistejä UTM-kampanja-URL-osoitteita Analyticsiin, mainoksiin, uutiskirjeisiin ja someen. Kopioi tai vie linkit yksityisesti selaimessa.', zh: '为 Analytics、广告、邮件和社交媒体创建清晰的 UTM 活动链接。在浏览器中私密复制或导出，内容无需上传。' },
+  'privacy-file-inspector': { en: 'Inspect hidden metadata, remove EXIF from images, and verify SHA-256 locally. A privacy-first browser tool with no uploads, accounts, or tracking.', tr: 'İşaretli dosyalardaki gizli metadata’yı inceleyin, görsellerden EXIF’i kaldırın ve SHA-256 değerini yerel olarak doğrulayın. Yükleme yok.', de: 'Prüfen Sie versteckte Metadaten, entfernen Sie EXIF und verifizieren Sie SHA-256 lokal. Keine Uploads.', fr: 'Inspectez les métadonnées, supprimez l’EXIF et vérifiez SHA-256 localement. Aucun envoi.', es: 'Inspeccione metadatos, elimine EXIF y verifique SHA-256 localmente. Sin cargas.', it: 'Ispeziona i metadati, rimuovi EXIF e verifica SHA-256 localmente. Nessun upload.', nl: 'Controleer metadata, verwijder EXIF en verifieer SHA-256 lokaal. Geen uploads.', sv: 'Kontrollera metadata, ta bort EXIF och verifiera SHA-256 lokalt. Inga uppladdningar.', da: 'Undersøg metadata, fjern EXIF og verificer SHA-256 lokalt. Ingen uploads.', no: 'Kontroller metadata, fjern EXIF og verifiser SHA-256 lokalt. Ingen opplastinger.', fi: 'Tarkista metadata, poista EXIF ja vahvista SHA-256 paikallisesti. Ei latauksia.', zh: '检查隐藏元数据、移除图片 EXIF，并在本地验证 SHA-256。无需上传。' },
+  'secure-note': {
+    en: 'Free private note encryption in your browser with AES-256-GCM. No uploads, account, or tracking. Create an encrypted bundle and keep your note on your device.',
+    tr: 'AES-256-GCM ile tarayıcınızda ücretsiz özel not şifreleme. Yükleme, hesap veya takip yok. Şifreli paket oluşturun ve notunuzu cihazınızda tutun.',
+    de: 'Kostenlose private Notizverschlüsselung mit AES-256-GCM im Browser. Keine Uploads, Konten oder Tracking. Erstellen Sie ein verschlüsseltes Bundle.',
+    fr: 'Chiffrement gratuit de notes privées avec AES-256-GCM dans votre navigateur. Sans téléversement, compte ni suivi. Créez un bundle chiffré.',
+    es: 'Cifrado gratuito de notas privadas con AES-256-GCM en tu navegador. Sin subidas, cuentas ni seguimiento. Crea un paquete cifrado.',
+    it: 'Crittografia gratuita di note private con AES-256-GCM nel browser. Nessun upload, account o tracking. Crea un pacchetto criptato.',
+    nl: 'Versleutel gratis privénotities met AES-256-GCM in je browser. Geen uploads, accounts of tracking. Maak een versleutelde bundel.',
+    sv: 'Gratis kryptering av privata anteckningar med AES-256-GCM i webbläsaren. Inga uppladdningar, konton eller spårning.',
+    da: 'Gratis kryptering af private noter med AES-256-GCM i browseren. Ingen upload, konto eller sporing.',
+    no: 'Gratis kryptering av private notater med AES-256-GCM i nettleseren. Ingen opplasting, konto eller sporing.',
+    fi: 'Salaa yksityiset muistiinpanot ilmaiseksi AES-256-GCM:llä selaimessa. Ei latauksia, tilejä tai seurantaa.',
+    zh: '在浏览器中使用 AES-256-GCM 免费加密私人便笺。无需上传、账号或追踪，创建加密数据包。',
+  },
+  'schema-generator': {
+    en: 'Free JSON-LD schema generator for structured data: create valid markup for rich results in your browser. No signup, no uploads, unlimited use.',
+    tr: 'JSON-LD şema oluşturucu ile yapılandırılmış verinizi saniyeler içinde üretin. Zengin sonuçlar için ücretsiz schema generator; tarayıcınızda çalışır.',
+    de: 'JSON-LD Schema-Generator für strukturierte Daten: Erstellen Sie gültiges Markup für Rich Results direkt im Browser — ohne Anmeldung, ohne Upload.',
+    fr: 'Générateur de schéma JSON-LD pour données structurées : créez un balisage valide pour les rich results dans votre navigateur, sans inscription.',
+    es: 'Generador de esquema JSON-LD para datos estructurados: crea marcado válido para resultados enriquecidos en tu navegador, sin registro ni subidas.',
+    it: 'Generatore di schema JSON-LD per dati strutturati: crea markup validi per i rich results direttamente nel browser, senza registrazione né upload.',
+    nl: 'JSON-LD schema generator voor gestructureerde data: maak geldige markup voor rich results direct in je browser, zonder registratie of uploads.',
+    sv: 'JSON-LD schemagenerator för strukturerad data: skapa giltig markup för rich results direkt i webbläsaren, utan registrering eller uppladdning.',
+    da: 'JSON-LD skemagenerator til strukturerede data: opret gyldig markup til rich results direkte i browseren, uden registrering eller upload.',
+    no: 'JSON-LD skjemagenerator for strukturerte data: lag gyldig markup for rich results direkte i nettleseren, uten registrering eller opplasting.',
+    fi: 'JSON-LD skeemageneraattori rakenteiselle datalle: luo kelvollinen merkintä rich results -tuloksiin suoraan selaimessa ilman rekisteröitymistä.',
+    zh: '免费的 JSON-LD Schema 生成器：在浏览器中为结构化数据生成有效标记，助力 Google 搜索富结果展示，无需注册、无需上传文件，适合 Shopify、WooCommerce、Webflow、Wix、Squarespace 与 Magento 等平台的站长与开发者，即开即用。',
+  },
+  'qr-code-generator': {
+    en: 'Create custom QR codes for URLs, text, Wi-Fi and contact cards in your browser. Choose colors and size, then download print-ready PNG or SVG files.',
+    tr: 'URL, metin, Wi-Fi ve iletişim kartları için tarayıcınızda özel QR kodlar oluşturun. Renk ve boyut seçin, baskıya hazır PNG veya SVG olarak indirin.',
+    de: 'Erstellen Sie individuelle QR-Codes für URLs, Text, WLAN und Kontaktkarten direkt im Browser. Farben und Größe wählen und als PNG oder SVG herunterladen.',
+    fr: 'Créez des QR codes personnalisés pour URL, texte, Wi-Fi et cartes de visite dans votre navigateur. Choisissez couleurs et taille, exportez en PNG ou SVG.',
+    es: 'Crea códigos QR personalizados para URL, texto, Wi-Fi y tarjetas de contacto en tu navegador. Elige colores y tamaño y descarga en PNG o SVG para impresión.',
+    it: 'Crea QR code personalizzati per URL, testo, Wi-Fi e biglietti da visita nel browser. Scegli colori e dimensioni e scarica in PNG o SVG pronto per la stampa.',
+    nl: "Maak aangepaste QR-codes voor URL's, tekst, wifi en contactkaarten in je browser. Kies kleuren en grootte en download drukklare PNG- of SVG-bestanden.",
+    sv: 'Skapa anpassade QR-koder för URL:er, text, Wi-Fi och kontaktkort i webbläsaren. Välj färger och storlek och ladda ner utskriftsklara PNG- eller SVG-filer.',
+    da: "Opret brugerdefinerede QR-koder til URL'er, tekst, Wi-Fi og kontaktkort i browseren. Vælg farver og størrelse og download printklare PNG- eller SVG-filer.",
+    no: 'Lag egendefinerte QR-koder for URL-er, tekst, Wi-Fi og kontaktkort i nettleseren. Velg farger og størrelse og last ned utskriftsklare PNG- eller SVG-filer.',
+    fi: 'Luo mukautettuja QR-koodeja linkkejä, tekstiä, Wi-Fi-yhteyksiä ja yhteystietoja varten selaimessa. Valitse värit ja koko ja lataa painovalmis PNG tai SVG.',
+    zh: '在浏览器中为网址、文本、Wi-Fi 和联系人名片创建自定义二维码，自由调整颜色与尺寸，导出高清 PNG 或矢量 SVG，适用于海报、包装与名片印刷，无需注册，内容不上传服务器。',
+  },
+  'llms-txt-generator': {
+    en: 'Create a standards-compliant llms.txt file that helps ChatGPT, Perplexity and Claude understand your site. Preview live, then copy or download.',
+    tr: 'ChatGPT, Perplexity ve Claude için standartlara uygun llms.txt dosyası oluşturun. Bölüm ve bağlantı ekleyin, canlı önizleyin, kopyalayın.',
+    de: 'Erstellen Sie eine standardkonforme llms.txt-Datei für ChatGPT, Perplexity und Claude. Abschnitte und Links hinzufügen, live ansehen, kopieren.',
+    fr: 'Créez un fichier llms.txt conforme au standard pour ChatGPT, Perplexity et Claude. Ajoutez sections et liens, prévisualisez en direct, copiez.',
+    es: 'Crea un archivo llms.txt que cumple el estándar para ChatGPT, Perplexity y Claude. Añade secciones y enlaces, previsualiza en vivo y cópialo.',
+    it: 'Crea un file llms.txt conforme allo standard per ChatGPT, Perplexity e Claude. Aggiungi sezioni e link, visualizza anteprima e copia o scarica.',
+    nl: 'Maak een llms.txt-bestand volgens de standaard voor ChatGPT, Perplexity en Claude. Voeg secties en links toe, bekijk live en kopieer of download.',
+    sv: 'Skapa en standardmässig llms.txt-fil för ChatGPT, Perplexity och Claude. Lägg till sektioner och länkar, förhandsgranska live och kopiera.',
+    da: 'Opret en standardoverensstemmende llms.txt-fil til ChatGPT, Perplexity og Claude. Tilføj sektioner og links, forhåndsvis live og kopier eller download.',
+    no: 'Lag en standardisert llms.txt-fil for ChatGPT, Perplexity og Claude. Legg til seksjoner og lenker, forhåndsvis live, kopier eller last ned.',
+    fi: 'Luo standardin mukainen llms.txt-tiedosto ChatGPT:lle, Perplexitylle ja Claudelle. Lisää osioita ja linkkejä, esikatsele reaaliajassa ja kopioi.',
+    zh: '创建符合标准的 llms.txt 文件，帮助 ChatGPT、Perplexity 和 Claude 理解您的网站。添加分区与链接，实时预览，一键复制或下载，全部在浏览器本地完成。',
+  },
+  'robots-txt-generator': {
+    en: 'Create robots.txt rules for GPTBot, ClaudeBot, Google-Extended and more. Allow AI search bots, block AI training crawlers, preview live.',
+    tr: 'GPTBot, ClaudeBot, Google-Extended ve daha fazlası için robots.txt kuralları oluşturun. AI arama botlarına izin verin, eğitim botlarını engelleyin.',
+    de: 'Erstellen Sie robots.txt-Regeln für GPTBot, ClaudeBot, Google-Extended und mehr. Erlauben Sie KI-Such-Bots und blockieren Sie KI-Training-Crawler.',
+    fr: "Créez des règles robots.txt pour GPTBot, ClaudeBot, Google-Extended et plus. Autorisez les bots de recherche IA, bloquez les crawlers d'entraînement.",
+    es: 'Crea reglas de robots.txt para GPTBot, ClaudeBot, Google-Extended y más. Permite los bots de búsqueda de IA y bloquea los rastreadores de entrenamiento.',
+    it: 'Crea regole robots.txt per GPTBot, ClaudeBot, Google-Extended e altri. Consenti ai bot di ricerca IA e blocca i crawler di addestramento.',
+    nl: 'Maak robots.txt-regels voor GPTBot, ClaudeBot, Google-Extended en meer. Sta AI-zoekbots toe en blokkeer AI-trainingscrawlers, bekijk live.',
+    sv: 'Skapa robots.txt-regler för GPTBot, ClaudeBot, Google-Extended med flera. Tillåt AI-sökrobotar, blockera AI-träningscrawlers, förhandsgranska.',
+    da: 'Opret robots.txt-regler for GPTBot, ClaudeBot, Google-Extended m.fl. Tillad AI-søgebotter, bloker AI-træningscrawlers, forhåndsvis live.',
+    no: 'Lag robots.txt-regler for GPTBot, ClaudeBot, Google-Extended med flere. Tillat AI-søkeboter, blokker AI-treningscrawlere, forhåndsvisning.',
+    fi: 'Luo robots.txt-säännöt GPTBotille, ClaudeBotille, Google-Extendedille ja muille. Salli tekoälyhakubotit ja estä koulutuscrawlerit.',
+    zh: '为 GPTBot、ClaudeBot、Google-Extended 等创建 robots.txt 规则，允许 AI 搜索爬虫、阻止 AI 训练爬虫，实时预览，一键复制或下载，全部在浏览器本地完成。',
+  },
+};
+
+function normalizeDescription(value, language, toolId) {
+  const override = DESCRIPTION_OVERRIDES[toolId]?.[language];
+  let description = clean(override || value);
+  const suffix = DESCRIPTION_SUFFIXES[language] || DESCRIPTION_SUFFIXES.en;
+  if (description.length < MIN_DESCRIPTION_LENGTH) description = `${description}${suffix}`;
+  return trimAtWord(description, MAX_DESCRIPTION_LENGTH);
+}
+
+function normalizeTitle(value, language, toolId) {
+  const override = TITLE_OVERRIDES[toolId]?.[language];
+  const base = clean(override || value);
+  return `${base} | Pratix.io`;
+}
+
+function getSeoCopy({ language, toolId = null, name, description }) {
+  return {
+    title: normalizeTitle(name, language, toolId),
+    description: normalizeDescription(description, language, toolId),
+  };
+}
+
+module.exports = { getSeoCopy, MIN_DESCRIPTION_LENGTH, MAX_DESCRIPTION_LENGTH };

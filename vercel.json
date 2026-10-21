@@ -2746,6 +2746,150 @@
     {
       "source": "/pt/gerador-de-metadados-seo/",
       "destination": "https://pratix-seo-metadata.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/en/cv-builder",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=en"
+    },
+    {
+      "source": "/en/cv-builder/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=en"
+    },
+    {
+      "source": "/tr/cv-olusturucu",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/tr/cv-olusturucu/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=tr"
+    },
+    {
+      "source": "/de/lebenslauf-builder",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=de"
+    },
+    {
+      "source": "/de/lebenslauf-builder/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=de"
+    },
+    {
+      "source": "/fr/createur-de-cv",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/fr/createur-de-cv/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=fr"
+    },
+    {
+      "source": "/es/creador-de-cv",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=es"
+    },
+    {
+      "source": "/es/creador-de-cv/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=es"
+    },
+    {
+      "source": "/it/creatore-di-cv",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=it"
+    },
+    {
+      "source": "/it/creatore-di-cv/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=it"
+    },
+    {
+      "source": "/nl/cv-maker",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/nl/cv-maker/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=nl"
+    },
+    {
+      "source": "/sv/cv-byggare",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/sv/cv-byggare/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=sv"
+    },
+    {
+      "source": "/da/cv-bygger",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=da"
+    },
+    {
+      "source": "/da/cv-bygger/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=da"
+    },
+    {
+      "source": "/no/cv-bygger",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=no"
+    },
+    {
+      "source": "/no/cv-bygger/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=no"
+    },
+    {
+      "source": "/fi/cv-tyokalu",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/fi/cv-tyokalu/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=fi"
+    },
+    {
+      "source": "/zh/cv-jianli-shengchengqi",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/zh/cv-jianli-shengchengqi/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=zh"
+    },
+    {
+      "source": "/pt/criador-de-cv",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pt/criador-de-cv/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=pt"
+    },
+    {
+      "source": "/pl/kreator-cv",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=pl"
+    },
+    {
+      "source": "/pl/kreator-cv/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=pl"
+    },
+    {
+      "source": "/ru/sozdat-rezyume",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ru"
+    },
+    {
+      "source": "/ru/sozdat-rezyume/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ru"
+    },
+    {
+      "source": "/ar/munshi-sira-dhatiya",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ar"
+    },
+    {
+      "source": "/ar/munshi-sira-dhatiya/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ar"
+    },
+    {
+      "source": "/ja/rirekisho-maker",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ja"
+    },
+    {
+      "source": "/ja/rirekisho-maker/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ja"
+    },
+    {
+      "source": "/ko/ilyeogseo-jagseonggi",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ko"
+    },
+    {
+      "source": "/ko/ilyeogseo-jagseonggi/",
+      "destination": "https://pratix-cv-builder.vercel.app/?lang=ko"
     }
   ],
   "redirects": [
