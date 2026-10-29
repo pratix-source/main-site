@@ -8,6 +8,7 @@ const source = fs.readFileSync(sourcePath, 'utf8');
 const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt'];
 const siteOrigin = 'https://www.pratix.io';
 const { getSeoCopy } = require('./seo-copy');
+const { injectToolActions } = require('./tool-actions');
 
 function escapeHtml(value) {
   return String(value).replaceAll('\\n', ' ').replace(/\s+/g, ' ').trim()
@@ -118,7 +119,7 @@ function setStaticMetadata(html, language, toolId = null) {
   const contentDescription = description;
   const staticSection = `\n  <section class="max-w-4xl mx-auto px-6 py-8 prerendered-content" data-prerendered="true">\n    <h1 class="text-2xl font-bold text-zinc-900">${escapeHtml(contentTitle)}</h1>\n    <p class="mt-3 text-zinc-600 leading-relaxed">${escapeHtml(contentDescription)}</p>\n  </section>\n`;
   html = html.replace('<body>', `<body>${staticSection}`);
-  return html;
+  return injectToolActions(html, language);
 }
 
 function writePage(relativePath, language, toolId = null) {
@@ -166,11 +167,15 @@ writePage('index.html', 'en');
 for (const language of languages) writePage(`${language}/index.html`, language);
 // Tool routes belong to the external tool deployments. Do not emit local tool-path
 // index files here, or Vercel's filesystem can shadow the external rewrites.
-for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html', 'pratix-standard.css', 'tools/qr-code-generator.html', 'tools/llms-txt-generator.html', 'tools/robots-txt-generator.html']) {
+for (const staticFile of ['robots.txt', 'google6ddf2b84ffac0dd8.html', 'pratix-standard.css', 'manifest.webmanifest', 'sw.js', 'favicon.svg', 'tools/qr-code-generator.html', 'tools/llms-txt-generator.html', 'tools/robots-txt-generator.html']) {
   const staticSource = path.join(root, staticFile);
   if (fs.existsSync(staticSource)) {
     fs.mkdirSync(path.dirname(path.join(distPath, staticFile)), { recursive: true });
-    fs.copyFileSync(staticSource, path.join(distPath, staticFile));
+    const staticHtml = fs.readFileSync(staticSource, 'utf8');
+    const languageMatch = staticHtml.match(/<html[^>]*\blang="([a-z]{2})"/i);
+    const language = languageMatch ? languageMatch[1] : 'en';
+    const output = staticFile.endsWith('.html') ? injectToolActions(staticHtml, language) : staticHtml;
+    fs.writeFileSync(path.join(distPath, staticFile), output);
   }
 }
 // Bundle the three mobile utilities into the main deployment so their localized routes never depend on an undeployed external project.
@@ -188,7 +193,7 @@ for (const [toolId, slugs] of Object.entries(mobileSlugs)) {
     if (!fs.existsSync(sourceToolPage)) continue;
     const destination = path.join(distPath, language, slugs[language], 'index.html');
     fs.mkdirSync(path.dirname(destination), { recursive: true });
-    fs.copyFileSync(sourceToolPage, destination);
+    fs.writeFileSync(destination, injectToolActions(fs.readFileSync(sourceToolPage, 'utf8'), language));
   }
 }
 
@@ -200,7 +205,7 @@ for (const language of languages) {
   if (!fs.existsSync(sourceToolPage)) continue;
   const destination = path.join(distPath, 'tools', 'hreflang-sitemap-auditor', `${language}.html`);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
-  fs.copyFileSync(sourceToolPage, destination);
+  fs.writeFileSync(destination, injectToolActions(fs.readFileSync(sourceToolPage, 'utf8'), language));
 }
 
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
