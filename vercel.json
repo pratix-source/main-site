@@ -109,99 +109,99 @@
     },
     {
       "source": "/en/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/en/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/tr/icerik-donusturucu",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/tr/icerik-donusturucu/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/de/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/de/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/fr/reutilisateur-de-contenu",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/fr/reutilisateur-de-contenu/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/es/reutilizador-de-contenido",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/es/reutilizador-de-contenido/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/it/riutilizzatore-contenuti",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/it/riutilizzatore-contenuti/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/nl/content-repurposer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/nl/content-repurposer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/sv/innehallsanpassare",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/sv/innehallsanpassare/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/da/indholdsgenbruger",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/da/indholdsgenbruger/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/no/innholdsfornyer",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/no/innholdsfornyer/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/fi/sisallon-uudelleenkayttaja/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dko"
     },
     {
       "source": "/zh/neirong-chongzuo-gongju/",
-      "destination": "https://content-repurposer-pratix-s-projects.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcontent-repurposer-pratix-s-projects.vercel.app%2F%3Flang%3Dko"
     },
     {
       "source": "/en/utm-builder",
@@ -229,27 +229,27 @@
     },
     {
       "source": "/fr/generateur-utm",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/fr/generateur-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ffr%2Fgenerateur-utm"
     },
     {
       "source": "/fr/generateur-utm/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/fr/generateur-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ffr%2Fgenerateur-utm"
     },
     {
       "source": "/es/generador-utm",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/es/generador-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fes%2Fgenerador-utm"
     },
     {
       "source": "/es/generador-utm/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/es/generador-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fes%2Fgenerador-utm"
     },
     {
       "source": "/it/generatore-utm",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/it/generatore-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fit%2Fgeneratore-utm"
     },
     {
       "source": "/it/generatore-utm/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/it/generatore-utm"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fit%2Fgeneratore-utm"
     },
     {
       "source": "/nl/utm-generator",
@@ -301,315 +301,315 @@
     },
     {
       "source": "/en/delivery-zone-map",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/en/delivery-zone-map"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fen%2Fdelivery-zone-map"
     },
     {
       "source": "/en/delivery-zone-map/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/en/delivery-zone-map/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fen%2Fdelivery-zone-map%2F"
     },
     {
       "source": "/tr/teslimat-bolgesi-haritasi",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/tr/teslimat-bolgesi-haritasi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ftr%2Fteslimat-bolgesi-haritasi"
     },
     {
       "source": "/tr/teslimat-bolgesi-haritasi/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/tr/teslimat-bolgesi-haritasi/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ftr%2Fteslimat-bolgesi-haritasi%2F"
     },
     {
       "source": "/de/liefergebiet-karte",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/de/liefergebiet-karte"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fde%2Fliefergebiet-karte"
     },
     {
       "source": "/de/liefergebiet-karte/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/de/liefergebiet-karte/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fde%2Fliefergebiet-karte%2F"
     },
     {
       "source": "/fr/carte-zone-livraison",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/fr/carte-zone-livraison"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-zone-livraison"
     },
     {
       "source": "/fr/carte-zone-livraison/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/fr/carte-zone-livraison/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-zone-livraison%2F"
     },
     {
       "source": "/es/mapa-zona-entrega",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/es/mapa-zona-entrega"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-zona-entrega"
     },
     {
       "source": "/es/mapa-zona-entrega/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/es/mapa-zona-entrega/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-zona-entrega%2F"
     },
     {
       "source": "/it/mappa-zona-consegna",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/it/mappa-zona-consegna"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-zona-consegna"
     },
     {
       "source": "/it/mappa-zona-consegna/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/it/mappa-zona-consegna/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-zona-consegna%2F"
     },
     {
       "source": "/nl/bezorggebied-kaart",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/nl/bezorggebied-kaart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fnl%2Fbezorggebied-kaart"
     },
     {
       "source": "/nl/bezorggebied-kaart/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/nl/bezorggebied-kaart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fnl%2Fbezorggebied-kaart%2F"
     },
     {
       "source": "/sv/leveransomradeskarta",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/sv/leveransomradeskarta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fsv%2Fleveransomradeskarta"
     },
     {
       "source": "/sv/leveransomradeskarta/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/sv/leveransomradeskarta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fsv%2Fleveransomradeskarta%2F"
     },
     {
       "source": "/da/leveringsomradekort",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/da/leveringsomradekort"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fda%2Fleveringsomradekort"
     },
     {
       "source": "/da/leveringsomradekort/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/da/leveringsomradekort/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fda%2Fleveringsomradekort%2F"
     },
     {
       "source": "/no/leveringsomradekart",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/no/leveringsomradekart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fno%2Fleveringsomradekart"
     },
     {
       "source": "/no/leveringsomradekart/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/no/leveringsomradekart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fno%2Fleveringsomradekart%2F"
     },
     {
       "source": "/fi/toimitusaluekartta",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/fi/toimitusaluekartta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ffi%2Ftoimitusaluekartta"
     },
     {
       "source": "/fi/toimitusaluekartta/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/fi/toimitusaluekartta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Ffi%2Ftoimitusaluekartta%2F"
     },
     {
       "source": "/zh/peisong-fanwei-ditu",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/zh/peisong-fanwei-ditu"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fzh%2Fpeisong-fanwei-ditu"
     },
     {
       "source": "/zh/peisong-fanwei-ditu/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/zh/peisong-fanwei-ditu/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fzh%2Fpeisong-fanwei-ditu%2F"
     },
     {
       "source": "/pt/mapa-area-entrega",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/pt/mapa-area-entrega"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-area-entrega"
     },
     {
       "source": "/pt/mapa-area-entrega/",
-      "destination": "https://pratix-delivery-zone-map-pratix-s-projects.vercel.app/pt/mapa-area-entrega/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-delivery-zone-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-area-entrega%2F"
     },
     {
       "source": "/en/field-visit-map",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/en/field-visit-map"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fen%2Ffield-visit-map"
     },
     {
       "source": "/en/field-visit-map/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/en/field-visit-map/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fen%2Ffield-visit-map%2F"
     },
     {
       "source": "/tr/saha-ziyaret-haritasi",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/tr/saha-ziyaret-haritasi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ftr%2Fsaha-ziyaret-haritasi"
     },
     {
       "source": "/tr/saha-ziyaret-haritasi/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/tr/saha-ziyaret-haritasi/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ftr%2Fsaha-ziyaret-haritasi%2F"
     },
     {
       "source": "/de/feldbesuchs-karte",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/de/feldbesuchs-karte"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fde%2Ffeldbesuchs-karte"
     },
     {
       "source": "/de/feldbesuchs-karte/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/de/feldbesuchs-karte/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fde%2Ffeldbesuchs-karte%2F"
     },
     {
       "source": "/fr/carte-visites-terrain",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/fr/carte-visites-terrain"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-visites-terrain"
     },
     {
       "source": "/fr/carte-visites-terrain/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/fr/carte-visites-terrain/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-visites-terrain%2F"
     },
     {
       "source": "/es/mapa-visitas-campo",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/es/mapa-visitas-campo"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-visitas-campo"
     },
     {
       "source": "/es/mapa-visitas-campo/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/es/mapa-visitas-campo/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-visitas-campo%2F"
     },
     {
       "source": "/it/mappa-visite-territorio",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/it/mappa-visite-territorio"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-visite-territorio"
     },
     {
       "source": "/it/mappa-visite-territorio/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/it/mappa-visite-territorio/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-visite-territorio%2F"
     },
     {
       "source": "/nl/veldbezoek-kaart",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/nl/veldbezoek-kaart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fnl%2Fveldbezoek-kaart"
     },
     {
       "source": "/nl/veldbezoek-kaart/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/nl/veldbezoek-kaart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fnl%2Fveldbezoek-kaart%2F"
     },
     {
       "source": "/sv/faltbesokskarta",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/sv/faltbesokskarta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fsv%2Ffaltbesokskarta"
     },
     {
       "source": "/sv/faltbesokskarta/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/sv/faltbesokskarta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fsv%2Ffaltbesokskarta%2F"
     },
     {
       "source": "/da/markbesogskort",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/da/markbesogskort"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fda%2Fmarkbesogskort"
     },
     {
       "source": "/da/markbesogskort/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/da/markbesogskort/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fda%2Fmarkbesogskort%2F"
     },
     {
       "source": "/no/feltbesokskart",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/no/feltbesokskart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fno%2Ffeltbesokskart"
     },
     {
       "source": "/no/feltbesokskart/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/no/feltbesokskart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fno%2Ffeltbesokskart%2F"
     },
     {
       "source": "/fi/kenttakayntikartta",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/fi/kenttakayntikartta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ffi%2Fkenttakayntikartta"
     },
     {
       "source": "/fi/kenttakayntikartta/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/fi/kenttakayntikartta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Ffi%2Fkenttakayntikartta%2F"
     },
     {
       "source": "/zh/waichu-fangwen-ditu",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/zh/waichu-fangwen-ditu"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fzh%2Fwaichu-fangwen-ditu"
     },
     {
       "source": "/zh/waichu-fangwen-ditu/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/zh/waichu-fangwen-ditu/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fzh%2Fwaichu-fangwen-ditu%2F"
     },
     {
       "source": "/pt/mapa-visitas-campo",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/pt/mapa-visitas-campo"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-visitas-campo"
     },
     {
       "source": "/pt/mapa-visitas-campo/",
-      "destination": "https://pratix-field-visit-map-pratix-s-projects.vercel.app/pt/mapa-visitas-campo/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-field-visit-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-visitas-campo%2F"
     },
     {
       "source": "/en/event-parking-map",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/en/event-parking-map"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fen%2Fevent-parking-map"
     },
     {
       "source": "/en/event-parking-map/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/en/event-parking-map/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fen%2Fevent-parking-map%2F"
     },
     {
       "source": "/tr/etkinlik-otopark-haritasi",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/tr/etkinlik-otopark-haritasi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ftr%2Fetkinlik-otopark-haritasi"
     },
     {
       "source": "/tr/etkinlik-otopark-haritasi/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/tr/etkinlik-otopark-haritasi/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ftr%2Fetkinlik-otopark-haritasi%2F"
     },
     {
       "source": "/de/event-parkplatz-karte",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/de/event-parkplatz-karte"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fde%2Fevent-parkplatz-karte"
     },
     {
       "source": "/de/event-parkplatz-karte/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/de/event-parkplatz-karte/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fde%2Fevent-parkplatz-karte%2F"
     },
     {
       "source": "/fr/carte-evenement-parking",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/fr/carte-evenement-parking"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-evenement-parking"
     },
     {
       "source": "/fr/carte-evenement-parking/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/fr/carte-evenement-parking/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ffr%2Fcarte-evenement-parking%2F"
     },
     {
       "source": "/es/mapa-evento-aparcamiento",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/es/mapa-evento-aparcamiento"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-evento-aparcamiento"
     },
     {
       "source": "/es/mapa-evento-aparcamiento/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/es/mapa-evento-aparcamiento/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fes%2Fmapa-evento-aparcamiento%2F"
     },
     {
       "source": "/it/mappa-evento-parcheggio",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/it/mappa-evento-parcheggio"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-evento-parcheggio"
     },
     {
       "source": "/it/mappa-evento-parcheggio/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/it/mappa-evento-parcheggio/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fit%2Fmappa-evento-parcheggio%2F"
     },
     {
       "source": "/nl/evenement-parkeerkaart",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/nl/evenement-parkeerkaart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fnl%2Fevenement-parkeerkaart"
     },
     {
       "source": "/nl/evenement-parkeerkaart/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/nl/evenement-parkeerkaart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fnl%2Fevenement-parkeerkaart%2F"
     },
     {
       "source": "/sv/evenemangsparkering-karta",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/sv/evenemangsparkering-karta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fsv%2Fevenemangsparkering-karta"
     },
     {
       "source": "/sv/evenemangsparkering-karta/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/sv/evenemangsparkering-karta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fsv%2Fevenemangsparkering-karta%2F"
     },
     {
       "source": "/da/event-parkeringskort",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/da/event-parkeringskort"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fda%2Fevent-parkeringskort"
     },
     {
       "source": "/da/event-parkeringskort/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/da/event-parkeringskort/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fda%2Fevent-parkeringskort%2F"
     },
     {
       "source": "/no/event-parkeringskart",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/no/event-parkeringskart"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fno%2Fevent-parkeringskart"
     },
     {
       "source": "/no/event-parkeringskart/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/no/event-parkeringskart/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fno%2Fevent-parkeringskart%2F"
     },
     {
       "source": "/fi/tapahtuma-pysakointikartta",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/fi/tapahtuma-pysakointikartta"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ffi%2Ftapahtuma-pysakointikartta"
     },
     {
       "source": "/fi/tapahtuma-pysakointikartta/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/fi/tapahtuma-pysakointikartta/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Ffi%2Ftapahtuma-pysakointikartta%2F"
     },
     {
       "source": "/zh/huodong-tingche-ditu",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/zh/huodong-tingche-ditu"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fzh%2Fhuodong-tingche-ditu"
     },
     {
       "source": "/zh/huodong-tingche-ditu/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/zh/huodong-tingche-ditu/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fzh%2Fhuodong-tingche-ditu%2F"
     },
     {
       "source": "/pt/mapa-evento-estacionamento",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/pt/mapa-evento-estacionamento"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-evento-estacionamento"
     },
     {
       "source": "/pt/mapa-evento-estacionamento/",
-      "destination": "https://pratix-event-parking-map-pratix-s-projects.vercel.app/pt/mapa-evento-estacionamento/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-event-parking-map-pratix-s-projects.vercel.app%2Fpt%2Fmapa-evento-estacionamento%2F"
     },
     {
       "source": "/en/",
@@ -621,195 +621,195 @@
     },
     {
       "source": "/en/secure-note",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/en/secure-note/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/tr/sifreli-not",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/tr/sifreli-not/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/de/sichere-notiz",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/de/sichere-notiz/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/fr/note-securisee",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/fr/note-securisee/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/es/nota-segura",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/es/nota-segura/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/it/nota-sicura",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/it/nota-sicura/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/nl/veilige-notitie",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/nl/veilige-notitie/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/sv/saker-anteckning",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/sv/saker-anteckning/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/da/sikker-note",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/da/sikker-note/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/no/sikkert-notat",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/no/sikkert-notat/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/fi/suojattu-muistiinpano",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/fi/suojattu-muistiinpano/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/zh/anquan-bianjian",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/zh/anquan-bianjian/",
-      "destination": "https://pratix-secure-note.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-secure-note.vercel.app%2F"
     },
     {
       "source": "/en/privacy-file-inspector",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/en/privacy-file-inspector/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-gizlilik-kontrolu",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-gizlilik-kontrolu/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/de/datei-datenschutzpruefer",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/de/datei-datenschutzpruefer/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/fr/inspecteur-confidentialite-fichiers",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/fr/inspecteur-confidentialite-fichiers/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/es/inspector-privacidad-archivos",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/es/inspector-privacidad-archivos/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/it/ispettore-privacy-file",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/it/ispettore-privacy-file/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/nl/bestandsprivacy-controle",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/nl/bestandsprivacy-controle/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/sv/filintegritetskontroll",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/sv/filintegritetskontroll/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/da/fil-privatlivstjek",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/da/fil-privatlivstjek/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/no/filpersonvernkontroll",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/no/filpersonvernkontroll/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/fi/tiedoston-yksityisyystarkistus",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/fi/tiedoston-yksityisyystarkistus/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-yinsi-jiancha",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-yinsi-jiancha/",
-      "destination": "https://pratix-privacy-file-inspector.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-privacy-file-inspector.vercel.app%2F"
     },
     {
       "source": "/en/excel-data-cleaner",
@@ -821,35 +821,35 @@
     },
     {
       "source": "/en/schema-generator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/en/schema-generator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/en/revenue-calculator",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/en/revenue-calculator/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/en/ad-layout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/en/ad-layout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/en/ai-prompt-generator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/en/ai-prompt-generator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/en/file-compressor",
@@ -869,43 +869,43 @@
     },
     {
       "source": "/en/pdf-editor",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/en/pdf-editor/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/en/loan-calculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/en/loan-calculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/en/debt-payoff-calculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/en/debt-payoff-calculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/en/net-worth-calculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/en/net-worth-calculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/en/file-bridge",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/en/file-bridge/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/en/content-creator-studio",
@@ -925,107 +925,107 @@
     },
     {
       "source": "/tr/excel-veri-temizleyici",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/tr/excel-veri-temizleyici/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/tr/schema-olusturucu",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/tr/schema-olusturucu/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/tr/gelir-hesaplayici",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/tr/gelir-hesaplayici/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/tr/reklam-yerlesim-olusturucu",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/tr/reklam-yerlesim-olusturucu/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/tr/yapay-zeka-prompt-olusturucu",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/tr/yapay-zeka-prompt-olusturucu/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-sikistirici",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-sikistirici/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/tr/ticaret-studyosu",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/tr/ticaret-studyosu/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/tr/pdf-duzenleyici",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/tr/pdf-duzenleyici/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/tr/kredi-hesaplayici",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/tr/kredi-hesaplayici/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/tr/borc-kapatma-hesaplayici",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/tr/borc-kapatma-hesaplayici/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/tr/net-deger-hesaplayici",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/tr/net-deger-hesaplayici/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-koprusu",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/tr/dosya-koprusu/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/tr/icerik-uretici-studyosu",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/tr/icerik-uretici-studyosu/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/de/",
@@ -1037,51 +1037,51 @@
     },
     {
       "source": "/de/excel-datenbereinigung",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/de/excel-datenbereinigung/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/de/schema-generator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/de/schema-generator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/de/umsatzrechner",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/de/umsatzrechner/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/de/werbelayout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/de/werbelayout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/de/ki-prompt-generator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/de/ki-prompt-generator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/de/dateikomprimierer",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/de/dateikomprimierer/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/de/commerce-studio",
@@ -1093,43 +1093,43 @@
     },
     {
       "source": "/de/pdf-editor",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/de/pdf-editor/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/de/kreditrechner",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/de/kreditrechner/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/de/schuldentilgungsrechner",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/de/schuldentilgungsrechner/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/de/nettovermoegensrechner",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/de/nettovermoegensrechner/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/de/dateibruecke",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/de/dateibruecke/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/de/content-creator-studio",
@@ -1149,51 +1149,51 @@
     },
     {
       "source": "/fr/nettoyeur-de-donnees-excel",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/fr/nettoyeur-de-donnees-excel/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-schema",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-schema/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-revenus",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-revenus/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-mise-en-page-publicitaire",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-mise-en-page-publicitaire/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-prompts-ia",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/fr/generateur-de-prompts-ia/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/fr/compresseur-de-fichiers",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/fr/compresseur-de-fichiers/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/fr/studio-commerce",
@@ -1205,51 +1205,51 @@
     },
     {
       "source": "/fr/editeur-pdf",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/fr/editeur-pdf/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-pret",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-pret/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-remboursement-de-dettes",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-remboursement-de-dettes/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-patrimoine-net",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/fr/calculateur-de-patrimoine-net/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/fr/pont-de-fichiers",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/fr/pont-de-fichiers/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/fr/studio-de-creation-de-contenu",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/fr/studio-de-creation-de-contenu/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/es/",
@@ -1261,107 +1261,107 @@
     },
     {
       "source": "/es/limpiador-de-datos-excel",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/es/limpiador-de-datos-excel/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-schema",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-schema/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-ingresos",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-ingresos/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-diseno-publicitario",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-diseno-publicitario/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-prompts-ia",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/es/generador-de-prompts-ia/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/es/compresor-de-archivos",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/es/compresor-de-archivos/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/es/estudio-de-comercio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/es/estudio-de-comercio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/es/editor-pdf",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/es/editor-pdf/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-prestamos",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-prestamos/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-pago-de-deudas",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-pago-de-deudas/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-patrimonio-neto",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/es/calculadora-de-patrimonio-neto/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/es/puente-de-archivos",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/es/puente-de-archivos/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/es/estudio-de-creacion-de-contenido",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/es/estudio-de-creacion-de-contenido/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/it/",
@@ -1373,51 +1373,51 @@
     },
     {
       "source": "/it/pulizia-dati-excel",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/it/pulizia-dati-excel/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/it/generatore-di-schema",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/it/generatore-di-schema/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-entrate",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-entrate/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/it/generatore-layout-pubblicitario",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/it/generatore-layout-pubblicitario/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/it/generatore-di-prompt-ia",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/it/generatore-di-prompt-ia/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/it/compressore-di-file",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/it/compressore-di-file/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/it/studio-commerce",
@@ -1429,51 +1429,51 @@
     },
     {
       "source": "/it/editor-pdf",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/it/editor-pdf/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-di-prestiti",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-di-prestiti/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-estinzione-debiti",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-estinzione-debiti/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-del-patrimonio-netto",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/it/calcolatore-del-patrimonio-netto/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/it/ponte-file",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/it/ponte-file/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/it/studio-creazione-contenuti",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/it/studio-creazione-contenuti/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/nl/",
@@ -1485,51 +1485,51 @@
     },
     {
       "source": "/nl/excel-gegevensreiniger",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/nl/excel-gegevensreiniger/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/nl/schema-generator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/nl/schema-generator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/nl/inkomsten-calculator",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/nl/inkomsten-calculator/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/nl/advertentie-layout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/nl/advertentie-layout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/nl/ai-promptgenerator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/nl/ai-promptgenerator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/nl/bestandscompressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/nl/bestandscompressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/nl/commerce-studio",
@@ -1541,43 +1541,43 @@
     },
     {
       "source": "/nl/pdf-editor",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/nl/pdf-editor/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/nl/leningcalculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/nl/leningcalculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/nl/schuldaflossingscalculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/nl/schuldaflossingscalculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/nl/nettovermogen-calculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/nl/nettovermogen-calculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/nl/bestandsbrug",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/nl/bestandsbrug/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/nl/contentcreator-studio",
@@ -1597,107 +1597,107 @@
     },
     {
       "source": "/sv/excel-datarensare",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/sv/excel-datarensare/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/sv/schema-generator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/sv/schema-generator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/sv/intaktskalkylator",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/sv/intaktskalkylator/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/sv/annonslayout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/sv/annonslayout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/sv/ai-promptgenerator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/sv/ai-promptgenerator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/sv/filkompressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/sv/filkompressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/sv/handelsstudio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/sv/handelsstudio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/sv/pdf-redigerare",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/sv/pdf-redigerare/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/sv/lanekalkylator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/sv/lanekalkylator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/sv/skuldavbetalningskalkylator",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/sv/skuldavbetalningskalkylator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/sv/nettofoermoegenhetskalkylator",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/sv/nettofoermoegenhetskalkylator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/sv/filbrygga",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/sv/filbrygga/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/sv/innehallsskaparstudio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/sv/innehallsskaparstudio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/da/",
@@ -1709,107 +1709,107 @@
     },
     {
       "source": "/da/excel-datarenser",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/da/excel-datarenser/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/da/schema-generator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/da/schema-generator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/da/indtaegtsberegner",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/da/indtaegtsberegner/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/da/annonce-layout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/da/annonce-layout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/da/ai-promptgenerator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/da/ai-promptgenerator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/da/filkompressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/da/filkompressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/da/handelsstudio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/da/handelsstudio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/da/pdf-editor",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/da/pdf-editor/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/da/laaneberegner",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/da/laaneberegner/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/da/gaeldsafviklingsberegner",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/da/gaeldsafviklingsberegner/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/da/nettoformueberegner",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/da/nettoformueberegner/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/da/filbro",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/da/filbro/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/da/indholdsskaber-studie",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/da/indholdsskaber-studie/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/no/",
@@ -1821,107 +1821,107 @@
     },
     {
       "source": "/no/excel-datarenser",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/no/excel-datarenser/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/no/skjemagenerator",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/no/skjemagenerator/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/no/inntektskalkulator",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/no/inntektskalkulator/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/no/annonselayout-generator",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/no/annonselayout-generator/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/no/ai-promptgenerator",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/no/ai-promptgenerator/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/no/filkompressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/no/filkompressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/no/handelsstudio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/no/handelsstudio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/no/pdf-redigerer",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/no/pdf-redigerer/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/no/lanekalkulator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/no/lanekalkulator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/no/gjeldsnedbetalingskalkulator",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/no/gjeldsnedbetalingskalkulator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/no/nettoformuekalkulator",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/no/nettoformuekalkulator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/no/filbro",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/no/filbro/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/no/innholdsskaperstudio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/no/innholdsskaperstudio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/fi/",
@@ -1933,107 +1933,107 @@
     },
     {
       "source": "/fi/excel-datan-puhdistaja",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/fi/excel-datan-puhdistaja/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/fi/skeemageneraattori",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/fi/skeemageneraattori/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/fi/tulolaskuri",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/fi/tulolaskuri/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/fi/mainosasettelun-generaattori",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/fi/mainosasettelun-generaattori/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/fi/tekoaly-kehotegeneraattori",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/fi/tekoaly-kehotegeneraattori/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/fi/tiedostopakkaaja",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/fi/tiedostopakkaaja/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/fi/kaupankayntistudio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/fi/kaupankayntistudio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/fi/pdf-editori",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/fi/pdf-editori/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/fi/lainalaskuri",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/fi/lainalaskuri/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/fi/velanmaksulaskuri",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/fi/velanmaksulaskuri/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/fi/nettovarallisuuslaskuri",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/fi/nettovarallisuuslaskuri/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/fi/tiedostosilta",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/fi/tiedostosilta/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/fi/sisallontuottajan-studio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/fi/sisallontuottajan-studio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/zh/",
@@ -2045,107 +2045,107 @@
     },
     {
       "source": "/zh/excel-shuju-qingliqi",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/zh/excel-shuju-qingliqi/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/zh/jiegouhua-shuju-shengchengqi",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/zh/jiegouhua-shuju-shengchengqi/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/zh/shouru-jisuanqi",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/zh/shouru-jisuanqi/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/zh/guanggao-buju-shengchengqi",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/zh/guanggao-buju-shengchengqi/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/zh/rengong-zhineng-tishi-ci-shengchengqi",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/zh/rengong-zhineng-tishi-ci-shengchengqi/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-yasuoqi",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-yasuoqi/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/zh/dian-shang-gongzuoshi",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/zh/dian-shang-gongzuoshi/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/zh/pdf-bianjiqi",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/zh/pdf-bianjiqi/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/zh/daikuan-jisuanqi",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/zh/daikuan-jisuanqi/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/zh/zhaiwu-huankuan-jisuanqi",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/zh/zhaiwu-huankuan-jisuanqi/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/zh/jing-zichan-jisuanqi",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/zh/jing-zichan-jisuanqi/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-qiaojie",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/zh/wenjian-qiaojie/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/zh/neirong-chuangzuozhe-gongzuoshi",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/zh/neirong-chuangzuozhe-gongzuoshi/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/bridge/:path*",
@@ -2153,15 +2153,15 @@
     },
     {
       "source": "/bridge",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/bridge/",
-      "destination": "https://pratix-bridge.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2F"
     },
     {
       "source": "/manifest.webmanifest",
-      "destination": "https://pratix-bridge.vercel.app/manifest.webmanifest"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2Fmanifest.webmanifest"
     },
     {
       "source": "/assets/:path*",
@@ -2169,11 +2169,11 @@
     },
     {
       "source": "/favicon.ico",
-      "destination": "https://pratix-bridge.vercel.app/favicon.ico"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2Ffavicon.ico"
     },
     {
       "source": "/sw.js",
-      "destination": "https://pratix-bridge.vercel.app/sw.js"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-bridge.vercel.app%2Fsw.js"
     },
     {
       "source": "/compressor/:path*",
@@ -2185,7 +2185,7 @@
     },
     {
       "source": "/compressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/prompter/:path*",
@@ -2193,11 +2193,11 @@
     },
     {
       "source": "/prompter",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/prompter/",
-      "destination": "https://prompter-wine-three.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fprompter-wine-three.vercel.app%2F"
     },
     {
       "source": "/revenue/:path*",
@@ -2205,11 +2205,11 @@
     },
     {
       "source": "/revenue",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/revenue/",
-      "destination": "https://revenue-khaki-seven.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Frevenue-khaki-seven.vercel.app%2F"
     },
     {
       "source": "/ads/:path*",
@@ -2217,11 +2217,11 @@
     },
     {
       "source": "/ads",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/ads/",
-      "destination": "https://banner-placeholder-generator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fbanner-placeholder-generator.vercel.app%2F"
     },
     {
       "source": "/cleaner/:path*",
@@ -2229,11 +2229,11 @@
     },
     {
       "source": "/cleaner",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/cleaner/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/schema/:path*",
@@ -2241,11 +2241,11 @@
     },
     {
       "source": "/schema",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/schema/",
-      "destination": "https://schema-generator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fschema-generator-one.vercel.app%2F"
     },
     {
       "source": "/commerce-studio/:path*",
@@ -2265,11 +2265,11 @@
     },
     {
       "source": "/pdfeditor",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/pdfeditor/",
-      "destination": "https://pdfeditor-psi.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpdfeditor-psi.vercel.app%2F"
     },
     {
       "source": "/creator-studio/:path*",
@@ -2285,11 +2285,11 @@
     },
     {
       "source": "/loancalculator",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/loancalculator/",
-      "destination": "https://loan-calculator-eight-mu.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Floan-calculator-eight-mu.vercel.app%2F"
     },
     {
       "source": "/loancalculator/:path*",
@@ -2297,11 +2297,11 @@
     },
     {
       "source": "/autoloancalculator",
-      "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fauto-loan-calculator-flame.vercel.app%2Ftools%2Fauto-loan-calculator.html"
     },
     {
       "source": "/autoloancalculator/",
-      "destination": "https://auto-loan-calculator-flame.vercel.app/tools/auto-loan-calculator.html"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fauto-loan-calculator-flame.vercel.app%2Ftools%2Fauto-loan-calculator.html"
     },
     {
       "source": "/autoloancalculator/:path*",
@@ -2309,11 +2309,11 @@
     },
     {
       "source": "/deptpayoffcalculator",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/deptpayoffcalculator/",
-      "destination": "https://dept-payoff-calculator.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fdept-payoff-calculator.vercel.app%2F"
     },
     {
       "source": "/deptpayoffcalculator/:path*",
@@ -2321,11 +2321,11 @@
     },
     {
       "source": "/networthcalculator",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/networthcalculator/",
-      "destination": "https://net-worth-calculator-one.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fnet-worth-calculator-one.vercel.app%2F"
     },
     {
       "source": "/networthcalculator/:path*",
@@ -2333,11 +2333,11 @@
     },
     {
       "source": "/vatcalculator",
-      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fvat-calculator-seven.vercel.app%2Ftools%2Fvat-calculator"
     },
     {
       "source": "/vatcalculator/",
-      "destination": "https://vat-calculator-seven.vercel.app/tools/vat-calculator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fvat-calculator-seven.vercel.app%2Ftools%2Fvat-calculator"
     },
     {
       "source": "/vatcalculator/:path*",
@@ -2345,11 +2345,11 @@
     },
     {
       "source": "/retirementsavingscalculator",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fretirement-savings-calculator-cyan.vercel.app%2Ftools%2Fretirement-savings-calculator"
     },
     {
       "source": "/retirementsavingscalculator/",
-      "destination": "https://retirement-savings-calculator-cyan.vercel.app/tools/retirement-savings-calculator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fretirement-savings-calculator-cyan.vercel.app%2Ftools%2Fretirement-savings-calculator"
     },
     {
       "source": "/retirementsavingscalculator/:path*",
@@ -2653,43 +2653,43 @@
     },
     {
       "source": "/tr/seo-metadata-olusturucu",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/tr/seo-metadata-olusturucu/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/de/seo-metadaten-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/de/seo-metadaten-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/fr/generateur-de-metadonnees-seo",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/fr/generateur-de-metadonnees-seo/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/es/generador-de-metadatos-seo",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/es/generador-de-metadatos-seo/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/it/generatore-metadati-seo",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/it/generatore-metadati-seo/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/nl/seo-metadata-generator",
@@ -2741,155 +2741,155 @@
     },
     {
       "source": "/pt/gerador-de-metadados-seo",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pt"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dpt"
     },
     {
       "source": "/pt/gerador-de-metadados-seo/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pt"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dpt"
     },
     {
       "source": "/en/cv-builder",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/en/cv-builder/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/tr/cv-olusturucu",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/tr/cv-olusturucu/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=tr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dtr"
     },
     {
       "source": "/de/lebenslauf-builder",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/de/lebenslauf-builder/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=de"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dde"
     },
     {
       "source": "/fr/createur-de-cv",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/fr/createur-de-cv/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=fr"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dfr"
     },
     {
       "source": "/es/creador-de-cv",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/es/creador-de-cv/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=es"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Des"
     },
     {
       "source": "/it/creatore-di-cv",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/it/creatore-di-cv/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=it"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dit"
     },
     {
       "source": "/nl/cv-maker",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/nl/cv-maker/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/sv/cv-byggare",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=sv"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dsv"
     },
     {
       "source": "/sv/cv-byggare/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=sv"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dsv"
     },
     {
       "source": "/da/cv-bygger",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=da"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dda"
     },
     {
       "source": "/da/cv-bygger/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=da"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dda"
     },
     {
       "source": "/no/cv-bygger",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=no"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dno"
     },
     {
       "source": "/no/cv-bygger/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=no"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dno"
     },
     {
       "source": "/fi/cv-tyokalu",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=fi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dfi"
     },
     {
       "source": "/fi/cv-tyokalu/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=fi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dfi"
     },
     {
       "source": "/zh/cv-jianli-shengchengqi",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=zh"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dzh"
     },
     {
       "source": "/zh/cv-jianli-shengchengqi/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=zh"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dzh"
     },
     {
       "source": "/pt/criador-de-cv",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=pt"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dpt"
     },
     {
       "source": "/pt/criador-de-cv/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=pt"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dpt"
     },
     {
       "source": "/pl/kreator-cv",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/pl/kreator-cv/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/ru/sozdat-rezyume",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/ru/sozdat-rezyume/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/ar/munshi-sira-dhatiya",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/ar/munshi-sira-dhatiya/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/ja/rirekisho-maker",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/ja/rirekisho-maker/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/ko/ilyeogseo-jagseonggi",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dko"
     },
     {
       "source": "/ko/ilyeogseo-jagseonggi/",
-      "destination": "https://pratix-cv-builder.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-cv-builder.vercel.app%2F%3Flang%3Dko"
     }
   ],
   "redirects": [
