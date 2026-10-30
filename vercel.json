@@ -853,11 +853,11 @@
     },
     {
       "source": "/en/file-compressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/en/file-compressor/",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/en/commerce-studio",
@@ -2181,7 +2181,7 @@
     },
     {
       "source": "/compressor",
-      "destination": "https://compressor-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcompressor-murex.vercel.app%2F"
     },
     {
       "source": "/compressor/",

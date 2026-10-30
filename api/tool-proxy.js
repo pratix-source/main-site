@@ -3,7 +3,8 @@ const ALLOWED = [
   'https://pratix-utm-campaign-builder.vercel.app/',
   'https://excel-data-cleaner-iota.vercel.app/',
   'https://creator-studio-seven-murex.vercel.app/',
-  'https://pratix-commerce-studio.vercel.app/'
+  'https://pratix-commerce-studio.vercel.app/',
+  'https://compressor-murex.vercel.app/'
 ];
 
 module.exports = async (req, res) => {
