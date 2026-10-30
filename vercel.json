@@ -205,27 +205,27 @@
     },
     {
       "source": "/en/utm-builder",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/en/utm-builder"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fen%2Futm-builder"
     },
     {
       "source": "/en/utm-builder/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/en/utm-builder"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fen%2Futm-builder"
     },
     {
       "source": "/tr/utm-olusturucu",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/tr/utm-olusturucu"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ftr%2Futm-olusturucu"
     },
     {
       "source": "/tr/utm-olusturucu/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/tr/utm-olusturucu"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ftr%2Futm-olusturucu"
     },
     {
       "source": "/de/utm-builder",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/de/utm-builder"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fde%2Futm-builder"
     },
     {
       "source": "/de/utm-builder/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/de/utm-builder"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fde%2Futm-builder"
     },
     {
       "source": "/fr/generateur-utm",
@@ -253,51 +253,51 @@
     },
     {
       "source": "/nl/utm-generator",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/nl/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fnl%2Futm-generator"
     },
     {
       "source": "/nl/utm-generator/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/nl/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fnl%2Futm-generator"
     },
     {
       "source": "/sv/utm-generator",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/sv/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fsv%2Futm-generator"
     },
     {
       "source": "/sv/utm-generator/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/sv/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fsv%2Futm-generator"
     },
     {
       "source": "/da/utm-generator",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/da/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fda%2Futm-generator"
     },
     {
       "source": "/da/utm-generator/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/da/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fda%2Futm-generator"
     },
     {
       "source": "/no/utm-generator",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/no/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fno%2Futm-generator"
     },
     {
       "source": "/no/utm-generator/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/no/utm-generator"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fno%2Futm-generator"
     },
     {
       "source": "/fi/utm-generaattori",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/fi/utm-generaattori"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ffi%2Futm-generaattori"
     },
     {
       "source": "/fi/utm-generaattori/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/fi/utm-generaattori"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Ffi%2Futm-generaattori"
     },
     {
       "source": "/zh/utm-jingzhui-shengchengqi",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/zh/utm-jingzhui-shengchengqi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fzh%2Futm-jingzhui-shengchengqi"
     },
     {
       "source": "/zh/utm-jingzhui-shengchengqi/",
-      "destination": "https://pratix-utm-campaign-builder.vercel.app/zh/utm-jingzhui-shengchengqi"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-utm-campaign-builder.vercel.app%2Fzh%2Futm-jingzhui-shengchengqi"
     },
     {
       "source": "/en/delivery-zone-map",
@@ -813,11 +813,11 @@
     },
     {
       "source": "/en/excel-data-cleaner",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/en/excel-data-cleaner/",
-      "destination": "https://excel-data-cleaner-iota.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fexcel-data-cleaner-iota.vercel.app%2F"
     },
     {
       "source": "/en/schema-generator",
@@ -2645,11 +2645,11 @@
     },
     {
       "source": "/en/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/en/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=en"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Den"
     },
     {
       "source": "/tr/seo-metadata-olusturucu",
@@ -2693,51 +2693,51 @@
     },
     {
       "source": "/nl/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/nl/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=nl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dnl"
     },
     {
       "source": "/pl/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/pl/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=pl"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dpl"
     },
     {
       "source": "/ru/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/ru/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ru"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dru"
     },
     {
       "source": "/ar/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/ar/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ar"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dar"
     },
     {
       "source": "/ja/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/ja/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ja"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dja"
     },
     {
       "source": "/ko/seo-metadata-generator",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dko"
     },
     {
       "source": "/ko/seo-metadata-generator/",
-      "destination": "https://pratix-seo-metadata.vercel.app/?lang=ko"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-seo-metadata.vercel.app%2F%3Flang%3Dko"
     },
     {
       "source": "/pt/gerador-de-metadados-seo",
