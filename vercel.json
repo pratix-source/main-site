@@ -861,11 +861,11 @@
     },
     {
       "source": "/en/commerce-studio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/en/commerce-studio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/en/pdf-editor",
@@ -909,11 +909,11 @@
     },
     {
       "source": "/en/content-creator-studio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/en/content-creator-studio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/tr/",
@@ -1085,11 +1085,11 @@
     },
     {
       "source": "/de/commerce-studio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/de/commerce-studio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/de/pdf-editor",
@@ -1133,11 +1133,11 @@
     },
     {
       "source": "/de/content-creator-studio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/de/content-creator-studio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/fr/",
@@ -1197,11 +1197,11 @@
     },
     {
       "source": "/fr/studio-commerce",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/fr/studio-commerce/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/fr/editeur-pdf",
@@ -1421,11 +1421,11 @@
     },
     {
       "source": "/it/studio-commerce",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/it/studio-commerce/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/it/editor-pdf",
@@ -1533,11 +1533,11 @@
     },
     {
       "source": "/nl/commerce-studio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/nl/commerce-studio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/nl/pdf-editor",
@@ -1581,11 +1581,11 @@
     },
     {
       "source": "/nl/contentcreator-studio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/nl/contentcreator-studio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/sv/",
@@ -2249,15 +2249,15 @@
     },
     {
       "source": "/commerce-studio/:path*",
-      "destination": "https://pratix-commerce-studio.vercel.app/:path*"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F%3Apath%2A"
     },
     {
       "source": "/commerce-studio",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/commerce-studio/",
-      "destination": "https://pratix-commerce-studio.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fpratix-commerce-studio.vercel.app%2F"
     },
     {
       "source": "/pdfeditor/:path*",
@@ -2273,15 +2273,15 @@
     },
     {
       "source": "/creator-studio/:path*",
-      "destination": "https://creator-studio-seven-murex.vercel.app/:path*"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F%3Apath%2A"
     },
     {
       "source": "/creator-studio",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/creator-studio/",
-      "destination": "https://creator-studio-seven-murex.vercel.app/"
+      "destination": "/api/tool-proxy?target=https%3A%2F%2Fcreator-studio-seven-murex.vercel.app%2F"
     },
     {
       "source": "/loancalculator",
