@@ -5,6 +5,22 @@ const root = path.resolve(__dirname, '..');
 const langs = ['en','tr','de','fr','es','it','nl','sv','da','no','fi','zh','pt'];
 const id = 'creator-content-packager';
 const failures = [];
+const home = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const catalogSource = home.match(/let PRATIX_TOOLS = (\[[\s\S]*?\]);/);
+if (!catalogSource) failures.push('main-site catalog: PRATIX_TOOLS array missing');
+else {
+  const catalog = JSON.parse(catalogSource[1]);
+  const entry = catalog.find(x => x.id === id);
+  if (!entry) failures.push('main-site catalog: tool card missing');
+  else {
+    if (entry.category !== 'marketing') failures.push(`main-site catalog: wrong category ${entry.category}`);
+    for (const lang of langs) if (!entry.name[lang] || !entry.desc[lang]) failures.push(`main-site catalog: missing ${lang} title/description`);
+  }
+}
+if (!/'creator-content-packager':\s*\{\s*\"en\"\s*:\s*\"creator-content-packager\"/.test(home)) failures.push('main-site catalog: localized route mapping missing');
+const categoriesSource = home.match(/let PRATIX_CATEGORIES = (\[[\s\S]*?\]);/);
+if (!categoriesSource || !JSON.parse(categoriesSource[1]).some(x => x.id === 'marketing')) failures.push('main-site catalog: Marketing category missing');
+
 for (const lang of langs) {
   const file = path.join(root, 'dist', 'tools', id, `${lang}.html`);
   if (!fs.existsSync(file)) { failures.push(`${lang}: missing HTML`); continue; }
@@ -27,6 +43,7 @@ for (const lang of langs) {
   if (!faq || faq.mainEntity.length !== visible.length || faq.mainEntity.some((q,i) => q.name !== visible[i]?.[0] || q.acceptedAnswer.text !== visible[i]?.[1])) failures.push(`${lang}: visible FAQ and FAQ schema mismatch`);
 }
 const sitemap = fs.readFileSync(path.join(root, 'dist', 'sitemap.xml'), 'utf8');
-for (const lang of langs) if (!sitemap.includes(`https://www.pratix.io/${lang}/${id}`)) failures.push(`sitemap missing ${lang}`);
+const sitemapLocs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x => x[1]);
+for (const lang of langs) { const url = `https://www.pratix.io/${lang}/${id}`; if (sitemapLocs.filter(x => x === url).length !== 1) failures.push(`sitemap ${lang}: expected exactly one URL`); }
 if (failures.length) throw new Error(failures.join('\n'));
 console.log(`Creator Content Packager validation passed for ${langs.length} language routes: metadata, H1, JSON-LD, FAQ parity, inline JS, and sitemap.`);

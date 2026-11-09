@@ -140,11 +140,6 @@ function buildSitemap() {
     groups.push({ toolId, languages: groupLanguages, urls: groupLanguages.map(language => absoluteUrl(language, toolId)) });
   }
 
-  for (const toolId of newToolIds) {
-    const groupLanguages = languages;
-    const urls = groupLanguages.map(language => `${siteOrigin}/${language}/${toolId}`);
-    groups.push({ toolId, languages: groupLanguages, urls });
-  }
   const urlBlocks = [];
   for (const group of groups) {
     const alternates = [
