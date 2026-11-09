@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node scripts/prerender.js",
-    "test": "npm run build && node scripts/verify-seo.js"
+    "test": "npm run build && node scripts/verify-seo.js && node scripts/verify-new-tools.js"
   }
 }

@@ -4,6 +4,110 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/en/creator-content-packager",
+      "destination": "/tools/creator-content-packager/en.html"
+    },
+    {
+      "source": "/en/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/en.html"
+    },
+    {
+      "source": "/tr/creator-content-packager",
+      "destination": "/tools/creator-content-packager/tr.html"
+    },
+    {
+      "source": "/tr/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/tr.html"
+    },
+    {
+      "source": "/de/creator-content-packager",
+      "destination": "/tools/creator-content-packager/de.html"
+    },
+    {
+      "source": "/de/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/de.html"
+    },
+    {
+      "source": "/fr/creator-content-packager",
+      "destination": "/tools/creator-content-packager/fr.html"
+    },
+    {
+      "source": "/fr/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/fr.html"
+    },
+    {
+      "source": "/es/creator-content-packager",
+      "destination": "/tools/creator-content-packager/es.html"
+    },
+    {
+      "source": "/es/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/es.html"
+    },
+    {
+      "source": "/it/creator-content-packager",
+      "destination": "/tools/creator-content-packager/it.html"
+    },
+    {
+      "source": "/it/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/it.html"
+    },
+    {
+      "source": "/nl/creator-content-packager",
+      "destination": "/tools/creator-content-packager/nl.html"
+    },
+    {
+      "source": "/nl/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/nl.html"
+    },
+    {
+      "source": "/sv/creator-content-packager",
+      "destination": "/tools/creator-content-packager/sv.html"
+    },
+    {
+      "source": "/sv/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/sv.html"
+    },
+    {
+      "source": "/da/creator-content-packager",
+      "destination": "/tools/creator-content-packager/da.html"
+    },
+    {
+      "source": "/da/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/da.html"
+    },
+    {
+      "source": "/no/creator-content-packager",
+      "destination": "/tools/creator-content-packager/no.html"
+    },
+    {
+      "source": "/no/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/no.html"
+    },
+    {
+      "source": "/fi/creator-content-packager",
+      "destination": "/tools/creator-content-packager/fi.html"
+    },
+    {
+      "source": "/fi/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/fi.html"
+    },
+    {
+      "source": "/zh/creator-content-packager",
+      "destination": "/tools/creator-content-packager/zh.html"
+    },
+    {
+      "source": "/zh/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/zh.html"
+    },
+    {
+      "source": "/pt/creator-content-packager",
+      "destination": "/tools/creator-content-packager/pt.html"
+    },
+    {
+      "source": "/pt/creator-content-packager/",
+      "destination": "/tools/creator-content-packager/pt.html"
+    },
+    {
       "source": "/en/hreflang-sitemap-auditor",
       "destination": "/tools/hreflang-sitemap-auditor/en.html"
     },

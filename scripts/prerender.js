@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { execFileSync } = require('node:child_process');
 
 const root = path.resolve(__dirname, '..');
 const sourcePath = path.join(root, 'index.html');
@@ -7,6 +8,7 @@ const distPath = path.join(root, 'dist');
 const source = fs.readFileSync(sourcePath, 'utf8');
 const languages = ['en', 'tr', 'de', 'fr', 'es', 'it', 'nl', 'sv', 'da', 'no', 'fi', 'zh', 'pt'];
 const siteOrigin = 'https://www.pratix.io';
+const newToolIds = ['creator-content-packager'];
 const { getSeoCopy } = require('./seo-copy');
 const { injectToolActions } = require('./tool-actions');
 
@@ -72,6 +74,7 @@ const localizedToolIds = Object.keys(slugMap);
 
 function absoluteUrl(language, toolId = null) {
   if (!toolId) return `${siteOrigin}/${language}/`;
+  if (newToolIds.includes(toolId)) return `${siteOrigin}/${language}/${toolId}`;
   return `${siteOrigin}/${language}/${slugMap[toolId][language] || slugMap[toolId].en || slugMap[toolId].en}`;
 }
 
@@ -137,6 +140,11 @@ function buildSitemap() {
     groups.push({ toolId, languages: groupLanguages, urls: groupLanguages.map(language => absoluteUrl(language, toolId)) });
   }
 
+  for (const toolId of newToolIds) {
+    const groupLanguages = languages;
+    const urls = groupLanguages.map(language => `${siteOrigin}/${language}/${toolId}`);
+    groups.push({ toolId, languages: groupLanguages, urls });
+  }
   const urlBlocks = [];
   for (const group of groups) {
     const alternates = [
@@ -161,6 +169,8 @@ function buildSitemap() {
   return `<?xml version='1.0' encoding='utf-8'?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlBlocks.join('\n')}\n</urlset>\n`;
 }
 
+process.env.TOOL_ID = 'creator-content-packager';
+execFileSync(process.execPath, [path.join(root, 'scripts/build-new-tools.js')], { stdio: 'inherit' });
 fs.rmSync(distPath, { recursive: true, force: true });
 fs.mkdirSync(distPath, { recursive: true });
 writePage('index.html', 'en');
@@ -208,6 +218,14 @@ for (const language of languages) {
   fs.writeFileSync(destination, injectToolActions(fs.readFileSync(sourceToolPage, 'utf8'), language));
 }
 
+for (const toolId of newToolIds) {
+  for (const language of languages) {
+    const src = path.join(root, 'tools', toolId, `${language}.html`);
+    const dest = path.join(distPath, 'tools', toolId, `${language}.html`);
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.writeFileSync(dest, fs.readFileSync(src, 'utf8'));
+  }
+}
 fs.writeFileSync(path.join(distPath, 'sitemap.xml'), buildSitemap());
 
 console.log(`Prerendered ${1 + languages.length} hub pages into ${path.relative(root, distPath)}/`);
